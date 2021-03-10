@@ -18,16 +18,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -473,18 +464,15 @@
 <h1 id="cgm-faqs">CGM FAQs<a class="headerlink" href="#cgm-faqs" title="Permanent link">⌁</a></h1>
 <h2 id="what-cgms-does-loop-work-with">What CGMs does Loop work with?<a class="headerlink" href="#what-cgms-does-loop-work-with" title="Permanent link">⌁</a></h2>
 <p>Loop works Dexcom G4 with share, G5, G6, Share and the Medtronic CGM systems compatible with Looping pumps.</p>
-<p>Read the details <a href="https://loopkit.github.io/loopdocs/build/step4/">here</a>.</p>
+<p>Read the details <a href="../../build/step4/">here</a>.</p>
 <h2 id="do-i-need-wait-for-a-new-sensor-session-to-start-loop">Do I need wait for a new sensor session to start Loop?<a class="headerlink" href="#do-i-need-wait-for-a-new-sensor-session-to-start-loop" title="Permanent link">⌁</a></h2>
 <p>No, you can start Looping mid-sensor session. There's no need to do anything special with regards to your CGM session when starting or ending Loop use.</p>
 <h2 id="what-do-i-do-when-sensor-is-in-warm-up">What do I do when sensor is in warm-up?<a class="headerlink" href="#what-do-i-do-when-sensor-is-in-warm-up" title="Permanent link">⌁</a></h2>
 <p>While the CGM is in warm-up, Loop will return to your scheduled basal delivery (within 30 min or less). You won't get temp basal adjustments during the warm-up period. If you need to bolus during this time, you will need to do a finger check and enter the blood glucose value into Apple Health app manually if you'd like Loop to offer a bolus recommendation. Loop will read that value from the Health app to provide you a bolus recommendation. If you are really ambitious, some people do frequent (15 min or so) finger checks and enter those into Health during warmup. This could allow Loop to do a bit of looping during warmup, albeit on blood glucose values that are spread pretty far apart compared to normal.</p>
 <h2 id="what-do-i-do-when-i-switch-transmitters">What do I do when I switch transmitters?<a class="headerlink" href="#what-do-i-do-when-i-switch-transmitters" title="Permanent link">⌁</a></h2>
-<p>When you change transmitters, you will need to update the transmitter ID in your Loop settings. This is pretty simple task. </p>
+<p>When you change transmitters, you will need to update the transmitter ID in your Loop settings. This is pretty simple task.</p>
 <p>When you change transmitters, select the <code>Delete CGM</code> button at the very bottom of the CGM info page in Loop. Then you will select your Dexcom system again and add the new transmitter ID. You cannot just tap on your old transmitter ID to update it.</p>
-<p align="center">
-<img src="../img/delete-cgm.jpg" width="400">
-</p>
-
+<p><img alt="img/delete-cgm.jpg" src="../img/delete-cgm.jpg" /></p>
 <p>If you don't update your transmitter ID when you change active transmitters, your Loop will be forced to go to your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.</p>
 <h2 id="can-i-use-libre-sensors-with-a-reader-like-miao-miao">Can I use Libre sensors with a reader like Miao Miao?<a class="headerlink" href="#can-i-use-libre-sensors-with-a-reader-like-miao-miao" title="Permanent link">⌁</a></h2>
 <p>If you want to use a Libre sensor you will need to modify Loop to accomplish that use. Loop code does not natively support that sensor, nor readers.</p>

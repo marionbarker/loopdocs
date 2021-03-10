@@ -18,16 +18,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -481,10 +472,10 @@
 <h1 id="updatingrebuilding-loop-faqs">Updating/Rebuilding Loop FAQs<a class="headerlink" href="#updatingrebuilding-loop-faqs" title="Permanent link">⌁</a></h1>
 <p>SOOOO many questions about updating or rebuilding Loop. The general answer is that people tend to overthink this. Rebuilding your Loop app is really quite easy...so a short read of these questions should help a lot.</p>
 <p>First, please take a minute to understand what the words mean.</p>
-<p>"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop. You do this when you want to switch branches. You do this when you want to get fixes or new features from the same branch. The process doesn't care if you are moving from omnipod-testing -&gt; dev or jojo -&gt; dev or master -&gt; dev or any other combination. </p>
+<p>"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop. You do this when you want to switch branches. You do this when you want to get fixes or new features from the same branch. The process doesn't care if you are moving from omnipod-testing -&gt; dev or jojo -&gt; dev or master -&gt; dev or any other combination.</p>
 <p>Updating Loop is the same idea as what happens to your other apps on your iPhone when you update them from the App Store on the phone. A refreshed version of the same app appears on the phone, simply replacing-in-place the same Loop you were using with an updated version.</p>
 <h2 id="where-should-i-start-when-i-want-to-update-my-loop">Where should I start when I want to update my Loop?<a class="headerlink" href="#where-should-i-start-when-i-want-to-update-my-loop" title="Permanent link">⌁</a></h2>
-<p><strong>ALWAYS start with the <a href="https://loopkit.github.io/loopdocs/build/updating/">Update Loop page</a> before any new build that you'd be doing.</strong> That page is important because it will offer information on the updates you need to do before building, as well as any late breaking things that might need to be considered.</p>
+<p><strong>ALWAYS start with the <a href="../../build/updating/">Update Loop page</a> before any new build that you'd be doing.</strong> That page is important because it will offer information on the updates you need to do before building, as well as any late breaking things that might need to be considered.</p>
 <p>Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated. Grab new code and you will get the version that has all the latest and greatest features and bug fixes.</p>
 <h2 id="when-do-i-have-to-updaterebuild">When do I have to update/rebuild?<a class="headerlink" href="#when-do-i-have-to-updaterebuild" title="Permanent link">⌁</a></h2>
 <p>Absolute minimum: 1 year from when you last built (paid account).</p>
@@ -493,11 +484,15 @@
 <h2 id="will-i-have-to-delete-my-old-loop-app">Will I have to delete my old Loop app?<a class="headerlink" href="#will-i-have-to-delete-my-old-loop-app" title="Permanent link">⌁</a></h2>
 <p>No. Do not delete your old Loop. In fact, that is a bad idea as you will lose your currently paired pod and/or settings if you do that. So, don't delete (except for two situations below):</p>
 <ol>
-<li>You broke it: There is a glitch in Loop where if you enter the target correction range backwards, then your Loop app will stop working. Correction range needs to be in minimum-maximum, for example 100-120 mg/dL. If you entered that as 120-100 mg/dL, Loop will not work during the time that backwards correction range is supposed to be active. In this case you would need to delete the app and rebuild.</br></br></li>
-<li>Moving from dev branch back down to jojo branch. The way the new dev branch is coded will require you to delete your dev build prior to going back jojo branch.</li>
+<li>
+<p>You broke it: There is a glitch in Loop where if you enter the target correction range backwards, then your Loop app will stop working. Correction range needs to be in minimum-maximum, for example 100-120 mg/dL. If you entered that as 120-100 mg/dL, Loop will not work during the time that backwards correction range is supposed to be active. In this case you would need to delete the app and rebuild.</p>
+</li>
+<li>
+<p>Moving from dev branch back down to jojo branch. The way the new dev branch is coded will require you to delete your dev build prior to going back jojo branch.</p>
+</li>
 </ol>
 <h2 id="does-updating-make-a-separate-second-loop-app">Does updating make a separate, second Loop app?<a class="headerlink" href="#does-updating-make-a-separate-second-loop-app" title="Permanent link">⌁</a></h2>
-<p>No. Loop is simply updated in-place, written right over the old version. </p>
+<p>No. Loop is simply updated in-place, written right over the old version.</p>
 <p>The only exception to this is if you update/build using a different developer signing team than your original Loop app was built with. The app's identity on your phone is defined by the developer team that you signed the app with. That team has a unique ID to identify the app. So, if you change that unique ID, your phone interprets that as a unique app as well...giving you two Loop apps on the phone. Therefore, if changing developer accounts...you will get a new Loop app, and you would need a new Pod. You'll need to transfer your settings manually to the new app and delete your old app.</p>
 <h2 id="will-my-settings-be-saved-when-i-update">Will my settings be saved when I update?<a class="headerlink" href="#will-my-settings-be-saved-when-i-update" title="Permanent link">⌁</a></h2>
 <p>Yes. That's why we don't delete the app. Your settings will be saved.</p>
@@ -505,16 +500,13 @@
 <p>Yes. So long as you use the same developer team as you originally built the app with before.</p>
 <h2 id="how-can-i-confirm-what-version-was-installed">How can I confirm what version was installed?<a class="headerlink" href="#how-can-i-confirm-what-version-was-installed" title="Permanent link">⌁</a></h2>
 <p>The Loop's version is given at the top of the Loop settings page. Even better though, the new dev branch has very detailed info about the version of Loop you are using at the top of your Loop's Issue Report. This is a great new addition to help identify where, what, and when of your Loop version.</p>
-<p align="center">
-<img src="../img/loop-version.jpg" width="450">
-</p>
-<p></br></p>
+<p><img alt="img/loop-version.jpg" src="../img/loop-version.jpg" /></p>
 <h2 id="what-if-im-changing-branches-does-that-matter">What if I'm changing branches? Does that matter?<a class="headerlink" href="#what-if-im-changing-branches-does-that-matter" title="Permanent link">⌁</a></h2>
 <p>Does not matter. Moving between branches is an "updating Loop" action. Nothing about the information above changes.</p>
 <h2 id="what-if-im-changing-phones">What if I'm changing phones?<a class="headerlink" href="#what-if-im-changing-phones" title="Permanent link">⌁</a></h2>
 <p>Changing phones is a little different than updating. You will need to change pods in order to move to the new phone's Loop. And you will have to enter all your setting in again. Loop will not be "restored from backup" the way other apps are when switching phones...so you will have to actually build it fresh.</p>
 <h2 id="how-long-does-it-take">How long does it take?<a class="headerlink" href="#how-long-does-it-take" title="Permanent link">⌁</a></h2>
-<p>Assuming your macOS and Xcode updates are done, then plan on about 30 minutes. </p></div>
+<p>Assuming your macOS and Xcode updates are done, then plan on about 30 minutes.</p></div>
             </div>
         </div>
 

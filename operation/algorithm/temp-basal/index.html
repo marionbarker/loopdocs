@@ -18,16 +18,7 @@
         <script src="../../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -488,10 +479,10 @@
 <p>If RBR ≥ maximum basal rate, then Loop will issue the maximum basal rate  </p>
 </li>
 <li>
-<p>If RBR &lt; maximum temporary basal rate, then Loop will issue RBR </p>
+<p>If RBR &lt; maximum temporary basal rate, then Loop will issue RBR</p>
 </li>
 </ul>
-<p>After running the temporary basal calculation described above, Loop checks whether there is already an appropriate basal running with at least 10 minutes remaining. If so, Loop will not reissue the temporary basal. However, if the recommended temporary basal differs from the currently running temporary basal — or the current scheduled basal if no temporary is running —  then Loop will replace the current basal rate with the recommended temporary basal rate. </p>
+<p>After running the temporary basal calculation described above, Loop checks whether there is already an appropriate basal running with at least 10 minutes remaining. If so, Loop will not reissue the temporary basal. However, if the recommended temporary basal differs from the currently running temporary basal — or the current scheduled basal if no temporary is running —  then Loop will replace the current basal rate with the recommended temporary basal rate.</p>
 <p>As mentioned at the beginning of this section, the process of determining whether a temporary basal should be issued is repeated every 5 minutes.</p>
 <h2 id="temporary-basal-rate-calculation-example">Temporary Basal Rate Calculation Example<a class="headerlink" href="#temporary-basal-rate-calculation-example" title="Permanent link">⌁</a></h2>
 <p>To illustrate how the Loop calculates the temporary basal rate to issue, consider the calculation for the following scenario:</p>
@@ -512,7 +503,7 @@
 <p>Maximum basal setting (set by user in Loop) = 6 U/hr  </p>
 </li>
 </ul>
-<p></br>First, calculate the dose:</p>
+<p>First, calculate the dose:</p>
 <p><img alt="basal dose example" src="../img/basal_dose_example.png" /></p>
 <p>Then, convert the dose into a basal rate to be issued for the next 30 minutes:</p>
 <p><img alt="basal dose br example" src="../img/br.png" /><img alt="basal dose br example" src="../img/basal_dose_br.png" /></p>

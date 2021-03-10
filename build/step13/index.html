@@ -18,16 +18,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -435,6 +426,14 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#store-and-name-your-download-properly" class="nav-link">Store and name your download properly</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#next-step-build-loop-app" class="nav-link">Next Step: Build Loop app</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -460,35 +459,25 @@
 <div class="admonition warning">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>"What the heck is a branch?"</strong> That's a great question. We have a page all about <a href="https://loopkit.github.io/loopdocs/faqs/branch-faqs/">Branch FAQs</a></li>
-<li><strong>"How can I tell which version I have downloaded if I'm unsure?"</strong> The downloaded Loop folder's name will give you an indication of which branch you downloaded. The folder name will be in the format <code>Loop-BranchName</code>. </li>
+<li><strong>"What the heck is a branch?"</strong> That's a great question. We have a page all about <a href="../../faqs/branch-faqs/">Branch FAQs</a></li>
+<li><strong>"How can I tell which version I have downloaded if I'm unsure?"</strong> The downloaded Loop folder's name will give you an indication of which branch you downloaded. The folder name will be in the format <code>Loop-BranchName</code>.</li>
 <li><strong>"When do I need to download new Loop code?"</strong> Anytime you want to update your Loop app to get new features, you'll simply download the code again by clicking on the links below. The links always go to the most recent version of each of the branches. It's a good idea is to delete your old downloads before making a new one, just to avoid confusion.</li>
 </ul>
 </div>
 <h2 id="pick-a-branch-to-download">Pick a branch to download<a class="headerlink" href="#pick-a-branch-to-download" title="Permanent link">⌁</a></h2>
-<p>You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are stored in "branches". You have a choice of branches to build from...you'll pick one to download. Not sure what a branch is or what it means? You can read more details on the <a href="https://loopkit.github.io/loopdocs/faqs/branch-faqs/">Branch FAQs page</a>.</p>
-<p>Master vs Dev vs some other branch? Generally speaking, most users should stick to using Master branch. Experimental features and new code changes will be testing in the dev branch first...so that dev branch can be prone to having periodic glitches or regressions as the new features are developed. If you aren't a developer or debugging, stick to Master branch.  Click on ONE of the links below to download Loop code...hint hint...<strong><u>click on the Master branch for 99% of users</u></strong>.</p>
-<p></br></br></p>
-<p align="center">
-[Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)</br></br>
-********************
-
-[Dev branch---in very rough shape right now, please only build if developer interested in debugging](https://github.com/LoopKit/Loop/archive/dev.zip)</br></br>
-[Automatic-bolus branch---do your research before using as well, if you are asking what it is then you haven't researched enough yet](https://github.com/LoopKit/Loop/archive/automatic-bolus.zip)</br></br>
-
-*********************
-
-## Store and name your download properly
-It is best practice to leave your Loop code in your Downloads folder. If you store your Loop code in a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive. Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive? Check your System Preferences. If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
-<p align="center">
-<img src="../img/icloud-drive.png" width="650">
-</p></br>
-
-Depending on your browser and settings, your Loop download may or may not automatically unzip. If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility. This will create a blue folder called `Loop-master`.  HOWEVER, if you already have an existing `Loop-master` folder from a previous download, the name of the next download will be something like `Loop-master (1)`.
-
-## Next Step: Build Loop app
-
-Now you are ready to move onto Step 14 to [Build Loop app](https://loopkit.github.io/loopdocs/build/step14/).</div>
+<p>You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are stored in "branches". You have a choice of branches to build from...you'll pick one to download. Not sure what a branch is or what it means? You can read more details on the <a href="../../faqs/branch-faqs/">Branch FAQs page</a>.</p>
+<p>Master vs Dev vs some other branch? Generally speaking, most users should stick to using Master branch. Experimental features and new code changes will be testing in the dev branch first...so that dev branch can be prone to having periodic glitches or regressions as the new features are developed. If you aren't a developer or debugging, stick to Master branch.  Click on ONE of the links below to download Loop code...hint hint...<strong>click on the Master branch for 99% of users</strong>.</p>
+<p><a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: Master branch</a></p>
+<hr />
+<p><a href="https://github.com/LoopKit/Loop/archive/dev.zip">Dev branch---in very rough shape right now, please only build if developer interested in debugging</a></p>
+<p><a href="https://github.com/LoopKit/Loop/archive/automatic-bolus.zip">Automatic-bolus branch---do your research before using as well, if you are asking what it is then you haven't researched enough yet</a></p>
+<hr />
+<h2 id="store-and-name-your-download-properly">Store and name your download properly<a class="headerlink" href="#store-and-name-your-download-properly" title="Permanent link">⌁</a></h2>
+<p>It is best practice to leave your Loop code in your Downloads folder. If you store your Loop code in a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is <strong>not</strong> an iCloud drive. Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive? Check your System Preferences. If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and <strong>NOT</strong> appropriate places to save your Loop download.</p>
+<p><img alt="img/icloud-drive.png" src="../img/icloud-drive.png" /></p>
+<p>Depending on your browser and settings, your Loop download may or may not automatically unzip. If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility. This will create a blue folder called <code>Loop-master</code>.  HOWEVER, if you already have an existing <code>Loop-master</code> folder from a previous download, the name of the next download will be something like <code>Loop-master (1)</code>.</p>
+<h2 id="next-step-build-loop-app">Next Step: Build Loop app<a class="headerlink" href="#next-step-build-loop-app" title="Permanent link">⌁</a></h2>
+<p>Now you are ready to move onto Step 14 to <a href="../step14/">Build Loop app</a>.</p></div>
             </div>
         </div>
 

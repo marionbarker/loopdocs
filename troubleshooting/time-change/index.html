@@ -18,16 +18,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -472,13 +463,11 @@
 <p>But, if you remember to turn Bluetooth back on while in airplane mode, two things happen (1) Dexcom and Loop will work while in airplane and (2) airplane mode will “remember” the next time that you like Bluetooth left on in airplane mode and will not turn it off the next time you slide airplane mode on. So now you’ve just prevented yourself from forgetting to turn Bluetooth on the next time you fly and are in a hurry to meet your lovely seat mate and stow your luggage. You can safely follow cabin instructions and put phone in airplane mode without losing loop or dexcom.</p>
 <h2 id="changing-timezones-and-daylight-savings-time">Changing Timezones and Daylight Savings Time<a class="headerlink" href="#changing-timezones-and-daylight-savings-time" title="Permanent link">⌁</a></h2>
 <p>Loop is built to operate fully across time zone and daylight savings time changes. When traveling, there is no urgency to update the pump's time to match the wall-clocks in your geography. Configuration schedules—basal rates, target ranges, carb ratios, and insulin sensitivities—will all remain in the pump's time zone. The app's graphs and status will always display in the time zone of the iPhone, and Loop will understand the difference in offset between the two, highlighting it when attempting to change configuration schedules.</p>
-<p>When you're ready to update the pump's time, simply <u><strong>use the Loop's "Change Time" command</strong> </u>. This will also shift your configuration schedules to the current time zone.</p>
+<p>When you're ready to update the pump's time, simply <strong><em>use the Loop's "Change Time" command</em></strong>. This will also shift your configuration schedules to the current time zone.</p>
 <div class="admonition danger">
 <p class="admonition-title">Medtronic Users Only</p>
-<p><strong>Always use RileyLink to change pump time instead of the Medtronic Pump's screen.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.</strong>
-<p align="center">
-<img src="../img/time_change.png" width="400">
-</p></p>
+<p><strong>Always use RileyLink to change pump time instead of the Medtronic Pump's screen.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.</strong></p>
+<p><img alt="img/time_change.png" src="../img/time_change.png" /></p>
 </div>
 <h2 id="iphone">iPhone<a class="headerlink" href="#iphone" title="Permanent link">⌁</a></h2>
 <p>Loop will assume your iPhone's time (UTC, not timezone) is always correct. This theoretically may not be the case if a nearby cell tower is improperly configured (though there are likely resilience mechanisms in iOS to handle this). Automatic time setting can always be disabled in Settings.</p>
