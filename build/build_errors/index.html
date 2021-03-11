@@ -442,6 +442,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#apple-watch-issues" class="nav-link">Apple Watch Issues</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -475,7 +479,7 @@
 <p><strong>Are you are using a free developer account?</strong> Make sure you finished the <a href="/build/step14/#sign-four-targets">removal of Siri and Push Notification capabilities</a>.</p>
 </li>
 <li>
-<p><strong>Are you doing a WorkSpace build?</strong> Make sure you selected LoopWorkspace instead of Loop.</p>
+<p><strong>Are you doing a WorkSpace build?</strong> Make sure you selected Loop (Workspace) instead of Loop.</p>
 </li>
 </ol>
 <h2 id="fix-95-of-errors">Fix 95% of errors<a class="headerlink" href="#fix-95-of-errors" title="Permanent link">⌁</a></h2>
@@ -492,7 +496,7 @@
 <li>Confirm it really is an error not already on this page; read all the circled bits in the images in the Specific Error Messages section</li>
 <li>Follow the steps in the Posting for Help section</li>
 <li>WE CANNOT HELP without version numbers and screenshots</li>
-<li>Do not do not take pictures of your computer screen with your phone</li>
+<li>Do not take pictures of your computer screen with your phone</li>
 </ul>
 <h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Permanent link">⌁</a></h2>
 <p>STOP!!  Read this section! Important!</p>
@@ -561,7 +565,7 @@
 <p>With Xcode 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
 <h3 id="no-such-module-loopkit-or-similar-message">No such module 'LoopKit' or similar message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Permanent link">⌁</a></h3>
 <p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then re-run the fix listed above.</p>
-<p>Make sure to download a fresh version of code!  Anything downloaded before Jan 21, 2021 will not work.  That's when the need for carthage was removed.</p>
+<p>Solution: Make sure to download a fresh version of code!  Anything downloaded before Jan 21, 2021 will not work.  That's when the need for carthage was removed.</p>
 <p><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" /></p>
 <h3 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h3>
 <p>Error message: "<strong>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</strong>"</p>
@@ -578,7 +582,7 @@
 <p>Error message:  "<strong>Invalid active developer path (/Library/Developer/CommandLineTools)</strong>" or "<strong>unable to find utility "xcodebuild", not a developer tool or in PATH</strong>"</p>
 <p><img alt="img/command-line-error-1.jpg" src="../img/command-line-error-1.jpg" /></p>
 <p><img alt="img/command-line-error-2.jpg" src="../img/command-line-error-2.jpg" /></p>
-<p>Solution: Go to your Xcode preferences and under the Locations tab, select your Xcode version (the figure shows 12.0.1 - yours will probably be a bigger number) in the dropdown menu for Command Line Tools.</p>
+<p>Solution: Go to your Xcode preferences and under the Locations tab, select your Xcode version (the figure shows 12.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.</p>
 <p><img alt="img/command-line-error-3.png" src="../img/command-line-error-3.png" /></p>
 <h3 id="device-management-could-not-launch-loop">Device Management could not launch Loop<a class="headerlink" href="#device-management-could-not-launch-loop" title="Permanent link">⌁</a></h3>
 <p>Error message: "Could not launch "Loop". Verify the Developer App certificate for your account is trusted on your device. Open Settings and navigate to General -&gt; Device Management, then select your Developer App certificate to trust it."</p>
@@ -638,6 +642,7 @@
 <p>Error message: "<strong>Abort with payload</strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.</p>
 <p><img alt="img/abort_payload.png" src="../img/abort_payload.png" /></p>
 <p>Solution: This error message is caused by having Loop download folder in an iCloud mapped drive.  Move your download folder back to the Downloads folder, then rebuild.</p>
+<h2 id="apple-watch-issues">Apple Watch Issues<a class="headerlink" href="#apple-watch-issues" title="Permanent link">⌁</a></h2>
 <h3 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop app not appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Permanent link">⌁</a></h3>
 <p>Error: <strong>Apple watch app is not appearing</strong>.</p>
 <p>Solution: Usually because you have not updated the watchOS prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
