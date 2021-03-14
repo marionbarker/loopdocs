@@ -507,7 +507,7 @@
 </p>
 </div>
 <p>If you think you are immune from needing to update and want to skip this Step 1...I HIGHLY recommend actually checking this chart to make sure your macOS and Xcode meet their minimums based on your device's iOS before proceeding.  I cannot emphasize how many people try to build without meeting the minimum versions because they ASSUME they are ok.</p>
-<p><img alt="img/minimum-related.png" src="../img/minimum-related.png" /></p>
+<p align="center"><img alt="img/minimum-related.png" src="../img/minimum-related.png" width="750" /></p>
 <h2 id="step-2-check-your-developer-account">Step 2: Check your Developer Account<a class="headerlink" href="#step-2-check-your-developer-account" title="Permanent link">⌁</a></h2>
 <p>Apple updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.</p>
 <p><img alt="img/license.png" src="../img/license.png" /></p>
@@ -521,7 +521,7 @@
 <h2 id="step-4a-delete-old-provisioning-profiles">Step 4a: Delete old provisioning profiles<a class="headerlink" href="#step-4a-delete-old-provisioning-profiles" title="Permanent link">⌁</a></h2>
 <p>This is a new step in the updating process. Everyone should do this step every time they rebuild or update their Loop apps now. Older versions of Xcode used to automatically create a "provisioning profile" as part of your Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.</p>
 <p>You can always check the expiration date at the time of building your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death.</p>
-<p><img alt="img/provisioning-profile-date.png" src="../img/provisioning-profile-date.png" /></p>
+<p align="center"><img alt="img/provisioning-profile-date.png" src="../img/provisioning-profile-date.png" width="850" /></p>
 <p>Here's what started happening about a year ago with Xcode 11...the provisioning profiles weren't updating "created" date with new builds. Instead, Xcode was simply using the old profile's "created" date. This change has resulted in many people's apps expiring (and therefore dying suddenly) despite having updated/rebuilt within less than 12 months ago and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
 <p>To solve this new issue...we have an easy solution. Honest...easy. You can do this. Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)</p>
 <div class="admonition warning">
@@ -533,8 +533,9 @@
 </ul>
 <p><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision</code>
 </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.</p>
-<p><img alt="img/empty-profiles.png" src="../img/empty-profiles.png" /></p>
+<p><img alt="img/empty-profiles.png" src="../img/empty-profiles.png" width="650" /></p>
 </div>
+<p>{align="center"}</p>
 <h2 id="step-4b-clean-cache-and-dervied-data">Step 4b: Clean cache and dervied data<a class="headerlink" href="#step-4b-clean-cache-and-dervied-data" title="Permanent link">⌁</a></h2>
 <p>An ounce of prevention is worth a pound of cure.  Since we already have Terminal app open, let's prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
 <div class="admonition danger">
@@ -543,8 +544,9 @@
 1. Copy and paste this command and press return: <code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> Note: you won't see any message back if the command runs successfully.</br></br>
 2. Copy and paste this command and press return: <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code> Note: you won't see any message back if the command runs successfully.
 </br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.</p>
-<p><img alt="img/cleaned-terminal.png" src="../img/cleaned-terminal.png" /></p>
+<p><img alt="img/cleaned-terminal.png" src="../img/cleaned-terminal.png" width="650" /></p>
 </div>
+<p>{align="center"}</p>
 <h2 id="step-5-build-like-normal">Step 5: Build like normal<a class="headerlink" href="#step-5-build-like-normal" title="Permanent link">⌁</a></h2>
 <p>From here, go straight to <a href="../step14/">Step 14 Build Loop app</a> and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.</p>
 <div class="admonition info">

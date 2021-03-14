@@ -471,7 +471,7 @@
 
 <h1 id="pod-pairing-failures">Pod Pairing Failures<a class="headerlink" href="#pod-pairing-failures" title="Permanent link">⌁</a></h1>
 <p>Have you seen an error message during the pairing process for a new pod? The most common messages are "No response from pod" or "Pod sent ack instead of response", as shown below.</p>
-<p><img alt="img/pod-pair-fail.jpg" src="../img/pod-pair-fail.jpg" /></p>
+<p align="center"><img alt="img/pod-pair-fail.jpg" src="../img/pod-pair-fail.jpg" width="550" /></p>
 <p>There have been a large number of fixes and improvements to reduce various pairing problems and to automatically recover from them when they do occur. <strong>Make sure you stay on top of Loop updates to take advantage of these code improvements.</strong> It is <em>strongly</em> recommended to update to a modern stable version (i.e., the current Loop master release) when running any version of Loop prior to V2.2.4 with an Omnipod. In particular, you should <em>never</em> run Loop V2.2.3 with an Omnipod due to a severe UI bug that can result in a partially setup pod where the only possible recovery is an immediate Loop update to be able to complete the pod setup process.</p>
 <h2 id="why-do-pod-pairings-fail">Why do pod pairings fail?<a class="headerlink" href="#why-do-pod-pairings-fail" title="Permanent link">⌁</a></h2>
 <p>Assuming the RileyLink is ok, the most common cause of a pod pairing failure is that Loop incorrectly partially pairs with the pod due to some problems during the fragile pairing process, perhaps aggravated by the placement of the RileyLink and the pod, wireless communications interference, and/or incorrect handling of some fault and retry conditions in versions of Loop prior to V2.2.4 that can leave the pod in an apparent non-responding state. This page will help you walk through some easy troubleshooting steps to recover that pod into good working order.</p>
@@ -505,7 +505,7 @@
 </div>
 <p>The placement of the pod and the RileyLink relative to each other is critical variable because the pod operates in a low power radio mode during pairing which can lead to a number of potential faulty and half-paired pod situations, particularly with earlier versions of Loop.</p>
 <p><strong>How close should they be?</strong> Most people assume "the closer the better", but it has been measured that if the RileyLink and pod are <em>too close together</em>, the RileyLink may not be able to pick up the pairing response. The current recommendation is for the RileyLink to be placed a few inches to the side of the pod being paired.</p>
-<p><img alt="img/pod-rileylink-positioning.jpg" src="../img/pod-rileylink-positioning.jpg" /></p>
+<p align="center"><img alt="img/pod-rileylink-positioning.jpg" src="../img/pod-rileylink-positioning.jpg" width="600" /></p>
 <div class="admonition info">
 <p class="admonition-title">If <strong>Pair</strong> fails, move a bit and RETRY</p>
 <ul>
@@ -527,13 +527,13 @@
 </ul>
 <h3 id="step-5a-switch-from-omnipod-pumps">Step 5A "Switch from Omnipod Pumps"<a class="headerlink" href="#step-5a-switch-from-omnipod-pumps" title="Permanent link">⌁</a></h3>
 <p>If you press the <strong>Cancel</strong> button and see a screen like below, you're going to select <strong>Switch from Omnipod Pumps</strong> in red. While this appears to confirm that you want to stop using the Omnipod, we will be adding pods back soon. Don't worry.</p>
-<p><img alt="img/delete-omnipod-confirmation.png" src="../img/delete-omnipod-confirmation.png" /></p>
+<p align="center"><img alt="img/delete-omnipod-confirmation.png" src="../img/delete-omnipod-confirmation.png" width="400" /></p>
 <p>Don't fret. None of your Loop settings including the basal schedule and delivery limits, will be lost deleting the Omnipod pump. Select <strong>Delete Omnipod</strong> to proceed which will take you back to the Loop home screen.  From here, select the gear icon at the bottom right to go the Loop <code>Settings</code> page. Then select <strong>Add Pump</strong> in blue and then select <strong>Omnipod</strong> from the <code>Add Pump</code> list displayed.</p>
-<p><img alt="img/add-pump-list.png" src="../img/add-pump-list.png" /></p>
+<p align="center"><img alt="img/add-pump-list.png" src="../img/add-pump-list.png" width="400" /></p>
 <p>Verify that the green LED on the RileyLink goes on and off as you touch the switch for RileyLink you are using indicating a successful Bluetooth connection between the RileyLink and your iPhone. Leave the RileyLink enabled with its green LED and slider turned on, and then touch the <strong>Continue</strong> button on the bottom. The Pod Settings screen should have the previous Basal Rates and Delivery Limits in effect from your previous run which can be verified at this time. Once ready, select <strong>Continue</strong> on the bottom of the screen.</p>
-<p><img alt="img/pod-settings-delivery-limits.png" src="../img/pod-settings-delivery-limits.png" /></p>
+<p align="center"><img alt="img/pod-settings-delivery-limits.png" src="../img/pod-settings-delivery-limits.png" width="400" /></p>
 <p>Finally, you will be back to the <code>Pod Pairing</code> screen.</p>
-<p><img alt="img/pod-pairing.png" src="../img/pod-pairing.png" /></p>
+<p align="center"><img alt="img/pod-pairing.png" src="../img/pod-pairing.png" width="200" /></p>
 <p>Instead of filling a new pod with insulin, attempt to pair again using the original pod which was previously filled but unable to complete the pairing process successfully. That pod should still be occassionally giving reminder beeps. Place the RileyLink a few inches to the side of the pod and press the <strong>Pair</strong> button at the bottom of the screen and hopefully Loop will be able to successfully pair this time after starting from a fresh slate. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.</p>
 <h3 id="step-5b-deactivate-pod">Step 5B "Deactivate pod"<a class="headerlink" href="#step-5b-deactivate-pod" title="Permanent link">⌁</a></h3>
 <p>If you press the <strong>Cancel</strong> button and see an option for "Deactivate pod", we're going to do a little different than Step 5A.</p>
@@ -552,9 +552,9 @@
 </li>
 </ol>
 <p>Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button. It will take a few attempts, and you will see some failure messages about how the deactivation failed (of course it did...we hid the pod!) Eventually, you'll be given an "Continue" button that you'll want to use.</p>
-<p><img alt="img/deactivate-pod.png" src="../img/deactivate-pod.png" /></p>
+<p align="center"><img alt="img/deactivate-pod.png" src="../img/deactivate-pod.png" width="600" /></p>
 <p>Press the "Continue" button. The instructions start with "fill a new pod with insulin"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the <strong>Pair</strong> button and hopefully you'll find success with the process. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.</p>
-<p><img alt="img/deactivate-pod2.png" src="../img/deactivate-pod2.png" /></p>
+<p align="center"><img alt="img/deactivate-pod2.png" src="../img/deactivate-pod2.png" width="600" /></p>
 <h2 id="step-6-help-improve-pod-pairing-process">Step 6: Help improve pod pairing process<a class="headerlink" href="#step-6-help-improve-pod-pairing-process" title="Permanent link">⌁</a></h2>
 <p>To help fix pairing bugs, some improvements have also been made in our ability to save the communications between the pods and Loop app during the pairing process. So, please help us leverage these new improvements and better squash bugs.</p>
 <p>If you run into any pairing problems when running a version of Loop prior to V2.2.4, which required Step 5A or Step 5B to be able to pair, or you had a pod that had to be abandoned, it would be helpful to generate an "Issue Report" after you finally get a pod paired (whether is was the original pod or if a different pod) and then post the resulting "Loop Report" on <a href="https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Omnipod.20Pairing.20Issues">Zulipchat here</a> with a short explanation of what happened.</p>

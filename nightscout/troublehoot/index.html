@@ -444,7 +444,7 @@
 <p>NOTE: The #1 reason why BGs aren't showing is that you have mismatched password and user names in Heroku settings and Dexcom. Please see blue box below for that error.</p>
 <h3 id="heroku-settings">Heroku Settings<a class="headerlink" href="#heroku-settings" title="Permanent link">⌁</a></h3>
 <p>Login to your Heroku account and from within Heroku settings, click on the  <code>Reveal Config Vars</code></p>
-<p><img alt="img/config-vars.png" src="../img/config-vars.png" /></p>
+<p align="center"><img alt="img/config-vars.png" src="../img/config-vars.png" width="800" /></p>
 <p>Now from the <code>Config Vars</code> area, check the following (see screenshot below for reference):</p>
 <ol>
 <li>You must use the same <code>BRIDGE_PASSWORD</code> or <code>BRIDGE_USER_NAME</code> that your Dexcom mobile app is using.</li>
@@ -453,9 +453,9 @@
 <li>Your <code>careportal</code> must be one word in the <code>ENABLE</code> line, sometimes autocorrect makes it two words.</li>
 <li>If using <code>mmol</code>, make sure you have spelled that value correctly in the <code>DISPLAY_UNITS</code>.</li>
 </ol>
-<p><img alt="img/bridge-settings.jpg" src="../img/bridge-settings.jpg" /></p>
+<p align="center"><img alt="img/bridge-settings.jpg" src="../img/bridge-settings.jpg" width="600" /></p>
 <p>One thing that can happen if you have an incorrect Dexcom login/password in Loop's CGM Share account settings and/or in your Nightscout BRIDGE settings is that Dexcom will lock your account...and you won't see CGM data in Nightscout. If you notice your CGM readings disappeared, but everything else is flowing...check your Heroku logs that are viewable by selecting "View Logs" from the drop-down menu underneath the "More" option.</p>
-<p><img alt="img/heroku-logs.png" src="../img/heroku-logs.png" /></p>
+<p align="center"><img alt="img/heroku-logs.png" src="../img/heroku-logs.png" width="800" /></p>
 <p>Do your logs have "SSO authentication errors" like in the red box highlighted above? If you do, then:</p>
 <ol>
 <li>
@@ -474,7 +474,7 @@
 </div>
 <h3 id="dexcom-share">Dexcom Share<a class="headerlink" href="#dexcom-share" title="Permanent link">⌁</a></h3>
 <p>Make sure you have Dexcom Share turned ON in your Dexcom app. In the Dexcom app's main screen, find the triangle made of dots. If the dots are grey, you do not have Share turned on. Tap the triangle, and follow the directions to add a follower (yourself if you don't have someone else you'd like to invite) and turn on Share.</p>
-<p><img alt="img/sharing.jpg" src="../img/sharing.jpg" /></p>
+<p align="center"><img alt="img/sharing.jpg" src="../img/sharing.jpg" width="250" /></p>
 <h2 id="loop-data-not-showing">Loop data not showing<a class="headerlink" href="#loop-data-not-showing" title="Permanent link">⌁</a></h2>
 <p>If your BG data is showing, but Loop data is not (like Loop pill is empty and carbs and boluses are not showing), please delete your Nightscout account in Loop settings area. Enter the information in freshly. Make sure to use <code>https://</code> to start the site URL. Make sure there is no trailing slash at the end of the URL. Make sure you have <code>loop</code> on the ENABLE line in Heroku settings.</p></div>
             </div>

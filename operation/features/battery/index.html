@@ -455,9 +455,9 @@
 <p>There are generally two different types of AAA batteries that we use in these Medtronic pumps; alkaline or lithium.</p>
 <p>To understand pump battery levels, you first need to know a little about <strong>battery discharge curves</strong>.  It's not a hard concept...basically how a battery dies over time as it is used or sits in a drawer.  More technically said, a battery discharge curve is the measure of volts that a battery puts out over time.  Batteries start at a higher voltage output and slowly that voltage output degrades over time (or use) until the battery no longer provides enough "ummph" to keep the electronic gadget going.  BUT, alkaline batteries and lithium batteries have different discharge curves due to the chemistry inside them, and the curves can be slightly different depending on the environment (temperature) and battery manufacturer.</p>
 <p>Alkaline batteries have a relatively steady voltage drop over time, as shown below.  Notice the shape of the curve has a significant amount of time in the 1.3 to 1.2 volts range, and a relatively smooth decline to about 1.2 volts.</p>
-<p><img alt="img/alkaline.jpg" src="../img/alkaline.jpg" /></p>
+<p align="center"><img alt="img/alkaline.jpg" src="../img/alkaline.jpg" width="250" /></p>
 <p>Lithium batteries have a much steadier voltage output over time, as shown below.  Notice how the shape of the curve is relatively flat for a large portion of the battery life before suddenly off around 1.3 volts.</p>
-<p><img alt="img/lithium.jpg" src="../img/lithium.jpg" /></p>
+<p align="center"><img alt="img/lithium.jpg" src="../img/lithium.jpg" width="250" /></p>
 <p>What does the above information mean in terms of Looping?  A lithium battery at 1.3v is going to have a much quicker time to death than an alkaline battery sitting at 1.3v.  You might only get a couple of hours of looping left when a lithium battery is at 1.3v, but an alkaline battery at 1.3v might go for several more days.  So when we talk about setting alarm levels in either system, your battery type is an important consideration.</p>
 <h2 id="medtronic-pump-battery-level-indicator">Medtronic Pump Battery Level Indicator<a class="headerlink" href="#medtronic-pump-battery-level-indicator" title="Permanent link">⌁</a></h2>
 <p>If you read Medtronic's literature, it will tell you to use Energizer alkaline batteries in their pumps.  Why would that be?  Hint: the answer doesn't mean that Duracell batteries are inherently worse than Energizer or that lithium batteries won't work in Medtronic pumps.</p>
@@ -495,7 +495,7 @@
 </ul>
 <h2 id="nightscout-pump-battery-alarms">Nightscout Pump Battery Alarms<a class="headerlink" href="#nightscout-pump-battery-alarms" title="Permanent link">⌁</a></h2>
 <p>The Nightscout alarms are based on the Heroku settings that you have input specifically.  If you don't specifically set them, Nightscout will use the default settings for pump battery alerts as shown below:</p>
-<p><img alt="img/pump-ns.png" src="../img/pump-ns.png" /></p>
+<p align="center"><img alt="img/pump-ns.png" src="../img/pump-ns.png" width="650" /></p>
 <p>Nightscout pump battery levels, if you leave things at default installation, will not trigger alarms.  If however you add a setting of <code>PUMP_ENABLE_ALERTS</code> to <code>true</code>, you will receive pump battery notifications according to the levels shown in the parenthesis above.  For example, your x23 pump is reporting its levels in percent, therefore you'd receive a yellow warning alarm at 30% and an urgent red alarm at 20%.  Your x22 pump however is reporting its levels at voltage readings, therefore you'd receive a warning yellow alarm at 1.35v and an urgent red alarm at 1.30v.</p>
 <div class="admonition info">
 <p>Are the default NS alarm levels going to work for you?  The answer depends on what type of battery level you are using, what model pump you are using, and how much advance notification you want to receive before needing to change a pump battery.  There is a bit of personal preference and experimentation to finding what works for you.</p>
