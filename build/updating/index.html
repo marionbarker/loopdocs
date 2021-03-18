@@ -476,7 +476,7 @@
 <li>Verify/Update macOS and Xcode</li>
 <li>Check your Developer Account</li>
 <li>Download Updated Loop code</li>
-<li>Optional Actions<br />
+<li>Recommended Actions<br />
     a. Delete old provisioning profiles<br/>
     b. Clean cache and derived data<br/></li>
 <li>Build like normal</li>
@@ -548,7 +548,7 @@
 <p>Older versions of Xcode used to automatically create a new "provisioning profile" as part of the Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.</p>
 <p>You can always check the expiration date immediately after a successful build of your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death, which you can record in your calendar.</p>
 <p align="center"><img alt="img/provisioning-profile-date.png" src="../img/provisioning-profile-date.png" width="850" /></p>
-<p>Here's what started happening about September 2019 with Xcode 11...the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
+<p>Here's what started happening about September 2019 with Xcode 11, the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
 <p>Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)</p>
 <h3 id="delete-profiles">Delete Profiles<a class="headerlink" href="#delete-profiles" title="Permanent link">⌁</a></h3>
 <div class="admonition warning">
@@ -589,8 +589,8 @@
 <p>From here, go straight to <a href="../step14/">Step 14 Build Loop app</a> and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.</p>
 <div class="admonition info">
 <p class="admonition-title">Double check expiration date</p>
-<p>If you want to make sure that step 4 above (deleting the provisioning profiles) went well...go ahead and check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app will safely function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.</p>
-<p>Note - this only works if the computer just successfully built the app on the phone. To find out expiration date on any phone, use this <a href="https://www.loopandlearn.org/loop-expiration-date/">procedure</a>.</p>
+<p>If you want to make sure that step 4 above (deleting the provisioning profiles) went well, check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app, if you successfully build, will function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.</p>
+<p>To find out expiration date later, use this <a href="https://www.loopandlearn.org/loop-expiration-date/">procedure</a>.</p>
 </div>
 <h2 id="step-6-resolve-build-errors-if-needed">Step 6: Resolve Build Errors if needed<a class="headerlink" href="#step-6-resolve-build-errors-if-needed" title="Permanent link">⌁</a></h2>
 <div class="admonition green">
