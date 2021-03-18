@@ -439,15 +439,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#step-4a-delete-old-provisioning-profiles-optional" class="nav-link">Step 4a: Delete old provisioning profiles (Optional)</a>
+            <li class="nav-item" data-level="2"><a href="#step-4a-delete-old-provisioning-profiles" class="nav-link">Step 4a: Delete old provisioning profiles</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#step-4b-clean-cache-and-derived-data-optional" class="nav-link">Step 4b: Clean cache and derived data (optional)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#step-4c-customize-code-optional" class="nav-link">Step 4c: Customize Code (Optional)</a>
+            <li class="nav-item" data-level="2"><a href="#step-4b-clean-cache-and-derived-data" class="nav-link">Step 4b: Clean cache and derived data</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -455,7 +451,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#step-6-check-build-errors-page-if-needed" class="nav-link">Step 6: Check Build Errors page if needed</a>
+            <li class="nav-item" data-level="2"><a href="#step-6-resolve-build-errors-if-needed" class="nav-link">Step 6: Resolve Build Errors if needed</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -480,13 +476,11 @@
 <li>Verify/Update macOS and Xcode</li>
 <li>Check your Developer Account</li>
 <li>Download Updated Loop code</li>
-<li>Open in Xcode, sign targets</li>
 <li>Optional Actions<br />
     a. Delete old provisioning profiles<br/>
-    b. Clean cache and derived data<br/>
-    c. Add optional code customizations<br/></li>
-<li>Build onto your iPhone</li>
-<li>Resolve Build Errors</li>
+    b. Clean cache and derived data<br/></li>
+<li>Build like normal</li>
+<li>Resolve Build Errors if needed</li>
 </ol>
 </div>
 <div class="admonition faqs">
@@ -529,8 +523,9 @@
 <h2 id="step-3-download-updated-loop-code">Step 3: Download Updated Loop Code<a class="headerlink" href="#step-3-download-updated-loop-code" title="Permanent link">⌁</a></h2>
 <p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want).</p>
 <p>If you aren't a developer or debugging, avoid the dev branch - and be warned once you install dev on a phone, you might have to completely delete the app to return to master or automatic-bolus.  </p>
-<p>There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for both master and automatic-bolus branches. The <a href="https://www.loopnlearn.org/build-select/">Build Select Script</a> webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface.</p>
-<p>If you prefer the zip download method, the links are repeated here. (These links always point to the most recent release of the code.) Click on ONE of the links below to download Loop code. Both master and automatic-bolus are pretty stable and widely used.  The <a href="https://www.loopnlearn.org/compare-branches/">Compare Version</a> webpage explains the differences between master and automatic-bolus.</p>
+<p>There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for both master and automatic-bolus branches. The <a href="https://www.loopnlearn.org/build-select/">Build Select Script</a> webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.</p>
+<p>If you prefer the zip download method, the links from Build Step 13 are repeated below. (These links always point to the most recent release of the code.) Click on one of the links below to download Loop code and then follow the manual steps on this page until you have a new version on your phone.</p>
+<p>Both master and automatic-bolus are pretty stable and widely used.  The <a href="https://www.loopnlearn.org/compare-branches/">Compare Version</a> webpage explains the differences between master and automatic-bolus.</p>
 <ul>
 <li>
 <p><a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: master branch</a></p>
@@ -544,25 +539,18 @@
 <li><a href="https://github.com/LoopKit/Loop/archive/dev.zip">Dev branch---in very rough shape right now, please only build if developer interested in debugging</a></li>
 </ul>
 <hr />
-<h2 id="step-4a-delete-old-provisioning-profiles-optional">Step 4a: Delete old provisioning profiles (Optional)<a class="headerlink" href="#step-4a-delete-old-provisioning-profiles-optional" title="Permanent link">⌁</a></h2>
-<h3 id="why-is-this-step-optional">Why is this step optional?<a class="headerlink" href="#why-is-this-step-optional" title="Permanent link">⌁</a></h3>
-<p>If you build frequently, you do not need to delete the profiles every time. There is a small chance that deleting the profiles will force a new certificate – that will affect all apps built with your user ID.</p>
-<p>What does it look like if you run into the force new certificate problem.</p>
-<div class="admonition warning">
-<p class="admonition-title">Revoke certificate</p>
-<p><em>"Your account already has an Apple Development signing certificate for this machine . . ."</em></p>
-<p>You must revoke your certificate to continue - all apps built with this certificate stop working within 24 hours.</p>
-<p>Your Apple Developer ID is not affected so you can re-build on the existing Loop app on your phone and maintain all your settings with the new certificate</p>
-</div>
-<p align="center"><br/>
-<img alt="img/rejected-cert.svg" src="../img/rejected-cert.svg" width="850" /></p>
+<h2 id="step-4a-delete-old-provisioning-profiles">Step 4a: Delete old provisioning profiles<a class="headerlink" href="#step-4a-delete-old-provisioning-profiles" title="Permanent link">⌁</a></h2>
 <h3 id="infrequent-builder-app-expires-soon">Infrequent Builder, App Expires soon<a class="headerlink" href="#infrequent-builder-app-expires-soon" title="Permanent link">⌁</a></h3>
-<p>If your app will expire soon or you build infrequently, then follow these steps. Here are instructions to check your <a href="https://www.loopandlearn.org/loop-expiration-date/">Loop Expiration Date</a>.</p>
-<p>This is a new step in the updating process. If you build infrequently then do this step every time. Older versions of Xcode used to automatically create a "provisioning profile" as part of your Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.</p>
-<p>You can always check the expiration date immediately after a successful build of your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death.</p>
+<p>If your app will expire soon or you build infrequently, then <a href="./#delete-profiles">Delete Profiles</a>. Not sure when your app expires? Here are instructions to check your <a href="https://www.loopandlearn.org/loop-expiration-date/">Loop Expiration Date</a>.</p>
+<h3 id="frequent-builder">Frequent Builder<a class="headerlink" href="#frequent-builder" title="Permanent link">⌁</a></h3>
+<p>If you build frequently, you do not need to delete the profiles every time. There is a small chance that deleting the profiles will <a href="./#revoke-certificate-issue">force a new certificate</a> – that will affect all apps built with your user ID.</p>
+<h3 id="background-information">Background Information<a class="headerlink" href="#background-information" title="Permanent link">⌁</a></h3>
+<p>Older versions of Xcode used to automatically create a new "provisioning profile" as part of the Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.</p>
+<p>You can always check the expiration date immediately after a successful build of your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death, which you can record in your calendar.</p>
 <p align="center"><img alt="img/provisioning-profile-date.png" src="../img/provisioning-profile-date.png" width="850" /></p>
-<p>Here's what started happening about a year ago with Xcode 11...the provisioning profiles were being reused so the date was not updated each time you built. This change has resulted in many people's apps expiring (and therefore dying suddenly) despite having updated/rebuilt less than 12 months ago and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
-<p>To solve this new issue...we have an easy solution. Honest...easy. You can do this. Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)</p>
+<p>Here's what started happening about September 2019 with Xcode 11...the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
+<p>Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)</p>
+<h3 id="delete-profiles">Delete Profiles<a class="headerlink" href="#delete-profiles" title="Permanent link">⌁</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">How to delete old provisioning profiles</p>
 <ul>
@@ -574,18 +562,29 @@
 </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.</p>
 <p align="center"><img alt="img/empty-profiles.png" src="../img/empty-profiles.png" width="650" /></p>
 </div>
-<h2 id="step-4b-clean-cache-and-derived-data-optional">Step 4b: Clean cache and derived data (optional)<a class="headerlink" href="#step-4b-clean-cache-and-derived-data-optional" title="Permanent link">⌁</a></h2>
-<p>This may not be necessary, but one of the first steps to try if you do get a build error is to clean the cache and derived data. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
+<h3 id="revoke-certificate-issue">Revoke Certificate Issue<a class="headerlink" href="#revoke-certificate-issue" title="Permanent link">⌁</a></h3>
+<p>What does it look like if you run into the force new certificate problem? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.  </p>
+<p align="center"><br/>
+<img alt="img/rejected-cert.svg" src="../img/rejected-cert.svg" width="850" /></p>
+<p>More information is shown in the orange box below.</p>
+<div class="admonition warning">
+<p class="admonition-title">Revoke certificate</p>
+<p><em>"Your account already has an Apple Development signing certificate for this machine . . ."</em></p>
+<p>You must revoke your certificate to continue - all apps built with this certificate stop working within 24 hours.</p>
+<p>Your Apple Developer ID is not affected so you can re-build on the existing Loop app on your phone and maintain all your settings with the new certificate</p>
+</div>
+<h2 id="step-4b-clean-cache-and-derived-data">Step 4b: Clean cache and derived data<a class="headerlink" href="#step-4b-clean-cache-and-derived-data" title="Permanent link">⌁</a></h2>
+<p>This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
 <div class="admonition green">
 <p class="admonition-title">Clean cache and derived data</p>
-<p>Using Terminal app that should still be open from Step 4a just now, </br></br>
-1. Copy and paste this command and press return: <code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> Note: you won't see any message back if the command runs successfully.</br></br>
-2. Copy and paste this command and press return: <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code> Note: you won't see any message back if the command runs successfully.
-</br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.</p>
+<p>Using Terminal app that should still be open from Step 4a</p>
+<ol>
+<li>Copy and paste this command and press return: <code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> Note: you won't see any message back if the command runs successfully.</br></br></li>
+<li>Copy and paste this command and press return: <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code> Note: you won't see any message back if the command runs successfully.
+</br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.</li>
+</ol>
 <p align="center"><img alt="img/cleaned-terminal.png" src="../img/cleaned-terminal.png" width="650" /></p>
 </div>
-<h2 id="step-4c-customize-code-optional">Step 4c: Customize Code (Optional)<a class="headerlink" href="#step-4c-customize-code-optional" title="Permanent link">⌁</a></h2>
-<p>If you like to add code customizations, now is the time to do it.</p>
 <h2 id="step-5-build-like-normal">Step 5: Build like normal<a class="headerlink" href="#step-5-build-like-normal" title="Permanent link">⌁</a></h2>
 <p>From here, go straight to <a href="../step14/">Step 14 Build Loop app</a> and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.</p>
 <div class="admonition info">
@@ -593,10 +592,11 @@
 <p>If you want to make sure that step 4 above (deleting the provisioning profiles) went well...go ahead and check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app will safely function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.</p>
 <p>Note - this only works if the computer just successfully built the app on the phone. To find out expiration date on any phone, use this <a href="https://www.loopandlearn.org/loop-expiration-date/">procedure</a>.</p>
 </div>
-<h2 id="step-6-check-build-errors-page-if-needed">Step 6: Check Build Errors page if needed<a class="headerlink" href="#step-6-check-build-errors-page-if-needed" title="Permanent link">⌁</a></h2>
+<h2 id="step-6-resolve-build-errors-if-needed">Step 6: Resolve Build Errors if needed<a class="headerlink" href="#step-6-resolve-build-errors-if-needed" title="Permanent link">⌁</a></h2>
 <div class="admonition green">
-<p class="admonition-title">CHECK BUILD ERRORS PAGE</p>
-<p>If you get a build error...still check the <a href="../build_errors/">Build Errors page</a>. Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.</p>
+<p class="admonition-title">Check Build Errors Page</p>
+<p>If you get a build error, check the <a href="../build_errors/">Build Errors page</a>. You might be able to resolve it yourself.</p>
+<p>Even if your exact error isn't there, the information you need to provide when asking for help is listed on that page. And that information is critical to allow mentors to help troubleshoot your build error.</p>
 </div></div>
             </div>
         </div>
