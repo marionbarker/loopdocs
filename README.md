@@ -99,6 +99,11 @@ This will get rendered to this:
     <img alt="Eros" src="../img/eros.png" width="750" />
 </p>
 
+A note about images in tables.  If the image is in the left column with the text in the right column, only the width of the first image in the first row of the table matters. The value entered (width="###") seems to vary in its effect based on how many words are in the right column.
+All subsequent images are displayed with the same relative width (which may not have much to do with the value actually entered).
+
+Starting a new table, tweak the entered width of the first row image to make it look right compared to previous table.  The actual ### may be different.  For example, displays.md.
+
 ```
 
 ### Admonitions
