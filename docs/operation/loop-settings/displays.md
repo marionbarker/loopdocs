@@ -27,9 +27,9 @@ Omnipod users: The last two icons are the most recent (1) pod status and (2) hou
 
 The Loop Status is the colored circle in the upper left corner of the main Loop display.  There are four colors that are typically displayed.
 
-|||
+| <div style="width:72px"></div> ||
 |---|---|
-|![Closed Grey Circle Icon](img/grey_loop.jpg){width="400"}|A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the [Yellow and Red Loop troubleshooting page](../../troubleshooting/yellow-red-loop.md)  for tips.|
+|![Closed Grey Circle Icon](img/grey_loop.jpg)|A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the [Yellow and Red Loop troubleshooting page](../../troubleshooting/yellow-red-loop.md)  for tips.|
 |![Closed Green Circle Icon](img/green_loop.jpg)|A green circle indicates the Loop has been successfully completed within the last 5 minutes.  The time since the loop last completed will be displayed under the circle.|
 |![Closed Yellow Circle Icon](img/yellow_loop.jpg)|A yellow circle indicates the Loop has not completed in the last 5-15 minutes.  It is not unusual to have a few instances of yellow circles throughout a day of looping.  They can be caused by temporarily getting too far away from RileyLink or iPhone (more than about 3-10 feet depending on conditions), CGM failing to read or being in ???, radio frequency “noise” interference, and such.  Generally, most yellow circles will self-resolve without needing any special troubleshooting.|
 |![Closed Red Circle Icon](img/red_loop.jpg)|A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the [Yellow and Red Loop troubleshooting page](../../troubleshooting/yellow-red-loop.md) for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.|
@@ -41,42 +41,42 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 
 #### Glucose
 
-|||
+| <div style="width:72px"></div> ||
 |---|---|
-|![Blood Glucose Reading](img/cgm.jpg){width="320"}|The current BG reading from the CGM will display, including trending arrow and time the reading was taken.  If the BG is being read straight from the G5/G6 transmitter or G4 receiver, no special symbols will appear.|
+|![Blood Glucose Reading](img/cgm.jpg)|The current BG reading from the CGM will display, including trending arrow and time the reading was taken.  If the BG is being read straight from the G5/G6 transmitter or G4 receiver, no special symbols will appear.|
 |![Blood Glucose Reading with Cloud Icon](img/cgm_cloud.jpg)|If the BG is being read from the Dexcom Share Servers, a small cloud icon will be in the corner of the BG reading.  Internet access is required to run in this mode.|
 |![Blood Glucose Reading with Alert Symbol](img/cgm_alert.jpg)|When you first start Loop, there may be a small yellow alert next to the BG.  This should go away within a short period of time (around 5 minutes or less).  If the yellow alert remains, something may be wrong with fetching BG data.  You can try restarting the Loop app (double tap home button, up-swipe on the app to close it) to see if BG data will resume. </br></br> **Special note for Dexcom G5/G6 users**>, a yellow alert will appear when calibration is needed.  The alert will clear once the calibration is given, but typically Loop will work IF the yellow alert is only for a needed G5/G6 calibration.|
 
 #### Temp Basal
 
-|||
+| <div style="width:72px"></div> ||
 |---|---|
-|![Temporary basal delta with respect to scheduled basal](img/temp_basal.jpg){width="280"}|The temp basal will display the enacted temp basal change relative to the scheduled basal.  So if the scheduled basal was 1.0 units per hour and Loop has set a temp basal of 0.2 units per hour, the temp basal icon will display -0.8 U, as shown in the graphic to the left.|
+|![Temporary basal delta with respect to scheduled basal](img/temp_basal.jpg)|The temp basal will display the enacted temp basal change relative to the scheduled basal.  So if the scheduled basal was 1.0 units per hour and Loop has set a temp basal of 0.2 units per hour, the temp basal icon will display -0.8 U, as shown in the graphic to the left.|
 
 #### Reservoir (Medtronic Users)
 
-|||
+| <div style="width:72px"></div> ||
 |---|---|
-|![Medtronic reservoir indicator is red with <10% remaining](img/red_reservoir.jpg){width="280"}|The reservoir icon will remain grey and plain until insulin volume decreases.  At 25% reservoir volume remaining, the reservoir icon will turn yellow.  At 10% reservoir volume remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds.|
+|![Medtronic reservoir indicator is red with <10% remaining](img/red_reservoir.jpg)|The reservoir icon will remain grey and plain until insulin volume decreases.  At 25% reservoir volume remaining, the reservoir icon will turn yellow.  At 10% reservoir volume remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds.|
 
 #### Battery (Medtronic Users)
 
-|||
+| <div style="width:72px"></div> ||
 |---|---|
-|![Medtronic battery indicator is grey showing 100%](img/battery.jpg){width="320"}|For x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  For x22, x23 pumps, the battery icon will read discrete % values.  </br></br>The warning colors/levels on Loop's battery indicator work in conjunction with the type of battery selected.  If you change battery types, please make sure to update your battery selection in the Loop app settings.   </br></br>The pump's on-screen battery indicator is not a good indicator of remaining battery life for the purposes of looping.  Loop's pump communications will fail from low battery levels sooner than the insulin delivery will fail.  The Loop's battery level warnings are designed to give you approximately 8 hours of notice before the pump battery will need changing.|
+|![Medtronic battery indicator is grey showing 100%](img/battery.jpg)|For x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  For x22, x23 pumps, the battery icon will read discrete % values.  </br></br>The warning colors/levels on Loop's battery indicator work in conjunction with the type of battery selected.  If you change battery types, please make sure to update your battery selection in the Loop app settings.   </br></br>The pump's on-screen battery indicator is not a good indicator of remaining battery life for the purposes of looping.  Loop's pump communications will fail from low battery levels sooner than the insulin delivery will fail.  The Loop's battery level warnings are designed to give you approximately 8 hours of notice before the pump battery will need changing.|
 
 #### Reservoir (Omnipod Users)
 
-|||
+| <div style="width:72px"></div> ||
 |---|---|
-|![Omnipod reservoir indicator is red with <20u remaining](img/pod-reservoir.jpg){width="280"}|The pod icon will remain grey and plain until insulin volume decreases.  At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds. </br></br>When the reading is 0 units, there may be up to 4 unit of insulin available but don't count on it. If the pod senses insulin can no longer be delivered, the pod will have a sustained audible alarm (the scream). Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.|
+|![Omnipod reservoir indicator is red with <20u remaining](img/pod-reservoir.jpg)|The pod icon will remain grey and plain until insulin volume decreases.  At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds. </br></br>When the reading is 0 units, there may be up to 4 unit of insulin available but don't count on it. If the pod senses insulin can no longer be delivered, the pod will have a sustained audible alarm (the scream). Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.|
 
 #### Pod Age (Omnipod Users)
 
 
-|||
+| <div style="width:72px"></div> ||
 |---|---|
-|![Omnipod age icon is yellow showing 2 hours remaining in guaranteed life, 10 hours until shutdown](img/pod-age.jpg){width="400"}|The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red, the pod will begin the periodic warning beep, and the pod age icon will show a "replace pod" message in the HUD. </br></br>When you reach 80 hours of pod use, the pod will have a sustained audible alarm (the scream) and stops all insulin delivery. Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.|
+|![Omnipod age icon is yellow showing 2 hours remaining in guaranteed life, 10 hours until shutdown](img/pod-age.jpg)|The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red, the pod will begin the periodic warning beep, and the pod age icon will show a "replace pod" message in the HUD. </br></br>When you reach 80 hours of pod use, the pod will have a sustained audible alarm (the scream) and stops all insulin delivery. Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.|
 
 ## Charts
 
