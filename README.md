@@ -73,7 +73,7 @@ The conventions for linking to images is the same as linking to pages as describ
 
 New images should be placed in the "img" directory just below the md-file.
 
-Example of correct link to image.
+Example of correct link to image is [alt-text](relative path/image-name).
 
 ```markdown
 ![iPhone](img/phones.png)
@@ -99,10 +99,19 @@ This will get rendered to this:
     <img alt="Eros" src="../img/eros.png" width="750" />
 </p>
 
-A note about images in tables.  If the image is in the left column with the text in the right column, only the width of the first image in the first row of the table matters. The value entered (width="###") seems to vary in its effect based on how many words are in the right column.
-All subsequent images are displayed with the same relative width (which may not have much to do with the value actually entered).
+A note about images in tables. Use html on the first line that indicates the table.
+For example, in displays.md there are many icons with descriptions to the right.
+For no header row, replace `|||`` with:
+```
+| <div style="width:72px"></div> ||
+|---|---|
+|![img](img/name)|text with description|
+```
 
-Starting a new table, tweak the entered width of the first row image to make it look right compared to previous table.  The actual ### may be different.  For example, displays.md.
+provides appropriate views on both desktop and mobile.
+To add header row, use:
+```
+| <div style="width:72px">Column 1</div> | Column 2 |
 
 ```
 
