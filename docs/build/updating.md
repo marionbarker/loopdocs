@@ -131,17 +131,22 @@ More information is shown in the orange box below.
 !!! warning "Revoke certificate"
     _"Your account already has an Apple Development signing certificate for this machine . . ."_
 
-    WAIT - You might not need to revoke your certificate.
+    **WAIT - You might not need to revoke your certificate**
 
-    1. You might get this if you have a new computer (or new VM) or if your computer had to undergo a factory reset - you need to transfer your keychain to your new computer.  Check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
+    1. You might get this if you have a new computer (or new VM) or if your computer had to undergo a factory reset.
+        * You need to transfer your keychain to your new computer  
+        * Check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
     1. You manually deleted the private keys from keychain (unlikely for the usual Loop builder)
-    1. Your version of Xcode is out-of-date - mentors have seen this with people trying to build with Xcode 11.4 (this may be due to Apple recent change of the certificate to the new global cert)
+    1. Your version of Xcode is out-of-date
+        * Mentors have seen this with people trying to build with Xcode 11.4
+        * This may be due to recent Apple change of the certificate to the new global cert
+    1. Sometimes it just happens and we don't know why or any solution other than getting a new certificate
 
-    Notes from an expert: "the certificate screenshot on the page is caused by switching to a new computer without transferring the private keys for the certificate. The only option is to revoke the certificate (will force a need to rebuild) or transfer the keys." See the link above to find out about transferring keys. That expert continues: "I actually save a backup (the export step from that page) to Dropbox. Apple repaired my system once and it was factory reset and that saved a lot of hassle."
+    **Notes from an expert:** "The certificate screenshot on this page can be caused by switching to a new computer without transferring the private keys for the certificate. The two options are to revoke the certificate (that will force you to rebuild on every device that used the certificate) or transfer the keys." See the link above to find out about exporting and importing keys. That expert continues: "I actually save a backup (the export step) to Dropbox. Apple repaired my system once and it was factory reset and that saved a lot of hassle."
 
-    Know that once you revoke your certificate to continue - all apps built with this certificate stop working within 24 hours. That includes every phone and every app that was built with that certificate.
+    Know that once you revoke your certificate - all apps built with this certificate stop working within 24 hours. That includes every phone and every app that was built with that certificate.
 
-    If you do hit Revoke Certificate, you'll get a new one. Even with the new certificate, your Apple Developer ID is not affected. You can re-build on the existing Loop app on your device(s) and maintain all your settings with the new certificate.
+    If you do hit Revoke Certificate, you'll get a new one. Even with the new certificate, your Apple Developer ID is not affected. You can re-build on the existing Loop app on your device(s) and maintain all your settings with the new certificate. But you will have to rebuild to every device that used the certificate you just revoked.
 
 
 
