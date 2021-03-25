@@ -1,7 +1,7 @@
 # Welcome to Loop
 
-![img/phones.png](img/phones.png){width="300"}
-![img/phones.png](img/watch.png)
+![Loop main display on phone](img/phone_updated_loop.svg){width="300"}
+![Loop watch screen on watch](img/watch.png)
 
 ## Introduction
 
