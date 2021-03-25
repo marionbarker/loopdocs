@@ -570,8 +570,24 @@
 <div class="admonition warning">
 <p class="admonition-title">Revoke certificate</p>
 <p><em>"Your account already has an Apple Development signing certificate for this machine . . ."</em></p>
-<p>You must revoke your certificate to continue - all apps built with this certificate stop working within 24 hours.</p>
-<p>Your Apple Developer ID is not affected so you can re-build on the existing Loop app on your phone and maintain all your settings with the new certificate</p>
+<p><strong>WAIT - You might not need to revoke your certificate</strong></p>
+<ol>
+<li>You might get this if you have a new computer (or new VM) or if your computer had to undergo a factory reset.<ul>
+<li>You need to transfer your keychain to your new computer  </li>
+<li>Check this <a href="https://help.apple.com/xcode/mac/current/#/dev8a2822e0b">Apple Documentation Link</a></li>
+</ul>
+</li>
+<li>You manually deleted the private keys from keychain (unlikely for the usual Loop builder)</li>
+<li>Your version of Xcode is out-of-date<ul>
+<li>Mentors have seen this with people trying to build with Xcode 11.4</li>
+<li>This may be due to recent Apple change of the certificate to the new global cert</li>
+</ul>
+</li>
+<li>Sometimes it just happens and we don't know why or any solution other than getting a new certificate</li>
+</ol>
+<p><strong>Notes from an expert:</strong> "The certificate screenshot on this page can be caused by switching to a new computer without transferring the private keys for the certificate. The two options are to revoke the certificate (that will force you to rebuild on every device that used the certificate) or transfer the keys." See the link above to find out about exporting and importing keys. That expert continues: "I actually save a backup (the export step) to Dropbox. Apple repaired my system once and it was factory reset and that saved a lot of hassle."</p>
+<p>Know that once you revoke your certificate - all apps built with this certificate stop working within 24 hours. That includes every phone and every app that was built with that certificate.</p>
+<p>If you do hit Revoke Certificate, you'll get a new one. Even with the new certificate, your Apple Developer ID is not affected. You can re-build on the existing Loop app on your device(s) and maintain all your settings with the new certificate. But you will have to rebuild to every device that used the certificate you just revoked.</p>
 </div>
 <h2 id="step-4b-clean-cache-and-derived-data">Step 4b: Clean cache and derived data<a class="headerlink" href="#step-4b-clean-cache-and-derived-data" title="Permanent link">⌁</a></h2>
 <p>This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
