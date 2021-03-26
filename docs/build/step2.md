@@ -55,16 +55,16 @@ Your phone's iOS version can be found under the Settings app, General, About as 
 
 This is important - this allows you to choose when to update your phone.
 
-- Sometimes an iOS update can break the Loop app
-- Typically an iOS update means an  Xcode update
-- An Xcode update might be required to be able to rebuild Loop on your phone
+- As far as we know, an iOS update has never prevented Loop from working
+- But an iOS update often requires an Xcode update to build Loop on that device
+- Rarely, but it has happened, that Xcode update requires a Loop code update
+- If a problem is found, the solution is typically posted pretty quickly
 - Most people who Loop want to keep Looping - so do yourself a favor and turn off automatic updates
 - Google the instructions for your device if you cannot figure it out
     1. It's fine to automatically download the updates
     1. Do not enable automatic installation of the updates
 - Check on your favorite social media platform to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple
 - The "All-Clear" or "WAIT there's a problem" is normally posted within a few days
-- If a problem is found, the solution is typically posted pretty quickly
 
 ## Next Step: Compatible Pump
 
