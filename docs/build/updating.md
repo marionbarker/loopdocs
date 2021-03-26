@@ -7,7 +7,7 @@
 
 !!! info "Summary"
 
-    1. Verify/Update macOS and Xcode
+    1. Install macOS and Xcode updates
     2. Check your Developer Account
     3. Download Updated Loop code
     4. Recommended Actions<br />
@@ -140,7 +140,7 @@ More information is shown in the orange box below.
     1. Your version of Xcode is out-of-date
         * Mentors have seen this with people trying to build with Xcode 11.4
         * This may be due to recent Apple change of the certificate to the new global cert
-    1. Sometimes it just happens and we don't know why or any solution other than getting a new certificate
+    1. Sometimes it just happens and we don't know why or any solution other than getting a new certificate (the experts are doing tests - so check here back for updates)
 
     **Notes from an expert:** "The certificate screenshot on this page can be caused by switching to a new computer without transferring the private keys for the certificate. The two options are to revoke the certificate (that will force you to rebuild on every device that used the certificate) or transfer the keys." See the link above to find out about exporting and importing keys. That expert continues: "I actually save a backup (the export step) to Dropbox. Apple repaired my system once and it was factory reset and that saved a lot of hassle."
 
