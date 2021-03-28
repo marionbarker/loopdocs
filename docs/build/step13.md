@@ -5,8 +5,8 @@
     - 10 minutes to read this page
 
 !!! info "Summary"
-    - Master branch of Loop has been recently updated to Loop v2.0
-    - All branches of Loop support both Medtronic and Omnipod pump users.
+    - All branches of Loop support both Medtronic and Omnipod pump users
+    - master and automatic-bolus are at Loop v2.2.4
 
 !!! warning "FAQs"
     - **"What the heck is a branch?"** That's a great question. We have a page all about [Branch FAQs](../faqs/branch-faqs.md)
@@ -17,7 +17,7 @@
 
 You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are available. Both master and automatic-bolus are pretty stable and widely used.  The [Compare Version](https://www.loopnlearn.org/compare-branches/) webpage explains the differences between master and automatic-bolus.
 
-Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.) 
+Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)
 
 ---
 

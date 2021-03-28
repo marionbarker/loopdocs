@@ -88,7 +88,10 @@ The chart below is a helpful map of how to read of the minimum versions you'll n
 ## What happens if you try using too old of Xcode?
 
 !!! warning "Breaking News"
-    If you try to build with version of Xcode older than 11.4.1 you will get a Revoke Certificate message when you try to sign targets.  Go to [Revoke Certificate Issue](updating.md#revoke-certificate-issue) to see what the error message is.  You may be able to avoid revoking the certificate by updating Xcode (on March 27, 2021, Xcode is at version 12.4).  Go to [Install macOS and Xcode updates](updating.md#step-1-install-macos-and-xcode-updates).
+    * If you try to build with a version of Xcode older than 11.4.1 you will get a Revoke Certificate message when you try to sign targets
+    * Go to [Revoke Certificate Issue](updating.md#revoke-certificate-issue) to see the error message
+    * You should update Xcode (on March 27, 2021, Xcode is at version 12.4)
+          * Go to [Install macOS and Xcode updates](updating.md#step-1-install-macos-and-xcode-updates)
 
 It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
 
