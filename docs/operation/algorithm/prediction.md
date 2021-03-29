@@ -1,8 +1,8 @@
 # Blood Glucose Prediction
 
-Loop uses an algorithm to maintain blood glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction, and blood glucose momentum) at any time *t* to recommend temporary basal rate corrections and boluses.
+Loop uses an algorithm to maintain blood glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction(RC), and blood glucose momentum) at any time *t* to recommend temporary basal rate corrections and boluses.
 
-![combined effects basic equation](img/predicted_glucose_equation.png)
+![combined effects basic equation](img/predicted_glucose_equation.svg)
 
 You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on Loop's status screen. Loop updates this blood glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
 
@@ -20,9 +20,17 @@ The sections below provide detailed information on each of the four contribution
 
 Most traditional pump users and caregivers are already familiar with the concept of an insulin activity curve, where the insulin’s effect is time-dependent. Insulin takes a little while to affect blood glucose. The insulin effect typically peaks around one hour after giving insulin and then gradually decays.
 
+!!! info ""
+    With the newer and faster insulins, the timing is modified as seen in the different insulin models available from the Loop Settings -> Insulin Model. There may be a few places where the duration of insulin activity (DIA) is stated to be 6 hours. This is true for most people and some insulins. However, the term DIA should be used, not 6 hours because that is what Loop uses in calculations.
+
 ![insulin activity curve](img/insulin_activity_curve.png)
 
-Loop provides users with two different classes of insulin models (i.e., an exponential model and the Walsh model). All of the exponential models have an insulin activity duration of 6 hours, whereas the insulin activity duration is customizable for the Walsh model. The rapid-acting and Fiasp insulin activity curves are modeled as exponential curves that match the shape of the insulin activity curves from insulin labeling, and as observed in both adults and children.
+Loop provides users with two different classes of insulin models (i.e., an exponential model and the Walsh model).
+
+!!! info ""
+    Please do not use the Walsh model. If you must change a model, use [code customizations](../../build/code_customization.md#exponential-insulin-curve) for one of the exponential models.
+
+The rapid-acting and Fiasp insulin activity curves are modeled as exponential curves that match the shape of the insulin activity curves from insulin labeling, and as observed in both adults and children. Notice that the Walsh model is a poor fit to this behavior.
 
 ![insulin models](img/insulin_models.png)
 
@@ -32,7 +40,7 @@ The amount of insulin effect remaining, or percent of remaining active insulin a
 
 ![insulin percent remaining](img/insulin_percent_remaining.png)
 
-If a user’s insulin sensitivity factor (ISF) is 50 mg/dL per 1 unit of insulin and the user gives 2 units of insulin, then the user’s blood glucose would be expected to drop 100 mg/dL within the 6 hours following the insulin delivery. This insulin effect can be visualized in several different ways: the expected active insulin, expected drop in blood glucose every 5 minutes after delivery, and the expected cumulative drop in blood glucose. The figures below use the Rapid Acting - Adult insulin model in Loop.
+If a user’s insulin sensitivity factor (ISF) is 50&nbsp;mg/dL per 1 unit of insulin and the user gives 2 units of insulin, then the user’s blood glucose would be expected to drop 100&nbsp;mg/dL within the 6 hours following the insulin delivery. This insulin effect can be visualized in several different ways: the expected active insulin, expected drop in blood glucose every 5 minutes after delivery, and the expected cumulative drop in blood glucose. The figures below use the Rapid Acting - Adult insulin model in Loop.
 
 ### Active Insulin
 
@@ -40,11 +48,12 @@ This figure shows that 2 units of insulin are given initially, and the correspon
 
 ![insulin remaining example](img/insulin_remaining_example.png)
 
-The active insulin at any time is the product of original insulin delivered and the percent of insulin activity remaining. Knowing the expected active insulin over the next 6 hours, and the insulin sensitivity factor (50 mg/dL, in this case), Loop can calculate the expected drop in blood glucose from that dose of insulin as shown in the figure below.
+The active insulin at any time is the product of original insulin delivered and the percent of insulin activity remaining. Knowing the expected active insulin over the next 6 hours, and the insulin sensitivity factor (50&nbsp;mg/dL, in this case), Loop can calculate the expected drop in blood glucose from that dose of insulin as shown in the figure below.
 
 ![bg drop from 2 units](img/bg_drop.png)
 
-NOTE: ISF is also a function of time, which means if the user’s scheduled ISF changes during the insulin activity time, it will change the expected drop in blood glucose due to the insulin effect.
+!!! info ""
+    ISF can be a function of time if a schedule, rather than a single value, is entered under settings.  Therefore, if the user’s scheduled ISF changes during the insulin activity time, it will change the expected drop in blood glucose due to the insulin effect.
 
 ### Expected Change in Blood Glucose
 
@@ -54,7 +63,7 @@ Lastly, taking the first derivative (i.e., the rate of change) of the cumulative
 
 ### Insulin Effect on Blood Glucose
 
-For this example, assuming a user’s blood glucose was 205 mg/dL at the time of insulin delivery, Loop would predict a drop in blood glucose due to the two units delivered at 12 pm as shown in the figure below.
+For this example, the user adds 2&nbsp;units of insulin at noon when their BG is 205&nbsp;mg/dL. This plot shows the prediction Loop would make of the effect of those 2&nbsp;units over the DIA (6 hours in this example).
 
 ![two unit example](img/two_units.png)
 
@@ -62,7 +71,7 @@ For this example, assuming a user’s blood glucose was 205 mg/dL at the time of
 
 In traditional basal/bolus pump therapy, basal rates are set to accommodate the user's endogenous glucose production (EGP) that causes blood glucose to rise. If a user's basal settings were exactly right in traditional pump therapy, the user would have perfectly flat blood glucose all day, all other factors being equal.
 
-In reality, people with type 1 diabetes, and their caregivers, know that basal settings are never exactly right. Every day is a little different, and a myriad of factors that affect blood glucose (e.g., including stress, hormones, sleep, etc.) may affect insulin needs. Some people have different basal profiles to accommodate these variations. Some people regularly tune and adjust their basal rates, and/or do so at their endocrinology clinic visits.
+In reality, people with type 1 diabetes, and their caregivers, know that basal settings are never exactly right. Every day is a little different, and a myriad of factors that affect blood glucose (e.g., including stress, hormones, sleep, etc.) may affect insulin needs. If you haven't seen the [42-Factors article by Adam Brown](https://diatribe.org/42factors), it's worth the click. Some people have different basal profiles to accommodate these variations. Some people regularly tune and adjust their basal rates, and/or do so at their endocrinology clinic visits.
 
 Since the Loop algorithm assumes that the user-set basal rates are correct, it calculates the effect of insulin relative to scheduled basal rates. If basal rates are not entirely correct, Loop can compensate a bit through the retrospective correction and blood glucose momentum effects, discussed later in this page.
 
@@ -70,9 +79,9 @@ The insulin delivery chart below displays a bar-graph history of the temporary b
 
 ![Loop's temp basal chart](img/temp_basal_chart.png)
 
-For example, if the user’s scheduled basal rate is 1 U/hr, and Loop gives a temporary basal rate of 3 U/hr, then it will calculate the expected drop in blood glucose due to +2 U/hr of insulin.
+For example, if the user’s scheduled basal rate is 1&nbsp;U/hr, and Loop enacts a temporary basal rate of 3&nbsp;U/hr, then it will calculate the expected drop in blood glucose due to +2&nbsp;U/hr of insulin. Once Loop has enacted a temp basal, the updated prediction assumes that temp basal will continue for the full half hour. So in this example, that would be 1&nbsp;U extra spread out over the half hour.  After 5&nbsp;minutes, when the next BG is received, the prediction, and possibly the temp basal, will be updated.
 
-Similarly if Loop sets a temporary basal rate of 0 U/hr for 1 hour, then the insulin effect will also be relative to the current scheduled basal rate of 1 U/hr, and Loop would predict the user’s blood glucose to increase by the amount of change from -1 U/hr of insulin. If the user’s ISF is 50 mg/dL, then Loop would predict blood glucose to rise 50 mg/dL over the insulin activity duration (6 hours).
+Similarly if Loop sets a temporary basal rate of 0&nbsp;U/hr for 1&nbsp;hour, then the insulin effect will also be relative to the current scheduled basal rate of 1&nbsp;U/hr, and Loop would predict the user’s blood glucose to increase by the amount of change from -1&nbsp;U/hr of insulin, e.g., -0.5&nbsp;U over the next half hour. If the user’s ISF is 50&nbsp;mg/dL, then Loop would predict blood glucose to rise 25&nbsp;mg/dL over the DIA.
 
 Here is a real-world example where Loop is setting many temporary basal rates over the course of the day. The light orange bars are the temporary basal rates delivered and the solid orange line is the active insulin at any given time during the day.  
 
@@ -80,9 +89,7 @@ Here is a real-world example where Loop is setting many temporary basal rates ov
 
 ### Total Insulin Effect (combining boluses and temporary basal rates)
 
-Loop will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. As demonstrated above, using the predicted active insulin Loop can predict the blood glucose drop over the next 6 hours.
-
-Lastly, the combined effect of bolus and basal insulin are visually represented for the user by Loop’s insulin charts:
+Loop will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past DIA amount of time (typically 6&nbsp;hours), to predict the active insulin for the next DIA. The extra insulin at the beginning of the interval has essentially expired, while the newest insulin has yet to have it's full effect. The figure below shows the visual representation of the IOB (Active Insulin, e.g., insulin above basal) and the history of temp basal and bolus (Insulin Delivery).
 
 ![Loop's iob and temp basals](img/insulin_delivery_iob.jpg)
 
@@ -90,15 +97,19 @@ The insulin effect can be expressed mathematically:
 
 ![insulin effect equation ](img/insulin_effect_equation.png)
 
-where BG is the expected change in blood glucose with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at time t, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in blood glucose due to insulin. The insulin activity accounts for the EGP and any active insulin from basals and boluses.
+where BG is the expected change in blood glucose with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/u) at time t, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in blood glucose due to insulin. The insulin activity accounts for the EGP and any active insulin from basals and boluses.
 
 ## Carbohydrate Effect
 
-Carbohydrates will raise blood glucose, but the speed and degree to which they impact blood glucose are dependent on the type of carbohydrates. High glycemic index (GI) carbohydrates will raise blood glucose quickly over a shorter time, whereas low GI foods will raise blood glucose more slowly over a longer period. Foods like candy, juice, and fruits tend to be high GI foods, while pizza, burritos, and quesadillas are usually lower GI foods. Digestion issues like gastroparesis may also contribute to variations in carbohydrate absorption.
+Carbohydrates (and protein and to some extent fat) will raise blood glucose, but the speed and degree to which they impact blood glucose are dependent on the type of food. High glycemic index (GI) carbohydrates eaten alone will raise blood glucose quickly over a shorter time, whereas low GI foods or high-fat meals will raise blood glucose more slowly over a longer period. Foods like candy, juice, and fruits tend to be high GI foods, while pizza, burritos, and quesadillas are usually lower GI foods. Digestion issues like gastroparesis may also contribute to variations in meal absorption. Loop only models the entered carbohydrate amount, but many Loopers increase the amount to cover the expected effect of protein and adjust the expected absorption time for fat. For simplicity, the rest of this page just refers to carbohydrates.
 
-Because carbohydrate absorption can be quite variable, Loop has a model that dynamically adjusts the expected remaining time of carbohydrate absorption. To start with, Loop allows the user to input a rough guess of how long they think the food or drink will take to absorb. The user’s guess is used as a middle of the road estimate, and Loop’s algorithm will shorten or lengthen it based on observed blood glucose change.
+Because meal absorption can be quite variable, Loop has a model that dynamically adjusts the expected remaining time of absorption. To start with, Loop allows the user to input a rough guess of how long they think the food or drink will take to absorb. The user’s guess is used as a middle of the road estimate, and Loop’s algorithm will shorten or lengthen it based on observed blood glucose change.
 
-For all carbohydrate entries, Loop assumes carbohydrates will not start absorbing for 10 minutes, so there is a 10-minute period of no absorption that is modeled prior to the absorption modeled in the next sections.
+For all carbohydrate entries, Loop assumes a (piece-wise non-linear) carbohydrate absorption pattern. That sounds scary, but it isn't. Loop uses this to predict the effect of the entered meal on BG combined with the insulin effect model to recommeded a bolus.  This non-linear model is more accurate than the constant absorption assumption used by versions of Loop before v2.0. (Your Loop is unlikely to be that old.)
+
+![non linear carb model with default and other parameters](img/non-linear-carb-model.png){width="600"}
+
+assumes carbohydrates will not start absorbing for 10 minutes, so there is a 10-minute period of no absorption that is modeled prior to the absorption modeled in the next sections. Then the expected rate of carbohydrate absorption ramps up
 
 ### Linear Carbohydrate Absorption
 
@@ -140,7 +151,7 @@ If we further expand this example, by assuming the following at 4pm:
 
 * that there are still carbohydrates left to be absorbed from both meals,
 * that the estimated insulin counteraction effect (ICE) is +15 ![ICE units](img/ice_units.png), and
-* the user’s CIR is 10 g/U and the ISF is 50 mg/dL/U,
+* the user’s CIR is 10 g/U and the ISF is 50&nbsp;mg/dL/U,
 
 then the estimated amount of carbohydrates absorbed at 4pm would be 3g:
 
@@ -184,7 +195,7 @@ The retrospective correction effect can be expressed mathematically:
 
 where BG is the predicted change in blood glucose with the units (mg/dL/5min) at time *t* over the time range of 5 to 60 minutes, and the other term gives the percentage of BG*vel* that is applied to this effect.
 
-The retrospective correction effect can be illustrated with an example: if the BG*vel* over the past 30 minutes was -10 mg/dL per 5min, then the retrospective correction effect over the next 60 minutes would be as follows:
+The retrospective correction effect can be illustrated with an example: if the BG*vel* over the past 30 minutes was -10&nbsp;mg/dL per 5min, then the retrospective correction effect over the next 60 minutes would be as follows:
 
 |Minutes relative to now (*t=0*)|Percent of BG*vel* Applied to RC Effect| ![img/delta_bgrc.png](img/delta_bgrc.png) |
 |------|-------|-------|
@@ -219,9 +230,9 @@ The momentum slope is then blended into the next 20 minutes of predicted blood g
 
 NOTE: The term ![blood glucose momentum term](img/momentum_term.png) is also applied to the combined insulin, carbohydrates, and retrospective correction effects to get the delta blood glucose prediction.
 
-The momentum effect can be illustrated with an example: if the last 3 blood glucose readings were 100, 103, and 106 mg/dL, then the slope would be 3 mg/dL per 5 minutes (0.6 mg/dL per minute). The amount of that recent trend or slope applied to the next 20 minutes of predictions (i.e., the next 4 predictions from the other effects) is roughly 100% (3 mg/dL per 5 min) at 5 minutes, 66% (2 mg/dL per 5 min) at 10 minutes, 33% (1 mg/dL per 5 min) at 15 minutes, and 0% (0 mg/dL per 5 min) at 20 minutes.
+The momentum effect can be illustrated with an example: if the last 3 blood glucose readings were 100, 103, and 106&nbsp;mg/dL, then the slope would be 3&nbsp;mg/dL per 5 minutes (0.6&nbsp;mg/dL per minute). The amount of that recent trend or slope applied to the next 20 minutes of predictions (i.e., the next 4 predictions from the other effects) is roughly 100% (3&nbsp;mg/dL per 5 min) at 5 minutes, 66% (2&nbsp;mg/dL per 5 min) at 10 minutes, 33% (1&nbsp;mg/dL per 5 min) at 15 minutes, and 0% (0&nbsp;mg/dL per 5 min) at 20 minutes.
 
-Also, if the combined effect from the insulin, carbohydrates, and retrospective correction is assumed to be a constant 6 mg/dL/5min over the next 20 minutes, then the expected overall effect and the predicted blood glucose can be calculated as follows.
+Also, if the combined effect from the insulin, carbohydrates, and retrospective correction is assumed to be a constant 6&nbsp;mg/dL/5min over the next 20 minutes, then the expected overall effect and the predicted blood glucose can be calculated as follows.
 
 |Minutes relative to now (*t=0*)|Percent of Slope Applied to Momentum Effect|Momentum Effect (3mg/dL/5min)|Percent of Other Effects Applied Overall Effect|Other Effects (Insulin, Carbohydrate, and Retrospective Correction)|Overall Effect (mg/dL/5min)|Predicted BG (mg/dL)|
 |-------|-------|-------|-------|-------|-------|-------|
