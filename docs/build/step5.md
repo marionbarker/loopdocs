@@ -15,11 +15,11 @@
     - **Rileylink vs radio-link**: The Rileylink is the original design. Other DIY Loopers have created several other options.  A new section has been added to this page: [Radio-link Options](step5.md#radio-link-options).  All headers will continue using Rileylink in the name (because we don't want to mess up the links).  But gradually, radio-link will be used in the body of the pages - unless it is specific to Rileylink.
     - **"Do I need a radio-link?"** Yes. Loop will not work without a radio-link. Omnipod users will not be able to bolus from their looping pod without a radio-link.
     - **"What happens if I lose my radio-link or walk away from it?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-happens-if-i-walk-away-from-my-rileylink).
-    - **"Can I use an Omnipod RileyLink with a Medtronic pump? or vice versa?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-will-happen-if-you-use-a-916mhz-antenna-rileylink-with-an-omnipod-or-vice-versa).
+    - **"Can I use an Omnipod RileyLink with a Medtronic pump? or vice versa?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-will-happen-if-your-radio-link-has-the-wrong-antenna).
     - **"Can I swap out radio-links at any time?"** Yes, you can. Radio-links can be replaced quite simply without needing to start a new pod or rebuild Loop app. There's a place in Loop settings where you find your new device name and turn "on" the Bluetooth connection to start using it. You can swap between RileyLink, OrangeLink, EmaLink or the next version of link.
     - **"How close does the radio-link need to be to me? Do I have to carry it with me?"** Good questions...answered [here](../faqs/rileylink-faqs.md#do-i-have-to-carry-the-rileylink-everywhere).
     - **"Why is it named RileyLink?"** Riley is the name of Pete Schwamb's daughter and he's the guy that created the RileyLink.
-    - **"Can I make my own radio-link?"** Technically yes, however it is not an easy project. You'll need specialized tools and patience. [add link here to FAQs](../faqs/rileylink-faqs.md)
+    - **"Can I make my own radio-link?"** Technically yes, however it is not an easy project. You'll need specialized tools and patience.
 
 ## What is RileyLink
 
@@ -36,14 +36,14 @@ There used to be just one option. Now there are more, so you have to make a deci
 
 ## Radio-link Options
 
-!!! danger "Radio-links"
+!!! info "Radio-links"
     - One thing that might affect your choice is where you live
         - These devices are sold at cost
         - If you are in the US, shipping for RileyLink and OrangeLink is less expensive
         - The EmaLink ships from Europe
         - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the getrileylink (non-profit) organization
     - RileyLink
-        - Original design, available from [getrileylink](https://getrileylink.org)
+        - Designed by Pete Schwamb, available from [getrileylink](https://getrileylink.org)
         - Rechargable battery (max 36 hours per charge)
         - Must order either Omnipod or Medtronic version
     - OrangeLink
@@ -68,7 +68,7 @@ Your RileyLink will come with the battery disconnected and the parts not already
 
 Make sure the lipo battery is well-plugged into the connection. Line up the little ridge appropriately, and push fairly firmly to get the connection tight.  Poor battery cable connection can make the Loop communications fail.  See photos below, for example.
 
-!!! info "Common new user errors"
+!!! warning "Common new user errors"
 
     The most common two errors for new RileyLink owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RileyLink. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos shown below. Remember to charge your RileyLink each night.
 
