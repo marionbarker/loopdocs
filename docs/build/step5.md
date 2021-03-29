@@ -13,7 +13,7 @@
 
 !!! warning "FAQs"
     - **Rileylink vs radio-link**: The Rileylink is the original design. Other DIY Loopers have created several other options.  A new section has been added to this page: [Radio-link Options](step5.md#radio-link-options).  All headers will continue using Rileylink in the name (because we don't want to mess up the links).  But gradually, radio-link will be used in the body of the pages - unless it is specific to Rileylink.
-    - **"Do I need a radio-link?"** Yes. Loop will not work without a radio-link. Omnipod users will not be able to bolus from their looping pod without a radio-link.
+    - **"Do I need a radio-link?"** Yes. Loop will not work without a radio-link.
     - **"What happens if I lose my radio-link or walk away from it?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-happens-if-i-walk-away-from-my-rileylink).
     - **"Can I use an Omnipod RileyLink with a Medtronic pump? or vice versa?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-will-happen-if-your-radio-link-has-the-wrong-antenna).
     - **"Can I swap out radio-links at any time?"** Yes, you can. Radio-links can be replaced quite simply without needing to start a new pod or rebuild Loop app. There's a place in Loop settings where you find your new device name and turn "on" the Bluetooth connection to start using it. You can swap between RileyLink, OrangeLink, EmaLink or the next version of link.
@@ -135,7 +135,7 @@ Since the best practice is to charge your RileyLink overnight while you sleep, a
 
 ### Range
 
-The range that your radio-link will function is **heavily** dependent on the environment that you are in. Most people wear the RL in a pocket or carry a belt holster during the day. The radio frequency communications will have a shorter range than the BT communications, therefore RL will do better closer to the pump rather than the iPhone if you are deciding on options for carrying gear.
+The range at which all radio-links will function is **heavily** dependent on the environment that you are in. Both the EmaLink and OrangeLink have reported longer ranges, so they can be kept in a central location - but still need to be "near enough". Most people keep their RileyLink in a pocket or carry a belt holster during the day. The radio frequency communications will have a shorter range than the BT communications, therefore RileyLink will do better closer to the pump rather than the iPhone if you are deciding on options for carrying gear.
 
 Problematic environments will be places like technical conferences, sports arenas, and other places where wireless communications are heavy and plenty.
 
