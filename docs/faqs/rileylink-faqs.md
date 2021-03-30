@@ -47,12 +47,9 @@ There are two different types of RileyLinks currently; the difference being the 
 
 ## What will happen if your radio-link has the wrong antenna?
 
-You can *technically* use that RileyLink with either pump on Loop. But, you will have significant frustrations with the short distances required between the pump/pod and RileyLink when using the "wrong" antenna. With mismatched antenna/pump, the RileyLink needs to be very close and in clear line-of-sight to pump/pod. This makes everyday living (and sleeping) a bit hard. If you use the appropriate-antenna-for-your-pump RileyLink, the distances the pump/pod and RileyLink can tolerate from each other is much more "real world" friendly and stable.
+You can *technically* use that RileyLink with either pump on Loop. But, you will have significant frustrations with the short distances required between the pump/pod and RileyLink when using the "wrong" antenna. With mismatched antenna/pump, the RileyLink needs to be very close (think inches) and in clear line-of-sight to pump/pod. This makes everyday living (and sleeping) a bit hard. If you use the appropriate-antenna-for-your-pump RileyLink, the distances the pump/pod and RileyLink can tolerate from each other is much more "real world" friendly and stable.
 
 In summary, definitely use the appropriate RileyLink with the antenna that matches your pump so that you are less frustrated. In a pinch, your old RileyLink might work as a backup, but you won't love it.
-
-![chart showing quality of communications for RileyLink with antenna that matches or does not match the pump](img/rl-antenna-chart.png){width="750"}
-{align="center"}
 
 ## Can you swap out the old antenna on a RileyLink?
 
