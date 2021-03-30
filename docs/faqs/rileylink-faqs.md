@@ -74,7 +74,9 @@ You can't. There is no charge level indicator. Just charge it nightly, and you w
 
 ## How should I carry the RileyLink? Does it make a difference?
 
-In general, you want to get in the habit of carrying RileyLink with you, yes. A pocket, carabiner, lanyard, SPIbelt...the options are endless. What you don't want to do is put the RileyLink in a blocking bag that has RFID blocking (some travel fanny packs have that). The distance that your RileyLink can be away from your pump will depend heavily on the environment you are in.
+In general, you want to get in the habit of carrying RileyLink with you, yes. A pocket, carabiner, lanyard, SPIbelt...the options are endless. What you don't want to do is put the RileyLink in a blocking bag that has RFID blocking (some travel fanny packs have that). The distance that your RileyLink can be away from your pump will depend heavily on the environment you are in. You may find it works best if you keep it on the same side of your body as your pump.
+
+Both the EmaLink and OrangeLink have reported longer ranges, so they can be kept in a central location - but still need to be "near enough". And don't forget that your radio-link is in that central location and leave the area without it.
 
 ## Is RileyLink waterproof?
 
@@ -88,7 +90,7 @@ People not pushing the LiPo battery in all the way when they first assemble thei
 
 The simple answer is - try this if you are having persistent red loops associated with pump communication that are not resolved by toggling phone Bluetooth off then on again. You might need to do this, even if the firmware (next paragraph) is correct.
 
-In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu.  The firmware displayed should match what is shown in the figure below, `subg_rfspy 2.2/ble_rfspy 2.0`. If not, you should power cycle your RileyLink. Make sure, after power cycling, that the correct firmware is displayed. If several power cycles do not help, contact [GetRileyLink](https://getrileylink.org/contact) for assistance.
+In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu.  The firmware displayed should match or be a higher version number than what is shown in the figure below, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number. Check it when RL is working well and make a note of what it says.) If not, you should power cycle your RileyLink. Make sure, after power cycling, that the correct firmware is displayed. If several power cycles do not help, contact [GetRileyLink](https://getrileylink.org/contact) for assistance.
 
 The firmware should say .  
 
@@ -101,4 +103,4 @@ Yes, you can have two turned on, but it won't help anything really. Loop only us
 
 ## Can I run Loop without a RileyLink?
 
-You cannot run DIY Loop without a radio-link at this time.
+At this time, DIY Loop only works with certain insulin pumps which all require use of a radio-link.

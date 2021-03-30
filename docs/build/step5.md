@@ -8,11 +8,11 @@
 !!! info "Summary"
     - Decide what kind of radio-link to buy
     - Order your radio link
-    - If you choose Rileylink
+    - If you choose RileyLink
         - Assemble the RileyLink
 
 !!! warning "FAQs"
-    - **Rileylink vs radio-link**: The Rileylink is the original design. Other DIY Loopers have created several other options.  A new section has been added to this page: [Radio-link Options](step5.md#radio-link-options).  All headers will continue using Rileylink in the name (because we don't want to mess up the links).  But gradually, radio-link will be used in the body of the pages - unless it is specific to Rileylink.
+    - **RileyLink vs radio-link**: The RileyLink is the original design. Other DIY Loopers have created several other options.  A new section has been added to this page: [Radio-link Options](step5.md#radio-link-options).  All headers will continue using RileyLink in the name (because we don't want to mess up the links).  But gradually, radio-link will be used in the body of the pages - unless it is specific to RileyLink.
     - **"Do I need a radio-link?"** Yes. Loop will not work without a radio-link.
     - **"What happens if I lose my radio-link or walk away from it?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-happens-if-i-walk-away-from-my-rileylink).
     - **"Can I use an Omnipod RileyLink with a Medtronic pump? or vice versa?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-will-happen-if-your-radio-link-has-the-wrong-antenna).
@@ -25,9 +25,9 @@
 
 The radio-link (RL) is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by select Medtronic and Omnipod pumps. What does that mean to you? It means radio-link is the communication highway between your insulin pump, CGM, and iPhone.
 
-**Loop will not work without the radio-link.**
+**DIY Loop will not work without the radio-link.**
 
-![img/rl_diag.png](img/rl_diag.png){width="450"}
+![Omnipod or Medtronic pump communicating through RileyLink to phone running Loop app](img/radio-link-comm-pod-mmt.svg){width="450"}
 {align="center"}
 
 ## Order RileyLink
@@ -37,18 +37,18 @@ There used to be just one option. Now there are more, so you have to make a deci
 ## Radio-link Options
 
 !!! info "Radio-links"
-    - One thing that might affect your choice is where you live
+    - One thing that might affect your choice is where you live and whether you want to charge it or change batteries
         - These devices are sold at cost
         - If you are in the US, shipping for RileyLink and OrangeLink is less expensive
         - The EmaLink ships from Europe
-        - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the getrileylink (non-profit) organization
+        - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the getrileylink (non-profit) organization for all the radio-links listed below
     - RileyLink
         - Designed by Pete Schwamb, available from [getrileylink](https://getrileylink.org)
         - Rechargable battery (max 36 hours per charge)
         - Must order either Omnipod or Medtronic version
     - OrangeLink
         - Designed by Vic Wu, available from [getrileylink](https://getrileylink.org)
-        - Uses 2 AAA batteries
+        - Uses 2 AAA batteries, weeks of use typical
         - Works with either Omnipod or Medtronic
         - Uses new chipsets, reported to have longer range
         - Matches Apple Airpod form factor, so can use airpod cases
@@ -56,8 +56,8 @@ There used to be just one option. Now there are more, so you have to make a deci
         - Designed by Sorin Kupas-Spunei to increase range, offer smaller sizes
         - Rechargable battery (a variety of battery sizes are available)
         - Must order either Omnipod or Medtronic version
-        - See [EmaLink Information](https://github.com/sks01/EmaLink#emalink) and [EmaLink Wiki](https://github.com/sks01/EmaLink/wiki)
-            - Do not worry about the beta testing discussion on the wiki - this link passed beta-testing
+        - See [EmaLink Information](https://github.com/sks01/EmaLink#emalink)
+            - This link has photos comparing all radio-links, one shows pod and medtronic for comparison
         - This design is from Europe, available by sending a private message via github to Sorin (sks01)
         - For US buyers, sometimes a group-buy is organized on Facebook to minimize shipping costs
             - Robert Holbrook has made it easier for US buyers with this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
@@ -87,9 +87,9 @@ All of these radio-links communicate with the pump through radio frequency commu
 
 ### Radio communications
 
-When your RL and pump are first paired, Loop performs a series of tests that you won't see...they are tuning tests. Basically, RL sends little test messages to the pump and waits for a response. The RL tries this same "ping" to the pump a range of various radio frequencies. The range of radio frequencies it tries is based on the pump you've told RL to expect (Omnipod, Medtronic NA/CA, or Medtronic WW).  RL will then record the radio frequencies that provided the strongest response and use that frequency for future pump communications.
+**Medtronic Only** When your RL and pump are first paired, Loop performs a series of tests that you won't see...they are tuning tests. Basically, Loop sends little test messages via the RL to the pump and waits for a response. Loop tries this same "ping" to the pump over a range of frequencies based on the pump you've told Loop to expect (Medtronic NA/CA, or Medtronic WW).  The Loop app will then use the radio frequency with the strongest response for future pump communications.
 
-Usually this best frequency is pretty constant for any given pump+RL, but during temperature changes it may be that the best frequency is not the one currently set. In the event that RL has problems communicating with the pump, Loop has code built-in that will automatically tell the RL "Hey, try that tuning pump thing again...maybe there's a better frequency we need to try." This retuning is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles).
+**For long-time MMT Loopers who remember hitting the tune button:** Usually this best frequency is constant for any given Medtronic pump + RL, but may drift with time or temperature changes. The tuning mentioned above is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles). You no longer need to hit the tune button in the menu.
 
 ### Bluetooth communications
 
@@ -129,15 +129,19 @@ If your blue light remains on despite trying a restart, it is time to pull out y
 
 ### RileyLink Charging
 
-The battery that comes with RileyLink is not charged completely when it is shipped, so feel free to charge it up.  You'll need a [mini-USB cable](https://www.amazon.com/AmazonBasics-USB-2-0-Cable--Male/dp/B00NH13S44) and [0.5A USB charging power supply](https://www.amazon.com/Cellet-Powered-Charger-iPhones-Smartphones-/dp/B00FE8WFCO) like your iPhone power supply.  RileyLink takes about 2 hours to fully charge (the red light will turn off when fully charged, read note above about red light patterns) and should easily last at least a full day of constant Loop use.  Typically, it can go into the 30-hour range without any problems.  Most people charge their RL each night when they are sleeping.  You don't have to worry about leaving the RL plugged in "too long" for charging.  It will automatically stop charging the battery when it is fully charged.
+The battery that comes with RileyLink is not charged completely when it is shipped, so be sure to charge it up before initial use.  You'll need a [mini-USB cable](https://www.amazon.com/AmazonBasics-USB-2-0-Cable--Male/dp/B00NH13S44) and [0.5A USB charging power supply](https://www.amazon.com/Cellet-Powered-Charger-iPhones-Smartphones-/dp/B00FE8WFCO) like your iPhone power supply.  RileyLink takes about 2 hours to fully charge (the red light will turn off when fully charged, read note above about red light patterns) and should easily last at least a full day of constant Loop use.  Typically, it can go into the 30-hour range without any problems.  Most people charge their RL each night when they are sleeping.  You don't have to worry about leaving the RL plugged in "too long" for charging.  It will automatically stop charging the battery when it is fully charged.
 
 Since the best practice is to charge your RileyLink overnight while you sleep, and the battery lasts safely over 24 hours, there is no battery level indicator for the RileyLink.  The RileyLink's charge level is not viewable on Nightscout, nor within the Loop app.  If you forget to charge your RileyLink overnight, you can recharge it with a portable USB battery in a pinch.  A [short mini-USB cable](https://www.adafruit.com/product/899) could be a good addition to a small gear bag.
 
 ### Range
 
-The range at which all radio-links will function is **heavily** dependent on the environment that you are in. Both the EmaLink and OrangeLink have reported longer ranges, so they can be kept in a central location - but still need to be "near enough". Most people keep their RileyLink in a pocket or carry a belt holster during the day. The radio frequency communications will have a shorter range than the BT communications, therefore RileyLink will do better closer to the pump rather than the iPhone if you are deciding on options for carrying gear.
+The range at which all radio-links will function is **heavily** dependent on the environment that you are in. Both the EmaLink and OrangeLink have reported longer ranges, so they can be kept in a central location - but still need to be "near enough". The rest of this section discusses RileyLink.
 
-Problematic environments will be places like technical conferences, sports arenas, and other places where wireless communications are heavy and plenty.
+Most people keep their RileyLink in a pocket or carry a belt holster during the day on the same side of their body as their pump. The radio frequency communications will have a shorter range than the BT communications, therefore RileyLink will do better closer to the pump rather than the iPhone if you are deciding on options for carrying gear.
+
+Generally speaking, RileyLink is solid about 10-12 feet away in most environments. In some situations, you could have RileyLink work fine even at 20+feet away. Other times, you may need to get RileyLink closer.
+
+What influences this distance? The biggest influences are (1) body-blocking and (2) "noisy" environments. The human body is a lot of water, and water is an excellent blocker of wireless communication.  So, sleeping on a pod and smothering it entirely with your body will possibly decrease the ability of radio-link to communicate with the pod. Environments with a high concentration of wireless signals can also interfere with radio-link communications and make closer proximity a benefit. Where might those kinds of situations happen? Concerts, conferences, and sporting arenas are pretty prone to interference.
 
 ### RileyLink Lipo Battery
 
@@ -153,7 +157,7 @@ To remove the lipo battery from the RileyLink, please do so slowly and patiently
 
 Yes, waiting for your radio-link to arrive is extremely difficult if they are backordered.  PLEASE be patient, since Loop CANNOT work without one.
 
-If you're really dying to do something while the radio-link ships, you can proceed with finishing these build directions all the way through Step 14...but after that you'll have to wait for the radio-link.  You can't properly enter any settings or pump info in Loop app without it.
+If you're really dying to do something while the radio-link ships, you can proceed with finishing these build directions all the way through Step 14...but after that you'll have to wait for the radio-link.  You can't properly enter any settings or pump info in the Loop app without it.
 
 ## Next Step: Enroll in Apple Developer Program
 
