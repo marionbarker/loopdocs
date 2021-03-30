@@ -87,9 +87,7 @@ People not pushing the LiPo battery in all the way when they first assemble thei
 
 The simple answer is - try this if you are having persistent red loops associated with pump communication that are not resolved by toggling phone Bluetooth off then on again. You might need to do this, even if the firmware (next paragraph) is correct.
 
-In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu.  The firmware displayed should match or be a higher version number than what is shown in the figure below, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number. Check it when RL is working well and make a note of what it says.) If not, you should power cycle your RileyLink. Make sure, after power cycling, that the correct firmware is displayed. If several power cycles do not help, contact [GetRileyLink](https://getrileylink.org/contact) for assistance.
-
-The firmware should say .  
+In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu.  The firmware displayed should match or be a higher version number than what is shown in the figure below, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number. Check it when RL is working well and make a note of what it says.) If not, you should power cycle your RileyLink. Make sure, after power cycling, that the correct firmware is displayed. If several power cycles do not help, contact [GetRileyLink](https://getrileylink.org/contact) for assistance.<br/><br/>
 
 ![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
