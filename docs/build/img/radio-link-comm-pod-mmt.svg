@@ -3321,7 +3321,7 @@
        id="path7520-7" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart-1-7);marker-end:url(#Arrow1Mend-3-4)"
-       d="m 24.252381,-59.842578 9.540711,0.13363"
+       d="m 24.252394,-62.478521 9.540829,0.13363"
        id="path7520-6-9" />
     <text
        xml:space="preserve"
@@ -3395,21 +3395,26 @@
          id="tspan4591">RF</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="28.753279"
-       y="-54.672081"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82224px;line-height:1.25;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="28.753168"
+       y="-57.308472"
        id="text8869-0-3-6"
-       inkscape:transform-center-x="-0.13363476"
-       inkscape:transform-center-y="-24.722431"><tspan
+       inkscape:transform-center-x="-0.13346623"
+       inkscape:transform-center-y="-24.722829"><tspan
          sodipodi:role="line"
          id="tspan8867-3-2-2"
-         x="28.753279"
-         y="-54.672081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;text-anchor:middle;stroke-width:0.264583">933MHz</tspan><tspan
+         x="28.753168"
+         y="-57.308472"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82224px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;text-anchor:middle;stroke-width:0.264583">868 or</tspan><tspan
          sodipodi:role="line"
-         x="28.753279"
-         y="-51.144306"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="28.753168"
+         y="-53.78067"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82224px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan4847">916MHz</tspan><tspan
+         sodipodi:role="line"
+         x="28.753168"
+         y="-50.252872"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82224px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;text-anchor:middle;stroke-width:0.264583"
          id="tspan4591-1">RF</tspan></text>
   </g>
 </svg>
