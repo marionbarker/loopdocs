@@ -507,7 +507,7 @@
 <div class="admonition danger">
 <p class="admonition-title">RileyLink vs radio-link</p>
 <ul>
-<li>The Rileylink is the original design for the required radio-link</li>
+<li>The RileyLink is the original design for the required radio-link</li>
 <li>The headers (anchor links) on this page still use RileyLink, but there are multiple options</li>
 </ul>
 </div>
@@ -530,11 +530,10 @@
 <div class="admonition note">
 <p>The color of the circuit board is irrelevant.</p>
 </div>
-<p align="center"><img alt="img/two-rl.png" src="../img/two-rl.png" width="650" /></p>
+<p align="center"><img alt="components for RileyLink: case, board, battery; Medtronic on left, Omnipod on right" src="../img/two-rl.png" width="650" /></p>
 <h2 id="what-will-happen-if-your-radio-link-has-the-wrong-antenna">What will happen if your radio-link has the wrong antenna?<a class="headerlink" href="#what-will-happen-if-your-radio-link-has-the-wrong-antenna" title="Permanent link">⌁</a></h2>
-<p>You can <em>technically</em> use that RileyLink with either pump on Loop. But, you will have significant frustrations with the short distances required between the pump/pod and RileyLink when using the "wrong" antenna. With mismatched antenna/pump, the RileyLink needs to be very close and in clear line-of-sight to pump/pod. This makes everyday living (and sleeping) a bit hard. If you use the appropriate-antenna-for-your-pump RileyLink, the distances the pump/pod and RileyLink can tolerate from each other is much more "real world" friendly and stable.</p>
+<p>You can <em>technically</em> use that RileyLink with either pump on Loop. But, you will have significant frustrations with the short distances required between the pump/pod and RileyLink when using the "wrong" antenna. With mismatched antenna/pump, the RileyLink needs to be very close (think inches) and in clear line-of-sight to pump/pod. This makes everyday living (and sleeping) a bit hard. If you use the appropriate-antenna-for-your-pump RileyLink, the distances the pump/pod and RileyLink can tolerate from each other is much more "real world" friendly and stable.</p>
 <p>In summary, definitely use the appropriate RileyLink with the antenna that matches your pump so that you are less frustrated. In a pinch, your old RileyLink might work as a backup, but you won't love it.</p>
-<p align="center"><img alt="img/rl-antenna-chart.png" src="../img/rl-antenna-chart.png" width="750" /></p>
 <h2 id="can-you-swap-out-the-old-antenna-on-a-rileylink">Can you swap out the old antenna on a RileyLink?<a class="headerlink" href="#can-you-swap-out-the-old-antenna-on-a-rileylink" title="Permanent link">⌁</a></h2>
 <p>Yes, the antenna swap is not a hard swap if you have basic soldering skills and tools. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on <a href="https://getrileylink.org/product/433diyupgrade/">GetRileyLink site</a>. Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to a decreased range and frequent communication drops between Loop and the pods. Be very sure that the wire on the antenna does NOT poke out the back side of the printed-circuit board where it could rub against and possibly puncture the battery casing.</p>
 <p>One user found the antenna no longer securely soldered after a year of use (and perhaps being dropped).  The solder should be shiny and the antenna base should be firmly attached to the board.</p>
@@ -555,11 +554,11 @@
 <p>The simple answer is - try this if you are having persistent red loops associated with pump communication that are not resolved by toggling phone Bluetooth off then on again. You might need to do this, even if the firmware (next paragraph) is correct.</p>
 <p>In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu.  The firmware displayed should match or be a higher version number than what is shown in the figure below, e.g., <code>subg_rfspy 2.2/ble_rfspy 2.0</code>. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number. Check it when RL is working well and make a note of what it says.) If not, you should power cycle your RileyLink. Make sure, after power cycling, that the correct firmware is displayed. If several power cycles do not help, contact <a href="https://getrileylink.org/contact">GetRileyLink</a> for assistance.</p>
 <p>The firmware should say .  </p>
-<p align="center"><img alt="img/rl-firmware.jpg" src="../img/rl-firmware.jpg" width="350" /></p>
+<p align="center"><img alt="Expected firmware display under device menu for post-Aug 2018 RileyLink" src="../img/rl-firmware.jpg" width="350" /></p>
 <h2 id="can-i-use-more-than-one-rileylink-at-a-time-will-it-improve-anything">Can I use more than one RileyLink at a time? Will it improve anything?<a class="headerlink" href="#can-i-use-more-than-one-rileylink-at-a-time-will-it-improve-anything" title="Permanent link">⌁</a></h2>
 <p>Yes, you can have two turned on, but it won't help anything really. Loop only uses one radio-link at a time. If you have several radio-link turned on in Loop settings, your Loop will only look for another radio-link after Loop fails for over 15 minutes on the original radio-link. In my experience, it is rare that Loop would fail for more than 15 minutes and a second radio-link would help in the same environment. If one radio-link gets damaged though and you need to swap out to a second radio-link, there are no issues with that.</p>
 <h2 id="can-i-run-loop-without-a-rileylink">Can I run Loop without a RileyLink?<a class="headerlink" href="#can-i-run-loop-without-a-rileylink" title="Permanent link">⌁</a></h2>
-<p>At this time, DIY Loop only works with certain insulin pumps which all require use of a radio-link.</p></div>
+<p>No, currently DIY Loop only works with certain insulin pumps, all of which require use of a radio-link.</p></div>
             </div>
         </div>
 
