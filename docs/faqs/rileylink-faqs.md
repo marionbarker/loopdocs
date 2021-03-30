@@ -3,7 +3,7 @@
 ## What is the RileyLink? Do I have to have one?
 
 !!! danger "RileyLink vs radio-link"
-    - The Rileylink is the original design for the required radio-link
+    - The RileyLink is the original design for the required radio-link
     - The headers (anchor links) on this page still use RileyLink, but there are multiple options
 
 
@@ -42,7 +42,7 @@ There are two different types of RileyLinks currently; the difference being the 
 !!! note ""
     The color of the circuit board is irrelevant.
 
-![img/two-rl.png](img/two-rl.png){width="650"}
+![components for RileyLink: case, board, battery; Medtronic on left, Omnipod on right](img/two-rl.png){width="650"}
 {align="center"}
 
 ## What will happen if your radio-link has the wrong antenna?
@@ -51,7 +51,7 @@ You can *technically* use that RileyLink with either pump on Loop. But, you will
 
 In summary, definitely use the appropriate RileyLink with the antenna that matches your pump so that you are less frustrated. In a pinch, your old RileyLink might work as a backup, but you won't love it.
 
-![img/rl-antenna-chart.png](img/rl-antenna-chart.png){width="750"}
+![chart showing quality of communications for RileyLink with antenna that matches or does not match the pump](img/rl-antenna-chart.png){width="750"}
 {align="center"}
 
 ## Can you swap out the old antenna on a RileyLink?
@@ -94,7 +94,7 @@ In Loop settings, tap on your pump, find your device (RileyLink or other) and ta
 
 The firmware should say .  
 
-![img/rl-firmware.jpg](img/rl-firmware.jpg){width="350"}
+![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
 
 ## Can I use more than one RileyLink at a time? Will it improve anything?

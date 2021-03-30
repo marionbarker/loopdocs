@@ -72,14 +72,14 @@ Make sure the lipo battery is well-plugged into the connection. Line up the litt
 
     The most common two errors for new RileyLink owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RileyLink. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos shown below. Remember to charge your RileyLink each night.
 
-![img/battery-cables.jpg](img/battery-cables.jpg){width="400"}
+![RileyLink showing Bad and Good battery insertion](img/battery-cables.jpg){width="400"}
 {align="center"}
 
 Loose battery cable on left, Proper battery cable on right
 
 Finally, the board and the battery fit into the slim case fairly tightly as well.  Click on the image below to watch a helpful [assembly video](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be).
 
-[![img/slimcase.png](img/slimcase.png)](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be)
+[![frame for video on how to insert RileyLink into slim case, follow link for video](img/slimcase.png)](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be)
 
 ## Extra Details about RileyLink
 
@@ -103,7 +103,7 @@ Your BT signal strength can be seen in the Loop settings, Pump settings, device 
 
 You will notice the Signal Strength is a negative number and in units of dB.  Remember that number line from elementary school?  A signal strength of -50&nbsp;dB is a stronger signal than  -80&nbsp;dB.<br/><br/>
 
-![img/RL_bt.jpg](img/RL_bt.jpg){width="400"}
+![device window showing Signal Strength and Connection State](img/RL_bt.jpg){width="400"}
 {align="center"}
 
 ### RileyLink Lights
@@ -151,7 +151,7 @@ Keep your RileyLink and lipo battery protected from damage.  Lipo batteries are 
 
 To remove the lipo battery from the RileyLink, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle-nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
 
-[![img/rileylink_battery_removal.png](img/rileylink_battery_removal.png)](https://youtu.be/s2qNPLpfwww)
+[![frame from video showing how to remove battery from RileyLink, follow link for video](img/rileylink_battery_removal.png)](https://youtu.be/s2qNPLpfwww)
 
 ## Waiting for RileyLink
 
