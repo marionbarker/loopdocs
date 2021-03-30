@@ -54,13 +54,16 @@ There used to be just one option. Now there are more, so you have to make a deci
         - Matches Apple Airpod form factor, so can use airpod cases
     - EmaLink
         - Designed by Sorin Kupas-Spunei to increase range, offer smaller sizes
-        - Rechargable battery (a variety of battery sizes are available)
+        - Rechargable battery (variety of case/battery sizes available)
+            - Micro/Nano: 2 to 3 days
+            - Standard: 6 to 7 days
+            - Maxx: 12 to 14 days
         - Must order either Omnipod or Medtronic version
         - See [EmaLink Information](https://github.com/sks01/EmaLink#emalink)
-            - This link has photos comparing all radio-links, one shows pod and medtronic for comparison
+            - This link has several photos with all radio-links, pod and Medtronic in same frame
         - This design is from Europe, available by sending a private message via github to Sorin (sks01)
-        - For US buyers, sometimes a group-buy is organized on Facebook to minimize shipping costs
-            - Robert Holbrook has made it easier for US buyers with this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
+        - Robert Holbrook has made it easier for US buyers with this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
+            - For US buyers, sometimes a group-buy is organized on Facebook to minimize shipping costs
 
 ## Assemble RileyLink
 
