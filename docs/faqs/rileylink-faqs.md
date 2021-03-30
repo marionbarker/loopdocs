@@ -103,4 +103,4 @@ Yes, you can have two turned on, but it won't help anything really. Loop only us
 
 ## Can I run Loop without a RileyLink?
 
-At this time, DIY Loop only works with certain insulin pumps which all require use of a radio-link.
+No, currently DIY Loop only works with certain insulin pumps, all of which require use of a radio-link.
