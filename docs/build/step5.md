@@ -87,7 +87,7 @@ All of these radio-links communicate with the pump through radio frequency commu
 
 ### Radio communications
 
-**Medtronic Only** When your RL and pump are first paired, Loop performs a series of tests that you won't see...they are tuning tests. Basically, Loop sends little test messages via the RL to the pump and waits for a response. Loop tries this same "ping" to the pump over a range of frequencies based on the pump you've told Loop to expect (Medtronic NA/CA, or Medtronic WW).  The Loop app will then use the radio frequency with the strongest response for future pump communications.
+**Medtronic Only** When your RL and pump first connect, Loop performs a series of tests that you won't see...they are tuning tests. Basically, Loop sends little test messages via the RL to the pump and waits for a response. Loop tries this same "ping" to the pump over a range of frequencies based on the pump you've told Loop to expect (Medtronic NA/CA, or Medtronic WW).  The Loop app will then use the radio frequency with the strongest response for future pump communications.
 
 **For long-time MMT Loopers who remember hitting the tune button:** Usually this best frequency is constant for any given Medtronic pump + RL, but may drift with time or temperature changes. The tuning mentioned above is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles). You no longer need to hit the tune button in the menu.
 
