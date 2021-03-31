@@ -30,20 +30,28 @@ When you progress to “closed-loop”, do so safely by starting with appropriat
 ## How to Use These Docs
 
 * Use the navigation menu at the top of the screen
-    * Click here for a clickable index - see if I can figure out how to make this happen
-* A Table of Contents for the current page is always displayed on the left side of the screen
+    * Most menu items are only one level deep - so you see all the underlying pages by clicking on the menu name
+    * Operate has 4 drop-down menus, easiest way to go through these pages is hitting Next or the letter `n`
+        * Operate->How To Use Loop App
+        * Operate->Looping Tips
+        * Operate->Algorithm
+        * Operate->Troubleshoot
+* Use the Table of Contents for the current page, which is displayed on the left side of the screen
     * On mobile devices, at the top of the page, tap the down arrow on the upper left to display the TOC, tap again to dismiss it
-* Some pages you might want to read sequentially
+* Read pages sequentially first time through
     * Type the letter `n` for next and `p` for previous to navigate
-* You can search the Loop Docs site by clicking the ![Magnifying Glass Search Icon](img/search_icon.png){width="50px"} icon or typing the letter `s` on your keyboard
+* Search for topics by clicking the Search icon or typing the letter `s` on your keyboard
     * As you type in the search box, suggested section headings with the first few rows of content will show up below the search bar
     * Scroll down and select the Heading Title of the section of interest
-    * If you hit return, the Search display vanishes<br/><br/>
-![img/search_example.png](img/search_example.png){width="400"}
+    * If you hit return, the Search display vanishes
+<br/><br/>![how to use the search for this site](img/search_example.png){width="400"}<br/><br/>
+* There is another website [Looptips](https://kdisimone.github.io/looptips/) you should review
+    * While these articles were written and illustrated with an earlier version of Loop, they are well worth reading
+    * This link is repeated on the Operate->Looping Tips->Loop Tips page
 
 ## Stay in the Loop!
 
-The are a number of social media options. (Read the directions on each of these - some ask you to answer questions - please do so):
+There are a number of social media options. (Read the directions on each of these - some ask you to answer questions - please do so):
 
   * The fastest way to get help (with the most number of mentors) is to join [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup).
   * There's another group [LoopandLearn](https://www.facebook.com/groups/LOOPandLEARN) that has a lot of Loop-centric information, provide supports for some Loop forks (remember other CGM?) and has a Speaker Series covering many topics of general Diabetes interest as well as Loop-specific chats.
@@ -54,15 +62,30 @@ The are a number of social media options. (Read the directions on each of these 
 
 ## Contribute
 
-Please consider submitting suggestions for updates and improvements to the documentation. Do this using the  Issues at the [loopdocs repo](https://github.com/LoopKit/loopdocs/issues). See what issues are already open - if yours is new, please add it. Indicate what page or pages need updating with a brief description, and we'll collaborate from there.
+Please consider submitting suggestions for updates and improvements to this documentation or [code](index.md#information-for-coders). For documentation, please enter an Issue at the [loopdocs repo](https://github.com/LoopKit/loopdocs/issues). See what issues are already open - if yours is new, please add it by clicking on the `New Issue` button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. There are over 70 pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.
 
 ## Development History
 
-Loop has been developed as an open-source, shared project.  For a really interesting read about the history of Loop development, check out this [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805) post, written by Loop developer Nate Racklyeft.  The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.
+Loop has been developed as an open-source, shared project.  
+
+  * For a really interesting read about the history of Loop development, check out this [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805) post, written by Loop developer Nate Racklyeft
+
+  * If you're an Omnipod user, you may find this article interesting [Insulin Pumps, Decapped chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb
+
+  * For all Loopers, read about the early days and the many advances brought about by the greater Diabetes Community of people who are not waiting in [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/) written by Dana Lewis and check out her website [DIYPS](https://diyps.org)
+
+The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.
 
 ## Information for Coders
 
-[Loop](https://github.com/LoopKit/Loop) is an app template for building an automated insulin delivery system. It is a stone resting on the boulders of work done by many others.  
+[Loop](https://github.com/LoopKit/Loop) is an app template for building an automated insulin delivery system. It is a stone resting on the boulders of work done by many others.
+
 The app is built on top of [LoopKit](https://github.com/LoopKit/LoopKit). LoopKit is a set of frameworks that provide data storage, retrieval, and calculation, as well as boilerplate view controllers used in Loop. Using the open-source Loop app template, you can build an insulin delivery system that uses specific commercial and open-source hardware and software technologies to bring together the insulin pump, continuous glucose monitor (CGM), and insulin dosing algorithm to create a continuous insulin basal dosing “Loop”.  
 
-For more information on how to contribute to an open-source project, this [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/) guide may be useful. Also, please review the Loop [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md) and Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md).
+For more information on how to contribute to an open-source project, please review:
+
+  * [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+  * Review the Loop [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md)
+  * Review the Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md)
+
+Then if you want to contribute, please join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels. Meet the developers and testers who make this app the life-changing tool that so many people use. Learn about what is coming next.
