@@ -45,10 +45,10 @@ nav:
     - 'Loop Displays': 'operation/loop-settings/displays.md'
     - 'RileyLink menu': 'operation/loop-settings/rileylink.md'
 - Operate:
+    - 'Meal Entries': 'operation/features/carbs.md'
+    - 'Bolus': 'operation/features/bolus.md'
+    - 'Overrides': 'operation/features/workout.md'
     - How to Use Loop App:
-        - 'Carb Entries': 'operation/features/carbs.md'
-        - 'Bolus': 'operation/features/bolus.md'
-        - 'Overrides': 'operation/features/workout.md'
         - 'Pre-meal target': 'operation/features/premeal.md'
         - 'Health app': 'operation/features/healthapp.md'
         - 'Using ICE info': 'operation/features/ice.md'

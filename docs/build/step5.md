@@ -38,7 +38,6 @@ There used to be just one option. Now there are more, so you have to make a deci
 
 !!! info "Radio-links"
     - One thing that might affect your choice is where you live and whether you want to charge it or change batteries
-        - These devices are sold at cost
         - If you are in the US, shipping for RileyLink and OrangeLink is less expensive
         - The EmaLink ships from Europe
         - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the getrileylink (non-profit) organization for all the radio-links listed below

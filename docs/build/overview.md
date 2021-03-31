@@ -12,7 +12,7 @@ To orient yourself, consider clicking through the Build Steps from Step 1 throug
 
 And - yes, Step 7 is no longer required but we did not want to renumber the steps.
 
-Once you've completed this quick introduction to how to build the Loop app, then return and read the pages completely for Steps 1 through 14 and then continue on to skim Oh dear! Build errors? The most important take-away from that page is to realize that most of the mistakes have already been made and there are correction steps to follow to get your build back on track. If that doesn't help, there are [mentors](../index.md#stay-in-the-loop) ready and willing to assist.
+Once you've completed this quick introduction to how to build the Loop app, then return and read the pages completely for Steps 1 through 14. It's good idea to skim Oh dear! Build errors? at this point. The most important take-away from that page is to realize that most of the mistakes have already been made and there are correction steps to follow to get your build back on track. If that doesn't help, there are [mentors](../index.md#stay-in-the-loop) ready and willing to assist.
 
 There are a couple of FAQs pages that you might want to review before you continue - especially if you prefer videos over written steps.
 

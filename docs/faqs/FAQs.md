@@ -14,7 +14,7 @@ Loop has both hardware and software requirements. In general, to use Loop you ne
 
 - Compatible insulin pump: [Medtronic or Omnipod](../build/step3.md)
 - [Compatible CGM](../build/step4.md)
-- [RileyLink](../build/step5.md)
+- [Radio-link](../build/step5.md)
 - [Compatible iPhone/iPod Touch](../build/step2.md)
 - [Apple computer running Mojave macOS 10.14.3 or later](../build/step1.md)
 - [Xcode (a free Apple application)](../build/step8.md)
@@ -55,7 +55,7 @@ If you'd rather break it up into several shorter bits of effort, the [`Build App
 
 Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
 
-The [RileyLink kit](https://getrileylink.org/) costs $150. This is a one-time cost and many people still have their original RileyLinks from nearly 3 years ago running just fine. I highly recommend purchasing two RileyLinks when financially feasible, to have one as a backup in case of accidental damage.
+There are several options for the radio-links at this time.  They typically cost around $150. This is a one-time cost and the radio-links should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one radio-link and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer radio-links have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) offering to sell their RileyLink for a reduced cost.
 
 The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days. That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.
 
