@@ -515,10 +515,29 @@
 <h2 id="automatic-bolus-ab-branch">Automatic-Bolus (AB) Branch<a class="headerlink" href="#automatic-bolus-ab-branch" title="Permanent link">⌁</a></h2>
 <p>Loopers who are using AB still typically prebolus and/or  bolus for meals. The amount of <code>Recommended</code> insulin that will appear in the Meal Bolus screen will be the full amount of the bolus (not 40%). As discussed above, you can accept this recommendation or enter a different amount, however, and this is <strong>very important</strong>, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping <code>Deliver</code> or tapping <code>Save Without Bolusing</code>, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of recommended bolus at each successive Loop interval.</p>
 <h2 id="dynamic-carb-absorption">Dynamic Carb Absorption<a class="headerlink" href="#dynamic-carb-absorption" title="Permanent link">⌁</a></h2>
-<p>As Loop observes the BG impacts of the meal, Loop adjust the effective meal absorption time or the number of carbs to be absorbed, as well as adjust insulin delivery.</p>
-<p>You can watch the progression of the Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (ICE) on the Carbohydrates screen to see the same-day history of the meals that you have recorded.</p>
+<p>Loop observes the blood glucose impact of the meal within the 150% absorption time window. Loop calculates how many carbs have been absorbed (regardless of how many you entered) based on your BG pattern and your settings. You can watch the progression of the Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (ICE) on the Carbohydrates screen. An example of the screen is on the left side of the figure below. An explanation of the dual lines for each entry and the color coding scheme is explained below the figure.<br/><br/></p>
 <p align="center"><img alt="Edit a carb entry" src="../img/edit-carb-entry.svg" width="900" /></p>
-<p>The information available on the Carbohydrates screen disappears for any meals not still active at midnight, so if you're looking for details as to how a particular meal absorbed, you need to screenshot or otherwise capture this information before midnight. Previous entries can be modified or deleted through this screen. To adjust an entry, simply tap on it (you don't need to tap the <code>Edit Carb Entry</code> at the top of the screen). You can change a prebolus time, add/subtract carb entries, or adjust absorption times (even mid-meal). To delete an entry, you first tap <code>Edit Carb Entry</code> and tap on the red circle to the left of the entry that you would like to delete. It is a little counterintuitive, but the <code>Edit Carb Entry</code> button let's you delete, but not edit an entry.</p>
+<ul>
+<li>Top line of each entry<ul>
+<li>Amount you entered, time of entry, absorption time entered</li>
+</ul>
+</li>
+<li>Bottom line of each entry (changes with each CGM reading)<ul>
+<li>Amount absorbed, estimated time when amount you entered will be absorbed</li>
+<li>Color codes while within the 150% absorption time window<ul>
+<li>Green: amount absorbed is less than 10% above the entered amount</li>
+<li>Yellow: amount absorbed exceeds 10% above the entered amount</li>
+</ul>
+</li>
+<li>Color codes after 150% absorption time window expires<ul>
+<li>Grey: amount absorbed is within 10% of the entered amount</li>
+<li>Yellow: amount absorbed is exceeds 10% above or below the entered amount</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The information available on the Carbohydrates screen disappears for any meals not still active at midnight, so if you're looking for details as to how a particular meal absorbed, you need to screenshot or otherwise capture this information before midnight. Previous entries can be modified or deleted through this screen. To adjust an entry, simply tap on it (you don't need to tap the <code>Edit Carb Entry</code> at the top of the screen). You can change a prebolus time, modify carb amounts, or adjust absorption times (even mid-meal). To delete an entry, you first tap <code>Edit Carb Entry</code> and tap on the red circle to the left of the entry that you would like to delete. It is a little counterintuitive, but the <code>Edit Carb Entry</code> button lets you delete, but not edit an entry.</p>
 <h2 id="edit-meals">Edit Meals<a class="headerlink" href="#edit-meals" title="Permanent link">⌁</a></h2>
 <p>Adjusting a meal entry can be a particularly useful tool when:</p>
 <ul>
@@ -534,9 +553,12 @@
 <p>If you have accidentally made duplicate entries for the same meal, click on the Active Carbohydrates chart in the main Loop screen and tap <code>Edit Carb Entry</code> to delete the redundant entries. Deleting the meal entry will not impact the insulin that has already been delivered, but it will alert Loop to adjust your BG projection for purposes of calculating future insulin delivery.</p>
 </div>
 <h2 id="third-party-apps">Third Party Apps<a class="headerlink" href="#third-party-apps" title="Permanent link">⌁</a></h2>
-<p>If you use a 3rd party app, such as My Fitness Pal, to enter and track carbs and that app also stores the carb values in Apple Health, Loop will read those values from Apple Health and use them in calculating temp basal rates. Entries from 3rd party apps cannot be removed from within Loop. You will have to edit them in the third party app, or from the Health app. Because of this potential for confusion, it is recommended to turn off Loop's ability to read other apps' carbohydrate data from with the Health app. You are asked if you want to enable this when Loop is first installed. After installation, you can also go to the Settings App -&gt; Privacy -&gt; Health -&gt; Loop and scroll down to the Allow Loop to Read Data section to turn off <code>Carbohydrates</code>.</p>
+<p>If you use a 3rd party app, such as My Fitness Pal, to enter and track carbs and that app also stores the carb values in Apple Health, Loop will read those values from Apple Health and use them in calculating temp basal rates. Entries from 3rd party apps cannot be removed from within Loop. You will have to edit them in the third party app, or from the Health app.</p>
+<p>You have two choices - do not allow 3rd party apps to write to Apple Health or turn off Loop Permission to read carbohydrate entries from Apple Health.  This second option works, if that 3rd party app is important to you.  </p>
+<p>This probably messes up the entries to Tidepool.  Doing a test now.</p>
+<p>Because of this potential for confusion, it is recommended to turn off Loop's ability to read other apps' carbohydrate data from with the Health app. You are asked if you want to enable this when Loop is first installed. After installation, you can also go to the Settings App -&gt; Privacy -&gt; Health -&gt; Loop and scroll down to the Allow Loop to Read Data section to turn off <code>Carbohydrates</code>.</p>
 <h2 id="carb-absorption-model">Carb Absorption Model<a class="headerlink" href="#carb-absorption-model" title="Permanent link">⌁</a></h2>
-<p>More information about the way Loop models the <a href="../../algorithm/prediction/#carbohydrate-effect">Carbohydrate Effect</a> can be found the algorithm page.</p></div>
+<p>More information about the way Loop models effects of carbs, insulin etc is on the <a href="../../algorithm/prediction/">algorithm page</a>.</p></div>
             </div>
         </div>
 
