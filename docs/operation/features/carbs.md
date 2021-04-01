@@ -5,7 +5,7 @@
 
 To start a new meal entry, tap on the green meal icon in the toolbar at the bottom left of the status screen. Your Loop app will open to Add Carb Entry screen, but you should think of this as a meal entry. Many Loopers increase the carbohydrate grams amount to cover the expected effect of protein and adjust the expected absorption time for fat. For simplicity, the rest of this page just refers to carbs because all the figures show carbs or carbohydrates in the menus.  
 
-Below are step by step instructions on how to record meals in Loop, but first, here are a few methods that you cannot use: you cannot use your Medtronic pump bolus wizard, you cannot use your Medtronic pump carb entry screen, and you cannot use Nightscout careportal. Carb entries from those sources are not read by Loop.
+Below are step by step instructions on how to record meals in Loop, but first, here are a few methods that you cannot use: you cannot use your pump's bolus wizard, you cannot use your pump's carb entry screen, and you cannot use Nightscout's careportal.
 
 ![Add a carb entry](img/add-carb-entry.svg){width="900"}
 {align="center"}
@@ -20,9 +20,9 @@ Next, you'll want to select your Food Type. This is not required - you can just 
 
 The next step is to set your `Absorption Time`. You can accept the default absorption times of 2, 3 or 4 hours OR you can enter any time that you'd like up to 8 hours. Loop will initially estimate your absorption time at 150% of the time that you enter.  As a result, carbs entered using the taco icon will initially be treated as 4.5 hour absorption.  As Loop observes the BG impacts of the meal, Loop will shorten the meal's absorption time or increase the number of carbs to be absorbed, as well as adjust insulin delivery.  
 
-You do not have to enter all carbs for a meal at the same absorption or eating time.  If you want to enter some of the meal carbs as faster and some as slower, you can log the meal over several individual entries.  For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may want to do record some carbs as lollipop and some as pizza. Another example would be steak and potatoes, you may want to record the potatoes with a current start time and taco absorption and the steak with a start time of 1-2 hours into the future and a 5 hour absorption time.
+You do not have to enter all carbs for a meal at the same absorption or eating time.  If you want to enter some of the meal's carbs as faster and some as slower, you can log the meal over several individual entries.  For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may want to do record some carbs as lollipop and some as pizza. Another example would be steak and potatoes, you may want to record the potatoes with a current start time and taco absorption and the steak with a start time of 1-2 hours into the future and a 5 hour absorption time.
 
-When you are done recording a given food entry, press `Continue` and the Meal Bolus tool will open. This tool initially shows the predicted BG if you consume those carbs with no bolus given. Note that the carbs are not yet saved - this tool allows you to observe what the predicted BG would be for different bolus amounts.  As you change the bolus, you can observe modifications to that prediction.
+When you are done recording a given food entry, press `Continue` and the Meal Bolus tool will open.  
 
 ![Record a meal bolus](img/meal-bolus.svg){width="900"}
 {align="center"}
@@ -36,7 +36,7 @@ If your BG is below your correction range, Loop's Recommended bolus will have a 
 
 ## Automatic-Bolus (AB) Branch
 
-Loopers who are using AB still typically prebolus and/or  bolus for meals. The amount of `Recommended` insulin that will appear in the Meal Bolus screen will be the full amount of the bolus (not 40%).  As discussed above, you can accept this recommendation or enter a different amount, however, and this is **very important**, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping `Deliver` or tapping `Save Without Bolusing`, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of recommended insulin at each successive Loop interval.
+Loopers who are using AB still typically prebolus and/or  bolus for meals. The amount of `Recommended` insulin that will appear in the Meal Bolus screen will be the full amount of the bolus (not 40%).  As discussed above, you can accept this recommendation or enter a different amount, however, and this is **very important**, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping `Deliver` or tapping `Save Without Bolusing`, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of recommended bolus at each successive Loop interval.
 
 ## Edit Meals
 
@@ -66,4 +66,4 @@ If you use a 3rd party app, such as My Fitness Pal, to enter and track carbs and
 
 ## Carb Absorption Model
 
-More information about the way Loop models the Carbohydrate Effect will be found on the algorithm page when it is updated (later).
+More information about the way Loop models the [Carbohydrate Effect](../algorithm/prediction.md#carbohydrate-effect) can be found the algorithm page.
