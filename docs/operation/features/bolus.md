@@ -23,14 +23,15 @@ Loop reassesses your insulin needs every time a new BG reading is detected, typi
     * Each automatic bolus is subject to your Delivery Limits
 
 
-## Starting Bolus Notification
+## Bolus Status Line
 
-When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop is sending a bolus command to the pump. The "starting bolus" indicator is shown in the figure below.
-
-![Bolus status indicator](img/bolus-start-progress-cancel.svg){width="900"}
+![Bolus start and progress status indicator](img/bolus-status-line-start-progress.svg){width="900"}
 {align="center"}
 
-Once the bolus begins, the bolused xx of yy with the circle display begins. If you change your mind, just click on the bolus status line to cancel your bolus.  If you see a 'pump is suspended notice' in the bolus status line after cancelling your bolus, just tap on it to resume pump operations.
+When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop is sending a bolus command to the pump. The "starting bolus" indicator is shown in the left screenshot above. Once the bolus begins, the bolused xx of yy with the circle display begins, as shown in the right screenshot above. If you change your mind, just click on the bolus status line while the bolus is in progress to cancel your bolus, as shown in the screenshot below.  If you see a 'pump is suspended notice' in the bolus status line after cancelling your bolus, just tap on it to resume pump operations.
+
+![Bolus cancel status indicator](img/bolus-status-line-cancel.svg){width="300"}
+{align="center"}
 
 
 ## Bolus Failure Notifications
