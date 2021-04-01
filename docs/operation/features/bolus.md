@@ -1,6 +1,6 @@
 # Bolus
 
-![img/toolbar.png](img/toolbar-bolus.svg){width="300"}
+![Loop toolbar](img/toolbar-bolus.svg){width="300"}
 {align="center"}
 
 Bolus entries can be made manually through the bolus tool (double orange triangles) in the toolbar, either as part of a meal bolus or as a correction for a high BG.
@@ -8,9 +8,6 @@ Bolus entries can be made manually through the bolus tool (double orange triangl
 ## Meal Bolus
 
 [Click here for Meal Entry](carbs.md)
-
-![img/below-min.svg](img/below-min.svg){width="300"}
-{align="center"}
 
 ## Correction Bolus
 
@@ -22,18 +19,19 @@ Loop reassesses your insulin needs every time a new BG reading is detected, typi
     <br/><br/>
 
 * If you are using the automatic-bolus branch with `Dosing Strategy` set to `Automatic Bolus`
-    * Loop will automatically deliver 40% of the correction bolus with each successive prediction
+    * Loop will automatically deliver 40% of the correction bolus at each successive loop interval
     * Each automatic bolus is subject to your Delivery Limits
 
 
 ## Starting Bolus Notification
 
-When the phone is head in portrait mode, a new status line will appear below the Heads Up Display when Loop is sending a bolus command to the pump. The "starting bolus" indicator is shown in the figure below.
+When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop is sending a bolus command to the pump. The "starting bolus" indicator is shown in the figure below.
 
-![img/starting_bolus.png](img/starting_bolus.png){width="300"}
+![Bolus status indicator](img/bolus-start-progress-cancel.svg){width="900"}
 {align="center"}
 
-Once the bolus begins, the bolused xx of yy with the circle display begins.  ADD a graphic here.
+Once the bolus begins, the bolused xx of yy with the circle display begins. If you change your mind, just click on the bolus status line to cancel your bolus.  If you see a 'pump is suspended notice' in the bolus status line after cancelling your bolus, just tap on it to resume pump operations.
+
 
 ## Bolus Failure Notifications
 
