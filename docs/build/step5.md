@@ -40,7 +40,7 @@ There used to be just one option. Now there are more, so you have to make a deci
     - Must order either Omnipod or Medtronic version
 - OrangeLink
     - Designed by Vic Wu, available from [getrileylink](https://getrileylink.org)
-    - Uses 2 AAA batteries, weeks of use typical (depends on batteries)
+    - Uses 2 AAA batteries, weeks or more of use typical (depends on batteries)
     - Works with either Omnipod or Medtronic
     - Uses new chipsets, reported to have longer range
     - Matches Apple Airpod form factor, so can use airpod cases
@@ -84,7 +84,15 @@ The range at which radio-links will function is dependent on the environment tha
 
 What influences this distance? The biggest influences are (1) body-blocking and (2) "noisy" environments. The human body is a lot of water, and water is an excellent blocker of wireless communication. So, sleeping on a pod and smothering it entirely with your body will possibly decrease the ability of radio-link to communicate with the pod. Environments with a high concentration of wireless signals can also interfere with radio-link communications and make closer proximity a benefit. Where might those kinds of situations happen? Concerts, conferences, and sporting arenas are pretty prone to interference.
 
-Many people keep their radio-link in a pocket, purse or carry a belt holster during the day on the same side of their body as their pump. The practical range can vary from type to type and among individual units. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test. Figure out what works for your devices.
+Many people keep their radio-link on the same side of their body as their pump during the day. They use a pocket, carabiner, lanyard, SPIbelt - the options are endless. What you don't want to do is put the radio-link in a blocking bag that has RFID blocking (some travel fanny packs have that).  
+
+The practical range can vary from type to type and among individual units. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test. Figure out what works for your devices.
+
+Suggested communication signal to send
+
+* For Omnipod, send Read Pod Status
+* For Medtronic, send Button Press
+
 
 ## Waiting for your Radio-Link
 
