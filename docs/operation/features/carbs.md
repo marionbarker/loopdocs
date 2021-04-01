@@ -45,7 +45,7 @@ You can watch the progression of the Loop's observations of your meal by tapping
 ![Edit a carb entry](img/edit-carb-entry.svg){width="900"}
 {align="center"}
 
-The information available on the Carbohydrates screen disappears for any meals not still active at midnight, so if you're looking for details as to how a particular meal absorbed, you need to screenshot or otherwise capture this information before midnight. Previous entries can be modified or deleted through this screen. To adjust an entry, simply tap on it (you don't need to tap the `Edit Carb Entry` at the top of the screen). You can change a prebolus time, add/subtract carb entries, or adjust absorption times (even mid-meal). To delete an entry, you first tap `Edit Carb Entry` and tap on the red circle to the left of the entry that you would like to delete. It is a little counterintuitive, but the `Edit Carb Entry` button lets you delete, but not edit an entry. Adjusting a meal entry can be a particularly useful tool when:
+The information available on the Carbohydrates screen disappears for any meals not still active at midnight, so if you're looking for details as to how a particular meal absorbed, you need to screenshot or otherwise capture this information before midnight. Previous entries can be modified or deleted through this screen. To adjust an entry, simply tap on it (you don't need to tap the `Edit Carb Entry` at the top of the screen). You can change a prebolus time, add/subtract carb entries, or adjust absorption times (even mid-meal). To delete an entry, you first tap `Edit Carb Entry` and tap on the red circle to the left of the entry that you would like to delete. It is a little counterintuitive, but the `Edit Carb Entry` button let's you delete, but not edit an entry. Adjusting a meal entry can be a particularly useful tool when:
 
 * You did not finish an entire meal that you bolused for,
 * You did not get to eat the meal at the time you originally expected,
@@ -62,8 +62,8 @@ The information available on the Carbohydrates screen disappears for any meals n
 
 ## Third Party Apps
 
-If you use a 3rd party app, such as My Fitness Pal, to enter and track carbs and that app also stores the carb values in Apple Health, Loop will read those values from Apple Health and use them in calculating temp basal rates. Entries from 3rd party apps cannot be removed from within Loop.  You will have to edit them in the third party app, or from the Health app. Because of this potential for confusion and possible over-dosing of insulin, it is recommended you turn off the ability for any app, other than Loop to write carbohydrate data to the Health app. You are asked if you want to enable this when Loop is first installed. After installation, you can also go to the Settings App -> Privacy -> Health -> Loop and scroll down to the Allow Loop to Read Data section to turn off `Carbohydrates`.
+If you use a 3rd party app, such as My Fitness Pal, to enter and track carbs and that app also stores the carb values in Apple Health, Loop will read those values from Apple Health and use them in calculating temp basal rates. Entries from 3rd party apps cannot be removed from within Loop.  You will have to edit them in the third party app, or from the Health app. Because of this potential for confusion, it is recommended to turn off Loop's ability to read other apps' carbohydrate data from with the Health app. You are asked if you want to enable this when Loop is first installed. After installation, you can also go to the Settings App -> Privacy -> Health -> Loop and scroll down to the Allow Loop to Read Data section to turn off `Carbohydrates`.
 
 ## Carb Absorption Model
 
-More information about the way Loop models the Carbohydrate Effect will be found on the algorithm page when it is updated.
+More information about the way Loop models the Carbohydrate Effect will be found on the algorithm page when it is updated (later).
