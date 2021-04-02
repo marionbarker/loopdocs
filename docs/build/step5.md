@@ -28,7 +28,7 @@ The radio-link is an open-source hardware device that can bridge Bluetooth Low E
 
 ## Radio-Link Options
 
-There used to be just one option. Now there are more, so you have to make a decision. Depending on your choice, be sure to have the correct charging cable or batteries handy and add spare sets to your diabetes go-bag.
+There used to be just one option. Now there are more, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare sets to your diabetes go-bag.
 
 - One thing that might affect your choice is where you live and whether you want to charge it or change batteries
     - If you are in the US, shipping for RileyLink and OrangeLink is less expensive
@@ -84,13 +84,19 @@ What influences this distance? The biggest influences are (1) body-blocking and 
 
 Many people keep their radio-link on the same side of their body as their pump during the day. They use a pocket, carabiner, lanyard, SPIbelt - the options are endless. What you don't want to do is put the radio-link in a blocking bag that has RFID blocking (some travel fanny packs have that).  
 
-The practical range can vary from type to type and among individual units. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test. Figure out what works for your devices.
+The practical range can vary from type to type and among individual units. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test.  Figure out what works for your devices.
 
 Suggested communication signal to send
 
-* For Omnipod, send Read Pod Status
-* For Medtronic, send Button Press
+**Medtronic** send Button Press
 
+**Omnipod** send Read Pod Status
+
+* If you have a newer version of Loop, the report from Read Pod status has the Received Signal Strength Indicator (RSSI) between the radio-link and the Pod
+* The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod from the radio-link
+* This information complements the BT signal strength reported in the device menu
+
+If you want to be analytic about your range test, you can make a table of distance, Bluetooth strength and, if available, RSSI.
 
 ## Waiting for your Radio-Link
 
@@ -121,7 +127,7 @@ Make sure the LiPo battery is well-plugged into the connection. Line up the litt
 ![RileyLink showing Bad and Good battery insertion](img/battery-cables.jpg){width="400"}
 {align="center"}
 
-Loose battery cable on left, Proper battery cable on right
+Loose battery cable on left. Proper battery cable on right
 
 Finally, the board and the battery fit into the slim case fairly tightly as well. Click on the image below to watch a helpful [assembly video](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be).
 
@@ -135,7 +141,7 @@ The RileyLink has several lights that you may notice from time to time. There is
 
 * Green light: Bluetooth connection light. The green light will remain on while you have a BT connection with your iPhone. If that green light fails to stay on, you should troubleshoot your BT connections. Try restarting BT on your iPhone and/or turning the RileyLink off/on by its power switch.
 
-* Blue light: Pump communications. If you have an older firmware on your RileyLink, some of the blue lights will flash periodically as it communicates with the pump. It's just letting you know that it is busy talking and collecting info. You will also see increased blue flashes if you have "Enabled Diagnostic LEDs" for MDT users that have the RileyLinks with updated firmware (shipping since late August 2018).
+* Blue light: Pump communications. If you have an older firmware on your RileyLink, some of the blue lights will flash periodically as it communicates with the pump. It's just letting you know that it is busy talking and collecting info. You will also see increased blue flashes if you have "Enabled Diagnostic LEDs" for Medtronic users that have the RileyLinks with updated firmware (shipping since late August 2018).
 
 A solid blue light that consistently remains lit on the board could mean one of two things:
 
