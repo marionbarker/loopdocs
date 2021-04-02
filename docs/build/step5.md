@@ -11,7 +11,7 @@
 !!! warning "FAQs"
     - **RileyLink vs radio-link**: The RileyLink is the original design. It was the first and only radio-link for many years. Other DIY Loopers have created new versions, see [Radio-Link Options](step5.md#radio-link-options). You may see RileyLink in a lot of graphics and older documentation pages. The term radio-link is generic, whereas RileyLink, OrangeLink and EmaLink are specific to those versions.
     - **"Do I need a radio-link?"** Yes. DIY Loop will not work without a radio-link.
-    - **"What happens if I lose my radio-link or walk away from it?"** Within half hour, your pump returns to normal scheduled basal rate
+    - **"What happens if I lose my radio-link or walk away from it?"** Within a half hour, your pump returns to normal scheduled basal rate
     - **"Can I swap out radio-links at any time?"** Yes, you can. You do not need to start a new pod or rebuild Loop app. There's a place in Loop settings where you find your new device and turn "on" the Bluetooth connection within Loop to start using it. You can swap between RileyLink, OrangeLink, EmaLink or some future radio-link option.
     - **"How close does the radio-link need to be to me? Do I have to carry it with me?"** See [Radio-Link Range](step5.md#radio-link-range).
 
@@ -62,13 +62,13 @@ All the radio-links communicate with the pump through radio frequency communicat
 
 **Medtronic Only** When your radio-link and pump first connect, Loop performs a series of tests that you won't see...they are tuning tests. Basically, Loop sends little test messages via the radio-link to the pump and waits for a response. Loop tries this same "ping" to the pump over a range of frequencies based on the pump you've told Loop to expect (Medtronic NA/CA, or Medtronic WW). The Loop app will then use the radio frequency with the strongest response for future pump communications.
 
-**For long-time MMT Loopers who remember hitting the tune button:** Usually this best frequency is constant for any given Medtronic pump + radio-link, but may drift with time or temperature changes. The tuning mentioned above is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles). You no longer need to hit the tune button in the menu.
+**For long-time Medtronic Loopers who remember hitting the tune button:** Usually this best frequency is constant for any given Medtronic pump + radio-link, but may drift with time or temperature changes. The tuning mentioned above is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles). You no longer need to hit the tune button in the menu.
 
 !!! info "Bluetooth (BT) Troubleshooting"
 
     If your iPhone has BT issues, your Loop will have failures. There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop. If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.
 
-Your BT signal strength can be seen in the Loop settings, Pump settings, device menu, on the `Signal Strength` line. As you move closer and further away from your phone, you can watch that number dynamically change. This line is **not** displaying the signal strength of your pump RF communications, just BT between the radio-link and the phone.
+Your BT signal strength can be seen in the Loop settings, Pump settings, Device menu, on the `Signal Strength` line. As you move closer and further away from your phone, you can watch that number dynamically change. This line is **not** displaying the signal strength of your pump RF communications, just BT between the radio-link and the phone.
 
 You will notice the Signal Strength is a negative number and in units of dB. Remember that number line from elementary school?  A signal strength of -50&nbsp;dB is a stronger signal than  -80&nbsp;dB.<br/><br/>
 
@@ -102,13 +102,13 @@ If you want to be analytic about your range test, you can make a table of distan
 
 While you are waiting for the radio-link to arrive, you can proceed with finishing these build directions all the way through Step 14. After that you'll have to wait for the radio-link. You can't properly enter any settings or pump info in the Loop app without it.
 
-The population of DIY loopers (Loop and Android APS) has grown enough that you might be able to find someone local to loan your their spare.
+The population of DIY loopers (Loop and Android APS) has grown enough that you might be able to find someone local to loan you their spare.
 
 ## Next Step: Enroll in Apple Developer Program
 
 Now you are ready to move onto Step 6 to [enroll in the Apple Developer Program](step6.md).
 
-If you purchased a RileyLink, keep reading, then move on to Step 6 - or come back here when your RileyLink arrives.
+If you want more information about RileyLink, keep reading, then move on to Step 6.
 
 ## RileyLink Extra Details
 

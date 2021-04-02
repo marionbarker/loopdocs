@@ -44,7 +44,7 @@ In Loop settings, tap on your pump, find your device (RileyLink or other) and ta
 ![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
 
-With RileyLink, the firmware displayed should match or be a higher version number than what is shown in the figure below, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number.) Check it when the radio-link is working well and make a note of what it says. If you're having Red Loops, you might want to check firmware and connected state. Make sure, after power cycling your radio-link, that the correct firmware is displayed. If several power cycles do not help, contact the manufacturer for assistance.
+With RileyLink, the firmware displayed should match or be a higher version number than what is shown in the figure above, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number.) Check it when the radio-link is working well and make a note of what it says. If you're having Red Loops, you might want to check firmware and connected state. Make sure, after power cycling your radio-link, that the correct firmware is displayed. If several power cycles do not help, contact the manufacturer for assistance.
 
 
 ## RileyLink Questions
@@ -71,7 +71,7 @@ Yes, the antenna swap is not a hard swap if you have basic soldering skills and 
 
 Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to a decreased range and frequent communication drops between Loop and the pods. Be very sure that the wire on the antenna does NOT poke out the back side of the printed-circuit board where it could rub against and possibly puncture the battery casing.
 
-One user found the antenna no longer securely soldered after a year of use (and perhaps being dropped).  The solder should be shiny and the antenna base should be firmly attached to the board.
+After a year of use (and a year of being dropped), the antenna may no longer securely soldered. The solder should be shiny and the antenna base should be firmly attached to the board.
 
 ### How long will my RileyLink go between charging?
 
@@ -85,4 +85,4 @@ You can't. There is no charge level indicator. Just charge it nightly, and you w
 
 Eventually, Lithium-ion Polymer (LiPo) batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. Many people report using their battery for more than 2 years without issue.
 
-Be aware that if a battery is failing, it may swell. If you notice that the RileyLink battery is swollen, replace it immediately and recycle it properly.
+Be aware that if a battery is failing, it may swell. If you notice that the RileyLink battery is swollen, remove the swollen battery from your home and place in a fire-safe area and recycle it properly.  Either order a new battery or pull out your spare.
