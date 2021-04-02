@@ -97,18 +97,19 @@ This will get rendered to this:
 <p align="center">
     <img alt="Eros" src="../img/eros.png" width="750" />
 </p>
+```
 
 A note about images in tables. Use html on the first line that indicates the table.
-For example, in displays.md there are many icons with descriptions to the right.
+For example, in displays.md there are many icons with descriptions to the right. This format provides appropriate views on both desktop and mobile.
+
 For no header row, replace `|||` with:
 
 ```markdown
 | <div style="width:72px"></div> ||
 |---|---|
-|![img](img/name)|text with description|
+|![icon alt-text ](img/icon)|text with description|
 ```
 
-This format provides appropriate views on both desktop and mobile.
 To add header row, use:
 ```markdown
 | <div style="width:72px">Column 1</div> | Column 2 |
