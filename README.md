@@ -101,17 +101,15 @@ This will get rendered to this:
 A note about images in tables. Use html on the first line that indicates the table.
 For example, in displays.md there are many icons with descriptions to the right.
 For no header row, replace `|||`` with:
-```
-| <div style="width:72px"></div> ||
-|---|---|
-|![img](img/name)|text with description|
-```
+
+```| <div style="width:72px"></div> ||```
+```|---|---|```
+```|![img](img/name)|text with description|```
+
 
 This format provides appropriate views on both desktop and mobile.
 To add header row, use:
-```
-| <div style="width:72px">Column 1</div> | Column 2 |
-```
+``` | <div style="width:72px">Column 1</div> | Column 2 | ```
 
 ### Admonitions
 
