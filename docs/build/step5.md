@@ -33,14 +33,14 @@ There used to be just one option. Now there are more, so you have to make a deci
 - One thing that might affect your choice is where you live and whether you want to charge it or change batteries
     - If you are in the US, shipping for RileyLink and OrangeLink is less expensive
     - The EmaLink ships from Europe
-    - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the getrileylink organization for all the radio-links listed below
+    - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the GetRileyLink organization for all the radio-links listed below
 - RileyLink
-    - Designed by Pete Schwamb, available from [getrileylink](https://getrileylink.org)
+    - Designed by Pete Schwamb, available from [GetRileyLink](https://getrileylink.org)
     - Rechargable battery (max 36 hours per charge)
     - Must order either Omnipod or Medtronic version
 - OrangeLink
-    - Designed by Vic Wu, available from [getrileylink](https://getrileylink.org)
-    - Uses 2 AAA batteries, weeks or more of use typical (depends on batteries)
+    - Designed by Vic Wu, available from [GetRileyLink](https://getrileylink.org)
+    - Uses 2 AAA batteries, weeks or more of use typical (depends on batteries/pump type)
     - Works with either Omnipod or Medtronic
     - Uses new chipsets, reported to have longer range
     - Matches Apple Airpod form factor, so can use airpod cases
@@ -86,11 +86,9 @@ Many people keep their radio-link on the same side of their body as their pump d
 
 The practical range can vary from type to type and among individual units. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test.  Figure out what works for your devices.
 
-Suggested communication signal to send
+Suggested communication signal to send for **Medtronic** send Button Press
 
-**Medtronic** send Button Press
-
-**Omnipod** send Read Pod Status
+Suggested communication signal to send for **Omnipod** send Read Pod Status
 
 * If you have a newer version of Loop, the report from Read Pod status has the Received Signal Strength Indicator (RSSI) between the radio-link and the Pod
 * The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod from the radio-link

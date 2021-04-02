@@ -4,7 +4,10 @@ This is the repo that contains the source files for the [Loop Docs](https://loop
 
 ## Contributing
 
-To suggest changes, fork this repository, edit the files, and submit your changes as a pull request.
+The easy way:
+* To suggest changes, please review Issues.  Add your comment if an Issue is already open, otherwise, add a new Issue.
+
+If you want to make a fork and provide pull requests, please keep reading.
 
 ### Previewing Changes
 
@@ -47,24 +50,22 @@ $ mkdocs gh-deploy
 Links should be written like this:
 
 ```markdown
-In the same directory: [Click here for step 14](step14.md)
+In the same directory: [Click here for Step 14](step14.md)
 
-In a directory below the current page: [Click here for step 14](build/step14.md)
+In a directory below the current page: [Click here for Step 14](build/step14.md)
 
-In a directory "outside" the current directory: [Click here for step 14](../build/step14.md)
+In a directory "outside" the current directory: [Click here for Step 14](../build/step14.md)
 
 Like above, but linking directly to a heading/anchor in step14.md:
 
-[Click here for step 14](../build/step14.md#sign-four-targets)
+[Click here for Step 14](../build/step14.md#sign-four-targets)
 
 ```
 
 Notice about mkdocs: "Using absolute paths with links is not officially supported. Relative paths are adjusted by MkDocs to ensure they are always relative to the page. Absolute paths are not modified at all. This means that your links using absolute paths might work fine in your local environment but they might break once you deploy them to your production server."
 
 ```markdown
-Do NOT do this : [Click here for step 14](/build/step14.md)
-
-The link starts with a '/'. Do not do this.
+Do NOT use a link starts that with a '/': [Click here for Step 14](/build/step14.md)
 ```
 
 ### Images
@@ -77,19 +78,17 @@ Example of correct link to image is [alt-text](relative path/image-name).
 
 ```markdown
 ![iPhone](img/phones.png)
-
 ```
 
 With images it is possible to add extra attributes like 'width' and 'center'.
 
 ```markdown
-
 ![iPhone](img/phones.png){width="300"}
 
 This will get rendered to this: <img alt="iPhone" src="img/phones.png" width="300">
 
 You can also center a image, by adding '{align="center"}' on a new line
-just below the paragraph you want center:
+just below the paragraph you want to center:
 
 ![Eros](img/eros.png){width="750"}
 {align="center"}
@@ -108,11 +107,10 @@ For no header row, replace `|||`` with:
 |![img](img/name)|text with description|
 ```
 
-provides appropriate views on both desktop and mobile.
+This format provides appropriate views on both desktop and mobile.
 To add header row, use:
 ```
 | <div style="width:72px">Column 1</div> | Column 2 |
-
 ```
 
 ### Admonitions
@@ -135,23 +133,22 @@ The markdown syntax used by loopdocs is:
 
 The keyword Cascading Style Sheet (css) definitions are found in docs/stylesheets/admonitions.css.
 
-Please use the keywords in the first column, but be aware that older *.md files may use the synonym.
+This table was proposed and green and faqs were used on a few pages. But, not sure if faqs and green are acceptable markdown standard. For now, use danger and warning.  Might modify the style later.
 
 ```markdown
 | keyword  | synonym  |  example in build                   | color  |
-| green    |  danger  |  step3.md, Time Estimate            | green  |
+| danger   |  green   |  step3.md, Time Estimate            | green  |
 | info     |          |  step3.md, Summary                  | blue   |
 | faqs     |          |  step3.md, FAQs                     | orange |
 | note     |          |  step3.md, MMT pump model/firmware  | grey   |
 | warning  |          |  step3.md, Reminder and Disclaimer  | orange |
 ```
-Note that faqs and warning use the same style. However, the meaning is quite different, so moving forward please use the keyword ```faqs``` for FAQs.
 
 The 3 top boxes on many pages, but especially the Build Step series should always use
 ```
-!!! green "Time Estimate"
+!!! danger "Time Estimate"
 
 !!! info "Summary"
 
-!!! faqs "FAQs"
+!!! warning "FAQs"
 ```

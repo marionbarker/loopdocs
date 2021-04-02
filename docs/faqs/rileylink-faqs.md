@@ -83,6 +83,6 @@ You can't. There is no charge level indicator. Just charge it nightly, and you w
 
 ### How long will my RileyLink battery last?
 
-Eventually, Lithium-ion Polymer (LiPo) batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. Many people report using their battery for more than 2 years without issue.
+Eventually, Lithium-ion Polymer (LiPo) batteries will lose charging capacity. You would want to replace if you notice the battery not lasting the full day. Many people report using their battery for more than 2 years without issue.
 
 Be aware that if a battery is failing, it may swell. If you notice that the RileyLink battery is swollen, remove the swollen battery from your home and place in a fire-safe area and recycle it properly.  Either order a new battery or pull out your spare.
