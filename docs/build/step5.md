@@ -10,9 +10,9 @@
 
 !!! warning "FAQs"
     - **RileyLink vs radio-link**: The RileyLink is the original design. It was the first and only radio-link for many years. Other DIY Loopers have created new versions, see [Radio-Link Options](step5.md#radio-link-options). You may see RileyLink in a lot of graphics and older documentation pages. The term radio-link is generic, whereas RileyLink, OrangeLink and EmaLink are specific to those versions.
-    - **"Do I need a radio-link?"** Yes. Loop will not work without a radio-link.
+    - **"Do I need a radio-link?"** Yes. DIY Loop will not work without a radio-link.
     - **"What happens if I lose my radio-link or walk away from it?"** Within half hour, your pump returns to normal scheduled basal rate
-    - **"Can I swap out radio-links at any time?"** Yes, you can. You do not need to start a new pod or rebuild Loop app. There's a place in Loop settings where you find your new device and turn "on" the Bluetooth connection within Loop to start using it. You can swap between RileyLink, OrangeLink, EmaLink or the next version of link.
+    - **"Can I swap out radio-links at any time?"** Yes, you can. You do not need to start a new pod or rebuild Loop app. There's a place in Loop settings where you find your new device and turn "on" the Bluetooth connection within Loop to start using it. You can swap between RileyLink, OrangeLink, EmaLink or some future radio-link option.
     - **"How close does the radio-link need to be to me? Do I have to carry it with me?"** See [Radio-Link Range](step5.md#radio-link-range).
 
 
@@ -28,7 +28,7 @@ The radio-link is an open-source hardware device that can bridge Bluetooth Low E
 
 ## Radio-Link Options
 
-There used to be just one option. Now there are more, so you have to make a decision.
+There used to be just one option. Now there are more, so you have to make a decision. Depending on your choice, be sure to have the correct charging cable or batteries handy and add spare sets to your diabetes go-bag.
 
 - One thing that might affect your choice is where you live and whether you want to charge it or change batteries
     - If you are in the US, shipping for RileyLink and OrangeLink is less expensive
@@ -51,11 +51,9 @@ There used to be just one option. Now there are more, so you have to make a deci
         - Standard: 6 to 7 days
         - Maxx: 12 to 14 days
     - Must order either Omnipod or Medtronic version
-    - See [EmaLink Information](https://github.com/sks01/EmaLink#emalink)
-        - This link has several photos with all radio-links, pod and Medtronic in same frame
-    - This design is from Europe, available by sending a private message via github to Sorin (sks01)
-    - Robert Holbrook has made it easier for US buyers with this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
-        - For US buyers, sometimes a group-buy is organized on Facebook to minimize shipping costs
+    - This [EmaLink Information](https://github.com/sks01/EmaLink#emalink) includes photos of various EmaLink configurations as well as photos showing relative sizes of EmaLink, OrangeLink and RileyLink
+    - This device ships from Europe, and is available by sending a private message via github to Sorin (sks01) or you can use this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
+    - Sometimes, a group-buy is organized on Facebook to minimize shipping costs
 
 
 ## Radio-Link Communications
@@ -106,19 +104,19 @@ Now you are ready to move onto Step 6 to [enroll in the Apple Developer Program]
 
 If you purchased a RileyLink, keep reading, then move on to Step 6 - or come back here when your RileyLink arrives.
 
-## RileyLink Specific Section
+## RileyLink Extra Details
 
-Since the RileyLink has been around the longest, some additional information about the RileyLink has been added to this page throughout the years. The other radio-links should have information from the manufacturer, so go to those documents or links instead.
+Since the RileyLink has been around the longest, some additional information about the RileyLink has been added to this page throughout the years. The rest of this page is specific just to the RileyLink.
 
-### Assemble RileyLink
+### RileyLink Assembly
 
-Your RileyLink will come with the battery disconnected and the parts not already inside the case. It will be up to you to put the RileyLink in the case and attach the battery.
+Your RileyLink will come with the Lithium-ion Polymer (LiPo) battery disconnected and the parts not already inside the case. It will be up to you to put the RileyLink in the case and attach the battery.
 
-Make sure the lipo battery is well-plugged into the connection. Line up the little ridge appropriately, and push fairly firmly to get the connection tight. Poor battery cable connection can make the Loop communications fail. See photos below, for example.
+Make sure the LiPo battery is well-plugged into the connection. Line up the little ridge appropriately, and push fairly firmly to get the connection tight. Poor battery cable connection can make the Loop communications fail. See photos below, for example.
 
 !!! warning "Common new user errors"
 
-    The most common two errors for new RileyLink owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RileyLink. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos shown below. Remember to charge your RileyLink each night.
+    The most common two errors for new RileyLink owners are (1) not fully pushing in the LiPo battery cable connection and (2) failing to charge the RileyLink. Compare your LiPo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos shown below. Remember to charge your RileyLink each night.
 
 ![RileyLink showing Bad and Good battery insertion](img/battery-cables.jpg){width="400"}
 {align="center"}
@@ -153,12 +151,12 @@ The battery that comes with RileyLink is not charged completely when it is shipp
 
 Since the best practice is to charge your RileyLink overnight while you sleep, and the battery lasts safely over 24 hours, there is no battery level indicator for the RileyLink. The RileyLink's charge level is not viewable on Nightscout, nor within the Loop app. If you forget to charge your RileyLink overnight, you can recharge it with a portable USB battery in a pinch. A [short mini-USB cable](https://www.adafruit.com/product/899) could be a good addition to a small gear bag.
 
-### RileyLink Lipo Battery
+### RileyLink Battery
 
-Keep your RileyLink and lipo battery protected from damage. Lipo batteries are unsafe when damaged or punctured, so the case is an important part of safe Looping. If your battery is damaged in some way, please disconnect it immediately, and dispose of it (they should be recycled). You can order new RileyLink batteries on the [GetRileyLink website](http://getrileylink.org/)
+Keep your RileyLink and its Lithium-ion Polymer (LiPo) battery protected from damage. LiPo batteries are unsafe when damaged or punctured, so the case is an important part of safe Looping. If your battery is damaged in some way, please disconnect it immediately, and dispose of it (they should be recycled). You can order new RileyLink batteries on the [GetRileyLink website](http://getrileylink.org/)
 
-### Removing RileyLink Lipo Battery
+### RileyLink Battery Removal
 
-To remove the lipo battery from the RileyLink, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle-nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
+To remove the LiPo battery from the RileyLink, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle-nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
 
 [![frame from video showing how to remove battery from RileyLink, follow link for video](img/rileylink_battery_removal.png)](https://youtu.be/s2qNPLpfwww)

@@ -4,7 +4,7 @@
 
 The radio-link is a required part of Loop. The radio-link is a little device that helps your iPhone and pump/pod speak to each other. The radio-link is a critical part of the Loop system because the pump needs communications via radio-frequency, and the iPhone needs communications via Bluetooth. The radio-link is like a translator that can speak both formats so that the pump and iPhone can loop together. The radio-link communicates information to/from your pump by radio communications, and to/from your iPhone using Bluetooth.
 
-Purchase information for radio-links is on [Build Step 5](../build/step5.md#radio-link-options)
+Purchase information for radio-links is in [Build Step 5](../build/step5.md#radio-link-options)
 
 ## Do I have to carry the radio-link everywhere?
 
@@ -44,7 +44,9 @@ In Loop settings, tap on your pump, find your device (RileyLink or other) and ta
 ![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
 
-## What are the differences between Medtronic and Omnipod Antennas?
+## RileyLink Questions
+
+### What are the differences between the RileyLink Medtronic and Omnipod Antennas?
 
 There are two types of antennas for RileyLinks; each antenna is optimized for the pump you are using. Otherwise they are identical. See [Build Step 5: Radio-Link Options](../build/step5.md#radio-link-options) for other radio-links.  The OrangeLink has both antennas included in its design and can talk to either Medtronic or Omnipod.  The EmaLink requires selection for type of pump.
 
@@ -62,11 +64,11 @@ In a pinch, if you have a RileyLink that you used with a Medtronic pump and have
 
 ### Can you swap out the old antenna on a RileyLink?
 
-Yes, the antenna swap is not a hard swap if you have basic soldering skills and tools. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/). Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to a decreased range and frequent communication drops between Loop and the pods. Be very sure that the wire on the antenna does NOT poke out the back side of the printed-circuit board where it could rub against and possibly puncture the battery casing.
+Yes, the antenna swap is not a hard swap if you have basic soldering skills and tools. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on the [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/).
+
+Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to a decreased range and frequent communication drops between Loop and the pods. Be very sure that the wire on the antenna does NOT poke out the back side of the printed-circuit board where it could rub against and possibly puncture the battery casing.
 
 One user found the antenna no longer securely soldered after a year of use (and perhaps being dropped).  The solder should be shiny and the antenna base should be firmly attached to the board.
-
-## RileyLink Specific Questions
 
 ### How long will my RileyLink go between charging?
 
@@ -80,4 +82,4 @@ You can't. There is no charge level indicator. Just charge it nightly, and you w
 
 Eventually, lithium polymer (LiPo) batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. Many people report using their battery for more than 2 years without issue.
 
-Be aware that if a battery is failing, it may swell. If you notice, the RileyLink battery is swollen, replace it immediately and recycle it properly.
+Be aware that if a battery is failing, it may swell. If you notice that the RileyLink battery is swollen, replace it immediately and recycle it properly.
