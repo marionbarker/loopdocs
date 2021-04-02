@@ -1,13 +1,17 @@
 # Bolus
 
+To start a bolus entry, tap on the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen.
+
 ![Loop toolbar](img/toolbar-bolus.svg){width="300"}
 {align="center"}
 
-Bolus entries can be made manually through the bolus tool (double orange triangles) in the toolbar, either as part of a meal bolus or as a correction for a high BG.
+The Loop app will open to the Bolus screen. This looks similar to the [Meal Bolus](carbs.md#meal-bolus) screen, but doesn't list the meal entry. If Loop predicts you need more insulin, there will be a recommended value. In this example, the current glucose is below the correction range, but the prediction is well above the range. Loop allows you to dip below the correction range but its recommended bolus will be limited by your Suspend Threshold. Check back once your BG start to rise and there will probably be a bigger recommendation.
 
-## Meal Bolus
+You can tap on the `Recommended` line and that value will be transferred to the Bolus line or tap on 0.0u on the `Bolus` row and type in your desired bolus amount. As soon as a value is entered on the `Bolus` row, the Deliver button turns blue and can be tapped to deliver that amount via your pump.
 
-[Click here for Meal Entry](carbs.md)
+![Bolus when below correction range](img/below-min.svg){width="300"}
+{align="center"}
+
 
 ## Correction Bolus
 
