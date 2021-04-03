@@ -1,6 +1,18 @@
 # Using This Site FAQs
 
-This website is a step-by-step guide on how to build your Loop app. It is totally understandable to be intimidated and worried that this will be too technical...but please realize that this is actually as simple as reading, copying a few lines and clicking a few buttons...REALLY. And these directions will tell you exactly how to do that, and in particular how to navigate this site to make that easy.
+This website is a guide on how to build, set up and use your Loop app.
+
+It is totally understandable to be intimidated and worried by the thought of building your own app, that this will be too technical. Please realize that once you have your hardware, building the app requires reading, copying a few lines and clicking a few buttons.
+
+A quick overview of LoopDocs contents is shown below. If you are new to Loop or trying to figure out if you want to Loop, please start at the Overview of LoopDocs and read sequentially.
+
+* [Overview of LoopDocs](../index.md)
+    * Introduction to Loop
+    * How to Use LoopDocs
+    * Loop Community
+* [Detailed Build Directions](../build/overview.md)]
+* After you build, [Set up App](../operation/overview.md)
+* And a lot of useful information on operating Loop including adjusting settings
 
 ## This looks so hard. I don't know if I can do it!
 
