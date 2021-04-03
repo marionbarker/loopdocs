@@ -32,9 +32,9 @@ You may be saying - I can't build an app. But the wonderful volunteers in this c
 
 Once you've built the app, plan to learn to use it in stages. First run “open loop” to familiarize yourself with Loop’s operation. This allows you to understand why Loop is making certain recommendations and determine if you need to adjust settings for Loop.
 
-One thing many new users ask is why do my settings need to be different for Loop?  The main reason is that Loop uses a realistic model of insulin activity in your body including the long tail - and updates its calculations every 5 minutes.  You might have used a linear fall-off of insulin activity and corrected once every 2 or 3 hours. You might also have traded off higher basal rate to avoid worrying about snacks.  There's a whole section on settings - just giving you a heads up.
+One thing many new users ask is why do my settings need to be different for Loop?  The main reason is that Loop uses a realistic model of insulin activity in your body including the long tail - and updates its calculations every 5 minutes.  You might have used a linear fall-off of insulin activity and corrected once every 2 or 3 hours. You might also have traded off higher basal rate to avoid worrying about snacks.  There is a whole section on settings - just giving you a heads up.
 
-When you progress to “closed-loop”, do so safely by starting with appropriate safety limits and only progress to tighter limits after several days of no lows. Please ask questions at this point about why Loop is making the recommendations it does.  It should be similar to the therapy decisions you would make yourself.  If the recommendations it makes are different than you would make, try to figure out why. Hint - it's probably your settings.
+When you progress to “closed-loop”, do so safely by starting with appropriate safety limits and only progress to tighter limits after several days of no lows. Please ask questions at this point about why Loop is making the recommendations it does.  It should be similar to the therapy decisions you would make yourself.  If the recommendations it makes are different than you would make, try to figure out why. Hint - it is probably your settings.
 
 ## How to Use These Docs
 
@@ -63,12 +63,12 @@ When you progress to “closed-loop”, do so safely by starting with appropriat
 There are a number of social media options. (Read the directions on each of these - some ask you to answer questions - please do so):
 
   * The fastest way to get help (with the most number of mentors) is to join [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup).
-  * There's another group, Loop and Learn, that has a lot of Loop-centric information, a Speaker Series covering many topics of general Diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
+  * There is another group, Loop and Learn, that has a lot of Loop-centric information, a Speaker Series covering many topics of general Diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
       * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
       * [LoopandLearn Website](https://www.loopandlearn.org)
   * Both the Looped Facebook Group and LoopandLearn Facebook groups provide support for some Loop forks (remember other CGM?) as well as other DIY closed loop options.
   * Many Loopers use the Nightscout tool to assist in monitoring their settings in Loop. The fastest Nightscout help can be found in the original #wearenotwaiting community [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud).
-  * For those not interested in Facebook or interested in what's coming next for Loop, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels.  
+  * For those not interested in Facebook or interested in what is coming next for Loop, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels.  
       * Note - please only post in one channel at zulipchat - the mentors are subscribed to all of them.
   * And for those interested in delving deeper, see the next few sections.
 
@@ -76,7 +76,7 @@ There are a number of social media options. (Read the directions on each of thes
 
 Please consider submitting suggestions for updates and improvements to this documentation or the [Loop app code](index.md#information-for-coders).
 
-For documentation, please go to the [LoopKit/loopdocs repository Issues page](https://github.com/LoopKit/loopdocs/issues). Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the `New Issue` button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you can read the Issues but cannot comment or add a new one unless you have or set up a github userID.)
+For documentation, please go to the [LoopKit/loopdocs repository Issues page](https://github.com/LoopKit/loopdocs/issues). Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the `New Issue` button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you do not have to log in to github to read the Issues, but you cannot comment or add a new Issue without logging in.)
 
 If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  On Facebook - make sure your post is clear that you have a comment about LoopDocs.  In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue topic](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue)
 
@@ -98,7 +98,7 @@ The project continues to be a labor-of-love by a community of users; maintained 
 
 [Loop](https://github.com/LoopKit/Loop) is an app template for building an automated insulin delivery system. It is a stone resting on the boulders of work done by many others.
 
-The app is built on top of [LoopKit](https://github.com/LoopKit/LoopKit). LoopKit is a set of frameworks that provide data storage, retrieval, and calculation, as well as boilerplate view controllers used in Loop. Using the open-source Loop app template, you can build an insulin delivery system that uses specific commercial and open-source hardware and software technologies to bring together the insulin pump, continuous glucose monitor (CGM), and insulin dosing algorithm to create a DIY automated insulin delivery system. This version is knownn as Loop.  
+The app is built on top of [LoopKit](https://github.com/LoopKit/LoopKit). LoopKit is a set of frameworks that provide data storage, retrieval, and calculation, as well as boilerplate view controllers used in Loop. Using the open-source Loop app template, you can build an insulin delivery system that uses specific commercial and open-source hardware and software technologies to bring together the insulin pump, continuous glucose monitor (CGM), and insulin dosing algorithm to create a DIY automated insulin delivery system. This version is known as Loop.  
 
 For more information on how to contribute to an open-source project, please review:
 
