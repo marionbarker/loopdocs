@@ -7,7 +7,7 @@
 !!! info "Summary"
     - The [minimum macOS](step1.md#macos) required depends on your phone iOS.  You'll probably need at least Catalina unless you have a phone that has not been updated in a long time.
     - And yes, Big Sur is fine (newest macOS).
-    - If your macOS does not meet the minimum, check to see if you can up update your macOS.
+    - If your macOS does not meet the minimum, check to see if you can update your macOS.
     - If you cannot upgrade your existing computer, you'll need to check into a borrowed computer, patcher tool, or perhaps a new/used computer.
     - Check the `Software Update` to see if your computer has any updates available since you first installed it.
 
@@ -19,17 +19,17 @@
 
 ## New M1 chip Apple Computers
 
-Yes, the newest Apple computers just released in November 2020 are compatible with Loop building. These new computers will make Loop building extremely fast and the time estimates on these docs will be ridiculously slower than you will be experiencing.
+Yes, the newest Apple computers just released in November 2020 are compatible with Loop building. These new computers will make Loop building extremely fast.
 
 ## MacOS
 
-The minimum MacOS depends on the iOS of your iPhone/iPod. The latest macOS, Big Sur (11.x) can be used to build Loop for any of the phones listed below.
+The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big Sur (11.x) can be used to build Loop for any of the phone iOS listed below. The older macOS, Mojave, can not be used if your phone is updated past iOS 13.2.
 
-* **If you have iOS 12.4 to 13.2**, you can use macOS 10.14.4 (Mojave) or 10.15.2 or newer (Catalina)
+* **If you have iOS 12.4 to 13.2**, the minimum macOS is 10.14.4 (Mojave), newer is ok (Catalina or Big Sur)
 
-* **If you have iOS 13.4 to 13.7**, you will not be able to use Mojave and will need Catalina 10.15.2 at a minimum to build Loop.
+* **If you have iOS 13.4 to 13.7**, the minimum macOS is 10.15.2 (Catalina), newer is ok (Catalina or Big Sur)
 
-* **If you have iOS 14 or newer**, you will not be able to use Mojave and will need Catalina 10.15.4 at a minimum to build Loop..
+* **If you have iOS 14 or newer**, the minimum macOS is 10.15.**4** (Catalina), newer is ok (Catalina or Big Sur)
 
 !!! danger "iOS dictates your computer needs"
 
@@ -47,7 +47,26 @@ If your computer does not have the required minimum version, you'll need to chec
 
 If your computer does not give you the option to update to the newer macOS (in other words you are stuck on older versions)...it is quite possible that Apple has decided your computer is too old to run the latest and greatest. How old is too old? That will depend on your computer model and year as shown below:
 
-![img/mojave-minimum.png](img/mojave-minimum.png){width="750"}
+## Which Macs are compatible with macOS Catalina?
+* MacBook, 2015 or newer
+* MacBook Air, 2012 or newer
+* MacBook Pro, 2012 or newer
+* Mac mini, 2012 or newer
+* iMac, 2012 or newer
+* iMac Pro, 2017 or newer
+* Mac Pro, 2013 or newer
+* get the full list from [Apple for Catalina](https://support.apple.com/en-us/HT210222)
+
+
+## Which Macs are compatible with macOS Big Sur?
+* MacBook, 2015 or newer
+* MacBook Air, 2013 or newer
+* MacBook Pro, late 2013 or newer
+* Mac Mini, 2014 or newer
+* iMac, 2014 or newer
+* iMac Pro, 2017 or newer
+* Mac Pro, 2013 or newer
+* get the full list from [Apple for Big Sur](https://support.apple.com/en-us/HT211238)
 
 ## Next Step: Compatible iPhone/iPod touch
 
