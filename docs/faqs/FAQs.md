@@ -5,11 +5,11 @@
 Click on the image below to watch a short [Introduction to Loop video](https://youtu.be/qw_u1lqboCs).
 
 !!! warning "Old Video"
-    * This video was created before the Omnipod version of Loop was released - and yes you can use Omnipod Eros pumps
+    * This video was created before the Omnipod version of Loop was released in April 2019 - so yes you can definitely use Omnipod Eros pumps
     * The menus have been rearranged slightly but the overall concept of how to use Loop is demonstrated in this video
     * The workout target shown in the video has been completely reworked as Overrides
 
-[![img/intro-to-loop.png](img/intro-to-loop.png){width="400"}](https://youtu.be/qw_u1lqboCs)
+[![img/intro-to-loop.png](img/intro-to-loop.png){width="600"}](https://youtu.be/qw_u1lqboCs)
 
 
 ## What do I need to Loop?
@@ -20,7 +20,7 @@ Loop has both hardware and software requirements. In general, to use Loop you ne
 - [Compatible CGM](../build/step4.md)
 - [Radio-Link](../build/step5.md)
 - [Compatible iPhone/iPod Touch](../build/step2.md)
-- [Apple computer running Cataline macOS 10.15.4 or later](../build/step1.md)
+- [Apple computer, typically Catalina macOS or newer](../build/step1.md#macos)
 - [Xcode (a free Apple application)](../build/step8.md)
 - [Apple Developer Membership](../build/step6.md)
 
@@ -31,7 +31,7 @@ Loop has both hardware and software requirements. In general, to use Loop you ne
 
 No. Loop is not available for download. You must build your own Loop app. Loop app will not be available in the Apple App store because that would be distribution of a medical device, and we are not in that "business".  You can build yourself, but we are not distributors.
 
-Don't worry though, building your Loop app is straightforward. Each step is found in these docs. The harder part will be having the patience to read all the documents before you start. New Loop users are so excited to get started that they skip reading all the great info that these docs contain. So, as you begin the build...please include time to read the documents that follow what happens AFTER you successfully build your Loop app.
+Each step needed to successfully build your Loop app is found in these docs. The harder part will be having the patience to read all the documents before you start. New Loop users are so excited to get started that they skip reading all the great info that these docs contain. So, as you begin the build...please include time to read the documents that follow what happens **after** you successfully build your Loop app.
 
 If you have any questions, use the [Search](../index.md#how-to-use-these-docs) feature to find topics in LoopDocs.
 
@@ -63,13 +63,13 @@ There are several options for the [radio-links](../build/step5.md#radio-link-opt
 
 The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days. That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.
 
-There are no other costs, ongoing or initial, to use Loop.
+There are no other costs, ongoing or initial, to use Loop beyond what you already pay for your CGM, pump supplies and insulin.
 
 ## Do I need to own my own Apple computer?
 
 You don't have to own your own Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
 
-If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Build Step 1](../build/step1.md#step-1-install-macos-and-xcode-updates)
+If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/step1.md#macos) and [Xcode Version](../build/step8.md#how-do-all-the-minimum-versions-relate-to-each-other)
 
 ## Can I use a PC or Windows computer to build?
 
@@ -101,9 +101,9 @@ But the biggest issue with building for others is that they may be left without 
 
 ## How can I find a compatible pump? supplies?
 
-There is a [whole page with detailed information about Medtronic pumps](../build/step3.md); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
+There is a [whole page with detailed information about Medtronic pumps](../build/step3.md#check-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
-With the addition of Omnipod support, you can also now use Omnipod suppliers the way you'd normally source them.
+You can also use Omnipod Eros (not Dash). You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
 
 ## Can I pay someone else to do this?
 
