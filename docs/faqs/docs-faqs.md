@@ -19,7 +19,7 @@ If you get stuck, there are several things that can help:
 * Scroll back up in the directions and see if you maybe missed a step accidentally. Might even be that you missed a paragraph.
 * Check and compare your screen's display with what the screenshots are highlighting. Does your screen seem similar? Or does yours have an error message? If you have an error message, see if it helps guide you to the problem.
 * If you just get stumped, post in [Looped Group (Facebook)](https://www.facebook.com/groups/TheLoopedGroup/)or [Zulipchat](https://loop.zulipchat.com/) and ask for help. Lots of people standing by to help each other. If you have a **screenshot** of where you are stuck and what part of the directions you are on, that will help a lot.
-* Note the word screenshot - please use your mac or phone to take a screenshot.  Photos of screens are typically out of focus and not high enough resolution. Search for "How to take a screenshot" in your favorite search engine.
+* Note the word screenshot - please use your computer or phone to take a screenshot.  Photos of screens are typically out of focus and not high enough resolution. Search for "How to take a screenshot" in your favorite search engine.
 
 ## So, I build the app and then I'm done?
 
