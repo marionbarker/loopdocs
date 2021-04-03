@@ -6,7 +6,7 @@
 
 !!! info "Summary"
     - The [minimum macOS](step1.md#macos) required depends on your phone iOS.  You'll probably need at least Catalina unless you have a phone that has not been updated in a long time.
-    - And yes, Big Sur is fine (newest macOS).
+    - Big Sur (newest macOS) may become required for iOS 14.5 (coming soon).
     - If your macOS does not meet the minimum, check to see if you can update your macOS.
     - If you cannot upgrade your existing computer, you'll need to check into a borrowed computer, patcher tool, or perhaps a new/used computer.
     - Check the `Software Update` to see if your computer has any updates available since you first installed it.
@@ -23,13 +23,16 @@ Yes, the newest Apple computers just released in November 2020 are compatible wi
 
 ## MacOS
 
-The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big Sur (11.x) can be used to build Loop for any of the phone iOS listed below. The older macOS, Mojave, can not be used if your phone is updated past iOS 13.2.
+The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big Sur (11.x) can be used to build Loop for any of the phone iOS listed below and may be **required** to build on any iPhone starting with iOS 14.5. The older macOS, Mojave, can not be used if your phone is updated past iOS 13.2.
 
-* **If you have iOS 12.4 to 13.2**, the minimum macOS is 10.14.4 (Mojave), newer is ok (Catalina or Big Sur)
+* **If you have iOS 14.5 (not yet out) or newer**, the minimum macOS is expected to be Big Sur (11.x)
+
+* **If you have iOS 14 or newer**, the minimum macOS is 10.15.**4** (Catalina), newer is ok (Catalina or Big Sur)
 
 * **If you have iOS 13.4 to 13.7**, the minimum macOS is 10.15.2 (Catalina), newer is ok (Catalina or Big Sur)
 
-* **If you have iOS 14 or newer**, the minimum macOS is 10.15.**4** (Catalina), newer is ok (Catalina or Big Sur)
+* **If you have iOS 12.4 to 13.2**, the minimum macOS is 10.14.4 (Mojave), newer is ok (Catalina or Big Sur)
+
 
 !!! danger "iOS dictates your computer needs"
 

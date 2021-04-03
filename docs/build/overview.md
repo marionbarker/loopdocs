@@ -15,7 +15,7 @@ To orient yourself, consider clicking through the Build Steps from Step 1 throug
 * Summary
 * FAQs
 
-Once you've completed this quick overview of the build steps, return and read the pages completely for Steps 1 through 14. It's good idea to skim Oh dear! Build errors? at this point. The most important take-away from that page is to realize that most of the mistakes have already been made and there are correction steps to follow to get your build back on track. If that doesn't help, there are [mentors](../index.md#stay-in-the-loop) ready and willing to assist.
+Once you've completed this quick overview of the build steps, return and read the pages completely for Steps 1 through 14. It's good idea to skim [Oh dear! Build errors?](build_errors.md) at this point. The most important take-away from that page is to realize that most of the mistakes have already been made and there are correction steps to follow to get your build back on track. If that doesn't help, there are [mentors](../index.md#stay-in-the-loop) ready and willing to assist.
 
 The next stage is to work through the steps and complete the tasks on each page.  You can do one a day or blaze through them all.  Just be sure to read carefully and if you are confused - reach out for help.
 

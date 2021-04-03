@@ -5,7 +5,7 @@
 What is Loop?
 
 * Loop is an app that uses a compatible continuous glucose monitor (CGM) and is paired using a radio-link with your compatible pump.
-* Loop assists in the many dosing decisions people with diabetes face every day.
+* Loop assists in the many insulin dosing decisions people with diabetes face every day.
 * Loop is an app you build yourself and load on your iPhone (or iPod).
 * Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods.  
 
@@ -24,17 +24,17 @@ The Loop app works with Dexcom’s CGM or one of the Medtronic Sensors, but ther
 
     **You take full responsibility for building and running this system and do so at your own risk.**
 
-The Loop algorithm on your phone predicts future glucose based on carbohydrate intake, insulin on board, and current CGM readings. You enter your own settings for desired correction range, basal schedule, insulin sensitivity factor (ISF), carbohydrate ratio (CR) and the type of insulin you are using.  The glucose forecasts, using your settings and meal entries, provide Loop with the information needed to recommend a bolus or temporary basal rate to attain a targeted glucose range in the future.
+The Loop algorithm on your phone predicts future glucose based on carbohydrate intake, insulin on board, and current CGM readings. You enter your own settings for desired correction range, basal schedule, insulin sensitivity factor (ISF), carbohydrate ratio (CR) and the type of insulin you are using.  The glucose predictions, using your settings and meal entries, provide Loop with the information needed to recommend a bolus or temporary basal rate to attain a targeted glucose range in the future.
 
 The system can either operate “open-loop” by making recommendations to the user for their approval before enacting or “closed-loop” by automatically providing the recommended increase or decrease in insulin delivery.
 
 You may be saying - I can't build an app. But the wonderful volunteers in this community prepared this amazing website with step-by-step instructions containing pictures and arrows (say thank you to Katie DiSimone). The website is updated by more volunteers as improvements are made to the Loop app and when Apple makes changes to their iOS, Xcode and macOS environment. This language may sound scary, but it will become easier. Most people who Loop want to keep looping, so they learn the terminology and how to reach out to mentors for help.
 
-Once you've built the app, plan to learn to use it in stages. First run “open loop” to familiarize yourself with Loop’s operation. This allows you to understand why Loop is making certain recommendations and determine if you need to adjust settings for Loop.
+Once you've built the app, plan to learn to use it in stages. First run “open loop” to familiarize yourself with Loop’s operation. This allows you to understand why Loop is making certain recommendations and determine if you need to adjust Loop settings.
 
-One thing many new users ask is why do my settings need to be different for Loop?  The main reason is that Loop uses a realistic model of insulin activity in your body including the long tail - and updates its calculations every 5 minutes.  You might have used a linear fall-off of insulin activity and corrected once every 2 or 3 hours. You might also have traded off higher basal rate to avoid worrying about snacks.  There is a whole section on settings - just giving you a heads up.
+One thing many new users ask is why do my settings need to be different for Loop?  The main reason is that Loop uses a realistic model of insulin activity in your body including the long tail - and updates its calculations every 5 minutes.  You might have used a linear fall-off model for insulin activity and corrected once every 2 or 3 hours. You might also have traded off higher basal rate to avoid worrying about snacks.  There is a whole section on settings - just giving you a heads up.
 
-When you progress to “closed-loop”, do so safely by starting with appropriate safety limits and only progress to tighter limits after several days of no lows. Please ask questions at this point about why Loop is making the recommendations it does.  It should be similar to the therapy decisions you would make yourself.  If the recommendations it makes are different than you would make, try to figure out why. Hint - it is probably your settings.
+When you progress to “closed-loop”, do so safely by starting with conservative Correction Ranges and Delivery Limits and only progress to more aggressive settings after several days of no lows. Please ask questions at this point about why Loop is making the recommendations it does.  It should be similar to the therapy decisions you would make yourself.  If the recommendations it makes are different than you would make, try to figure out why. Hint - it is probably your settings.
 
 ## How to Use These Docs
 
@@ -66,7 +66,7 @@ There are a number of social media options. (Read the directions on each of thes
   * There is another group, Loop and Learn, that has a lot of Loop-centric information, a Speaker Series covering many topics of general Diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
       * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
       * [LoopandLearn Website](https://www.loopandlearn.org)
-  * Both the Looped Facebook Group and LoopandLearn Facebook groups provide support for some Loop forks (remember other CGM?) as well as other DIY closed loop options.
+  * Both the Looped and LoopandLearn Facebook groups provide support for some Loop forks (remember other CGM?) as well as other DIY closed loop options.
   * Many Loopers use the Nightscout tool to assist in monitoring their settings in Loop. The fastest Nightscout help can be found in the original #wearenotwaiting community [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud).
   * For those not interested in Facebook or interested in what is coming next for Loop, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels.  
       * Note - please only post in one channel at zulipchat - the mentors are subscribed to all of them.
