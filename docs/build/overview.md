@@ -1,6 +1,11 @@
 # Overview of Build Process
 
-The overall installation process is straightforward. Start with checking that you have the compatible gear needed to Loop, do a couple of  preparation steps on the computer, and then move onto building the Loop app.
+The overall build process is straightforward.
+
+* Start with checking that you have the compatible gear needed to Loop
+* Do a couple of  preparation steps on the computer
+* Download the code and build the Loop app on your phone
+* After the build, be sure to follow steps to [Set up](../operation/overview.md) and [Operate](../operation/features/carbs.md) the Loop app
 
 This may appear intimidating at first, but it is quite doable by the average computer user.
 
@@ -19,7 +24,7 @@ The next stage is to work through the steps and complete the tasks on each page.
 If you have never used Loop, click on the link to watch a short [Introduction to Loop Video](https://youtu.be/qw_u1lqboCs).
 
 !!! warning "Old Video"
-    * This video was created before the Omnipod version of Loop was released - and yes you can use Omnipod Eros pumps
+    * This video was created before the Omnipod version of Loop was released in April 2019 - so yes you can definitely use Omnipod Eros pumps
     * The menus have been rearranged slightly but the overall concept of how to use Loop is demonstrated in this video
     * The workout target shown in the video has been completely reworked as Overrides
 
