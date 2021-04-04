@@ -27,7 +27,7 @@ The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big 
 
 * **If you have iOS 14.5 (not yet out) or newer**, the minimum macOS is expected to be Big Sur (11.x)
 
-* **If you have iOS 14 or newer**, the minimum macOS is 10.15.**4** (Catalina), newer is ok (Catalina or Big Sur)
+* **If you have iOS 14 to 14.4.x**, the minimum macOS is 10.15.**4** (Catalina), newer is ok (Catalina or Big Sur)
 
 * **If you have iOS 13.4 to 13.7**, the minimum macOS is 10.15.2 (Catalina), newer is ok (Catalina or Big Sur)
 
