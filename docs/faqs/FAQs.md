@@ -93,7 +93,7 @@ Your Loop app will also die immediately if their developer account is not renewe
 
 Moral of the story, out of all the ways to save money...borrowing someone's developer account is not a good place to save money. You could find yourself unexpectedly without a Loop app without notice.
 
-## Can I use MY Apple Developer account to build for others?
+## Can I use my Apple Developer account to build for others?
 
 Technically yes...however, there are reasons this is discouraged. When you build for others, you must be careful to not unintentionally revoke the signing certificate that had been used for other people's apps (see note in FAQ above). You also need to let the people know that the MAXIMUM their app will last is 12 months. It will need to be rebuilt no matter what every 12 months.
 
