@@ -9,9 +9,9 @@ What is Loop?
 * Loop is an app you build yourself and load on your iPhone (or iPod).
 * Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods.  
 
-What CGM work with Loop?
+What CGMs work with Loop?
 
-The Loop app works with Dexcom’s CGM or one of the Medtronic Sensors, but there are other versions of Loop available that may work for you if you are not using one of these specific CGMs.  These other versions (known as forks) are created by Loop users and are maintained by them. This document does not cover those other CGM options, but check out the [Community Information](index.md#stay-in-the-loop) below.
+The Loop app works with Dexcom’s G4, G5 and G6 CGM. For Medtronic users, Loop also works with first generation Guardian and Guardian 2 Medtronic sensors that are compatible with the 522, 722, 523 and 723 pumps. There are other versions of Loop available that may work for you if you are not using one of these specific CGMs.  These other versions (known as forks) are created by Loop users and are maintained by them. This document does not cover those other CGM options, but check out the [Community Information](index.md#stay-in-the-loop) below.
 
 ![Loop main display on phone](img/phone_updated_loop.svg){width="300"}
 ![Loop watch screen on watch](img/watch_updated_loop.svg){width="300"}
@@ -84,13 +84,13 @@ There are over 70 pages of content and we need all the reviewers we can get to h
 
 ## Development History
 
-Loop has been developed as an open-source, shared project.
+Loop is an open-source, shared project.
 
-  * For a really interesting read about the history of Loop development, check out this [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805) post, written by Loop developer Nate Racklyeft
+  * Read about the early history of Loop development: [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805), written by Loop developer Nate Racklyeft
 
-  * If you're an Omnipod user, you may find this article interesting [Insulin Pumps, Decapped chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb
+  * Read about the early days and the many advances brought about by the greater Diabetes Community of people who are not waiting: [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/) written by Dana Lewis and check out her website [DIYPS](https://diyps.org)
 
-  * For all Loopers, read about the early days and the many advances brought about by the greater Diabetes Community of people who are not waiting in [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/) written by Dana Lewis and check out her website [DIYPS](https://diyps.org)
+  * Read about how hard it was to get a new insulin pump (Omnipod) to work with Loop: [Insulin Pumps, Decapped chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb and [Deep dip teardown of tubeless insulin pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
 
 The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.
 
