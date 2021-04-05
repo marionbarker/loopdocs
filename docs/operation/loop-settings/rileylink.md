@@ -5,7 +5,7 @@ The Device menu to view details about your RileyLink compatible device is access
 !!! danger "Helpful Tip"
     As soon as you connect the device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., RileyLink or OrangeLink or EmaLink. In the Device menu, tap on the Name line and enter your desired name. The new name may need to sit for a few seconds before exiting back out of the naming screen for it to be transferred and saved in the device. The device must be connected and on to change its name.
 
-Depending on which pump you have connected to your Loop app, your Device menu will look different. On the left below is the typical RL menu when using Medtronic pump, and on the right is with an Omnipod (older version of Loop). As you can see, both have in common a section called "Device", but after that only the Medtronic pumps will have additional commands in the Device menu.
+Depending on which pump you have connected to your Loop app, your Device menu will look different. On the left below is the typical Device menu when using Medtronic pump, and on the right is with an Omnipod. As you can see, both have in common a section called "Device", but after that only the Medtronic pumps will have additional commands in the Device menu.
 
 ![img/rl-comp.png](img/rl-comp.png){width="450"}
 {align="center"}
