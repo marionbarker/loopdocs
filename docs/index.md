@@ -8,7 +8,7 @@ What is Loop?
 * Loop assists in the many insulin dosing decisions people with diabetes face every day
 * Loop uses a compatible continuous glucose monitor (CGM) and is paired using the RileyLink protocol with your compatible pump
     * Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods
-    * Loop requires a RileyLink or [RileyLink compatible device](build/step5.md#rileylink-compatible-devices)
+    * Loop requires a [RileyLink compatible device](build/step5.md#rileylink-compatible-devices) to communicate between the phone and pump
 
 What CGMs work with Loop?
 
