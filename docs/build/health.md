@@ -4,7 +4,7 @@ The Loop app uses the iPhone's Health app to record blood glucose, insulin, and 
 
 ## Loop Permissions
 
-You need to set up Loop's permissions to store data in Health. When you finish building your first Loop app, the Health App screen for Loop permissions automatically appears. The directions tell you to turn all categories on, but the directions have changed. Do not enable permission for Loop to read Carbohydrates from Health.
+You need to set up Loop's permissions to store data in Health. When you finish building your first Loop app, the Health App screen for Loop permissions automatically appears. The directions have changed. Do not enable permission for Loop to read Carbohydrates from Health.
 
 You can also get to this screen (for iOS 14) by iPhone -> Settings -> Health (heart icon) -> Data Access & Devices -> Loop.
 
@@ -15,6 +15,9 @@ You can also get to this screen (for iOS 14) by iPhone -> Settings -> Health (he
 
       1.  A different app writes Carbohydrates to Apple Health
       1.  If two Loopers use the same Apple ID (this is strongly discouraged but it can happen, especially new Loopers building for their children)
+        * Note the Apple ID identifies a person and is distinct from the Apple Developer ID that identifes the developer
+        * The Apple Developer can install Loop on multiple devices with no crosstalk between different people using Loop
+        * The Apple ID identifies who data is associated with and should be associated with only one person
 
 
 ![Apple Health app, iOS 14, Loop app permissions screen](img/loop-health-permissions.svg){width="300"}
