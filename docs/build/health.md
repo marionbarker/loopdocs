@@ -1,6 +1,6 @@
 # Health Data
 
-The Loop app uses the iPhone's Health app to record blood glucose, insulin, and carbohydrate data. The blood glucose, insulin, and carbohydrate data stored in Apple Health can also be accessed and uploaded by Tidepool's Mobile app and was an important step in the Jaeb Observational Study enrollment (that study has completed). Please review the settings below to ensure you have the proper settings.
+The Loop app uses the iPhone's Health app to record blood glucose, insulin, and carbohydrate data. The blood glucose, insulin, and carbohydrate data stored in Apple Health can also be accessed and uploaded by Tidepool's Mobile app and was an important step in the Jaeb Observational Study (that study has completed). Please review the settings below to ensure you have the proper settings.
 
 ## Loop Permissions
 
@@ -25,7 +25,7 @@ You can also get to this screen (for iOS 14) by iPhone -> Settings -> Health (he
 
 * Loop eavesdrops on the Bluetooth communication of the Dexcom G4/G5/G6 CGM and **writes** the values to Health for the first 3 hours
 * After 3 hours, the Dexcom CGM app allows other apps (including Health) access to its CGM data, so Loop needs to **read** the older Blood Glucose from Health
-* During times when there is no CGM data, the user can enter a finger stick value into Apple Heatlh BG and Loop will **read** it, e.g., during sensor warmup
+* During times when there is no CGM data, the user can enter a finger stick value into Apple Health BG and Loop will **read** it, e.g., during sensor warmup
 
 
 **Carbohydrates**: Permission to Write ONLY
