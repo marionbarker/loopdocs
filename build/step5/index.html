@@ -162,7 +162,7 @@
 </li>
                                     
 <li>
-    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
+    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">Device Menu</a>
 </li>
                                 </ul>
                             </li>
@@ -447,7 +447,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#rileylink-extra-details" class="nav-link">RileyLink Extra Details</a>
+            <li class="nav-item" data-level="2"><a href="#rileylink-device-details" class="nav-link">RileyLink Device Details</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -476,18 +476,19 @@
 <div class="admonition warning">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>Do I have to buy one?</strong> These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one, then you'll probably want to buy a second as a spare.</li>
-<li><strong>RileyLink vs Compatible Devices</strong>: The RileyLink is the original design. It defined the RileyLink protocol for a specific bluetooth interface and way of opening a Sub-GHz radio channel to pumps. It was the first and only option for many years. Other DIY Loopers have created RileyLink compatible devices, see <a href="./#rileylink-compatible-devices">RileyLink Compatible Devices</a>. You will see the RileyLink in most graphics. At the current time, RileyLink, OrangeLink and EmaLink are available for purchase.</li>
+<li><strong>Do I have to buy one?</strong> These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two).</li>
+<li><strong>RileyLink Compatible Devices</strong>: RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created <a href="./#rileylink-compatible-devices">RileyLink Compatible Devices</a> that use the RileyLink protocol. At the current time, RileyLink, OrangeLink and EmaLink devices are available for purchase and all can be used interchangeably with Loop.</li>
 <li><strong>"What happens if I lose my RileyLink compatible device or walk away from it?"</strong> Within a half hour, your pump returns to normal scheduled basal rate</li>
-<li><strong>"Can I swap out RileyLink compatible devices at any time?"</strong> Yes, you can. You do not need to start a new pod or rebuild Loop app. There's a place in Loop settings where you find your new device and turn "on" the Bluetooth connection within Loop to start using it. You can swap between RileyLink, OrangeLink, EmaLink or some future RileyLink compatible device.</li>
+<li><strong>"Can I swap out RileyLink compatible devices at any time?"</strong> Yes, you can. You do not need to start a new pod or rebuild Loop app. Tap on the pump menu in Loop settings to search for new devices and enable Loop to create a Bluetooth connection. You can swap between RileyLink, OrangeLink, EmaLink or some future RileyLink compatible device.</li>
 <li><strong>"How close does the RileyLink compatible device need to be to me? Do I have to carry it with me?"</strong> See <a href="./#rileylink-compatible-device-range">RileyLink Compatible Device Range</a>.</li>
 </ul>
 </div>
 <h2 id="what-is-a-rileylink-compatible-device">What is a RileyLink Compatible Device<a class="headerlink" href="#what-is-a-rileylink-compatible-device" title="Permanent link">⌁</a></h2>
 <p>The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by select Medtronic and Omnipod pumps. What does that mean to you? It means the device is the communication highway between your insulin pump, CGM, and iPhone.</p>
 <p><strong>DIY Loop will not work without a RileyLink compatible device.</strong></p>
-<p align="center"><img alt="Omnipod or Medtronic pump communicating through RileyLink to phone running Loop app" src="../img/rileylink-comm-pod-mmt.svg" width="450" /></p>
+<p><img alt="Omnipod or Medtronic pump communicating through RileyLink to phone running Loop app" src="../img/rileylink-comm-pod-mmt.svg" width="600" /></p>
 <h2 id="rileylink-compatible-devices">RileyLink Compatible Devices<a class="headerlink" href="#rileylink-compatible-devices" title="Permanent link">⌁</a></h2>
+<p>The RileyLink protocol defines a specific bluetooth interface and way of opening a Sub-GHz radio channel to pumps. All RileyLink compatible devices follow the RileyLink protocol.</p>
 <p>There used to be just one option. Now there are more, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare sets to your diabetes go-bag.</p>
 <ul>
 <li>One thing that might affect your choice is where you live and whether you want to charge the device or change batteries<ul>
@@ -527,8 +528,8 @@
 </ul>
 <h2 id="rileylink-compatible-device-communications">RileyLink Compatible Device Communications<a class="headerlink" href="#rileylink-compatible-device-communications" title="Permanent link">⌁</a></h2>
 <p>All the RileyLink compatible devices communicate with the pump through radio frequency communications and with the phone through Bluetooth. Numerous factors can influence how well those communications can function...interferences from other devices, temperature, physical blocking, going through your body (think water), etc.</p>
-<p><strong>Medtronic Only</strong> When your RileyLink compatible device and pump first connect, Loop performs a series of tests that you won't see...they are tuning tests. Basically, Loop sends little test messages via the device to the pump and waits for a response. Loop tries this same "ping" to the pump over a range of frequencies based on the pump you've told Loop to expect (Medtronic NA/CA, or Medtronic WW). The Loop app will then use the radio frequency with the strongest response for future pump communications.</p>
-<p><strong>For long-time Medtronic Loopers who remember hitting the tune button:</strong> Usually this best frequency is constant for any given Medtronic pump + RileyLink compatible device, but may drift with time or temperature changes. The tuning mentioned above is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles). You no longer need to hit the tune button in the menu.</p>
+<p><strong>Medtronic Only</strong> When your device and pump first connect, Loop performs a series of tests that you won't see...they are tuning tests. Basically, Loop sends little test messages via the device to the pump and waits for a response. Loop tries this same "ping" to the pump over a range of frequencies based on the pump you've told Loop to expect (Medtronic NA/CA, or Medtronic WW). The Loop app will then use the frequency with the strongest response for future pump communications.</p>
+<p><strong>For long-time Medtronic Loopers who remember hitting the tune button:</strong> Usually this best frequency is constant for any given Medtronic pump + RileyLink compatible device, but may drift with time or temperature changes. The tuning mentioned above is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles). You no longer need to manually tune.</p>
 <div class="admonition info">
 <p class="admonition-title">Bluetooth (BT) Troubleshooting</p>
 <p>If your iPhone has BT issues, your Loop will have failures. There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop. If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.</p>
@@ -537,14 +538,17 @@
 <p>You will notice the Signal Strength is a negative number and in units of dB. Remember that number line from elementary school?  A signal strength of -50&nbsp;dB is a stronger signal than  -80&nbsp;dB.<br/><br/></p>
 <p align="center"><img alt="device window showing Signal Strength and Connection State" src="../img/RL_bt.jpg" width="400" /></p>
 <h2 id="rileylink-compatible-device-range">RileyLink Compatible Device Range<a class="headerlink" href="#rileylink-compatible-device-range" title="Permanent link">⌁</a></h2>
-<p>The range at which RileyLink compatible devices will function is dependent on the environment that you are in. Both the OrangeLink and some sizes of the EmaLink have reported longer ranges than RileyLink, so they might be able to be kept in a more central location - but still need to be "near enough".</p>
-<p>What influences this distance? The biggest influences are (1) body-blocking and (2) "noisy" environments. The human body is a lot of water, and water is an excellent blocker of wireless communication. So, sleeping on a pod and smothering it entirely with your body will possibly decrease the ability of RileyLink compatible device to communicate with the pod. Environments with a high concentration of wireless signals can also interfere with RileyLink compatible device communications and make closer proximity a benefit. Where might those kinds of situations happen? Concerts, conferences, and sporting arenas are pretty prone to interference.</p>
+<p>The range at which RileyLink compatible devices will function is dependent on the environment that you are in and the specific device design. Both the OrangeLink and some sizes of the EmaLink have reported longer ranges than RileyLink - but they still need to be "near enough".</p>
+<p>What influences this distance for a given device? The biggest external influences are (1) body-blocking and (2) "noisy" environments. The human body is a lot of water, and water is an excellent blocker of wireless communication. So, sleeping on a pod and smothering it entirely with your body will possibly decrease the ability of the device to communicate with the pod. Environments with a high concentration of wireless signals can also interfere with device communications and make closer proximity a benefit. Where might those kinds of situations happen? Concerts, conferences, and sporting arenas are pretty prone to interference.</p>
 <p>Many people keep their device on the same side of their body as their pump during the day. They use a pocket, carabiner, lanyard, SPIbelt - the options are endless. What you don't want to do is put it in a blocking bag that has RFID blocking (some travel fanny packs have that).  </p>
-<p>The practical range can vary from type to type and among individual units. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test.  Figure out what works for your devices.</p>
-<p>Suggested communication signal to send for <strong>Medtronic</strong>: Button Press</p>
-<p>Suggested communication signal to send for <strong>Omnipod</strong>: Read Pod Status</p>
+<p>The practical range can vary by device design and among individual units of the same design. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test.  Figure out what works for your devices.</p>
+<p>Suggested communication signals to send:</p>
 <ul>
-<li>If you have a newer version of Loop, the report from Read Pod status has the Received Signal Strength Indicator (RSSI) between the RileyLink compatible device and the Pod</li>
+<li><strong>Medtronic</strong>: Button Press</li>
+<li><strong>Omnipod</strong>: Read Pod Status</li>
+</ul>
+<p>If you use Omnipod and have a newer version of Loop, the report from Read Pod status has the Received Signal Strength Indicator (RSSI) between the RileyLink compatible device and the Pod</p>
+<ul>
 <li>The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod</li>
 <li>This information complements the BT signal strength reported in the device menu</li>
 </ul>
@@ -555,8 +559,8 @@
 <h2 id="next-step-enroll-in-apple-developer-program">Next Step: Enroll in Apple Developer Program<a class="headerlink" href="#next-step-enroll-in-apple-developer-program" title="Permanent link">⌁</a></h2>
 <p>Now you are ready to move onto Step 6 to <a href="../step6/">enroll in the Apple Developer Program</a>.</p>
 <p>If you want more information about RileyLink, keep reading, then move on to Step 6.</p>
-<h2 id="rileylink-extra-details">RileyLink Extra Details<a class="headerlink" href="#rileylink-extra-details" title="Permanent link">⌁</a></h2>
-<p>Since the RileyLink has been around the longest, some additional information about the RileyLink has been added to this page throughout the years. The rest of this page is specific just to the RileyLink.</p>
+<h2 id="rileylink-device-details">RileyLink Device Details<a class="headerlink" href="#rileylink-device-details" title="Permanent link">⌁</a></h2>
+<p>Since the RileyLink version of the communication link device has been around the longest, some additional information about that device has been added to this page throughout the years. The rest of this page is specific just to the RileyLink device.</p>
 <h3 id="rileylink-assembly">RileyLink Assembly<a class="headerlink" href="#rileylink-assembly" title="Permanent link">⌁</a></h3>
 <p>Your RileyLink will come with the Lithium-ion Polymer (LiPo) battery disconnected and the parts not already inside the case. It will be up to you to put the RileyLink in the case and attach the battery.</p>
 <p>Make sure the LiPo battery is well-plugged into the connection. Line up the little ridge appropriately, and push fairly firmly to get the connection tight. Poor battery cable connection can make the Loop communications fail. See photos below, for example.</p>
