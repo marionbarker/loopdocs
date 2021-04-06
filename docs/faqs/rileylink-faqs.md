@@ -2,13 +2,13 @@
 
 ## What is the RileyLink compatible device? Do I have to have one?
 
-The RileyLink compatible device is a required part of Loop. It is a small device that helps your iPhone and pump/pod speak to each other. The Loop compatible pumps communicate via radio-frequency and the iPhone communicates via Bluetooth. The RileyLink compatible device is like a translator that can speak both formats so that the pump and iPhone can loop together. The device communicates information to/from your pump by radio communications, and to/from your iPhone using Bluetooth.
+The RileyLink compatible device is a required part of Loop. It is a small device that helps your iPhone and pump/pod speak to each other. The Loop compatible pumps communicate via radio-frequency and the iPhone communicates via Bluetooth. The device is like a translator that can speak both formats so that the pump and iPhone can loop together. The device communicates information to/from your pump by radio communications, and to/from your iPhone using Bluetooth.
 
 Purchase information for these devices is found in [Build Step 5: RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices)
 
 ## Do I have to carry the RileyLink compatible device everywhere?
 
-If you want your Loop to keep automatically adjusting insulin dosing and issuing commands to your pump, you will need the RileyLink compatible device so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you.
+If you want your Loop to keep automatically adjusting insulin dosing and issuing commands to your pump, you will need the device so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you.
 
 There is now a topics section on The Looped Facebook group. (Right hand side when you're in the discussion location).
 
@@ -22,7 +22,7 @@ Please review [RileyLink Compatible Device Range](../build/step5.md#rileylink-co
 
 ## What happens if I walk away from my RileyLink compatible device?
 
-While you are out of the communication range for your RileyLink compatible device, any running temp basal will keep going until it finishes (the longest temp basal that Loop sets are for 30 minutes duration...so within 30 minutes or less your pump would go back to your regularly scheduled basal). When you come back into range of your device, Loop will pick back up within 5-10 minutes without you needing to do anything.
+While you are out of the communication range for your device, any running temp basal will keep going until it finishes (the longest temp basal that Loop sets are for 30 minutes duration...so within 30 minutes or less your pump would go back to your regularly scheduled basal). When you come back into range of your device, Loop will pick back up within 5-10 minutes without you needing to do anything.
 
 
 ## Is the RileyLink compatible device waterproof?
@@ -31,20 +31,20 @@ Nope. Nor is it sweat-proof. Be careful. There are waterproof cases.
 
 ## When should I power cycle my RileyLink compatible device?
 
-This is one of the first things to try if you have a Red Loop saying Pump Data Too Old. Many people prefer toggling phone Bluetooth off then on again, first, but if that doesn't work, try a power cycle on the RileyLink compatible device.
+This is one of the first things to try if you have a Red Loop saying Pump Data Too Old. Many people prefer toggling phone Bluetooth off then on again, first, but if that doesn't work, try a power cycle on the device.
 
 ## Can I use more than one RileyLink compatible device at a time? Will it improve anything?
 
-Yes, you can have two turned on. Loop only uses one RileyLink compatible device at a time. If you have several devices turned on in Loop settings, your Loop will only look for another device after Loop fails for over 15 minutes on the original device. It is rare that Loop would fail for more than 15 minutes and a second device would help in the same environment. However, if one RileyLink compatible device is in the bedroom and another in the kitchen, it will switch for you. If one device gets damaged and you need to swap out to a second device; there are no issues with that.
+Yes, you can have two turned on. Loop only uses one device at a time. If you have several devices turned on in Loop settings, your Loop will only look for another device after Loop fails for over 15 minutes on the original device. It is rare that Loop would fail for more than 15 minutes and a second device would help in the same environment. However, if one device is in the bedroom and another in the kitchen, it will switch for you. If one device gets damaged and you need to swap out to a second device; there are no issues with that.
 
 ## How can I find the firmware versions for my RileyLink compatible device?
 
-In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu. The figure below is specific to the RileyLink. If you have another type of RileyLink compatible device, the firmware value reported will be different.
+In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu. The figure below shows firmware specific to the RileyLink. If you have another type of device, the firmware value reported will be different.
 
 ![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
 
-With RileyLink, the firmware displayed should match or be a higher version number than what is shown in the figure above, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number.) Check it when the RileyLink compatible device is working well and make a note of what it says. If you're having Red Loops, you might want to check firmware and connected state. Make sure, after power cycling your RileyLink compatible device, that the correct firmware is displayed. If several power cycles do not help, contact the manufacturer for assistance.
+With RileyLink, the firmware displayed should match or be a higher version number than what is shown in the figure above, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number.) Check it when the device is working well and make a note of what it says. If you're having Red Loops, you might want to check firmware and connected state. Make sure, after power cycling your device, that the correct firmware is displayed. If several power cycles do not help, contact the manufacturer for assistance.
 
 
 ## RileyLink Questions
@@ -59,9 +59,9 @@ There are two types of antennas for RileyLinks; each antenna is optimized for th
 ![components for RileyLink: case, board, battery; Medtronic on left, Omnipod on right](img/two-rl.png){width="650"}
 {align="center"}
 
-### What will happen if your RileyLink compatible device has the wrong antenna?
+### What will happen if your RileyLink has the wrong antenna?
 
-You can *technically* use that RileyLink compatible device with either pump on Loop. But, you will have significant frustrations and probably a lot of red loops. With mismatched antenna/pump, the device needs to be very close (think inches) and in clear line-of-sight to pump/pod. This makes everyday living (and sleeping) a bit hard. If you use the appropriate-antenna-for-your-pump device, the distances the pump/pod and RileyLink compatible device can tolerate from each other is much more "real world" friendly and stable. The OrangeLink contains both antennas so will work with either pump. This may be a good choice if you like to switch between Medtronic and Omnipod.
+You can *technically* use that RileyLink with either pump on Loop. But, you will have significant frustrations and probably a lot of red loops. With mismatched antenna/pump, the device needs to be very close (think inches) and in clear line-of-sight to pump/pod. This makes everyday living (and sleeping) a bit hard. If you use the appropriate-antenna-for-your-pump device, the distances the pump/pod and RileyLink can tolerate from each other is much more "real world" friendly and stable. The OrangeLink contains both antennas so will work with either pump. This may be a good choice if you like to switch between Medtronic and Omnipod.
 
 In a pinch, if you have a RileyLink that you used with a Medtronic pump and have switched to Omnipod, it might work as a backup, but you won't love it.
 
