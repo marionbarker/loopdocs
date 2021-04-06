@@ -14,10 +14,7 @@ You can also get to this screen (for iOS 14) by iPhone -> Settings -> Health (he
     The old instructions suggested turning on all switches.  This is NOT necessary for Carbohydrates and can be dangerous if
 
       1.  A different app writes Carbohydrates to Apple Health
-      1.  If two Loopers use the same Apple ID (this is strongly discouraged but it can happen, especially new Loopers building for their children)
-        * Note the Apple ID identifies a person and is distinct from the Apple Developer ID that identifes the developer
-        * The Apple Developer can install Loop on multiple devices with no crosstalk between different people using Loop
-        * The Apple ID identifies who data is associated with and should be associated with only one person
+      1.  If two Loopers use the same Apple ID - PLEASE - do not do this; [Loopers need their own Apple ID](step6.md#loopers-need-their-own-apple-id)
 
 
 ![Apple Health app, iOS 14, Loop app permissions screen](img/loop-health-permissions.svg){width="300"}
