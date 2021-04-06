@@ -18,7 +18,7 @@
 It is important to understand that the Apple ID is distinct from the Apple Developer ID.
 
 !!! warning "Apple ID"
-    Parents should set up a different Apple ID for each of their looper children and looper children should not use the parent Apple ID.
+    Parents should set up a different Apple ID for each of their looper children and looper children should not use the parent Apple ID. [Please use Apple's Instructions for adding an Apple ID for your child.](https://support.apple.com/en-us/HT201084)
 
     Sharing the Apple ID prevents Apple Health features from working properly.  Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa. In fact, the recommenation for [Health Permissions](health.md#loop-permissions) has changed because this has happened.
 
