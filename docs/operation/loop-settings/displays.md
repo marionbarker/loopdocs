@@ -170,7 +170,7 @@ The toolbar is where your inputs to the Loop behavior take place.  The individua
 
 * **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../overview.md#configurations).
 
-## Next Step: Device Menu
+## Next Step: RileyLink Menu
 
 You are almost there! One more Loop menu that you need to know about is the RileyLink (or compatible device) Menu. You can access your this menu (one for each Bluetooth connected device) by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump [Medtronic](mdt-pump.md#pump-pairing) or [Omnipod](omnipod-pump.md#select-rileylink).
 
