@@ -24,6 +24,7 @@ The RileyLink compatible device is an open-source hardware device that can bridg
 
 ![Omnipod or Medtronic pump communicating through RileyLink to phone running Loop app](img/rileylink-comm-pod-mmt.svg){width="600"}
 
+
 ## RileyLink Compatible Devices
 
 The RileyLink protocol defines a specific bluetooth interface and way of opening a Sub-GHz radio channel to pumps. All RileyLink compatible devices follow the RileyLink protocol.
