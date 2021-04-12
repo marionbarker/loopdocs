@@ -182,6 +182,10 @@
     <a href="../workout/" class="dropdown-item">Overrides</a>
 </li>
                                     
+<li>
+    <a href="../../loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
+</li>
+                                    
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">How to Use Loop App</a>
     <ul class="dropdown-menu">
@@ -465,15 +469,15 @@
 <h1 id="meal-entry">Meal Entry<a class="headerlink" href="#meal-entry" title="Permanent link">⌁</a></h1>
 <p>To start a new meal entry, tap on the green plate icon (circled below) in the toolbar at the bottom of the Loop status screen. Your Loop app will open to the Add Carb Entry screen.</p>
 <p align="center"><img alt="Loop toolbar" src="../img/toolbar-meal.svg" width="300" /></p>
-<p>Many Loopers increase the carbohydrate amount to cover the expected effect of protein and adjust the expected absorption time for fat for their meal entry. For simplicity, the rest of this page just refers to carbs because all the figures show carbs or carbohydrates in the menus. You should consider the whole meal, especially if you eat lower carb.</p>
+<p>Many Loopers increase the carbohydrate amount to cover the expected effect of protein and adjust the expected absorption time for fat in their meal entry. For simplicity, the rest of this page only refers to carbs because all the figures show carbs or carbohydrates in the menus. You should consider the whole meal, including fat and protein, especially if you eat lower carb.</p>
 <div class="admonition danger">
 <p class="admonition-title">Meal Entry - Fast Version</p>
-<p>There is a lot of information on this page, most of which will become second nature. At first read, it may seem incredibly complicated. The short version is here (assuming you accept all the default settings that Loop offers).</p>
+<p>There is a lot of information on this page, most of which will become second nature. At first, it may seem incredibly complicated. The short version is here (assuming you accept all the default settings that Loop offers).</p>
 <ol>
 <li>Tap meal entry icon on toolbar</li>
-<li>Enter number of grams of carbs in Add Carb Entry screen</li>
-<li>Tap continue to advance to Meal Bolus screen</li>
-<li>Tap Recommended line to transfer value to the Bolus line</li>
+<li>Enter number of grams of carbs in the Add Carb Entry screen</li>
+<li>Tap continue to advance to the Meal Bolus screen</li>
+<li>Tap Recommended line to transfer the value to the Bolus line</li>
 <li>Tap Deliver</li>
 </ol>
 </div>
@@ -499,28 +503,36 @@
 <ul>
 <li>If you inadvertently missed recording an earlier meal, just scroll the time back to when that food started to absorb.</li>
 <li>If you want to prebolus some portion of the meal that you're about to eat, just scroll the time forward.</li>
-<li>You can prebolus part of your meal with the current time, and then record a second entry by scrolling the time forward for an hour or two to prebolus for a steak that may not start absorbing right away.</li>
+<li>You can prebolus part of your meal with the current time, and then record a second entry by scrolling the time forward for an hour or two to prebolus a slower absorping item, e.g., a steak that may not start absorbing right away.</li>
 </ul>
-<p>Next, you have the option to select your absorption time and select an icon. This is not required - you can just accept the Taco absorption time default and keep going. The standard icons and absorption times are listed below. You may have modified these by doing a <a href="../../../build/code_customization/#default-carb-absorption-times">Code Customization</a>.</p>
+<p>Next, you have the option to select your absorption time and select an icon. This is not required - you can just accept the default taco absorption time and keep going. The standard icons and absorption times are listed below. You may have modified these by doing a <a href="../../../build/code_customization/#default-carb-absorption-times">Code Customization</a>.</p>
 <ul>
-<li>The lollipop represents a 2 hour absorption (FAST)</li>
-<li>The taco represents a 3 hour absorption (MEDIUM)</li>
-<li>The pizza represents a 4 hour absorption (SLOW)</li>
+<li>The lollipop corresponds to a 2 hour absorption (FAST)</li>
+<li>The taco corresponds to a 3 hour absorption (MEDIUM)</li>
+<li>The pizza corresponds to a 4 hour absorption (SLOW)</li>
 </ul>
-<p>If you don't want the Taco default, you can tap on the lollipop or pizza to select those absorption times. If you want more detail recorded about the meal, there are alternative food icons and even text labels you can select.</p>
-<p>The alternative food icons are revealed by tapping anywhere on <code>Food Type</code> row that is not a lollipop, taco or pizza. These alternative food icons are arranged (scroll left or right) based upon how long each food takes to absorb. From left to right is FAST, MEDIUM, SLOW or OTHER. If you mix icons from different categories, the absorption time updates to the longest absorption time for any icon tapped. You can also tap on the <code>abc</code> that appears in the lower left corner and manually type in your food label. Note that the lollipop, taco and pizza do not show up on the Nightscout screen but the alternative icons and labels are displayed.</p>
-<p>Regardless of the choice of icons on the <code>Food Type</code> row, you have the option of adjusting the <code>Absorption Time</code> in half-hour increments from 30 minutes to 8 hours. (Note the dial may go past 8 hours, but it spins back to 8 if you try to exceed that time.) Loop will initially estimate your absorption time at 150% of the time that you enter. As a result, carbs entered using the taco icon will initially be treated as 4.5 hour absorption. More about this later in the <a href="./#dynamic-carb-absorption">Dynamic Carb Absorption</a> section.</p>
+<p>If you don't want to use the default taco absorption time, you can tap on the lollipop or the pizza icon to select those absorption times, or manually enter an absorption time between 30 min and 8 hours (method described below). If you want more detail recorded about the meal, there are alternative food icons and even text labels you can select.</p>
+<p>The alternative food icons are revealed by tapping anywhere on <code>Food Type</code> row that is not a lollipop, taco or pizza icon. These alternative food icons are arranged (scroll left or right) based upon how long each food takes to absorb. From left to right is FAST, MEDIUM, SLOW or OTHER. If you mix two icons from different categories, the absorption time updates to the longest absorption time. With three or more, you should double-check the absorption time and adjust it if necessary. You can also tap on the <code>abc</code> that appears in the lower left corner and manually type in your food label.</p>
+<p>Note that the lollipop, taco and pizza do not show up on the Nightscout screen whereas the alternative icons and labels are displayed.</p>
+<p>Regardless of the choice of icons on the <code>Food Type</code> row, you have the option to adjust the <code>Absorption Time</code> in half-hour increments from 30 minutes to 8 hours. (Note the dial may go past 8 hours, but it spins back to 8 if you try to exceed that time.) Loop will initially estimate your absorption time at 150% of the time that you enter. As a result, carbs entered using the taco icon will initially be treated as 4.5 hour absorption. More about this later in the <a href="./#dynamic-carb-absorption">Dynamic Carb Absorption</a> section.</p>
 <p>You do not have to enter all carbs for a meal at the same absorption or eating time. If you want to enter some of the meal's carbs as faster and some as slower, you can log the meal over several individual entries. For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may want to record some carbs as lollipop and some as pizza. Another example would be steak and potatoes, you may want to record the potatoes with a current start time and taco absorption and the steak with a start time of 1-2 hours into the future and a 5 hour absorption time.</p>
 <p>When you are done recording a given food entry, press <code>Continue</code> and the Meal Bolus tool will open.</p>
 <h2 id="meal-bolus">Meal Bolus<a class="headerlink" href="#meal-bolus" title="Permanent link">⌁</a></h2>
 <p align="center"><img alt="Record a meal bolus" src="../img/meal-bolus.svg" width="900" /></p>
-<p>You can tap on the <code>Recommended</code> line and that value will be transferred to the Bolus line, OR tap on 0.0u on the <code>Bolus</code> row and type in your desired bolus amount OR <code>Save Without Bolusing</code> The <code>Save Without Bolusing</code> option is used if you'd like to add to your meal entry or do not want to accept a bolus right now. The meal entry is NOT saved until you either <code>Deliver</code> or <code>Save Without Bolusing</code>. The graph at the top of the Meal Bolus screen will show your BG prediction based upon your meal entry and desired bolus amount. You can adjust your desired bolus amount or click <code>&lt;Carb Entry</code> to adjust your meal entry and then return to Meal Bolus to see how your BG prediction changes. When you're ready to bolus, click <code>Deliver</code>. If you start a bolus and plan to add additional meal entries, you will probably need to <code>Save without Bolusing</code> for the next entry because Loop will be in mid-bolus. After entering the rest of the meal, don't forget to <a href="../bolus/">bolus manually</a>.</p>
-<p align="center"><img alt="Bolus when below correction range" src="../img/below-min.svg" width="300" /></p>
-<p>If your BG is below your correction range, Loop's Recommended bolus will have a small warning above it stating that "Current glucose of xx is below correction range". You can either skip the bolus or enter a portion or all of the Recommended bolus. If your BG is below your suspend threshold, Loop will not recommend a bolus. If this happens, you can calculate the bolus using your carbohydrate ratio and enter a portion or all of this amount or you can set a 15 minute timer and wait for your BG to start to rise and then reassess when and how much to bolus.</p>
+<p>You can tap on the <code>Recommended</code> line and that value will be transferred to the Bolus line, OR tap on 0.0u on the <code>Bolus</code> row and type in your desired bolus amount OR <code>Save Without Bolusing</code> The <code>Save Without Bolusing</code> option is used if you'd like to add to your meal entry or do not want to accept a bolus right now. The meal entry is NOT saved until you either <code>Deliver</code> or <code>Save Without Bolusing</code>. The graph at the top of the Meal Bolus screen will show your BG prediction based upon your meal entry and desired bolus amount. You can adjust your desired bolus amount or click <code>&lt;Carb Entry</code> to adjust your meal entry and then return to Meal Bolus to see how your BG prediction changes. When you're ready to bolus, click <code>Deliver</code>. If you start a bolus and plan to add additional meal entries, you will probably need to <code>Save without Bolusing</code> for the next entry because Loop will mid-bolus, and you cannot initiate a new bolus while one is in progress. After entering the rest of the meal, don't forget to <a href="../bolus/">bolus</a> manually.</p>
+<div class="admonition warning">
+<p>If you need to modify or cancel a bolus in progress, turn the phone to portait orientation and tap the bolus in progress line right below the heads up display (HUD).  Loop will immediately cancel the in-progress bolus.  If you desire, then you can <a href="../bolus/">bolus</a> manually to modify the insulin to be delivered via bolus.</p>
+<p>Remember - once the <code>Deliver</code> button is tapped, the carb entry associated with that bolus is saved.  Loop will increase insulin delivery based on that entry. So if you canceled a bolus prior to modifying a carb entry, be sure to <a href="./#edit-meals">edit the carbs</a> already saved instead of entering a new carb entry.</p>
+</div>
+<p>If your BG is below your correction range, Loop's Recommended bolus will have a small warning above it stating that "Current glucose of xx is below correction range". You can either skip the bolus or enter a portion or all of the Recommended bolus.</p>
+<p>If your BG is below your suspend threshold, Loop will not recommend a bolus. If this happens, you can calculate the bolus using your carbohydrate ratio and enter a portion or all of this amount or you can set a 15 minute timer and wait for your BG to start to rise and then reassess when and how much to bolus.</p>
 <h2 id="automatic-bolus-ab-branch">Automatic-Bolus (AB) Branch<a class="headerlink" href="#automatic-bolus-ab-branch" title="Permanent link">⌁</a></h2>
-<p>Loopers who are using AB still typically prebolus and/or  bolus for meals. The amount of <code>Recommended</code> insulin that will appear in the Meal Bolus screen will be the full amount of the bolus (not 40%). As discussed above, you can accept this recommendation or enter a different amount, however, and this is <strong>very important</strong>, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping <code>Deliver</code> or tapping <code>Save Without Bolusing</code>, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of recommended bolus at each successive Loop interval.</p>
+<p>Loopers who are using AB still typically prebolus and/or  bolus for meals. The amount of <code>Recommended</code> insulin that will appear in the Meal Bolus screen will be the full amount of the bolus Loop recommends (not the 40% partial bolus delivered automatically). As discussed above, you can accept this recommendation or enter a different amount, however, and this is <strong>very important</strong>, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping <code>Deliver</code> or tapping <code>Save Without Bolusing</code>, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of the recommended bolus at each successive Loop interval.</p>
+<div class="admonition warning">
+<p>Note that this same automatic delivery of insulin in response to entered carbs occurs in the master branch, or when Dosing Strategy is set to Temp Basal in AB branch, but the delivery via temporary basal rates is slower, providing more time for an error to be noticed. By the same token, AB branch responds more quickly to increases in blood glucose.</p>
+</div>
 <h2 id="dynamic-carb-absorption">Dynamic Carb Absorption<a class="headerlink" href="#dynamic-carb-absorption" title="Permanent link">⌁</a></h2>
-<p>Loop observes the blood glucose impact of the meal within the 150% absorption time window. Loop calculates how many carbs have been absorbed (regardless of how many you entered) based on your BG pattern and your settings. You can watch the progression of the Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (ICE) on the Carbohydrates screen. An example of the screen is on the left side of the figure below. An explanation of the dual lines for each entry and the color coding scheme is explained below the figure.<br/><br/></p>
+<p>Loop observes the blood glucose impact of the meal within the 150% absorption time window. Loop calculates how many carbs have been absorbed (regardless of how many you entered) based on your BG pattern and your settings. You can watch the progression of  Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (ICE) on the Carbohydrates screen. An example of the screen is on the left side of the figure below. An explanation of the dual lines for each entry and the color coding scheme is explained below the figure.<br/><br/></p>
 <p align="center"><img alt="Edit a carb entry" src="../img/edit-carb-entry.svg" width="900" /></p>
 <ul>
 <li>Top line of each entry<ul>
@@ -560,7 +572,7 @@
 <h2 id="third-party-apps">Third Party Apps<a class="headerlink" href="#third-party-apps" title="Permanent link">⌁</a></h2>
 <p>Please see <a href="../../../build/health/#loop-permissions">Loop Permissions</a>.</p>
 <h2 id="carb-absorption-model">Carb Absorption Model<a class="headerlink" href="#carb-absorption-model" title="Permanent link">⌁</a></h2>
-<p>More information about the way Loop models effects of carbs, insulin, etc is on the <a href="../../algorithm/prediction/">algorithm page</a>.</p></div>
+<p>For more information about the way Loop models the effects of carbs, insulin, etc., see the <a href="../../algorithm/prediction/">algorithm page</a>.</p></div>
             </div>
         </div>
 

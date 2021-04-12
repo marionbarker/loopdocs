@@ -182,6 +182,10 @@
     <a href="../workout/" class="dropdown-item">Overrides</a>
 </li>
                                     
+<li>
+    <a href="../../loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
+</li>
+                                    
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">How to Use Loop App</a>
     <ul class="dropdown-menu">
@@ -445,7 +449,7 @@
 <h1 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Permanent link">⌁</a></h1>
 <p>To start a bolus entry, tap on the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen.</p>
 <p align="center"><img alt="Loop toolbar" src="../img/toolbar-bolus.svg" width="300" /></p>
-<p>The Loop app will open to the Bolus screen. This looks similar to the <a href="../carbs/#meal-bolus">Meal Bolus</a> screen, but doesn't list the meal entry. If Loop predicts you need more insulin, there will be a recommended value. In this example, the current glucose is below the correction range, but the prediction is well above the range. Loop allows you to dip below the correction range but its recommended bolus will be limited by your Suspend Threshold. Check back once your BG start to rise and there will probably be a bigger recommendation.</p>
+<p>The Loop app will open to the Bolus screen. This looks similar to the <a href="../carbs/#meal-bolus">Meal Bolus</a> screen, but doesn't list the meal entry. If Loop predicts you need more insulin, there will be a recommended value. In this example, the current glucose is below the correction range, but the prediction is well above the range. Loop allows you to dip below the correction range but its recommended bolus will be limited by your Suspend Threshold. Check back once your blood glucose (BG) starts to rise and there will probably be a bigger recommendation.</p>
 <p>You can tap on the <code>Recommended</code> line and that value will be transferred to the Bolus line or tap on 0.0u on the <code>Bolus</code> row and type in your desired bolus amount. As soon as a value is entered on the <code>Bolus</code> row, the Deliver button turns blue and can be tapped to deliver that amount via your pump.</p>
 <p align="center"><img alt="Bolus when below correction range" src="../img/below-min.svg" width="300" /></p>
 <h2 id="correction-bolus">Correction Bolus<a class="headerlink" href="#correction-bolus" title="Permanent link">⌁</a></h2>
@@ -454,15 +458,16 @@
 <li>
 <p>If you are using the master branch or the automatic-bolus branch with <code>Dosing Strategy</code> set to <code>Temp Basal</code></p>
 <ul>
-<li>Loop will provide increased temp basals for as long as it takes to bring predicted BG into range</li>
-<li>The increased temp basals are subject to your Delivery Limits.
+<li>Loop will provide increased temporary basal rates until it has delivered enough insulin to bring predicted BG into range</li>
+<li>The increased temporary basal rates are subject to your Delivery Limits.
 <br/><br/></li>
 </ul>
 </li>
 <li>
 <p>If you are using the automatic-bolus branch with <code>Dosing Strategy</code> set to <code>Automatic Bolus</code></p>
 <ul>
-<li>Loop will automatically deliver 40% of the correction bolus at each successive loop interval</li>
+<li>Loop will recalculate the correction bolus at each successive loop interval, i.e., every 5 minutes</li>
+<li>Loop will then automatically deliver 40% of that new correction value</li>
 <li>Each automatic bolus is subject to your Delivery Limits</li>
 </ul>
 </li>
@@ -472,9 +477,14 @@
 <p>When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop is sending a bolus command to the pump. The "starting bolus" indicator is shown in the left screenshot above. Once the bolus begins, the bolused xx of yy with the circle display begins, as shown in the right screenshot above. If you change your mind, just click on the bolus status line while the bolus is in progress to cancel your bolus, as shown in the screenshot below.  If you see a 'pump is suspended notice' in the bolus status line after cancelling your bolus, just tap on it to resume pump operations.</p>
 <p align="center"><img alt="Bolus cancel status indicator" src="../img/bolus-status-line-cancel.svg" width="300" /></p>
 <h2 id="bolus-failure-notifications">Bolus Failure Notifications<a class="headerlink" href="#bolus-failure-notifications" title="Permanent link">⌁</a></h2>
-<p>On occasion, you will receive notification that a bolus may have failed. If you're using AB, this can often be because a bolus is already being delivered. In some of these cases, the bolus was delivered. On a Medtronic pump, you should check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.  Omnipod users can hear the clicks if the room is quiet enough.</p>
-<p>If you get an uncertain delivery message, you may still see the "bolused xx of yy" display continue for as long as it would have taken to actually deliver the bolus. This display is driven by a timer and logic on the phone. (Loop is not asking the pump repeatedly - "are you done yet"). Loop has mostly been updated so that the next time it contacts the pump it determines whether that bolus actually went through or not and will update the screen.  Look at the Event History screen (accessed by tapping the Active Insulin or Insulin Delivery plots).</p>
-<p>If the uncertain delivery is not resolved by the next cycle or by doing a Read Pod Status for Pod or Get Recent History for Medtronic, please tap on Loop Settings, Issue Report and email it to yourself. Then post on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.</p></div>
+<p>On occasion, you will receive a notification that a bolus may have failed. If you're using AB branch, this can happen when an automatic bolus is in progress. In some of these cases, the bolus was delivered. On a Medtronic pump, you should check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.  Omnipod users can hear the clicks if the room is quiet enough.</p>
+<p>If you get an uncertain delivery message, you may still see the "bolused xx of yy" display continue for as long as it would have taken to actually deliver the bolus. This display is driven by a timer and logic on the phone. (Loop is not asking the pump repeatedly - "are you done yet?"). You may want to interrupt an uncertain bolus if it is large, evaluate status and then resume with a fresh bolus. Loop should update the status the next time it contacts the pump. It can determine whether that bolus actually went through or not and will update the screen.  Look at the Event History screen (accessed by tapping the Active Insulin or Insulin Delivery plots). Turn your phone to landscape orientation and you should see either "Certain" or "Uncertain" at the end of each Bolus record. (If you tap on the specific record, even more detail is displayed.)</p>
+<p>If an "uncertain" delivery is not resolved, try this:</p>
+<ul>
+<li>Omnipod: Execute a <a href="../../loop-settings/pump-commands/#pod-diagnostics">Read Pod Status command</a></li>
+<li>Medtronic: Execute a <a href="../../loop-settings/pump-commands/#medtronic-commands">Fetch Recent History command</a></li>
+</ul>
+<p>If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then <a href="../../..#stay-in-the-loop">post</a> on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.</p></div>
             </div>
         </div>
 
