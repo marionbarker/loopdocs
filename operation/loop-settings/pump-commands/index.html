@@ -449,111 +449,99 @@
 <h1 id="pump-commands">Pump Commands<a class="headerlink" href="#pump-commands" title="Permanent link">⌁</a></h1>
 <p>Initially, Loop was written to interact with Medtronic pumps. Then as Omnipod was added to Loop, the underlying code structure was reorganized to have "pump modules" and "CGM modules". This will make it easier, in future, to drop in new "modules" to Loop. This history is provided as a partial explanation as to why the <a href="./#medtronic-commands">Medtronic Pump Command</a> menus are found in the RileyLink menu, whereas the Omnipod pump command menus are in the <a href="./#omnipod-commands">Pod Settings</a> menu.</p>
 <h2 id="change-time-zone">Change Time Zone<a class="headerlink" href="#change-time-zone" title="Permanent link">⌁</a></h2>
-<p>For both Medtronic and Omnipod, the time zone should be changed using the Loop <code>Change Time Zone</code> command.</p>
+<p>For both Medtronic and Omnipod, use the Loop <code>Change Time Zone</code> command to update time.</p>
 <ul>
-<li><strong>Medtronics</strong>: Tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings menu.</li>
-<li><strong>Omnipod</strong>: Tap on the Pod Age icon in the Heads Up Display or the image of the Omnipod in the Loop settings menu.</li>
+<li><strong>Medtronics</strong>: Tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings menu</li>
+<li>
+<p><strong>Omnipod</strong>: Tap on the Pod Age icon in the Heads Up Display or the image of the Omnipod in the Loop settings menu</p>
+<p>Scroll down to the Change Time Zone line, example shown in the figure below.  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24 hour configuration pattern for basal rates, ISF, CR and correction range are aligned with the time zone shown on this line.</p>
+<p><img alt="Command line to modify the time zone" src="../img/change-time-zone.svg" width="250" /></p>
+</li>
 </ul>
-<p>Scroll down to the Change Time Zone line, example shown in the figure below.  You can leave the time zone offset, or touch it to modify the time.</p>
-<p align="center"><img alt="Command line to modify the time zone" src="../img/change-time-zone.svg" width="250" /></p>
+<p>The action for each pump:</p>
+<ul>
+<li><strong>Medtronics</strong>: The time is updated on the Medtronic pump, which aligns the scheduled basal rates configured in Loop to the current time zone</li>
+<li><strong>Omnipod</strong>: The basal rates as configured in Loop are sent to the Omnipod for the current time zone</li>
+<li><strong>Both</strong>: Loop no longer shifts the 24 hour configuration pattern for basal rates, ISF, CR and correction range to the old time zone</li>
+</ul>
 <h2 id="omnipod-commands">Omnipod Commands<a class="headerlink" href="#omnipod-commands" title="Permanent link">⌁</a></h2>
 <p>Tap on the Pod Age icon on the Heads Up Display or the image of the Omnipod in the Loop settings menu to reach the Pod Settings Menu.</p>
 <p>This screen provides important information about your Pod and allows you to issue some commands to the Pod through Loop.</p>
-<p align="center"><img alt="img/long-pod-settings.jpeg" src="../img/long-pod-settings.svg" width="250" /></p>
+<p align="center"><img alt="Pod Settings Menu" src="../img/long-pod-settings.svg" width="250" /></p>
 <h3 id="pod-information">Pod Information<a class="headerlink" href="#pod-information" title="Permanent link">⌁</a></h3>
 <p>The first section has information regarding how long the Pod has been active and the (72 hour) Pod expiration date/time. These are determined when the Pod is activated by injecting insulin into the reservoir and using actual time to estimate these values.</p>
 <div class="admonition info">
 <p>The Pod has an internal timer that keeps track of minutes that the Pod has been active.  This timer may have a slight drift with respect to actual time, so the 72 hour expiration beeps or the 80 hour Pod shutdown may be a few minutes before or after you expect it, based on this reported expiration date/time.</p>
 </div>
-<ul>
-<li>
-<p>Bolus Delivery: This line reports the % progress of any ongoing bolus. Unless a bolus is actively being delivered when you enter Pod Settings, this will say None. This line does not update until you tap on the refresh symbol to the right of the Pod image, or exit and re-enter the Pod Settings menu.</p>
-<p align="center"><img alt="img/pod-settings-bolus-status.png" src="../img/pod-settings-bolus-status.png" width="250" /></p>
-</li>
-<li>
-<p>Basal Delivery: This line will let you know what is active: The normal basal <em>schedule</em>,the <em>U/hour</em> of a 30 minute Temp Basal or if the Pod is <em>suspended</em>.</p>
-<p align="center"><img alt="img/pod-settings-basal-delivery.png" src="../img/pod-settings-basal-delivery.png" width="250" /></p>
-</li>
-<li>
-<p>Alarms: This line displays Alerts or Alarms; tapping on it, or on the accompanying banner displayed in the HUD, acknowledges the alert</p>
+<h4 id="bolus-delivery">Bolus Delivery<a class="headerlink" href="#bolus-delivery" title="Permanent link">⌁</a></h4>
+<p>This line reports the % progress of any ongoing bolus. Unless a bolus is actively being delivered when you enter Pod Settings, this will say None. This line does not update until you tap on the refresh symbol to the right of the Pod image, or exit and re-enter the Pod Settings menu.</p>
+<p align="center"><img alt="Bolus Status Line" src="../img/pod-settings-bolus-status.png" width="250" /></p>
+<h4 id="basal-delivery">Basal Delivery<a class="headerlink" href="#basal-delivery" title="Permanent link">⌁</a></h4>
+<p>This line will let you know what is active: The normal basal <em>schedule</em>,the <em>U/hour</em> of a 30 minute Temp Basal or if the Pod is <em>suspended</em>.</p>
+<p align="center"><img alt="Basal Delivery Line" src="../img/pod-settings-basal-delivery.png" width="250" /></p>
+<h4 id="alarms">Alarms<a class="headerlink" href="#alarms" title="Permanent link">⌁</a></h4>
+<p>This line displays Alerts or Alarms; tapping on it, or on the accompanying banner displayed in the HUD, acknowledges the alert</p>
 <ul>
 <li>If your Pod is beeping an alert, this line will display information about the alert. Tapping on the alert clears or "snoozes" the alert status.</li>
 <li>If your Pod is screaming, it's time to change it.  Tapping on this line stimulates an immediate reading of the actual error (normally this happens at the next CGM reading).</li>
-<li>There were overwhelming requests during initial testing to minimize the "beeping" of pods. You can turn on additional beeps by enabling <a href="./#pod-diagnostics">Confirmation Beeps</a>.<ul>
+<li>There were overwhelming requests during initial testing to minimize the "beeping" of pods. You can turn on additional beeps by enabling <a href="./#enable-confirmation-beeps">Confirmation Beeps</a>.<ul>
 <li>Expiration Reminder - Loop notification only, no pod beeps</li>
 <li>72 Hours Expiration - Loop notification and pod beeps (pod beeps continue  once per hour until alert is acknowledged)</li>
 <li>79 Hour Alert - Loop notification and pod beeps (pod beeps continue every 15 minutes until alert is acknowledged)</li>
 </ul>
 </li>
 </ul>
-<p align="center"><img alt="img/pod-settings-alarms.png" src="../img/pod-settings-alarms.png" width="250" /></p>
-</li>
-<li>
-<p>Reservoir: Pods do not report the volume of insulin remaining in the reservoir until there are less than 50 units remaining. So, typically you will see "50+ U" in this line for quite a while with a new Pod.</p>
-<p align="center"><img alt="img/pod-settings-reservoir.png" src="../img/pod-settings-reservoir.png" width="250" /></p>
-</li>
-<li>
-<p>Insulin Delivered: This line is the total amount of basal and bolus insulin delivered by the Pod since the cannula was inserted. It is obtained by taking the reported pod insulin delivery and subtracting the amount that was used to prime the pod and fill the cannula upon insertion (about 3&nbsp;U). This number is not expected to match the number reported by the Read Pod Status command, described below.</p>
-<p align="center"><img alt="img/pod-settings-insulin-delivered.png" src="../img/pod-settings-insulin-delivered.png" width="250" /></p>
-</li>
-</ul>
+<p align="center"><img alt="Alarm line showing pod expiration advisory" src="../img/pod-settings-alarms.png" width="250" /></p>
+<h4 id="reservoir">Reservoir<a class="headerlink" href="#reservoir" title="Permanent link">⌁</a></h4>
+<p>Pods do not report the volume of insulin remaining in the reservoir until there are less than 50 units remaining. So, typically you will see "50+ U" in this line for quite a while with a new Pod.</p>
+<p align="center"><img alt="Pod reservoir showing insulin amount" src="../img/pod-settings-reservoir.png" width="250" /></p>
+<h4 id="insulin-delivered">Insulin Delivered<a class="headerlink" href="#insulin-delivered" title="Permanent link">⌁</a></h4>
+<p>This line is the total amount of basal and bolus insulin delivered by the Pod since the cannula was inserted. It is obtained by taking the reported pod insulin delivery and subtracting the amount that was used to prime the pod and fill the cannula upon insertion (about 3&nbsp;U). This number is not expected to match the number reported by the Read Pod Status command, described below.</p>
+<p align="center"><img alt="Insulin Delivered Line" src="../img/pod-settings-insulin-delivered.png" width="250" /></p>
 <h3 id="pod-commands">Pod Commands<a class="headerlink" href="#pod-commands" title="Permanent link">⌁</a></h3>
 <p>This section contains commands the typical user will use.</p>
-<ul>
-<li>
-<p>Suspend Delivery: This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely.</p>
-<p align="center"><img alt="img/pod-settings-resume.png" src="../img/pod-settings-resume.png" width="250" /></p>
-<p>A banner notice will appear on the Loop's main screen when insulin delivery is suspended.</p>
-<p align="center"><img alt="img/pod-hud-suspended.png" src="../img/pod-hud-suspended.png" width="250" /></p>
+<h4 id="suspend-delivery">Suspend Delivery<a class="headerlink" href="#suspend-delivery" title="Permanent link">⌁</a></h4>
+<p>This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely.</p>
+<p align="center"><img alt="Line indicates delivery is suspended, tap to resume" src="../img/pod-settings-resume.png" width="250" /></p>
+<p>A banner notice will appear on the Loop's main screen when phone is in portrait mode when insulin delivery is suspended.</p>
+<p align="center"><img alt="banner notice on the HUD" src="../img/pod-hud-suspended.png" width="250" /></p>
 <p>You will need to press <code>Tap to Resume</code> in the banner or the <code>Resume Delivery</code> button in the Pod Settings to resume your scheduled basal rate and let Loop get back to action. Bolus deliveries will not be resumed, if they were interrupted.</p>
-</li>
-<li>
-<p>Expiration Reminder: With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting, Loop sets the default to 70 hours, i.e., two hours before the full 3 days that Insulet guarantees. As with the PDM, Loop allows the Pod to continue operating until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.</p>
-<p align="center"><img alt="img/pod-settings-screen-expiration-reminder.png" src="../img/pod-settings-screen-expiration-reminder.png" width="250" /></p>
-</li>
-<li>
-<p>Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your Pod. However, if you are going to be away from home for longer periods of time or when Daylight Savings Time starts or ends, you may want to update your Pod's basal schedule to match local time by selecting the <code>Change Time Zone</code> command when convenient. Using this command updates your basal schedule on your Pod. If you start a new Pod session without modifying the time zone here, the original time zone will be used for the new Pod. Please wait until you see <code>Succeeded</code> appear on the page to ensure the command has successfully been received by the Pod.</p>
+<h4 id="expiration-reminder">Expiration Reminder<a class="headerlink" href="#expiration-reminder" title="Permanent link">⌁</a></h4>
+<p>With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting, Loop sets the default to 70 hours, i.e., two hours before the full 3 days that Insulet guarantees. As with the PDM, Loop allows the Pod to continue operating until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.</p>
+<p align="center"><img alt="view of the expiration reminder selection wheel" src="../img/pod-settings-screen-expiration-reminder.png" width="250" /></p>
+<h4 id="change-time-zone_1">Change Time Zone<a class="headerlink" href="#change-time-zone_1" title="Permanent link">⌁</a></h4>
+<p>Use the <code>Change Time Zone</code> command to align your configuration settings with the current time zone. Note that this updates your basal schedule on your Pod. If you start a new Pod session without modifying the time zone here, the original time zone will be used for the new Pod. Please wait until you see <code>Succeeded</code> appear on the page to ensure the command has successfully been received by the Pod.</p>
 <div class="admonition info">
-<p>Make sure the phone, RileyLink compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.  (The Pod does not know time-of-day.)</p>
+<p>Make sure the phone, RileyLink compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.</p>
 </div>
-<p align="center"><img alt="img/pod-change-timezone.png" src="../img/pod-change-timezone.png" width="250" /></p>
-</li>
-<li>
-<p>Replace Pod: This command deactivates a Pod prior to replacing it. Once you tap <code>Replace Pod</code>, another screen appears for you to confirm that you mean it. It is strongly advised that you first tap <code>Suspend Delivery</code> and then <code>Replace Pod</code>.</p>
+<p align="center"><img alt="Pod menu showing when time zone change succeeded" src="../img/pod-change-timezone.png" width="250" /></p>
+<h4 id="replace-pod">Replace Pod<a class="headerlink" href="#replace-pod" title="Permanent link">⌁</a></h4>
+<p>This command deactivates a Pod prior to replacing it. Once you tap <code>Replace Pod</code>, another screen appears for you to confirm that you mean it. It is strongly advised that you first tap <code>Suspend Delivery</code> and then <code>Replace Pod</code>.</p>
 <div class="admonition info">
 <p>Loop continues to record the scheduled basal rate even with no Pod present. By first tapping <code>Suspend Delivery</code> and then tapping <code>Replace Pod</code> the Loop and Apple Health record for basal delivery is more accurate. This is especially important if a longer delay is planned prior to placing a new Pod on your body.</p>
 </div>
-</li>
-</ul>
-<p align="center"><img alt="img/pod-settings-replace-pod.png" src="../img/pod-settings-replace-pod.png" width="250" /></p>
+<p align="center"><img alt="Icon to tap to replace pod" src="../img/pod-settings-replace-pod.png" width="250" /></p>
 <h3 id="pod-devices">Pod Devices<a class="headerlink" href="#pod-devices" title="Permanent link">⌁</a></h3>
 <p>This allows access to the <a href="../rileylink/">RileyLink</a> menu for each connected RileyLink compatible device.</p>
 <h3 id="pod-details">Pod Details<a class="headerlink" href="#pod-details" title="Permanent link">⌁</a></h3>
 <p>This section provides some Pod identifying information. The Lot number and TID number are the tiny number stamped on the Pod that Insulet might ask you to report if you happen to call in this Pod for an appropriate failure.</p>
 <h3 id="pod-diagnostics">Pod Diagnostics<a class="headerlink" href="#pod-diagnostics" title="Permanent link">⌁</a></h3>
 <p>This section is labeled Diagnostics, but many Pod users make use of this section.</p>
-<ul>
-<li>
-<p>Read Pod Status: This command requests the status of the Pod and reports some of the returned information.</p>
-<p align="center"><img alt="example pod status information" src="../img/read-pod-status.svg" width="250" /></p>
-</li>
-<li>
-<p>Play Test Beeps: This command requests the Pod emit a beep pattern. If you hear it, you know the commands are getting to the Pod.</p>
-</li>
-<li>
-<p>Read Pulse Log: This command reads the pulse log (diagnostic) and saves the result in the log file.  This can be extracted by doing an Issue Report and emailing it to yourself. If you are having communication issues, you can provide this report to an expert who may be able to provide assistance. <a href="../../..#stay-in-the-loop">Post</a> for help in either zulipchat or a Facebook group to request assistance and you'll get information about how to get that log file submitted.</p>
-</li>
-<li>
-<p>Test Command: TBD - ask Joe.</p>
-</li>
-<li>
-<p>Enable Confirmation Beeps: This turns on beeps on the Pod.</p>
+<h4 id="read-pod-status">Read Pod Status<a class="headerlink" href="#read-pod-status" title="Permanent link">⌁</a></h4>
+<p>This command requests the status of the Pod and reports some of the returned information.</p>
+<p align="center"><img alt="result of read pod status" src="../img/read-pod-status.svg" width="250" /></p>
+<h4 id="play-test-beeps">Play Test Beeps<a class="headerlink" href="#play-test-beeps" title="Permanent link">⌁</a></h4>
+<p>This command requests the Pod emit a beep pattern. If you hear it, you know the commands are getting to the Pod.</p>
+<h4 id="read-pulse-log">Read Pulse Log<a class="headerlink" href="#read-pulse-log" title="Permanent link">⌁</a></h4>
+<p>This command reads the pulse log (diagnostic) and saves the result in the log file.  This can be extracted by doing an Issue Report and emailing it to yourself. If you are having communication issues, you can provide this report to an expert who may be able to provide assistance. <a href="../../..#stay-in-the-loop">Post</a> for help in either zulipchat or a Facebook group to request assistance and you'll get information about how to get that log file submitted.</p>
+<h4 id="test-command">Test Command<a class="headerlink" href="#test-command" title="Permanent link">⌁</a></h4>
+<p>TBD - ask Joe.</p>
+<h4 id="enable-confirmation-beeps">Enable Confirmation Beeps<a class="headerlink" href="#enable-confirmation-beeps" title="Permanent link">⌁</a></h4>
+<p>This turns on beeps on the Pod.</p>
 <ul>
 <li>Temp Basal Change (TBD)</li>
 <li>Bolus Acknowledgement (TBD)</li>
 <li>Other (TBD)</li>
-</ul>
-</li>
 </ul>
 <h2 id="medtronic-commands">Medtronic Commands<a class="headerlink" href="#medtronic-commands" title="Permanent link">⌁</a></h2>
 <p>The Medtronic commands are inside the RileyLink menu.</p>
@@ -566,16 +554,26 @@
 <h3 id="other-commands">Other commands<a class="headerlink" href="#other-commands" title="Permanent link">⌁</a></h3>
 <p>MySentry Pair, Fetch Recent History, Fetch Enlite Glucose, Get Pump Model, Send Button Press, Read Pump Status, and Read Basal Schedule are all ways of asking the pump for information you might be interested in. They are not part of setting up the Loop and will not affect Loop operations.</p>
 <p>Enable Diagnostic LEDs, Discover Commands, and RileyLink Statistics are commands that are sometimes used by developers to aid in app troubleshooting and debugging. They don't impact Loop operations.</p>
-<p><strong>MySentry Pair</strong> is for x23 and x54 pumps only, and you will have completed this pairing command as part of the original <a href="../mdt-pump/">Add Pump</a> process. The MySentry pairing process adds a specific ID to your pump in the pump's Connect Devices, Other Devices menu. This pairing allows Loop to get information from x23 and x54 in an efficient manner. If that is not done, Loop will only be green every other loop. If you ever want to re-pair MySentry, you can follow the directions as shown in the RileyLink command screen. You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.</p>
-<p><strong>Fetch Recent History</strong> polls the pump for recent pump events such as boluses, temp basals, primes, rewinds, etc.  The amount of information transmitted for a Fetch Recent History is usually quite large and, as a result, may be more prone to an early failure before it succeeds. If the first Fetch Recent History fails, sometimes it is helpful to use the Send Button Press command to sort of "wake up" the pump in preparation for communications.</p>
-<p><strong>Fetch Enlite Glucose</strong> is only useful for Medtronic CGM users. The Fetch Enlite Glucose command will pull the recent glucose values saved in the pump history. Dexcom users do not store any glucose data in the pump.</p>
-<p><strong>Get Pump Model</strong> simply returns the pump's model.</p>
-<p><strong>Send Button Press</strong> can be useful to see if the communication between the device and pump is working. If successful, the screen on the pump will light up and Loop will confirm the button press with a <code>success</code> message. If pump comms are failing, sending a successful button press can help "wake up" a pump that perhaps has not been communicating well.</p>
-<p><strong>Read Pump Status</strong> is also nice quick pump read for reservoir volume, pump battery voltage, and pump status (bolusing or suspending). For x23 and x54 pump users, this command will provide the exact pump battery voltage instead of the 25/50/75/100% levels that are reported otherwise.</p>
-<p><strong>Read Basal Schedule</strong> will pull the active basal pattern from the pump so you can review what the current settings are without using pump menu.</p>
-<p><strong>Enable Diagnostic LEDs</strong> will turn on more LED flashes on the RileyLink while it is operating. You will see more blue flashing lights as the RileyLink communicates with the pump. If you tried turning on this feature and decide later that you just don't want to see so many flashing lights, simply reboot the RileyLink by turning the power switch off/on.  This will reset the LEDs.</p>
-<p><strong>Discover Commands</strong> just ignore this menu item.</p>
-<p><strong>RileyLink Statistics</strong> tracks how long your device has stayed successfully operating and gives the developers some useful information about the stability of the RL operations. It really doesn't provide much to the average Loop user, however.</p></div>
+<h4 id="mysentry-pair">MySentry Pair<a class="headerlink" href="#mysentry-pair" title="Permanent link">⌁</a></h4>
+<p>MySentry Pair is for x23 and x54 pumps only, and you will have completed this pairing command as part of the original <a href="../mdt-pump/">Add Pump</a> process. The MySentry pairing process adds a specific ID to your pump in the pump's Connect Devices, Other Devices menu. This pairing allows Loop to get information from x23 and x54 in an efficient manner. If that is not done, Loop will only be green every other loop. If you ever want to re-pair MySentry, you can follow the directions as shown in the RileyLink command screen. You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.</p>
+<h4 id="fetch-recent-history">Fetch Recent History<a class="headerlink" href="#fetch-recent-history" title="Permanent link">⌁</a></h4>
+<p>Fetch Recent History polls the pump for recent pump events such as boluses, temp basals, primes, rewinds, etc.  The amount of information transmitted for a Fetch Recent History is usually quite large and, as a result, may be more prone to an early failure before it succeeds. If the first Fetch Recent History fails, sometimes it is helpful to use the Send Button Press command to sort of "wake up" the pump in preparation for communications.</p>
+<h4 id="fetch-enlite-glucose">Fetch Enlite Glucose<a class="headerlink" href="#fetch-enlite-glucose" title="Permanent link">⌁</a></h4>
+<p>Fetch Enlite Glucose is only useful for Medtronic CGM users. The Fetch Enlite Glucose command will pull the recent glucose values saved in the pump history. Dexcom users do not store any glucose data in the pump.</p>
+<h4 id="get-pump-model">Get Pump Model<a class="headerlink" href="#get-pump-model" title="Permanent link">⌁</a></h4>
+<p>Get Pump Model returns the pump's model.</p>
+<h4 id="send-button-press">Send Button Press<a class="headerlink" href="#send-button-press" title="Permanent link">⌁</a></h4>
+<p>Send Button Press can be useful to see if the communication between the device and pump is working. If successful, the screen on the pump will light up and Loop will confirm the button press with a <code>success</code> message. If pump comms are failing, sending a successful button press can help "wake up" a pump that perhaps has not been communicating well.</p>
+<h4 id="read-pump-status">Read Pump Status<a class="headerlink" href="#read-pump-status" title="Permanent link">⌁</a></h4>
+<p>Read Pump Status is also nice quick pump read for reservoir volume, pump battery voltage, and pump status (bolusing or suspending). For x23 and x54 pump users, this command will provide the exact pump battery voltage instead of the 25/50/75/100% levels that are reported otherwise.</p>
+<h4 id="read-basal-schedule">Read Basal Schedule<a class="headerlink" href="#read-basal-schedule" title="Permanent link">⌁</a></h4>
+<p>Read Basal Schedule will pull the active basal pattern from the pump so you can review what the current settings are without using pump menu.</p>
+<h4 id="enable-diagnostic-leds">Enable Diagnostic LEDs<a class="headerlink" href="#enable-diagnostic-leds" title="Permanent link">⌁</a></h4>
+<p>Enable Diagnostic LEDs will turn on more LED flashes on the RileyLink while it is operating. You will see more blue flashing lights as the RileyLink communicates with the pump. If you tried turning on this feature and decide later that you just don't want to see so many flashing lights, simply reboot the RileyLink by turning the power switch off/on.  This will reset the LEDs.</p>
+<h4 id="discover-commands">Discover Commands<a class="headerlink" href="#discover-commands" title="Permanent link">⌁</a></h4>
+<p>Ignore the Discover Commands menu item.</p>
+<h4 id="rileylink-statistics">RileyLink Statistics<a class="headerlink" href="#rileylink-statistics" title="Permanent link">⌁</a></h4>
+<p>RileyLink Statistics tracks how long your device has stayed successfully operating and gives the developers some useful information about the stability of the RL operations. It really doesn't provide much to the average Loop user, however.</p></div>
             </div>
         </div>
 
