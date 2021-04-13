@@ -47,7 +47,7 @@ If you get an uncertain delivery message, you may still see the "bolused xx of y
 
 If an "uncertain" delivery is not resolved, try this:
 
-* Omnipod: Execute a [Read Pod Status command](../loop-settings/pump-commands.md#pod-diagnostics)
-* Medtronic: Execute a [Fetch Recent History command](../loop-settings/pump-commands.md#medtronic-commands)
+* Omnipod: Execute a [Read Pod Status command](../loop-settings/pump-commands.md#read-pod-status)
+* Medtronic: Execute a [Fetch Recent History command](../loop-settings/pump-commands.md#fetch-recent-history)
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../index.md#stay-in-the-loop) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
