@@ -11,9 +11,9 @@ For both Medtronic and Omnipod, use the Loop `Change Time Zone` command to updat
 
     Scroll down to the Change Time Zone line, example shown in the figure below.  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24 hour configuration pattern for basal rates, ISF, CR and correction range are aligned with the time zone shown on this line.
 
-    ![Command line to modify the time zone](img/change-time-zone.svg){width="250"}
+![Command line to modify the time zone](img/change-time-zone.svg){width="250"}
+{align="center"}
 
-The action for each pump:
 
 * **Medtronics**: The time is updated on the Medtronic pump, which aligns the scheduled basal rates configured in Loop to the current time zone
 * **Omnipod**: The basal rates as configured in Loop are sent to the Omnipod for the current time zone
@@ -38,14 +38,18 @@ The first section has information regarding how long the Pod has been active and
 
 #### Bolus Delivery
 
-This line reports the % progress of any ongoing bolus. Unless a bolus is actively being delivered when you enter Pod Settings, this will say None. This line does not update until you tap on the refresh symbol to the right of the Pod image, or exit and re-enter the Pod Settings menu.
+This line reports the % progress of any ongoing bolus. This line reports `None` unless a bolus is actively being delivered when you enter Pod Settings. This line may not update until you tap on the refresh symbol to the right of the Pod image, or exit and re-enter the Pod Settings menu.
 
 ![Bolus Status Line](img/pod-settings-bolus-status.png){width="250"}
 {align="center"}
 
 #### Basal Delivery
 
-This line will let you know what is active: The normal basal _schedule_,the _U/hour_ of a 30 minute Temp Basal or if the Pod is _suspended_.
+This line reports
+
+* _schedule_ for scheduled basals
+* _U/hour_ for a 30 minute Temporary Basal
+* _suspended_ if the Pod is suspended
 
 ![Basal Delivery Line](img/pod-settings-basal-delivery.png){width="250"}
 {align="center"}
@@ -95,11 +99,13 @@ A banner notice will appear on the Loop's main screen when phone is in portrait 
 ![banner notice on the HUD](img/pod-hud-suspended.png){width="250"}
 {align="center"}
 
-You will need to press `Tap to Resume` in the banner or the `Resume Delivery` button in the Pod Settings to resume your scheduled basal rate and let Loop get back to action. Bolus deliveries will not be resumed, if they were interrupted.
+You will need to press `Tap to Resume` in the banner or the `Resume Delivery` button in the Pod Settings to resume your scheduled basal rate and let Loop get back to action. If a bolus delivery was interrupted by the Suspend Pod command, it will not be resumed.
 
 #### Expiration Reminder
 
-With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting, Loop sets the default to 70 hours, i.e., two hours before the full 3 days that Insulet guarantees. As with the PDM, Loop allows the Pod to continue operating until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.
+With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting, Loop sets the default to 70 hours, i.e., two hours before the full 3 days that Insulet guarantees. The allowed range of values is between 1 hour and 24 hours prior to Pod expiration at 72 hours of Pod life.
+
+As with the PDM, Loop allows the Pod to continue operating after expiration until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.
 
 ![view of the expiration reminder selection wheel](img/pod-settings-screen-expiration-reminder.png){width="250"}
 {align="center"}
@@ -153,11 +159,11 @@ This command reads the pulse log (diagnostic) and saves the result in the log fi
 
 #### Test Command
 
-TBD - ask Joe.
+This verifies communication with the pod. Loop reports success or failure.  Use Get Pod Status if you want to see the message as returned from the pod.
 
 #### Enable Confirmation Beeps
 
-This turns on beeps on the Pod.
+This turns on beeps on the Pod. Joe will provide more details of what gets enabled.
 
 * Temp Basal Change (TBD)
 * Bolus Acknowledgement (TBD)
@@ -179,7 +185,7 @@ There are several commands that Loop can issue to a Medtronic pump. Most are sim
 
 The frequency used by the device to communicate with the pump is reported along with the time at which it was tuned.  If you tap on that line, Loop will do a manual tune, but this should not be necessary.  If Loop hasn't communicated with the pump in 2 cycles, it will automatically tune the frequency.
 
-There is a Change Time button here, but since it is also found in the pump menu, you are more likely to tap it there.  Both buttons do the same thing - update your pump to match the current time at the current time zone.
+There is a Change Time button here, but since it is also found in the pump menu, you are more likely to tap it there.  Both buttons do the same thing. See (Change Time]
 
 ### Other commands
 
