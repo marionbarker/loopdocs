@@ -1,6 +1,19 @@
 # Pump Commands
 
-Initially, Loop was written to interact with Medtronic pumps. Then as Omnipod was added to Loop, the underlying code structure was reorganized to have "pump modules" and "CGM modules". This will make it easier, in future, to drop in new "modules" to Loop. This history is provided as a partial explanation as to why the [Medtronic Pump Command](pump-commands.md#medtronic-commands) menus are found in the RileyLink menu, whereas the Omnipod pump command menus are in the Pod Settings menu.
+Initially, Loop was written to interact with Medtronic pumps. Then as Omnipod was added to Loop, the underlying code structure was reorganized to have "pump modules" and "CGM modules". This will make it easier, in future, to drop in new "modules" to Loop. This history is provided as a partial explanation as to why the [Medtronic Pump Command](pump-commands.md#medtronic-commands) menus are found in the RileyLink menu, whereas the Omnipod pump command menus are in the [Pod Settings](pump-commands.md#omnipod-commands) menu.
+
+## Change Time Zone
+
+For both Medtronic and Omnipod, the time zone should be changed using the Loop `Change Time Zone` command.
+
+* **Medtronics**: Tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings menu.
+* **Omnipod**: Tap on the Pod Age icon in the Heads Up Display or the image of the Omnipod in the Loop settings menu.
+
+Scroll down to the Change Time Zone line, example shown in the figure below.  You can leave the time zone offset, or touch it to modify the time.
+
+![Command line to modify the time zone](img/change-time-zone.svg){width="250"}
+{align="center"}
+
 
 ## Omnipod Commands
 
@@ -28,10 +41,14 @@ The first section has information regarding how long the Pod has been active and
     ![img/pod-settings-basal-delivery.png](img/pod-settings-basal-delivery.png){width="250"}
     {align="center"}
 
-* Alarms: This line displays Alerts or Alarms.
+* Alarms: This line displays Alerts or Alarms; tapping on it, or on the accompanying banner displayed in the HUD, acknowledges the alert
 
-    * If your Pod is beeping an alarm, this line will display information about the alarm. By clicking on this line, you can clear or "snooze" the alarm status.
-    * If your Pod is screaming, it's time to change it.  Tapping on this line stimulates an immediate report of the actual error.
+    * If your Pod is beeping an alert, this line will display information about the alert. Tapping on the alert clears or "snoozes" the alert status.
+    * If your Pod is screaming, it's time to change it.  Tapping on this line stimulates an immediate reading of the actual error (normally this happens at the next CGM reading).
+    * There were overwhelming requests during initial testing to minimize the "beeping" of pods. You can turn on additional beeps by enabling [Confirmation Beeps](pump-commands.md#pod-diagnostics).
+        * Expiration Reminder - Loop notification only, no pod beeps
+        * 72 Hours Expiration - Loop notification and pod beeps (pod beeps continue  once per hour until alert is acknowledged)
+        * 79 Hour Alert - Loop notification and pod beeps (pod beeps continue every 15 minutes until alert is acknowledged)
 
     ![img/pod-settings-alarms.png](img/pod-settings-alarms.png){width="250"}
     {align="center"}
@@ -65,16 +82,16 @@ This section contains commands the typical user will use.
 
 * Expiration Reminder: With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting, Loop sets the default to 70 hours, i.e., two hours before the full 3 days that Insulet guarantees. As with the PDM, Loop allows the Pod to continue operating until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.
 
-![img/pod-settings-screen-expiration-reminder.png](img/pod-settings-screen-expiration-reminder.png){width="250"}
-{align="center"}
+    ![img/pod-settings-screen-expiration-reminder.png](img/pod-settings-screen-expiration-reminder.png){width="250"}
+    {align="center"}
 
 * Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your Pod. However, if you are going to be away from home for longer periods of time or when Daylight Savings Time starts or ends, you may want to update your Pod's basal schedule to match local time by selecting the `Change Time Zone` command when convenient. Using this command updates your basal schedule on your Pod. If you start a new Pod session without modifying the time zone here, the original time zone will be used for the new Pod. Please wait until you see `Succeeded` appear on the page to ensure the command has successfully been received by the Pod.
 
     !!! info ""
         Make sure the phone, RileyLink compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.  (The Pod does not know time-of-day.)
 
-![img/pod-change-timezone.png](img/pod-change-timezone.png){width="250"}
-{align="center"}
+    ![img/pod-change-timezone.png](img/pod-change-timezone.png){width="250"}
+    {align="center"}
 
 * Replace Pod: This command deactivates a Pod prior to replacing it. Once you tap `Replace Pod`, another screen appears for you to confirm that you mean it. It is strongly advised that you first tap `Suspend Delivery` and then `Replace Pod`.
 
