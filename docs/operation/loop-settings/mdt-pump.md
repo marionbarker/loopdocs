@@ -56,7 +56,7 @@ Now that your pump is paired with Loop, you will be finishing these steps:
 
 Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup. There will be other times you need to change the time - traveling or daylight savings time start and end. It is important that you use Loop to change time on your pump; do not adjust time on your pump directly once it is attached to Loop.  
 
-If you are traveling through time zones, Loop continues to work - just be aware that your basal rate and other configuration settings will be in the original time zone, whereas the glucose, insulin and carb charts will be in the iPhone time zone, until you change time zone it in Loop.  Please read up on [how to safely change your pump time](../../troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
+If you are traveling through time zones, Loop continues to work - just be aware that your basal rate and other configuration settings will be in the original time zone. To change time zones, please follow the [Change Time Zone](pump-commands.md#change-time-zone) instructions.
 
 !!! warning ""
 
