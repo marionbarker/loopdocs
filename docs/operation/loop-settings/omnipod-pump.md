@@ -59,13 +59,11 @@ When you finish entering these values, press the blue `Continue` button on the b
 
 ## Expiration Reminder
 
-Finish the setup with using the default expiration reminder time (2 hours before a full 3-days usage) or set the expiration notification to a more convenient time. The notification will come from Loop; your Pod will not beep at this time. Setup is complete and your Pod is ready for use when you press the final button.
+Finish the setup using the default expiration reminder time (2 hours before a full 3-days usage). You can modify that expiration reminder at any time, see [Expiration Reminder](pump-commands.md#expiration-reminder). The notification will come from Loop; your Pod will not beep at this time. Setup is complete and your Pod is ready for use when you press the final button.
 
 ![img/pod-setup-03-complete.png](img/pod-setup-03-complete.png){width="650"}
 {align="center"}
 
-
-* Expiration Reminder: With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting, Loop sets the default to 70 hours, i.e., two hours before the full 3 days that Insulet guarantees. As with the PDM, Loop allows the Pod to continue operating until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.
 
 ## Pod Settings
 

@@ -11,8 +11,8 @@ For both Medtronic and Omnipod, use the Loop `Change Time Zone` command to updat
 
     Scroll down to the Change Time Zone line, example shown in the figure below.  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24 hour configuration pattern for basal rates, ISF, CR and correction range are aligned with the time zone shown on this line.
 
-![Command line to modify the time zone](img/change-time-zone.svg){width="250"}
-{align="center"}
+    ![Command line to modify the time zone](img/change-time-zone.svg){width="250"}
+
 
 
 * **Medtronics**: The time is updated on the Medtronic pump, which aligns the scheduled basal rates configured in Loop to the current time zone
@@ -27,7 +27,6 @@ Tap on the Pod Age icon on the Heads Up Display or the image of the Omnipod in t
 This screen provides important information about your Pod and allows you to issue some commands to the Pod through Loop.
 
 ![Pod Settings Menu](img/long-pod-settings.svg){width="250"}
-{align="center"}
 
 ### Pod Information
 
