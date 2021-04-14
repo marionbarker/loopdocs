@@ -41,7 +41,6 @@ The first section has information regarding how long the Pod has been active and
 This line reports the % progress of any ongoing bolus. This line reports `None` unless a bolus is actively being delivered when you enter Pod Settings. This line may not update until you tap on the refresh symbol to the right of the Pod image, or exit and re-enter the Pod Settings menu.
 
 ![Bolus Status Line](img/pod-settings-bolus-status.png){width="250"}
-{align="center"}
 
 #### Basal Delivery
 
@@ -52,7 +51,6 @@ This line reports
 * _suspended_ if the Pod is suspended
 
 ![Basal Delivery Line](img/pod-settings-basal-delivery.png){width="250"}
-{align="center"}
 
 #### Alarms
 
@@ -60,27 +58,24 @@ This line displays Alerts or Alarms; tapping on it, or on the accompanying banne
 
 * If your Pod is beeping an alert, this line will display information about the alert. Tapping on the alert clears or "snoozes" the alert status.
 * If your Pod is screaming, it's time to change it.  Tapping on this line stimulates an immediate reading of the actual error (normally this happens at the next CGM reading).
-* There were overwhelming requests during initial testing to minimize the "beeping" of pods. You can turn on additional beeps by enabling [Confirmation Beeps](pump-commands.md#enable-confirmation-beeps).
-    * Expiration Reminder - Loop notification only, no pod beeps
-    * 72 Hours Expiration - Loop notification and pod beeps (pod beeps continue  once per hour until alert is acknowledged)
-    * 79 Hour Alert - Loop notification and pod beeps (pod beeps continue every 15 minutes until alert is acknowledged)
+* There was overwhelming preference during initial testing to minimize the "beeping" of Pods. You can turn on additional beeps by enabling [Confirmation Beeps](pump-commands.md#enable-confirmation-beeps). These are the Loop Notifications and Pod beeps you should expect with the default (confirmation beeps disabled) setting:
+    * Expiration Reminder - Loop notification only, no Pod beeps
+    * 72 Hours Expiration - Loop notification and Pod beeps (Pod beeps continue  once per hour until alert is acknowledged)
+    * 79 Hour Alert - Loop notification and Pod beeps (Pod beeps continue every 15 minutes until alert is acknowledged)
 
-![Alarm line showing pod expiration advisory](img/pod-settings-alarms.png){width="250"}
-{align="center"}
+![Alarm line showing Pod expiration advisory](img/pod-settings-alarms.png){width="250"}
 
 #### Reservoir
 
 Pods do not report the volume of insulin remaining in the reservoir until there are less than 50 units remaining. So, typically you will see "50+ U" in this line for quite a while with a new Pod.
 
 ![Pod reservoir showing insulin amount](img/pod-settings-reservoir.png){width="250"}
-{align="center"}
 
 #### Insulin Delivered
 
-This line is the total amount of basal and bolus insulin delivered by the Pod since the cannula was inserted. It is obtained by taking the reported pod insulin delivery and subtracting the amount that was used to prime the pod and fill the cannula upon insertion (about 3&nbsp;U). This number is not expected to match the number reported by the Read Pod Status command, described below.
+This line is the basal and bolus insulin delivered by the Pod since the cannula was inserted. It is obtained by taking the reported Pod insulin delivery and subtracting the amount used to prime the Pod and fill the cannula upon insertion (about 3&nbsp;U).
 
 ![Insulin Delivered Line](img/pod-settings-insulin-delivered.png){width="250"}
-{align="center"}
 
 
 ### Pod Commands
@@ -89,26 +84,26 @@ This section contains commands the typical user will use.
 
 #### Suspend Delivery
 
-This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely.
+This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery stops indefinitely and the display changes to say `Resume Delivery`. (If the display does not update, tap the refresh screen icon at the top of the screen to the right of the Pod image.)
 
 ![Line indicates delivery is suspended, tap to resume](img/pod-settings-resume.png){width="250"}
-{align="center"}
 
 A banner notice will appear on the Loop's main screen when phone is in portrait mode when insulin delivery is suspended.
 
 ![banner notice on the HUD](img/pod-hud-suspended.png){width="250"}
-{align="center"}
 
 You will need to press `Tap to Resume` in the banner or the `Resume Delivery` button in the Pod Settings to resume your scheduled basal rate and let Loop get back to action. If a bolus delivery was interrupted by the Suspend Pod command, it will not be resumed.
 
+!!! warning "Keep Gear Close During Resume"
+    When you resume delivery, the 24 hour Pod basal rate schedule is sent to the Pod. Be sure the Phone, RileyLink and Pod stay close until the message exchange is complete.  
+
 #### Expiration Reminder
 
-With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting, Loop sets the default to 70 hours, i.e., two hours before the full 3 days that Insulet guarantees. The allowed range of values is between 1 hour and 24 hours prior to Pod expiration at 72 hours of Pod life.
+With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Loop sets the default to 70 hours, i.e., two hours before the full 3 days that Insulet guarantees. The allowed range of values is between 1 hour and 24 hours prior to the Pod expiration at 72 hours of Pod life. If you select a date/time outside this range, Loop will modify your selection to the closest allowed value.
 
 As with the PDM, Loop allows the Pod to continue operating after expiration until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.
 
 ![view of the expiration reminder selection wheel](img/pod-settings-screen-expiration-reminder.png){width="250"}
-{align="center"}
 
 #### Change Time Zone
 
@@ -118,7 +113,6 @@ Use the `Change Time Zone` command to align your configuration settings with the
     Make sure the phone, RileyLink compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.
 
 ![Pod menu showing when time zone change succeeded](img/pod-change-timezone.png){width="250"}
-{align="center"}
 
 #### Replace Pod
 
@@ -127,8 +121,7 @@ This command deactivates a Pod prior to replacing it. Once you tap `Replace Pod`
 !!! info ""
     Loop continues to record the scheduled basal rate even with no Pod present. By first tapping `Suspend Delivery` and then tapping `Replace Pod` the Loop and Apple Health record for basal delivery is more accurate. This is especially important if a longer delay is planned prior to placing a new Pod on your body.
 
-![Icon to tap to replace pod](img/pod-settings-replace-pod.png){width="250"}
-{align="center"}
+![Icon to tap to replace Pod](img/pod-settings-replace-pod.png){width="250"}
 
 ### Pod Devices
 
@@ -146,28 +139,31 @@ This section is labeled Diagnostics, but many Pod users make use of this section
 
 This command requests the status of the Pod and reports some of the returned information.
 
-![result of read pod status](img/read-pod-status.svg){width="250"}
-{align="center"}
+* The line labeled `Pulses` reports the total number of pulses of insulin delivered by that Pod, converted to units (each pulse is 0.05&nbsp;U of insulin). If you compare this report (for your Pod) to the `Insulin Delivered` line in Pod settings, for your Pod at the same time, the difference is the insulin used to prime the Pod and fill the cannula at insertion.
+
+* The line label `RSSI` reports the Received Signal Strength Indicator (RSSI) between the RileyLink compatible device and the Pod. The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod. (Older versions of Loop may not report this information on this screen.)
+
+
+    ![result of read Pod status](img/read-pod-status.svg){width="250"}
 
 #### Play Test Beeps
 
-This command requests the Pod emit a beep pattern. If you hear it, you know the commands are getting to the Pod.
+This command requests the Pod emit a beep pattern. If you hear it, you know the commands are getting to the Pod. A message appears on your screen to indicate Loop got or did not get an acknowledgement from the Pod.
 
 #### Read Pulse Log
 
-This command reads the pulse log (diagnostic) and saves the result in the log file.  This can be extracted by doing an Issue Report and emailing it to yourself. If you are having communication issues, you can provide this report to an expert who may be able to provide assistance. [Post](../../index.md#stay-in-the-loop) for help in either zulipchat or a Facebook group to request assistance and you'll get information about how to get that log file submitted.
+This command reads the pulse log (diagnostic), displays it on the screen and saves the result in the log file. It takes some time, so keep your gear close until command completes. This can be extracted by doing an Issue Report and emailing it to yourself. If you are having communication issues, you can provide this report to an expert who may be able to provide assistance. [Post](../../index.md#stay-in-the-loop) for help in either zulipchat or a Facebook group to request assistance and you'll get information about how to get that log file submitted.
 
 #### Test Command
 
-This verifies communication with the pod. Loop reports success or failure.  Use Get Pod Status if you want to see the message as returned from the pod.
+This verifies communication with the Pod. Loop reports success or failure.  Use Get Pod Status if you want to see the some of the information returned from the Pod.
 
 #### Enable Confirmation Beeps
 
-This turns on beeps on the Pod. Joe will provide more details of what gets enabled.
+This turns confirmation beeps on for the Pod. The Pod beeps when you enable this, but is silent when you disable it.
 
-* Temp Basal Change (TBD)
-* Bolus Acknowledgement (TBD)
-* Other (TBD)
+* Bolus Acknowledgement - the Pod beeps when it has received and accepted the bolus command from Loop (manual or automatic) and then beeps again when the bolus is completed.
+* Other - most of the commands you can issue to the Pod will have an associated confirmation beep, such as updating the basal rate, requesting Pod status, canceling a bolus, suspending or resuming delivery.
 
 
 ## Medtronic Commands
@@ -179,7 +175,6 @@ Tap on the reservoir icon on the Heads Up Display or the image of the pump in th
 The figure below shows the `COMMANDS` section of the [RileyLink Menu](rileylink.md)  for  Medtronic pumps.
 
 ![Commands section of the RileyLink Menu for Medtronic Pumps](img/mdt-pump-commands.svg){width="450"}
-{align="center"}
 
 There are several commands that Loop can issue to a Medtronic pump. Most are simply for gathering information from the pump.
 
