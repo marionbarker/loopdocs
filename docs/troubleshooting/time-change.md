@@ -18,14 +18,12 @@ But, if you remember to turn Bluetooth back on while in airplane mode, two thing
 
 Loop is built to operate fully across time zone and daylight savings time changes. When traveling, there is no urgency to update the pump's time to match the wall-clocks in your geography. Configuration schedules—basal rates, target ranges, carb ratios, and insulin sensitivities all remain in the original time zone until modified by Loop command. The app's graphs and status will always display in the time zone of the iPhone, and Loop will understand the difference in offset between the two, highlighting it when attempting to change configuration schedules.
 
-When you're ready to update the pump's time, use the [Change Time Zone](../operation/loop-settings/pump-commands.md#change-time-zone). This will also shift your configuration schedules to the current time zone.
+When you're ready to update the pump's time, use the Loop [Change Time Zone](../operation/loop-settings/pump-commands.md#change-time-zone) command. This will also shift your configuration schedules to the current time zone.
 
-!!! danger "Medtronic Users Only"
+!!! warning "Medtronic Users"
 
-    **Always use the Pump Settings menu to change pump time instead of the Medtronic Pump's screen.**
+    **Do not use the Medtronic pump menus to change your pump's time when Looping.**
 
-    ![img/time_change.png](img/time_change.png){width="400"}
-    {align="center"}
 
 ## iPhone
 
