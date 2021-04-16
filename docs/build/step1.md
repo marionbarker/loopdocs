@@ -41,7 +41,7 @@ The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big 
 
 Do not use any of the beta macOS versions. (If you don't know what that means, don't worry...that means you aren't using one.)
 
-## Check your macOS
+## Check Your macOS
 
 You need an Apple computer that has at least the minimum macOS version described above. To find out which version you have installed, click on the little Apple icon in your computer's upper left corner and select `About this Mac`. It doesn't matter if the computer is a MacBook, iMac, macMini, etc...just so long as it has the minimum macOS you'll need.
 
@@ -56,7 +56,7 @@ If your computer does not give you the option to update to a newer macOS (in oth
 While you are on the screen, above, look at the top of the menu and click on the Storage Tab.  You will need to know the amount of free space when it's time for [Build Step 8: Download Xcode](step8.md)
 
 
-## Which Macs are compatible with macOS Big Sur?
+## Which Macs Are Compatible with macOS Big Sur?
 
 This is the preferred operating system for Loop.
 
@@ -70,7 +70,7 @@ This is the preferred operating system for Loop.
 * get the full list from [Apple for Big Sur](https://support.apple.com/en-us/HT211238)
 
 
-## Which Macs are compatible with macOS Catalina?
+## Which Macs Are Compatible with macOS Catalina?
 
 This is an acceptable operating system for Loop if you limit your phone iOS to be 14.4.x or earlier.
 
@@ -83,6 +83,6 @@ This is an acceptable operating system for Loop if you limit your phone iOS to b
 * Mac Pro, 2013 or newer
 * get the full list from [Apple for Catalina](https://support.apple.com/en-us/HT210222)
 
-## Next Step: Compatible iPhone/iPod touch
+## Next Step: Compatible iPhone/iPod Touch
 
 Now you are ready to move onto Step 2 to check if you have a [Compatible iPhone/iPod touch](step2.md).

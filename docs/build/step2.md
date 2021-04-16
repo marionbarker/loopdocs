@@ -18,7 +18,7 @@
     - **"Does my iPhone need a scell plan?"** No. Loop works using communication via Bluetooth and the RileyLink compatible device with your CGM and pump; no internet connection required. However, without a cell plan, connection to the internet relies on WiFi availability. If access to Dexcom Follow or Nightscout monitoring of Loop is a priority, then a cell plan may be desired.  
 
 
-## Which Devices are Compatible?
+## Which Devices Are Compatible?
 
 Loop requires an iPhone or iPod touch. Loop uses the Apple Health app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. iPads do not have the Apple Health app, so iPads will not work with Loop.
 
@@ -37,7 +37,7 @@ These devices are compatible with iOS 14, which is expected to be the minimum iO
 - iPhone SE (2016 or later model)
 - iPod Touch, 7th generation
 
-### Devices That Will Soon be Incompatible
+### Devices That Will Soon Be Incompatible
 
 - iPhone 5s, 6, 6+
 - iPod Touch, 6th generation
@@ -46,7 +46,7 @@ Apple stopped providing iOS updates for these devices at iOS 12.4. Apple release
 
 Side note for people who are seasoned Loop users and know about branches and such: Currently (April 2021), Loop's dev branch and several popular forks require devices to have iOS 13 or newer, and it is expected dev will soon require iOS 14. There's no set timeframe for when dev will next be merged into master.
 
-## Find your device's iOS
+## Find Your Device's iOS
 
 Your phone's iOS version can be found under the Settings app, General, About as shown below.
 
