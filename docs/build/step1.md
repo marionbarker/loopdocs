@@ -37,7 +37,7 @@ The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big 
 
 !!! danger "iOS Dictates Your Computer Needs"
 
-    Put simply for Loopers...the more up-to-date you keep you phone iOS, the more up-to-date your computer and macOS will need to be to enable a fresh build of Loop. A new build is required at least once a year. You can't avoid iOS updates forever...you just need to be aware of how they relate to each other if your computer is "getting on the older side". There will be more information presented on iOS in [Build Step 8: Download Xcode](step8.md#download-xcode).
+    Put simply for Loopers...the more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS will need to be to enable a fresh build of Loop. A new build is required at least once a year. You can't avoid iOS updates forever...you just need to be aware of how they relate to each other if your computer is "getting on the older side". There will be more information presented on iOS in [Build Step 8: Download Xcode](step8.md#download-xcode).
 
 Do not use any of the beta macOS versions. (If you don't know what that means, don't worry...that means you aren't using one.)
 
