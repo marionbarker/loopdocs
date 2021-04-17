@@ -6,15 +6,17 @@
 
 !!! info "Summary"
 
-    - If you use a Dexcom G4 Share, G5, or G6 CGM system...you can use Loop.
-    - If you use a Medtronic sensor compatible with a Loop-compatible Medtronic pump...you can use Loop.
+    Loop is compatible with:
+
+    - Dexcom G4 Share, G5, or G6 CGM systems
+    - Medtronic sensors connected to a Loop-compatible Medtronic pumps
 
 !!! warning "FAQs"
 
     - **"What about Libre sensors?"** You will need to seek out a modified version of Loop (search posts and then ask about "forks" that support your CGM in a [Loop Social Media](../index.md#stay-in-the-loop) site.)
-    - **"What about Eversense?"** Eversense's application does not integrate with Apple Health, nor has the communications protocols for Eversense been reverse engineered. Therefore, Eversense is not currently compatible with Loop.
+    - **"What about Eversense?"** Eversense's application does not integrate with Apple Health nor has the communications protocols for Eversense been reverse engineered. Therefore, Eversense is not currently compatible with Loop.
 
-A continuous glucose monitor (CGM) provides Loop with current blood glucose readings. These readings allow Loop to model the current glucose trend and predict future blood glucose based on carbohydrate input and your Loop settings. The following are the types of CGMs compatible with Loop. CGM readings are a required part of looping. If your Loop app is unable to retrieve blood glucose (BG) data, it will not be able to loop.
+A continuous glucose monitor (CGM) provides Loop with blood glucose readings. These readings allow Loop to model the current glucose trend and predict future blood glucose based on carbohydrate input and your Loop settings. The following are the types of CGMs compatible with Loop. CGM readings are a required part of looping. If your Loop app is unable to retrieve blood glucose (BG) data, it will not be able to loop.
 
 ## Dexcom G5 and G6 CGM ![img/g5.jpg](img/g5.jpg){width="150"}
 
@@ -22,19 +24,21 @@ Dexcom G5 and G6 CGM data is transmitted directly to the Dexcom app on your iPho
 
 ## Dexcom G4 CGM with Share Receiver ![img/g4_receiver.png](img/g4_receiver.png){width="150"}
 
-The Dexcom G4 Share system transmits CGM data from the transmitter to a Dexcom G4 Share Receiver. The receiver, in turn, connects to the Dexcom Share2 app on your iPhone via Bluetooth. The Share2 app uploads CGM data to the Dexcom servers. For Loop to function without an internet connection, you will need the Dexcom app running on the same device as Loop.
+The Dexcom G4 Share system transmits CGM data from the transmitter to a Dexcom G4 Share Receiver. The receiver, in turn, connects to the Dexcom Share2 app on your iPhone via Bluetooth. The Share2 app uploads CGM data to the Dexcom servers from your phone. For Loop to function without an internet connection, you will need the Dexcom app running on the same device as Loop.
 
 ## Medtronic CGM ![img/enlite.png](img/enlite.png){width="150"}
 
-The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends blood glucose readings to the pump. Loop can read the Medtronic CGM data directly from the pump using the RileyLink.
+The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends blood glucose readings to the pump. Loop can read the Medtronic CGM data directly from the pump using a RileyLink compatible device.
 
 ## Offline Use
 
-Offline use means using Loop when there is no cell data or internet available. Loop does not require any special setup to operate offline. You will not need to do anything special if you go camping or find yourself out in the wilderness. For offline Loop use, the iPhone's Bluetooth still needs to be active; and for Dexcom users, the Share2, G5, or G6 app also needs to be open (but don't have to be actively "sharing" to the internet). If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep your Loop running. If your offline use is failing, chances are you have forgotten to update your transmitter ID in Loop settings when you changed transmitters.
+Offline use means using Loop when there is no cell data or internet available. Loop does not require any special setup to operate offline.
+
+For offline Loop use, the iPhone's Bluetooth still needs to be active; and for Dexcom users, the Share2, G5, or G6 app also needs to be running on your Loop phone. If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep your Loop running. If your offline use is failing, chances are you have forgotten to update your transmitter ID in Loop settings when you changed transmitters.
 
 ## Dexcom Share
 
-Loop is capable of downloading Dexcom Share data for use in modeling BG. However, this is not a typical configuration and requires internet connection for both the phone with the Dexcom app and the phone with the Loop app.  As will be discussed during the Loop Set Up Steps, you usually enter the Dexcom transmitter ID and leave the Dexcom Share setting blank.
+Loop is capable of downloading Dexcom Share data for use in modeling BG. However, this is not a typical configuration and requires internet connection for both the phone with the Dexcom app and the phone with the Loop app.  As will be discussed during the Loop Set Up Steps for adding a CGM, you usually enter the Dexcom transmitter ID and leave the Dexcom Share setting blank.
 
 
 ## CGMs Not Natively Supported in Loop
