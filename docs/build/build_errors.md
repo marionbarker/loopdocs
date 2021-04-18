@@ -142,7 +142,7 @@ If you see a **Cartfile failure** and several other red errors (in particular sa
 ![img/container-1.png](img/container-1.png){width="750"}
 {align="center"}
 
-**Solution**: To resolve this error, you will need to click on the Loop target's signing area and then the plus-sign in the App Groups area under the signing. Copy and paste the bundle indentifier into the new container that starts with `group.` and then add `Group` to the end of the name. Click OK to save. Note, the line will start with lower case `groups.` followed by your bundle identifier and an upper case `Group` added to the end of the bundle identifier.
+**Solution**: To resolve this error, you will need to click on the Loop target's signing area and then the plus-sign in the App Groups area under the signing. Copy and paste the bundle indentifier into the new container that starts with `group.` and then add `Group` to the end of the name. Click OK to save. Note, the line will start with lower case `group.` followed by your bundle identifier and an upper case `Group` added to the end of the bundle identifier.
 
 ![img/container-2.png](img/container-2.png){width="750"}
 {align="center"}
