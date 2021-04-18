@@ -9,9 +9,9 @@ There are two types of build errors that happen: they are yellow warnings and re
 ## Start with The Obvious Error Causes
 
 !!! danger "New Loop Builders"
-    This page contains build error help for people updating their Loop as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4 and 6 in the list below. Then, skim the page until your reach [Find Your Error Message](build_errors.md#find-your-error-messages). Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
+    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4 and 6 in the list below. Then, skim the page until your reach [Find Your Error Message](build_errors.md#find-your-error-messages). Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
 
-Before you start trying to resolve your red errors...start with the most obvious things that can cause a red error message:
+Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
 1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
 
@@ -63,7 +63,7 @@ Therefore, try to resolve your build error yourself. Then, if you need to post f
     * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.  Do NOT use phone photographs of your computer screen.  See below for instructions on how to capture a screenshot.
     * State which fixes from the list below you have already tried AND post the screenshots of the results of those fix attempts.
 
-**How to capture a computer screenshot on a Mac**: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. It will have a filename that starts with "Screen Shot" and includes a date and time stamp. Phone photos of your computer screen won't be of sufficient clarity to read the needed information and often cut off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.
+**How to capture a computer screenshot on a Mac**: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode or terminal window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. It will have a filename that starts with "Screen Shot" and includes a date and time stamp. Phone photos of your computer screen won't be of sufficient clarity to read the needed information and often cut off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.
 
 ## Find Your Error Message(s)
 
@@ -91,12 +91,14 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ### Carthage Error
 
-If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error. The error looks similar to this:
+If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error.
+
+**Error Message:**
 
 !!! info "Wrong Version of Carthage Error"
     Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.
 
-The solution is to manually uninstall carthage:
+**Solution:** Manually uninstall carthage.
 
 - Open a Terminal
 - Copy and paste this command into the terminal
@@ -109,7 +111,9 @@ The solution is to manually uninstall carthage:
 
 ### Could Not Locate Device Support Files
 
-If you see an error message that says "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone. Update your Xcode version; this may also require a macOS update. Please review the iOS driven requirements for [Xcode and macOS](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
+**Error Message:** "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
+
+**Solution:** Update your Xcode version; this may also require a macOS update. Please review the phone iOS driven requirements for [Xcode and macOS](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
 ![img/device-support-files.jpg](img/device-support-files.jpg){width="750"}
 {align="center"}
@@ -119,7 +123,7 @@ With Xcode 12, the simulators are no longer being downloaded automatically. If y
 
 ### No Such Module 'LoopKit' or Similar Message
 
-If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the [Carthage Error](build_errors.md#carthage-error) fix listed above.
+**Error Message:** If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the [Carthage Error](build_errors.md#carthage-error) fix listed above.
 
 **Solution**: Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.
 
@@ -185,14 +189,16 @@ The final App Group should now have a blue check box, the name should start with
 
 That should clear the out, problematic profiles and allow a successful build.
 
-If your problem persists after that, then you should try a total reset of your phone to clear out the pesky problem. Before you do this, you may want to [Post for Help](build_errors.md#posting-for-help) to make sure it is really necessary:
+If your problem persists after that, then you might need to do total reset of your phone to clear out the pesky problem. Before you do this, you may want to [Post for Help](build_errors.md#posting-for-help) to make sure it is really necessary:
 
 1. Wipe the iPhone clean and set it up as a new device
     - FIRST - write down or screenshot all your settings
-    - Pod users - you will have to start a fresh pod after this but your old pod will continue giving you basal rate. If you leave it running - you won't be able to bolus.
+    - Pod users - you will have to start a fresh pod after this
+    - If you want your old pod to continue giving you basal rate, don't replace the pod before wiping your phone.  Once the phone is reset and a new Loop app is added, you must start a new pod.  The old pod should have the [sound connection broken](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod) before being discarded because you won't be able to deactivate the pod.
 2. Delete all certificates from your Developer account (you'll need to login to your Developer account to do that)
 3. Delete your old Loop code download and get a new one.
 4. Rebuild Loop on the phone with the new download of Loop code.
+1. Start a new pod with the new Loop app on the reset phone.
 
 ### Pending Certificate Request
 

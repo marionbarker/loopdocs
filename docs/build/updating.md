@@ -7,7 +7,7 @@
 
 !!! info "Summary"
 
-    1. Install macOS and Xcode updates
+    1. Install macOS and Xcode updates based on your phone iOS
     2. Check your Developer Account
     3. Download Updated Loop code
     4. Recommended Actions<br />
@@ -34,8 +34,9 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
 !!! warning "Verify macOS"
 
-    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone.
+    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone. (Note, the current macOS will build the Loop app for all these iOS versions.)
 
+    - For iOS 14.5 (not yet released), minimum is expected to be macOS 11.x (Big Sur)
     - For iOS 14.x, minimum is macOS 10.15.4 (Catalina)
     - For iOS 13.4 through 13.7, minimum is macOS 10.15.2 (Catalina)
     - For iOS 13.0 through 13.2, minimum is macOS 10.14.4 (Mojave)
@@ -145,7 +146,7 @@ More information is shown in the orange box below.
         * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
     1. Your version of Xcode is way out-of-date
         * Mentors have seen this with people trying to build with Xcode 11.4 or earlier
-        * Update [Xcode](step8.md) to the most recent version 
+        * Update [Xcode](step8.md) to the most recent version
 
     **If you revoke and keep going:**
 
