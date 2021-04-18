@@ -63,7 +63,11 @@ Therefore, try to resolve your build error yourself. Then, if you need to post f
     * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.  Do NOT use phone photographs of your computer screen.  See below for instructions on how to capture a screenshot.
     * State which fixes from the list below you have already tried AND post the screenshots of the results of those fix attempts.
 
-**How to capture a computer screenshot on a Mac**: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode or terminal window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. It will have a filename that starts with "Screen Shot" and includes a date and time stamp. Phone photos of your computer screen won't be of sufficient clarity to read the needed information and often cut off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.
+## Screenshots
+
+Please take screenshots of your issue and use them in your posts. On an Apple computer, press `shift-command-4` keys at the same time and a little crosshairs tool will appear. Click-and-drag across the area you'd like to screenshot. When you let go of the button, the screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". To capture an entire window, press `shift-command-4` keys at the same time followed by pressing the space bar and then click on the window of interest.  Use screenshots over cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.
+
+Use the whole Xcode window screenshot when posting for build help.
 
 ## Find Your Error Message(s)
 
