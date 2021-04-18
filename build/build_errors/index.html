@@ -465,9 +465,9 @@
 <h2 id="start-with-the-obvious-error-causes">Start with The Obvious Error Causes<a class="headerlink" href="#start-with-the-obvious-error-causes" title="Permanent link">⌁</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">New Loop Builders</p>
-<p>This page contains build error help for people updating their Loop as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4 and 6 in the list below. Then, skim the page until your reach <a href="./#find-your-error-messages">Find Your Error Message</a>. Once you've identified your error message, try to resolve it.  Still stuck? Read <a href="./#posting-for-help">Posting for Help</a></p>
+<p>This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4 and 6 in the list below. Then, skim the page until your reach <a href="./#find-your-error-messages">Find Your Error Message</a>. Once you've identified your error message, try to resolve it.  Still stuck? Read <a href="./#posting-for-help">Posting for Help</a></p>
 </div>
-<p>Before you start trying to resolve your red errors...start with the most obvious things that can cause a red error message:</p>
+<p>Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:</p>
 <ol>
 <li>
 <p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.</p>
@@ -524,7 +524,7 @@
 <li>State which fixes from the list below you have already tried AND post the screenshots of the results of those fix attempts.</li>
 </ul>
 </div>
-<p><strong>How to capture a computer screenshot on a Mac</strong>: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. It will have a filename that starts with "Screen Shot" and includes a date and time stamp. Phone photos of your computer screen won't be of sufficient clarity to read the needed information and often cut off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.</p>
+<p><strong>How to capture a computer screenshot on a Mac</strong>: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode or terminal window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. It will have a filename that starts with "Screen Shot" and includes a date and time stamp. Phone photos of your computer screen won't be of sufficient clarity to read the needed information and often cut off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.</p>
 <h2 id="find-your-error-messages">Find Your Error Message(s)<a class="headerlink" href="#find-your-error-messages" title="Permanent link">⌁</a></h2>
 <p>To begin fixing the error, use the Report Navigator view to find your error message.</p>
 <p align="center"><img alt="img/report-nav.png" src="../img/report-nav.png" width="750" /></p>
@@ -543,12 +543,13 @@
 <p align="center"><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Permanent link">⌁</a></h2>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Permanent link">⌁</a></h3>
-<p>If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error. The error looks similar to this:</p>
+<p>If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error.</p>
+<p><strong>Error Message:</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Wrong Version of Carthage Error</p>
 <p>Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.</p>
 </div>
-<p>The solution is to manually uninstall carthage:</p>
+<p><strong>Solution:</strong> Manually uninstall carthage.</p>
 <ul>
 <li>Open a Terminal</li>
 <li>Copy and paste this command into the terminal<ul>
@@ -564,11 +565,12 @@
 <li>The password will not display on the screen as you type it</li>
 </ul>
 <h3 id="could-not-locate-device-support-files">Could Not Locate Device Support Files<a class="headerlink" href="#could-not-locate-device-support-files" title="Permanent link">⌁</a></h3>
-<p>If you see an error message that says "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone. Update your Xcode version; this may also require a macOS update. Please review the iOS driven requirements for <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">Xcode and macOS</a>.</p>
+<p><strong>Error Message:</strong> "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.</p>
+<p><strong>Solution:</strong> Update your Xcode version; this may also require a macOS update. Please review the phone iOS driven requirements for <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">Xcode and macOS</a>.</p>
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
 <p>With Xcode 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
 <h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Permanent link">⌁</a></h3>
-<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
+<p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
 <p><strong>Solution</strong>: Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.</p>
 <p align="center"><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" width="850" /></p>
 <h3 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h3>
@@ -601,16 +603,18 @@
 <li>Rebuild Loop</li>
 </ol>
 <p>That should clear the out, problematic profiles and allow a successful build.</p>
-<p>If your problem persists after that, then you should try a total reset of your phone to clear out the pesky problem. Before you do this, you may want to <a href="./#posting-for-help">Post for Help</a> to make sure it is really necessary:</p>
+<p>If your problem persists after that, then you might need to do total reset of your phone to clear out the pesky problem. Before you do this, you may want to <a href="./#posting-for-help">Post for Help</a> to make sure it is really necessary:</p>
 <ol>
 <li>Wipe the iPhone clean and set it up as a new device<ul>
 <li>FIRST - write down or screenshot all your settings</li>
-<li>Pod users - you will have to start a fresh pod after this but your old pod will continue giving you basal rate. If you leave it running - you won't be able to bolus.</li>
+<li>Pod users - you will have to start a fresh pod after this</li>
+<li>If you want your old pod to continue giving you basal rate, don't replace the pod before wiping your phone.  Once the phone is reset and a new Loop app is added, you must start a new pod.  The old pod should have the <a href="../../faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod">sound connection broken</a> before being discarded because you won't be able to deactivate the pod.</li>
 </ul>
 </li>
 <li>Delete all certificates from your Developer account (you'll need to login to your Developer account to do that)</li>
 <li>Delete your old Loop code download and get a new one.</li>
 <li>Rebuild Loop on the phone with the new download of Loop code.</li>
+<li>Start a new pod with the new Loop app on the reset phone.</li>
 </ol>
 <h3 id="pending-certificate-request">Pending Certificate Request<a class="headerlink" href="#pending-certificate-request" title="Permanent link">⌁</a></h3>
 <p><strong>Error message:</strong> "You already have a current iOS Development certificate or a pending certificate request."</p>
