@@ -435,11 +435,15 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#sign-four-targets" class="nav-link">Sign Four Targets</a>
+            <li class="nav-item" data-level="2"><a href="#sign-four-targets-first-target" class="nav-link">Sign Four Targets - First Target</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#free-account" class="nav-link">Free Account</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sign-four-targets-all-targets" class="nav-link">Sign Four Targets - All Targets</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -551,7 +555,7 @@
 </div>
 <p align="center"><img alt="img/select_device.png" src="../img/select_device.png" width="750" /></p>
 <p align="center"><img alt="img/your_device.png" src="../img/your_device.png" width="650" /></p>
-<h2 id="sign-four-targets">Sign Four Targets<a class="headerlink" href="#sign-four-targets" title="Permanent link">⌁</a></h2>
+<h2 id="sign-four-targets-first-target">Sign Four Targets - First Target<a class="headerlink" href="#sign-four-targets-first-target" title="Permanent link">⌁</a></h2>
 <p>Once you select your device (your iPhone's name), you are ready to start signing the four targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose your team that you'd like to sign with. If you select a team name with (personal team), your app will expire after 7 days. If you select a team name without that (personal team), your app will last a full year.  If you never signed up for a <a href="../step9/#add-apple-id">Free Developer Account</a>, you will not have a (personal team) showing. Make sure you keep the "automatically manage signing" box checked above the team selection area.</p>
 <p align="center"><img alt="img/team.png" src="../img/team.png" width="750" /></p>
 <p>Once you choose your signing team, Xcode will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm. Note - you <strong>must</strong> be connected to the internet for this step because your computer needs to communicate with Apple to register that device.</p>
@@ -562,6 +566,7 @@
 <p>If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities, so you will need to disable them before proceeding on with signing and building your app. The push notification capability is used for setting remote overrides; disabling it will not affect regular notifications, e.g., "Loop Failure" with minutes since last Green Loop, "Pump Reservoir Low", etc. Click on the small x next to the Siri and push notification lines located at the bottom of your Signing &amp; Capabilities page. You need to do this in both the Loop and WatchApp Extension targets.</p>
 <p align="center"><img alt="img/siri-errors.png" src="../img/siri-errors.png" width="750" /></p>
 </div>
+<h2 id="sign-four-targets-all-targets">Sign Four Targets - All Targets<a class="headerlink" href="#sign-four-targets-all-targets" title="Permanent link">⌁</a></h2>
 <p>A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.  Click on each of the three remaining targets, and repeat the signing steps by choosing the same team name as you selected in the first target. The four targets that must be signed prior to building the Loop app are Loop, Loop Status Extension, Watch App, and WatchApp Extension.</p>
 <p align="center"><img alt="Xcode window showing the four targets that must be signed" src="../img/success.png" width="750" /></p>
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Permanent link">⌁</a></h2>
