@@ -71,7 +71,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 ![img/your_device.png](img/your_device.png){width="650"}
 {align="center"}
 
-## Sign Four Targets
+## Sign Four Targets - First Target
 
 Once you select your device (your iPhone's name), you are ready to start signing the four targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose your team that you'd like to sign with. If you select a team name with (personal team), your app will expire after 7 days. If you select a team name without that (personal team), your app will last a full year.  If you never signed up for a [Free Developer Account](step9.md#add-apple-id), you will not have a (personal team) showing. Make sure you keep the "automatically manage signing" box checked above the team selection area.
 
@@ -91,6 +91,9 @@ Once you choose your signing team, Xcode will automatically generate provisionin
 
     ![img/siri-errors.png](img/siri-errors.png){width="750"}
     {align="center"}
+
+
+## Sign Four Targets - All Targets
 
 A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.  Click on each of the three remaining targets, and repeat the signing steps by choosing the same team name as you selected in the first target. The four targets that must be signed prior to building the Loop app are Loop, Loop Status Extension, Watch App, and WatchApp Extension.
 
