@@ -18,7 +18,10 @@
 
 !!! warning "FAQs"
     - **"I got a build error! YIKES...what do I do?"** Check out the [Build Errors](build_errors.md) page for solutions.
-    - **"The build seems to take a long time, is that normal?"** Yes, the first build of a new download will take quite a long time. Just be patient, one of the build steps may take *much* longer than all the others. The build process does always end in a success or failure message, so just wait it out until you see one of those displayed.
+    - **"The build seems to take a long time, is that normal?"** Yes, the first build of a new download will take quite a long time. Just be patient, one of the build steps may take *much* longer than all the others.
+
+        - The build process always ends with either a "Build Succeeded" or "Build Failed" message, so just wait it out until you see one of those displayed.
+        - If you are away from you computer when the build succeeds, you might miss the "Build Succeeded" message, but you will see "Running Loop on <your phone name\>" at the very top of the Xcode window - and the Loop app will be open on your phone.
 
 ## Open Loop project in Xcode
 
@@ -75,7 +78,7 @@ Once you select your device (your iPhone's name), you are ready to start signing
 ![img/team.png](img/team.png){width="750"}
 {align="center"}
 
-Once you choose your signing team, Xcode will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm.
+Once you choose your signing team, Xcode will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm. Note - you **must** be connected to the internet for this step because your computer needs to communicate with Apple to register that device.
 
 ![img/register_device.png](img/register_device.png){width="750"}
 {align="center"}
@@ -98,7 +101,7 @@ A successfully signed target will have a provisioning profile and signing certif
 
 **New Loop users**: Customizations are not a required part of any Loop build. As you gain experience in how you use your Loop app, you may want to customize some of the features. First time builders are encouraged to build with the standard, default code. You can always update your Loop app to add customizations at a later time, using the same download. Subsequent build time is must faster (a few minutes) than the initial build for a given download.
 
-If you want any custom configurations to your Loop or Loop Apple Watch apps, now is the time to make them before you build on the Mac and copy the Loop app to your iPhone. Follow the step-by-step instructions on the [Code Customizations](code_customization.md) page. If you are a person familiar with Apple's Swift language, feel free to make your own customizations as well.
+If you want any custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the [Code Customizations](code_customization.md) page prior to building. If you are a person familiar with Apple's Swift language, feel free to make your own customizations as well.
 
 When you've finished your customizations, come on back to this section and continue on with the rest of the build.
 
@@ -139,14 +142,14 @@ There is a lot of information. The two most important warnings are highlighted h
 
             Example post: "I've read the docs but I'm still confused about xxx".  You may get a link back to a specific section of one page.  Read that section first. If that doesn't clarify things, then reply in that same post with what confuses you.
 
-            Please - pick one site; work with one mentor; do not post is multiple places at once.<br/><br/>
+            Please - pick one site; work with one mentor; do not post in multiple places at once.<br/><br/>
 
 
-    2. Once Carb entries are saved using the [Carb Entry to Meal Bolus Menus](../operation/features/carbs.md) or the [Edit Carb](../operation/features/carbs.md*edit-meals) feature, Loop will provide increased insulin to handle that entry.
+    2. Once Carb entries are saved using the [Carb Entry to Meal Bolus Menus](../operation/features/carbs.md) or the [Edit Carbohydrates Menu](../operation/features/carbs.md#edit-meals), Loop will provide increased insulin to handle that entry.
 
           - The Loop app is an automated insulin delivery system and if it thinks you have carbs on board, it will try to give you appropriate insulin for those carbs.
           - **You must delete or edit a saved carb entry if you no longer want Loop to provide insulin for it.**
-          - The [Apple Health Permissions](health.md#loop-permissions) should be configured so that Loop can write Carbohydrates (report to other apps), but Loop should **NOT** have permission to read Carbohydrates (that may be entered from other apps, or from a mistaken Blood Glucose entry in the wrong place).
+          - The [Apple Health Permissions](health.md#loop-permissions) should be configured so that Loop can write Carbohydrates (report to other apps), but Loop should **NOT** have permission to read Carbohydrates (that may be entered from other apps, or from a mistaken Blood Glucose entry in the wrong place in Apple Health).
 
 Now that the Safety Intermission is done, you can continue on with the last step in building your app.
 
@@ -189,7 +192,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
     While you are waiting for the build to complete, check out two pages:
 
-    - [Read Loop Troubleshooting](../troubleshooting/yellow-red-loop.md).
+    - [Red Loop Troubleshooting](../troubleshooting/yellow-red-loop.md).
     - And if you plan to use an Omnipod: [Pod Pairing Toubleshooting](../troubleshooting/pod-pairing.md)
 
     Ok, back to the building instructions.
@@ -205,7 +208,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! danger "BUILD SUCCEEDED"
 
-    Congrats! If the build is successful, you'll see the message or "Running Loop..." across the top of the Xcode window.
+    Congrats! If the build is successful, you'll see the message "Running Loop..." across the top of the Xcode window.
 
     Your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. `Allow` Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then **immediately turn OFF the permission to read Carbohydrates**.  (This is a [safety feature](health.md#loop-permissions).) Click `Allow` in the upper right corner.
 
@@ -213,7 +216,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
     ![img/health-start.JPEG](img/health-start.svg){width="450"}
     {align="center"}
 
-    **You can unplug your phone from the computer now.** You will get an Xcode message window that says `Lost connection to the debugger on "<your phone name>"`.  Just click OK.
+    **You can unplug your phone from the computer now.** You will get an Xcode message window that says "Lost connection to the debugger on <your phone name\>".  Just click OK.
 
     Next, you will use the [Set up App](../operation/overview.md) section of this website to keep proceeding safely.
 
@@ -234,13 +237,13 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 ## Summary
 
-If your build failed, you need to proceed to the [Build Errors](build_errors.md) page to find the solution. Please head there to find the help you need.
+If your build failed, you need to proceed to the [Build Errors](build_errors.md) page to find the solution. Please go there first to find the help you need.
 
-If your build was successful but your phone was locked, you will see an Xcode message window that says `Unlock <your phone name> to Continue`. Simply unlock the phone and the app will be copied onto your phone.
+If your build was successful but your phone was locked, you will see an Xcode message window that says "Unlock <your phone name\> to Continue". Simply unlock your phone and the app will be copied onto your phone and automatically open.
 
 If no build errors, you're done building your Loop app.
 
-The next step is to unplug your phone.  You will now get an Xcode message window that says `Lost connection to the debugger on "<your phone name"`.  Just click OK. This is because you unplugged your phone.  The Loop app is still running on your phone and your are ready for the Set up App menu.
+The next step is to unplug your phone.  You will now get an Xcode message window that says "Lost connection to the debugger on <your phone name\>".  Just click OK. This is because you unplugged your phone.  The Loop app is still running on your phone and you are ready for the Set up App menu.
 
 ![alt](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
 
