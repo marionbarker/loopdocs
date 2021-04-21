@@ -425,7 +425,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#step-14-build-loop-app" class="nav-link">Step 14: Build Loop app</a>
+            <li class="nav-item" data-level="1"><a href="#step-14-build-loop-app" class="nav-link">Step 14: Build Loop App</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#open-loop-project-in-xcode" class="nav-link">Open Loop Project in Xcode</a>
               <ul class="nav flex-column">
@@ -475,7 +475,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#next-steps" class="nav-link">Next steps</a>
+            <li class="nav-item" data-level="2"><a href="#next-steps" class="nav-link">Next Steps</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -486,7 +486,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="step-14-build-loop-app">Step 14: Build Loop app<a class="headerlink" href="#step-14-build-loop-app" title="Permanent link">⌁</a></h1>
+<h1 id="step-14-build-loop-app">Step 14: Build Loop App<a class="headerlink" href="#step-14-build-loop-app" title="Permanent link">⌁</a></h1>
 <div class="admonition danger">
 <p class="admonition-title">Time Estimate</p>
 <ul>
@@ -517,6 +517,7 @@
 <ul>
 <li>The build process always ends with either a "Build Succeeded" or "Build Failed" message; so just wait it out until you see one of those displayed.</li>
 <li>If you are away from you computer when the build succeeds, you might miss the "Build Succeeded" message, but you will see "Running Loop on &lt;your phone name>" at the very top of the Xcode window - and the Loop app will be open on your phone.</li>
+<li>The final step of a successful build is for Xcode to copy the completed build to your iPhone; if your phone is locked, Xcode pops up a message letting you know.  Unlock your phone to continue.</li>
 </ul>
 </li>
 </ul>
@@ -542,7 +543,7 @@
 <p align="center"><img alt="img/loop-second-click.png" src="../img/loop-second-click.png" width="550" /></p>
 </li>
 <li>
-<p>Third Click: With the Loop target selected, click on "Signing &amp; Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of the middle window. If you are missing the "Signing &amp; Capabilities" section and didn't have to click somewhere else to see that part...that means you have missed updating to Xcode 11 from an older version of Xcode. Please go back and update Xcode now.</p>
+<p>Third Click: With the Loop target selected, click on "Signing &amp; Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of the middle window. If you are missing the "Signing &amp; Capabilities" section and didn't have to click somewhere else to see that part, you are running a much older version of Xcode (Xcode 10 or earlier). Please update <a href="../updating/#step-1-install-macos-and-xcode-updates">Xcode and possibly macOS</a> now.</p>
 </li>
 </ol>
 <p align="center"><img alt="img/loop-third-click.png" src="../img/loop-third-click.png" width="550" /></p>
@@ -571,7 +572,7 @@
 <p align="center"><img alt="img/siri-errors.png" src="../img/siri-errors.png" width="750" /></p>
 </div>
 <h2 id="sign-the-targets">Sign the Targets<a class="headerlink" href="#sign-the-targets" title="Permanent link">⌁</a></h2>
-<p>Once you select your device (your iPhone's name), you are ready to start signing the four targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose the team you'd like to sign with. Make sure you keep the "automatically manage signing" box checked in the signing area.</p>
+<p>Once you select your device (your iPhone's name), you are ready to start signing the targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose the team you'd like to sign with. Make sure you keep the "automatically manage signing" box checked in the signing area.</p>
 <ul>
 <li>If you select a team name with (personal team), your app will expire after 7 days and you must disable <a href="./#free-account">Push Notification and Siri</a> as mentioned above.</li>
 <li>If you select a team name without (personal team), your app will last a full year.  </li>
@@ -584,15 +585,17 @@
 <p align="center"><img alt="Xcode window showing the four targets that must be signed" src="../img/success.png" width="750" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Advanced Users Only</p>
-<p>There is one more target, Loop Intent Extension, which must be signed to build dev.</p>
+<p>There is one more target, Loop Intent Extension, which must be signed to build the dev branch.</p>
 <ul>
 <li>Please only build dev if you're a developer/advanced user interested in testing</li>
-<li>Once you install dev on a device, you should delete the Loop app, including all your settings, if you decide to return to master or automatic-bolus.</li>
+<li>Once you install dev on a device, you should delete the Loop app, including all your settings, if you decide to return to master or automatic-bolus</li>
+<li><strong>Repeat: only build the dev branch if you're a developer/advanced user</strong></li>
+<li>The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see if you build the dev branch</li>
 </ul>
 </div>
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Permanent link">⌁</a></h2>
 <p><strong>New Loop users</strong>: Customizations are not a required part of any Loop build. As you gain experience using your Loop app, you may want to customize some of the features. First time builders are encouraged to build with the standard, default code. You can always update your Loop app to add customizations at a later time, using the same download. Subsequent build time is much faster than the initial build for a given download.</p>
-<p>If you want any custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the <a href="../code_customization/">Code Customizations</a> page prior to pressing the Build button. If you are a person familiar with Apple's Swift language, feel free to make your own customizations as well.</p>
+<p>If you want any custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the <a href="../code_customization/">Code Customizations</a> page prior to pressing the Build button.</p>
 <p>When you've finished your customizations, come on back to this section and continue with the rest of the build.</p>
 <h2 id="pair-your-apple-watch">Pair Your Apple Watch<a class="headerlink" href="#pair-your-apple-watch" title="Permanent link">⌁</a></h2>
 <p><strong>New Apple Watch users</strong>: If you have an unopened Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</p>
@@ -702,8 +705,8 @@
 <p>If your phone is still plugged into you computer, you can unplug it. You will get an Xcode message window that says "Lost connection to the debugger on &lt;your phone name>".  Just click OK.</p>
 <p>The next step is the begin the <a href="../../operation/overview/">Set up App</a> process.</p>
 <p><img alt="alt" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" /></p>
-<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">⌁</a></h2>
-<p>Go to the <a href="../../operation/overview/">Set up App</a> menu and work through the page to proceed safely.</p></div>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">⌁</a></h2>
+<p>Go to the <a href="../../operation/overview/">Set up App</a> menu to configure your Loop and follow that up with the first <a href="../../operation/features/carbs/">Operate</a> page and work those pages as you learn to run Loop safely.</p></div>
             </div>
         </div>
 
