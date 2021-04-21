@@ -44,7 +44,7 @@ Loop users who have been around for several years will remember this bug - fortu
 
 **Ok:** "My Loop app won't open." <---- Ok, so now I know the Loop app itself seems to be the problem, but still don't know if this is a build error or an error that has happened after building. The solutions might be different.
 
-**Better:** "My Loop app was working yesterday just fine, and now today it's not doing the things like I expect." <----- Getting closer. Now, I know this is not a build error and that it sounds like a more recent issue. I'm starting to narrow down the potential causes. This is about as much detail as it takes for me, as a volunteer, to consider helping. I might not have to ask 42 questions but instead only 4 questions now to find the remaining information for troubleshooting. But, if there were more detailstimefrom questions.
+**Better:** "My Loop app was working yesterday just fine, and now today it's not doing the things like I expect." <----- Getting closer. Now, I know this is not a build error and that it sounds like a more recent issue. I'm starting to narrow down the potential causes. This is about as much detail as it takes for me, as a volunteer, to consider helping. I might not have to ask 42 questions, but instead only 4 questions to find the remaining information for troubleshooting. If there were more details, it would save time.
 
 **Awesome:** "My Loop app was working yesterday. Around lunch time, I went into the settings screen and made some adjustments and ever since it just turns white and closes no matter what I try." <---- DEFINITELY getting closer. Now I have a strong suspicion about where the bug is happening and can help with a couple links.
 
