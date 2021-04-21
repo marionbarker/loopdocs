@@ -113,8 +113,8 @@ A successfully signed target will have a provisioning profile and signing certif
 
     There is one more target, Loop Intent Extension, which must be signed to build the dev branch.
 
-    - Please only build dev if you're a developer/advanced user interested in testing
-    - Once you install dev on a device, you should delete the Loop app, including all your settings, if you decide to return to master or automatic-bolus
+    - Please only build the dev branch if you're a developer/advanced user interested in testing
+    - Once you install the dev branch on a device, you should delete the Loop app, including all your settings, if you decide to return to master or automatic-bolus
     - **Repeat: only build the dev branch if you're a developer/advanced user**
     - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see if you build the dev branch
 

@@ -27,8 +27,8 @@ Click on one of the links below to download Loop code and then follow the rest o
 ---
 
 - [Dev branch---please only build if you're a developer/advanced user interested in testing](https://github.com/LoopKit/Loop/archive/dev.zip)
-    - Note that dev will soon require iOS 14 on your device
-    - Once you install dev on a device, you might have to delete the app to return to master or automatic-bolus
+    - Note, the dev branch will soon require iOS 14 on your device
+    - Once you install the dev branch on a device, you might have to delete the app to return to master or automatic-bolus
     - **Repeat: only build the dev branch if you're a developer/advanced user**
     - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see if you build the dev branch
 
