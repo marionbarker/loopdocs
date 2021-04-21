@@ -11,27 +11,8 @@
         - If you want to see Loop's actions anywhere other than the Looper's iPhone
         - If you want to ask a mentor for help adjusting your settings
 
-There are two options for setting up Nightscout; one option requires a small fee but automates both the setup and periodic updating, the other option can be "free" or lower cost but requires your effort to build and update. You choose which works best for you. Isn't it nice to have options?
-
-## T1Pal (Paid Service)
-
-[T1Pal is a paid NS hosting](https://t1pal.com/) company.  There is a hosting fee required which is used to help ensure Nightscout runs without limits and receives improvements.  Setup is simple and loop plugins are configured automatically during the setup guide.
-
-* Select [Get Started](https://www.t1pal.com/getting-started/starting/home) to register an account at [T1Pal](https://www.t1pal.com/).  You will need to enter your credit card, which helps ensure Nightscout is running correctly.
-* Select "visualize treatments" in the setup menu and select "loop."
-
-![img/t1pal_configure.png](img/t1pal_configure.png){width="450"}
-{align="center"}
-
-## Traditional DIY
-
-The [Nightscout](https://nightscout.github.io) documentation points to a free hosting option using Heroku, but "free" may come with a cost.  Please read this thoughtful article [Remember, #WeAreNotWaiting not #ItsAllFree](https://www.diabettech.com/wearenotwaiting/remember-wearenotwaiting-not-itsallfree/).
-
-The free options have data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use Nightscout more intensively for alarms, watches, etc., it is possible that you may exceed your quotas. If you can afford to pay a monthly fee to increase those caps, then you may choose to do so.
 
 ### Setup Nightscout
-
-The documentation and instructions for building your own Nightscout site have recently been completely overhauled and are WONDERFUL!
 
 Please visit [The Nightscout site](https://nightscout.github.io) to read the introductory material and then proceed to the Installation page for directions on how to set up your new Nightscout website.
 
