@@ -1,4 +1,4 @@
-# Step 14: Build Loop app
+# Step 14: Build Loop App
 
 !!! danger "Time Estimate"
     - 60-80 minutes for first time builders
@@ -21,6 +21,7 @@
 
         - The build process always ends with either a "Build Succeeded" or "Build Failed" message; so just wait it out until you see one of those displayed.
         - If you are away from you computer when the build succeeds, you might miss the "Build Succeeded" message, but you will see "Running Loop on <your phone name\>" at the very top of the Xcode window - and the Loop app will be open on your phone.
+        - The final step of a successful build is for Xcode to copy the completed build to your iPhone; if your phone is locked, Xcode pops up a message letting you know.  Unlock your phone to continue.
 
 ## Open Loop Project in Xcode
 
@@ -51,7 +52,7 @@ Once Xcode has finished indexing, the Loop project's various folders and files w
     ![img/loop-second-click.png](img/loop-second-click.png){width="550"}
     {align="center"}
 
-3. Third Click: With the Loop target selected, click on "Signing & Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of the middle window. If you are missing the "Signing & Capabilities" section and didn't have to click somewhere else to see that part...that means you have missed updating to Xcode 11 from an older version of Xcode. Please go back and update Xcode now.
+3. Third Click: With the Loop target selected, click on "Signing & Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of the middle window. If you are missing the "Signing & Capabilities" section and didn't have to click somewhere else to see that part, you are running a much older version of Xcode (Xcode 10 or earlier). Please update [Xcode and possibly macOS](updating.md#step-1-install-macos-and-xcode-updates) now.
 
 ![img/loop-third-click.png](img/loop-third-click.png){width="550"}
 {align="center"}
@@ -89,7 +90,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 
 ## Sign the Targets
 
-Once you select your device (your iPhone's name), you are ready to start signing the four targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose the team you'd like to sign with. Make sure you keep the "automatically manage signing" box checked in the signing area.
+Once you select your device (your iPhone's name), you are ready to start signing the targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose the team you'd like to sign with. Make sure you keep the "automatically manage signing" box checked in the signing area.
 
 - If you select a team name with (personal team), your app will expire after 7 days and you must disable [Push Notification and Siri](step14.md#free-account) as mentioned above.
 - If you select a team name without (personal team), your app will last a full year.  
@@ -110,17 +111,19 @@ A successfully signed target will have a provisioning profile and signing certif
 
 !!! warning "Advanced Users Only"
 
-    There is one more target, Loop Intent Extension, which must be signed to build dev.
+    There is one more target, Loop Intent Extension, which must be signed to build the dev branch.
 
     - Please only build dev if you're a developer/advanced user interested in testing
-    - Once you install dev on a device, you should delete the Loop app, including all your settings, if you decide to return to master or automatic-bolus.
+    - Once you install dev on a device, you should delete the Loop app, including all your settings, if you decide to return to master or automatic-bolus
+    - **Repeat: only build the dev branch if you're a developer/advanced user**
+    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see if you build the dev branch
 
 
 ## Code Customizations
 
 **New Loop users**: Customizations are not a required part of any Loop build. As you gain experience using your Loop app, you may want to customize some of the features. First time builders are encouraged to build with the standard, default code. You can always update your Loop app to add customizations at a later time, using the same download. Subsequent build time is much faster than the initial build for a given download.
 
-If you want any custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the [Code Customizations](code_customization.md) page prior to pressing the Build button. If you are a person familiar with Apple's Swift language, feel free to make your own customizations as well.
+If you want any custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the [Code Customizations](code_customization.md) page prior to pressing the Build button.
 
 When you've finished your customizations, come on back to this section and continue with the rest of the build.
 
@@ -275,6 +278,6 @@ The next step is the begin the [Set up App](../operation/overview.md) process.
 
 ![alt](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
 
-## Next steps
+## Next Steps
 
-Go to the [Set up App](../operation/overview.md) menu and work through the page to proceed safely.
+Go to the [Set up App](../operation/overview.md) menu to configure your Loop and follow that up with the first [Operate](../operation/features/carbs.md) page and work those pages as you learn to run Loop safely.

@@ -29,6 +29,8 @@ Click on one of the links below to download Loop code and then follow the rest o
 - [Dev branch---please only build if you're a developer/advanced user interested in testing](https://github.com/LoopKit/Loop/archive/dev.zip)
     - Note that dev will soon require iOS 14 on your device
     - Once you install dev on a device, you might have to delete the app to return to master or automatic-bolus
+    - **Repeat: only build the dev branch if you're a developer/advanced user**
+    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see if you build the dev branch
 
 
 ---
@@ -42,6 +44,6 @@ It is best practice to leave your Loop code in your Downloads folder. If you sto
 
 Depending on your browser and settings, your Loop download may or may not automatically unzip. If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility. This will create a blue folder called `Loop-master`.  HOWEVER, if you already have an existing `Loop-master` folder from a previous download, the name of the next download will be something like `Loop-master (1)`.
 
-## Next Step: Build Loop app
+## Next Step: Build Loop App
 
-Now you are ready to move onto Step 14 to [Build Loop app](step14.md).
+Now you are ready to move onto Step 14 to [Build Loop App](step14.md).
