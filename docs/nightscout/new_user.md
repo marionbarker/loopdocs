@@ -13,7 +13,7 @@
 
 There are two options for setting up Nightscout; one option requires a small fee but automates both the setup and periodic updating, the other option can be "free" or lower cost but requires your effort to build and update. You choose which works best for you. Isn't it nice to have options?
 
-## T1Pal (paid service)
+## T1Pal (Paid Service)
 
 [T1Pal is a paid NS hosting](https://t1pal.com/) company.  There is a hosting fee required which is used to help ensure Nightscout runs without limits and receives improvements.  Setup is simple and loop plugins are configured automatically during the setup guide.
 
@@ -35,7 +35,7 @@ The documentation and instructions for building your own Nightscout site have re
 
 Please visit [The Nightscout site](https://nightscout.github.io) to read the introductory material and then proceed to the Installation page for directions on how to set up your new Nightscout website.
 
-### Add Loop variables to Nightscout
+### Add Loop Variables to Nightscout
 
 There are a few Loop-specific variables you should configure to get the most out of your Nigghtscout site. Follow the [instructions to retrofit an existing Nightscout site](update_user.md#step-2-editadd-config-vars).
 
