@@ -1,10 +1,17 @@
 # New Nightscout Users
 
-!!! info "Is Nightscout required for Loop?"
+!!! info "Is Nightscout Required for Loop?"
 
-    Nope...you don't NEED to have a Nightscout site in order to use Loop. A Nightscout site is completely optional. However, if you want to see Loop's actions anywhere other than the Looper's iPhone...then you will want a Nightscout site. For example, parents of little Loop users may want to see the temporary basal rates Loop is setting, the current insulin on board, or a recent bolus and carb entry.  That's what Nightscout will provide...remote viewing of Loop actions.
+    Nightscout is not required, but is recommended for Loop.
 
-There are two options for setting up Nightscout; one option requires a small fee but automates both the setup and periodic updating/cleaning database, the other option is free but requires your effort to build and update. You choose which works best for you. Isn't it nice to have options?
+    - A Nightscout site provides a dashboard for remote viewing of Loop actions including the temporary basal rates Loop is setting, the current insulin on board, or a recent bolus and carb entry
+    - A Nightscout site provides reports for retrospective review of your settings
+    - You will want a Nightscout site:
+        - If you are a parent of a little Loop user
+        - If you want to see Loop's actions anywhere other than the Looper's iPhone
+        - If you want to ask a mentor for help adjusting your settings
+
+There are two options for setting up Nightscout; one option requires a small fee but automates both the setup and periodic updating, the other option can be "free" or lower cost but requires your effort to build and update. You choose which works best for you. Isn't it nice to have options?
 
 ## T1Pal (paid service)
 
@@ -16,15 +23,17 @@ There are two options for setting up Nightscout; one option requires a small fee
 ![img/t1pal_configure.png](img/t1pal_configure.png){width="450"}
 {align="center"}
 
-## Traditional DIY (free, do-it-yourself)
+## Traditional DIY
 
-Two options exist for easy DIY hosting of NS; Azure or Heroku. Both hosting services are free.  However,  Azure has data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use NS more intensively for alarms, watches, etc…it is possible that you may exceed your monthly data cap on Azure.  Many Loop users have transitioned their old sites from Azure over to Heroku and have found the hosting change to be beneficial.  Heroku also has some memory limits, but those limits have been more than adequate for Loop users.  Therefore, we recommend new users start with Heroku.
+The [Nightscout](https://nightscout.github.io) documentation points to a free hosting option using Heroku, but "free" may come with a cost.  Please read this thoughtful article [Remember, #WeAreNotWaiting not #ItsAllFree](https://www.diabettech.com/wearenotwaiting/remember-wearenotwaiting-not-itsallfree/).
+
+The free options have data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use Nightscout more intensively for alarms, watches, etc., it is possible that you may exceed your quotas. If you can afford to pay a monthly fee to increase those caps, then you may choose to do so.
 
 ### Setup Nightscout
 
-There's great news though! The documentation and instructions for building your own Nightscout site have recently been completely overhauled and are WONDERFUL!
+The documentation and instructions for building your own Nightscout site have recently been completely overhauled and are WONDERFUL!
 
-Please visit [The Nightscout site](https://nightscout.github.io/nightscout) to read the introductory material and then proceed to the Installation page for directions on how to set up your new Nightscout website.
+Please visit [The Nightscout site](https://nightscout.github.io) to read the introductory material and then proceed to the Installation page for directions on how to set up your new Nightscout website.
 
 ### Add Loop variables to Nightscout
 
