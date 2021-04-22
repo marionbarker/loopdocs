@@ -18,7 +18,7 @@ Please visit [The Nightscout site](https://nightscout.github.io) to read the int
 
 ### Add Loop Variables to Nightscout
 
-There are a few Loop-specific variables you should configure to get the most out of your Nigghtscout site. Follow the [instructions to retrofit an existing Nightscout site](update_user.md#step-2-editadd-config-vars).
+There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the [instructions to retrofit an existing Nightscout site](update_user.md#step-2-editadd-config-vars).
 
 ## Add Nightscout to Loop
 
