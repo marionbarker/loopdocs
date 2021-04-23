@@ -10,11 +10,13 @@
         - If you are a parent of a little Loop user
         - If you want to see Loop's actions anywhere other than the Looper's iPhone
         - If you want to ask a mentor for help adjusting your settings
+        - If you want to prepare reports to evaluate your own settings
+        - If you want to prepare reports to hand to your doctor
 
 
 ### Setup Nightscout
 
-Please visit [The Nightscout site](https://nightscout.github.io) to read the introductory material and then proceed to the Installation page for directions on how to set up your new Nightscout website.
+Please visit the [Nightscout](https://nightscout.github.io) documentation to read about Nightscout. There are several options for setting up your Nightscout site. Once your Nightscout site is operational and you've read the information about using your site, return to LoopDocs to update your configuration to Add Loop Variables to Nightscout.
 
 ### Add Loop Variables to Nightscout
 
