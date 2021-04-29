@@ -1,6 +1,7 @@
 # Medtronic Pump Users
 
-Your Loop won’t have much showing initially until we get some basic settings input. The beginning step will be to add a pump to your Loop. If you are using a Medtronic pump, you can follow along for the rest of this page. If, however, you are using an Omnipod pump, please head over to [this page](omnipod-pump.md) instead.
+Your Loop will have a lot of blank spots until you input some basic settings. The beginning step is to add a pump to your Loop app. If you are using an Medtronic pump, you can follow along for the rest of this page. If you are using a Medtronic pump, Omnipod pump, please head over to [Add Omnipod](omnipod-pump.md) instead.
+
 
 ## Prepare Medtronic Pump
 
