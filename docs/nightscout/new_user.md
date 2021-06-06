@@ -16,7 +16,16 @@
 
 ### Setup Nightscout
 
-Please visit the [Nightscout](https://nightscout.github.io) documentation to read about Nightscout. There are several options for setting up your Nightscout site. Once your Nightscout site is operational and you've read the information about using your site, return to LoopDocs to update your configuration to Add Loop Variables to Nightscout.
+Please visit the [Nightscout](https://nightscout.github.io) documentation to read about Nightscout. There are several options, mentioned in that documentation, for setting up your Nightscout site.
+
+  * You can choose the free (except for your time) DIY method
+  * You can choose the DIY method where you pay a monthly fee for data storage
+  * You can choose a managed site (for a monthly fee) that creates your site, keeps the software up to date and provides data storage
+
+Once your Nightscout site is operational and you've read the information about using your site, return to LoopDocs to update your configuration to Add Loop Variables to Nightscout.
+
+!!! info ""
+    The free DIY method provides sufficient storage for a single Loop user, but will require you to delete older data about once a year.
 
 ### Add Loop Variables to Nightscout
 
