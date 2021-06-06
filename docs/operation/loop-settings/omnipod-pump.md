@@ -11,16 +11,15 @@ Let’s start by clicking on the Loop Settings button in the toolbar at the bott
 
 ## Select RileyLink
 
-If the Loop app has not been given permission to access Bluetooth, you will first need to allow that.  [INSERT NEW SCREENSHOT - LATER].
+!!! danger ""
+    New RileyLink compatible devices won't have a name listed next to their slider at first. The name will only be displayed after connecting the device to Loop for the first time. So, if all you see in the device list is a little toggle and no "RileyLink" name...go ahead and switch that toggle. The default device name will appear after that toggle is green.
+
+    You can later [personalize](rileylink.md) the default device name once it is connected to Loop.
+
+![img/pod-rl.png](img/pod-rl.png){width="400"}
+{align="center"}
 
 A list of all RileyLink compatible devices in the nearby area will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen. If your RileyLink does not appear, make sure it is charged and turned on: slide the recessed switch toward the case's keyring.
-
-!!! info "New RileyLink"
-
-    New RileyLinks won't have a name listed next to their slider at first. The name will only be displayed after connecting a RileyLink to a Loop for the first time. So, if all you see in the device list is a little toggle off to the left and no "RileyLink" name...go ahead and switch that toggle. The RileyLink name will appear after that toggle is green.
-
-![img/pod-rl.png](img/pod-rl.png){width="550"}
-{align="center"}
 
 ## Delivery Limits and Basals
 
