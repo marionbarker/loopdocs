@@ -102,7 +102,7 @@ With the Expiration Reminder you can set a convenient time to get a notification
 As with the PDM, Loop allows the Pod to continue operating after expiration until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.
 
 !!! info ""
-    The current version of Loop has a "glitch" in setting the Expiration Reminder.  Once you select the line, scroll up or down until the line no longer is visible on the display then scroll it back. The operation should no be appropriate with a display similar to the graphic below.
+    The current version of Loop has a "glitch" in setting the Expiration Reminder.  Tap on the line (can't change time), scroll the entire display up or down until the line no longer is visible and then scroll it back. The Expiration Reminder display should now look like the graphic below. The expiration reminder time can now be selected.
 
 ![view of the expiration reminder selection wheel](img/pod-settings-screen-expiration-reminder.png){width="250"}
 
