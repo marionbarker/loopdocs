@@ -40,6 +40,7 @@ The next screen will offer two areas where you will need to enter information:
     * Note - once a pod is paired to the Loop app, you will press `Sync to Pod` instead of `Back` to save your basal rates - you only see `Back` when no pod is paired.
     * To delete a basal rate or rearrange the order, first tap `Edit` on upper right and then use standard Apple gestures (for your phone iOS) to delete or move rows.
     * You will not be able to move or delete the row for midnight.
+    * You will not be able to add another row if the last row is for 11:30 pm
 
 ![img/pod-settings-screen.png](img/pod-settings-screen.png){width="650"}
 {align="center"}
