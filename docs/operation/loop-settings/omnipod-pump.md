@@ -52,11 +52,12 @@ When you finish entering these values, press the blue `Continue` button on the b
 
 ## Pair Pod
 
-1. Place the Pod near the RileyLink (within 2 to 6 inches) with the phone within a few feet.
-2. Fill the Pod with insulin until it beeps (minimum fill is 80 units)
-3. Click the `Pair` button
-4. Wait while the progress bar for priming completes
-5. Press the `Continue` button when the blue checkmark confirms priming is complete
+1. Fill the Pod with insulin until it beeps (minimum fill is 80 units)
+1. Place the Pod about 6 inches from the RileyLink compatible device with the phone within a few feet
+1. Click the `Pair` button
+1. Loop checks on the radio signal strength (RSSI) reported by the pod when it starts to pair and if it is not within the optimum range, it will ask you to move the RileyLink closer or further away and try again.
+1. Wait while the progress bar for priming completes
+1. Press the `Continue` button when the blue checkmark confirms priming is complete
 
 ![img/pod-setup-01-pair.png](img/pod-setup-01-pair.png){width="650"}
 {align="center"}
