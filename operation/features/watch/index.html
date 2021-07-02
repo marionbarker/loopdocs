@@ -13,13 +13,21 @@
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
-        <link href="../../../stylesheets/admonitions.css" rel="stylesheet">
-        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+        <link href="../../../css/admonitions.css" rel="stylesheet">
 
         <script src="../../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-109876065-1', 'loopkit.github.io');
+            ga('send', 'pageview');
+        </script> 
     </head>
 
     <body>
@@ -37,6 +45,51 @@
                         <ul class="nav navbar-nav">
                             <li class="navitem">
                                 <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
@@ -68,6 +121,10 @@
                                     
 <li>
     <a href="../../../build/step6/" class="dropdown-item">Step 6 Enroll in Apple Developer Program</a>
+</li>
+                                    
+<li>
+    <a href="../../../build/step7/" class="dropdown-item">Step 7 Install Homebrew</a>
 </li>
                                     
 <li>
@@ -112,10 +169,6 @@
                                     
 <li>
     <a href="../../../build/loopworkspace/" class="dropdown-item">LoopWorkspace</a>
-</li>
-                                    
-<li>
-    <a href="../../../build/step7/" class="dropdown-item">Step 7 Skip Step 7</a>
 </li>
                                 </ul>
                             </li>
@@ -162,7 +215,7 @@
 </li>
                                     
 <li>
-    <a href="../../loop-settings/rileylink/" class="dropdown-item">RileyLink Menu</a>
+    <a href="../../loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
 </li>
                                 </ul>
                             </li>
@@ -170,25 +223,21 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="../carbs/" class="dropdown-item">Meal Entries</a>
-</li>
-                                    
-<li>
-    <a href="../bolus/" class="dropdown-item">Bolus</a>
-</li>
-                                    
-<li>
-    <a href="../workout/" class="dropdown-item">Overrides</a>
-</li>
-                                    
-<li>
-    <a href="../../loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
-</li>
-                                    
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">How to Use Loop App</a>
     <ul class="dropdown-menu">
+            
+<li>
+    <a href="../carbs/" class="dropdown-item">Carb Entries</a>
+</li>
+            
+<li>
+    <a href="../bolus/" class="dropdown-item">Bolus</a>
+</li>
+            
+<li>
+    <a href="../workout/" class="dropdown-item">Overrides</a>
+</li>
             
 <li>
     <a href="../premeal/" class="dropdown-item">Pre-meal target</a>
@@ -324,6 +373,10 @@
 </li>
                                     
 <li>
+    <a href="../../../nightscout/mlab_cleanup/" class="dropdown-item">NS Stopped Working</a>
+</li>
+                                    
+<li>
     <a href="../../../nightscout/remote-overrides/" class="dropdown-item">Remote Overrides</a>
 </li>
                                     
@@ -341,51 +394,6 @@
                                     
 <li>
     <a href="../../../nightscout/reports/" class="dropdown-item">Reports</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
 </li>
                                 </ul>
                             </li>
@@ -435,7 +443,10 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="apple-watch">Apple Watch<a class="headerlink" href="#apple-watch" title="Permanent link">⌁</a></h1>
-<p align="center"><img alt="img/watch.png" src="../img/watch.png" width="150" /></p>
+<p align="center">
+<img src="../img/watch.png" width="150">
+</p>
+
 <p>If you add an Apple Watch after building Loop, you will need to pair your watch to your iPhone and then rebuild Loop to enable the Loop watch app to show up as an available watch app.</p>
 <p>Loop is currently supported with all released versions of the Apple Watch and Apple watchOS 4.1 and newer.  The cool factor is increased since the Loop user can directly enter carbs and boluses straight from the watch, without needing to access the iPhone.  The Loop watch app shows the Loop status, current BG, eventual BG, carb tool, and bolus tool.</p>
 <p>By tapping on the carb or bolus tools, you can adjust the entries using the crown to dial in more/less.  You can manually scroll to change the desired bolus amount, if you want to decrease/increase from recommended amount.  </p>

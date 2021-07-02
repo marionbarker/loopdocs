@@ -13,13 +13,21 @@
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
-        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
-        <link href="../../stylesheets/extra.css" rel="stylesheet">
+        <link href="../../css/admonitions.css" rel="stylesheet">
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-109876065-1', 'loopkit.github.io');
+            ga('send', 'pageview');
+        </script> 
     </head>
 
     <body>
@@ -37,6 +45,51 @@
                         <ul class="nav navbar-nav">
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
@@ -68,6 +121,10 @@
                                     
 <li>
     <a href="../step6/" class="dropdown-item">Step 6 Enroll in Apple Developer Program</a>
+</li>
+                                    
+<li>
+    <a href="../step7/" class="dropdown-item">Step 7 Install Homebrew</a>
 </li>
                                     
 <li>
@@ -112,10 +169,6 @@
                                     
 <li>
     <a href="../loopworkspace/" class="dropdown-item">LoopWorkspace</a>
-</li>
-                                    
-<li>
-    <a href="../step7/" class="dropdown-item">Step 7 Skip Step 7</a>
 </li>
                                 </ul>
                             </li>
@@ -162,7 +215,7 @@
 </li>
                                     
 <li>
-    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Menu</a>
+    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
 </li>
                                 </ul>
                             </li>
@@ -170,25 +223,21 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="../../operation/features/carbs/" class="dropdown-item">Meal Entries</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/features/bolus/" class="dropdown-item">Bolus</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
-</li>
-                                    
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">How to Use Loop App</a>
     <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/features/carbs/" class="dropdown-item">Carb Entries</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/bolus/" class="dropdown-item">Bolus</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
+</li>
             
 <li>
     <a href="../../operation/features/premeal/" class="dropdown-item">Pre-meal target</a>
@@ -324,6 +373,10 @@
 </li>
                                     
 <li>
+    <a href="../../nightscout/mlab_cleanup/" class="dropdown-item">NS Stopped Working</a>
+</li>
+                                    
+<li>
     <a href="../../nightscout/remote-overrides/" class="dropdown-item">Remote Overrides</a>
 </li>
                                     
@@ -341,51 +394,6 @@
                                     
 <li>
     <a href="../../nightscout/reports/" class="dropdown-item">Reports</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
 </li>
                                 </ul>
                             </li>
@@ -431,10 +439,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#simulator-download" class="nav-link">Simulator Download</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#add-apple-id" class="nav-link">Add Apple ID</a>
               <ul class="nav flex-column">
               </ul>
@@ -471,27 +475,28 @@
 <li><strong>"I still only see an account with <code>(personal team)</code> beside it even though I enrolled in the paid Developer Account program...what should I do?"</strong> You should check your spam email box in case Apple sent you an email there. Make sure you've waited the 48 hours that Apple says it may take to get your account approved. If it's been 48 hours and you still don't see anything in your email, contact Apple support and ask them about the status of your enrollment. It may be held up by something on their end.</li>
 </ul>
 </div>
-<p>Since you've been working in order, you will now have Xcode installed on your computer from Step 8. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection, in Step 6. Now we need to tell Xcode about your Developer Account. But first a few more steps.</p>
-<p>Did your computer reboot following the Xcode installation. If not, reboot now.</p>
-<p>Open Xcode from your Applications folder. If it offers to start a new project with you, just close that window.</p>
+<p>Since you've been working in order, you will now have Xcode installed on your computer from Step 8. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection, in Step 6. Now we need to tell Xcode about your Developer Account.</p>
+<p>Open Xcode from your Applications folder. </p>
 <h2 id="command-line-tools">Command Line Tools<a class="headerlink" href="#command-line-tools" title="Permanent link">⌁</a></h2>
-<p>There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish...we will need those Command Line Tools. Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word <strong><code>Xcode</code></strong> in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting <code>Preferences</code> in the drop-down menu. The keyboard shortcut to open Xcode Preferences is <code>command-comma</code> if that's easier for you. Then select the <code>Locations</code> tab of Preferences window and you'll see the dropdown menu for Command Line Tools. Make sure the Xcode version listed matches what you just installed. If it's blank, use the blue arrows to the right of the Command Line Tools row to select it.</p>
-<p align="center"><img alt="img/command-line-error-3.png" src="../img/command-line-error-3.png" width="750" /></p>
-<h2 id="simulator-download">Simulator Download<a class="headerlink" href="#simulator-download" title="Permanent link">⌁</a></h2>
-<p>Starting with Xcode 12, the simulators are no longer being downloaded automatically.  You may be required to download them yourself. While still on the Xcode Preferences window, after adding command line tools using the Locations tab, click on the Components tab.  It should look similar to the first figure below.</p>
-<p>Choose the iOS operating system closest to the one on your phone and click the down arrow to install it. (If your phone has iOS 14.4, and the biggest number simulator you see is iOS 14.3, download that one. If you phone has iOS 13.3, first we recommend updating, but if you choose not to, then select iOS 13.3 from the list.)</p>
-<p>Then scroll down to find the watchOS lines and choose the operating system on your watch (or biggest number if you don't have a watch paired) and click the down arrow to install it.</p>
-<p>Simulator download is now initiated. You can continue with the next steps, but let download complete before trying to build.</p>
-<p align="center"><img alt="img/download-simulators-1.svg" src="../img/download-simulators-1.svg" width="750" /></p>
-<p align="center"><img alt="img/download-simulators-2.svg" src="../img/download-simulators-2.svg" width="750" /></p>
+<p>There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish...we will need those Command Line Tools. Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word <strong><code>Xcode</code> </strong> in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting <code>Preferences</code> in the drop-down menu. The keyboard shortcut to open Xcode Preferences is <code>command-comma</code> if that's easier for you. Then select the <code>Locations</code> tab of Preferences window and you'll see the dropdown menu for Command Line Tools. Make sure that Xcode 12.0.1 (or newer) is selected there.</p>
+<p align="center">
+<img src="https://loopkit.github.io/loopdocs/build/img/command-line-error-3.png" width="550">
+</p>
+
 <h2 id="add-apple-id">Add Apple ID<a class="headerlink" href="#add-apple-id" title="Permanent link">⌁</a></h2>
 <p>Go to the Xcode Preferences window from above, click on the <code>Accounts</code> tab and then press the <code>+</code> in the lower-left corner to add an Apple ID account.</p>
-<p align="center"><img alt="img/xcode_account.png" src="../img/xcode_account.png" width="750" /></p>
+<p align="center">
+<img src="https://loopkit.github.io/loopdocs/build/img/xcode_account.png" width="750">
+</p>
+
 <p>If you want to use a free developer account, you will simply enter your Apple ID in this section and Xcode will automatically enroll your Apple ID in the free developer program. If you enrolled in the paid account already and have confirmation that your account is active, enter the Apple ID of the paid developer account. The screenshot below shows the labeling of team names based on whether from free account vs. paid account. Free teams will have <code>(personal team)</code> after the name.</p>
-<p align="center"><img alt="img/apple_id.png" src="../img/apple_id.png" width="750" /></p>
+<p align="center">
+<img src="https://loopkit.github.io/loopdocs/build/img/apple_id.png" width="750">
+</p>
+
 <p>You are now done setting up Xcode.  Great job!  You will not need to redo the account setup steps on any subsequent builds or updates of your Loop app.  Xcode will remember these settings.</p>
 <h2 id="next-step-test-settings">Next Step: Test Settings<a class="headerlink" href="#next-step-test-settings" title="Permanent link">⌁</a></h2>
-<p>Now you are ready to move onto Step 10 to <a href="../step10/">Test Your Settings</a>.</p></div>
+<p>Now you are ready to move onto Step 10 to <a href="https://loopkit.github.io/loopdocs/build/step10/">Test Your Settings</a>.</p></div>
             </div>
         </div>
 
