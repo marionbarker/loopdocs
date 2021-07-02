@@ -13,21 +13,13 @@
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
-        <link href="../../css/admonitions.css" rel="stylesheet">
+        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
+        <link href="../../stylesheets/extra.css" rel="stylesheet">
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -45,51 +37,6 @@
                         <ul class="nav navbar-nav">
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
-</li>
-                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
@@ -121,10 +68,6 @@
                                     
 <li>
     <a href="../step6/" class="dropdown-item">Step 6 Enroll in Apple Developer Program</a>
-</li>
-                                    
-<li>
-    <a href="../step7/" class="dropdown-item">Step 7 Install Homebrew</a>
 </li>
                                     
 <li>
@@ -169,6 +112,10 @@
                                     
 <li>
     <a href="../loopworkspace/" class="dropdown-item">LoopWorkspace</a>
+</li>
+                                    
+<li>
+    <a href="../step7/" class="dropdown-item">Step 7 Skip Step 7</a>
 </li>
                                 </ul>
                             </li>
@@ -215,7 +162,7 @@
 </li>
                                     
 <li>
-    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
+    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Menu</a>
 </li>
                                 </ul>
                             </li>
@@ -223,21 +170,25 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">How to Use Loop App</a>
-    <ul class="dropdown-menu">
-            
 <li>
-    <a href="../../operation/features/carbs/" class="dropdown-item">Carb Entries</a>
+    <a href="../../operation/features/carbs/" class="dropdown-item">Meal Entries</a>
 </li>
-            
+                                    
 <li>
     <a href="../../operation/features/bolus/" class="dropdown-item">Bolus</a>
 </li>
-            
+                                    
 <li>
     <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
 </li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">How to Use Loop App</a>
+    <ul class="dropdown-menu">
             
 <li>
     <a href="../../operation/features/premeal/" class="dropdown-item">Pre-meal target</a>
@@ -373,10 +324,6 @@
 </li>
                                     
 <li>
-    <a href="../../nightscout/mlab_cleanup/" class="dropdown-item">NS Stopped Working</a>
-</li>
-                                    
-<li>
     <a href="../../nightscout/remote-overrides/" class="dropdown-item">Remote Overrides</a>
 </li>
                                     
@@ -394,6 +341,51 @@
                                     
 <li>
     <a href="../../nightscout/reports/" class="dropdown-item">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
 </li>
                                 </ul>
                             </li>
@@ -451,19 +443,45 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="health-data">Health Data<a class="headerlink" href="#health-data" title="Permanent link">⌁</a></h1>
-<p>Loop app uses the iPhone's Health app to store blood glucose, insulin, and carbohydrate data. Additional details about how to use Health to interpret your longer-term looping data can be found <a href="https://kdisimone.github.io/looptips/data/health/">here in LoopTips</a>. Health data can also be accessed and uploaded by Tidepool's Mobile app and is an important step in Jaeb Observational Study enrollment. Please review the settings below to ensure you have the proper settings.</p>
+<p>The Loop app uses the Health app to record blood glucose, insulin, and carbohydrate data. The blood glucose, insulin, and carbohydrate data stored in the Health app can also be accessed and uploaded by the <a href="https://tidepool.org">Tidepool</a> Mobile app which enables display on of your data on the Tidepool web-based display tool. Please review the settings below to ensure you have the proper settings.</p>
 <h2 id="loop-permissions">Loop Permissions<a class="headerlink" href="#loop-permissions" title="Permanent link">⌁</a></h2>
-<table>
-<th><img src="../img/healthapp.jpg" width="100%"></th>
-<td>When you first finish building your Loop app, you need to set up Loop's permissions to store data in Health.</br></br>When this screen appears, you should toggle on all of the categories for Loop for both reading and writing, so that the green sliders are showing. If you didn't turn those on, you should go back and set the permissions directly in Health app.</br></br>It is important at this point to also consider other apps which you may have previously given Health permissions to. In particular, <b><u>you do not want other apps, like myFitness Pal or Spike app, writing carbohydrate data to Loop</u></b>. This can cause Loop to have "doubled" carb entries and you will get incorrect insulin deliveries related to doubled carb entries. You can check your various apps' permissions by clicking on the sources button at the bottom of the Health app. Click on the apps listed as a source, and make sure none of them have permission to write carbohydrates to Health.</td>
-</table>
-
+<p>You need to set up Loop's permissions to read and write some data in the Health app. When you finish building your first Loop app, the Health app screen for Loop permissions automatically appears. (People who have been looping a while should be aware that the permissions are slightly different now.) Do not enable permission for Loop to read carbohydrates from the Apple Health app.</p>
+<p>You can also get to this screen (for iOS 14) by iPhone -&gt; Settings -&gt; Health (heart icon) -&gt; Data Access &amp; Devices -&gt; Loop.</p>
+<div class="admonition warning">
+<p class="admonition-title">New Instructions</p>
+<p>Loop does not need to read carbohydrates from the Health app.</p>
+<p>The old instructions suggested turning on all switches.  This is NOT necessary for carbohydrates and can be dangerous if</p>
+<ol>
+<li>A different app writes carbohydrates to the Health app</li>
+<li>If two Loopers use the same Apple ID - PLEASE - do not do this; <a href="../step6/#loopers-need-their-own-apple-id">Loopers need their own Apple ID</a></li>
+</ol>
+</div>
+<p align="center"><img alt="Apple Health app, iOS 14, Loop app permissions screen" src="../img/loop-health-permissions.svg" width="300" /></p>
+<p><strong>Blood Glucose</strong>: Permission to Write and Read</p>
+<ul>
+<li>Loop eavesdrops on the Bluetooth communication of the Dexcom G4/G5/G6 CGM and <strong>writes</strong> the values to the Health app for the first 3 hours</li>
+<li>After 3 hours, the Dexcom CGM app allows other apps (including the Health app) access to its CGM data, so Loop needs to <strong>read</strong> the older Blood Glucose from the Health app</li>
+<li>During times when there is no CGM data, the user can enter a finger stick value into the Health app Blood Glucose (BG) screen and Loop will <strong>read</strong> it, e.g., during sensor warmup</li>
+</ul>
+<p><strong>Carbohydrates</strong>: Permission to Write ONLY</p>
+<ul>
+<li>Loop has its own carbohydrate data store and does not need to read carbs from the Health app</li>
+<li>Once Loop records a carbohydrate entry, it will start to dose insulin to accommodate the expected rise in blood glucose from the carbohydrates consumed</li>
+<li>If any other app writes carbohydrates to the Health app, you do not want Loop to add them to what you've already entered into the Loop app (resulting in duplicate entries)</li>
+</ul>
+<p><strong>Insulin Delivery</strong>: Permission to Write and Read</p>
+<ul>
+<li>Loop <strong>writes</strong> basal and bolus doses to the Health app</li>
+<li>Loop <strong>reads</strong> any manual insulin added to the Health app, e.g., insulin taken by injection</li>
+</ul>
+<p><strong>Sleep</strong>: Permission to Read</p>
+<ul>
+<li>Loop uses Sleep information to decide which times of day to use the limited daily allocation from Apple for updates to the Loop watch complication.</li>
+</ul>
 <h2 id="dexcom-permissions">Dexcom Permissions<a class="headerlink" href="#dexcom-permissions" title="Permanent link">⌁</a></h2>
-<p>You also need to enable your Dexcom app to write to the Health app. You can find this in your Dexcom app's Settings, under Health.  Click on the <code>Enable</code> button and then <code>Turn All Categories On</code> so that the toggle for allowing Dexcom to write data is now a green color.</p>
-<p align="center">
-<img src="../img/health_g5.jpg" width="550">
-</p>
-<p></br></br></p></div>
+<p>You also need to enable your Dexcom Mobile app to write to the Health app. The steps shown in the figure below are valid for iOS 12.</p>
+<p>For iOS 13/14, the menu items are: iPhone -&gt; Settings -&gt; Health (heart icon) -&gt; Data Access &amp; Devices -&gt; Dexcom app. Make sure Dexcom has permission to write Blood Glucose (after the 3 hour delay).  If you do not do this, you will have a maximum history of 3 hours displayed in the Loop Glucose screen.</p>
+<p align="center"><img alt="G5 Dexcom app, iOS 12, instructions for enabling Dexcom to write to Health" src="../img/health_g5.jpg" width="550" /></p></div>
             </div>
         </div>
 

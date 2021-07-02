@@ -13,21 +13,13 @@
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
-        <link href="../../css/admonitions.css" rel="stylesheet">
+        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
+        <link href="../../stylesheets/extra.css" rel="stylesheet">
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -45,51 +37,6 @@
                         <ul class="nav navbar-nav">
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
-</li>
-                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
@@ -121,10 +68,6 @@
                                     
 <li>
     <a href="../../build/step6/" class="dropdown-item">Step 6 Enroll in Apple Developer Program</a>
-</li>
-                                    
-<li>
-    <a href="../../build/step7/" class="dropdown-item">Step 7 Install Homebrew</a>
 </li>
                                     
 <li>
@@ -169,6 +112,10 @@
                                     
 <li>
     <a href="../../build/loopworkspace/" class="dropdown-item">LoopWorkspace</a>
+</li>
+                                    
+<li>
+    <a href="../../build/step7/" class="dropdown-item">Step 7 Skip Step 7</a>
 </li>
                                 </ul>
                             </li>
@@ -215,7 +162,7 @@
 </li>
                                     
 <li>
-    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
+    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Menu</a>
 </li>
                                 </ul>
                             </li>
@@ -223,21 +170,25 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">How to Use Loop App</a>
-    <ul class="dropdown-menu">
-            
 <li>
-    <a href="../../operation/features/carbs/" class="dropdown-item">Carb Entries</a>
+    <a href="../../operation/features/carbs/" class="dropdown-item">Meal Entries</a>
 </li>
-            
+                                    
 <li>
     <a href="../../operation/features/bolus/" class="dropdown-item">Bolus</a>
 </li>
-            
+                                    
 <li>
     <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
 </li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">How to Use Loop App</a>
+    <ul class="dropdown-menu">
             
 <li>
     <a href="../../operation/features/premeal/" class="dropdown-item">Pre-meal target</a>
@@ -373,10 +324,6 @@
 </li>
                                     
 <li>
-    <a href="../mlab_cleanup/" class="dropdown-item">NS Stopped Working</a>
-</li>
-                                    
-<li>
     <a href="./" class="dropdown-item active">Remote Overrides</a>
 </li>
                                     
@@ -397,6 +344,51 @@
 </li>
                                 </ul>
                             </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
+</li>
+                                </ul>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
@@ -406,7 +398,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../mlab_cleanup/" class="nav-link">
+                                <a rel="prev" href="../troublehoot/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -487,68 +479,53 @@
 </ol>
 </div>
 <h2 id="step-1-updating-loop-app-and-iphone-settings">Step 1: Updating Loop app and iPhone settings<a class="headerlink" href="#step-1-updating-loop-app-and-iphone-settings" title="Permanent link">⌁</a></h2>
-<p>Remote overrides were in dev branch of Loop beginning October 13, 2019 and in master branch as of December 31, 2019. If you built one of those branches before those dates, you'll need to update your Loop app to be able to access remote overrides.  Be sure to review all the steps for updating your Loop app <a href="https://loopkit.github.io/loopdocs/build/updating/">here</a>.</p>
+<p>Remote overrides were in dev branch of Loop beginning October 13, 2019 and in master branch as of December 31, 2019. If you built one of those branches before those dates, you'll need to update your Loop app to be able to access remote overrides.  Be sure to review all the steps for updating your Loop app <a href="../../build/updating/">here</a>.</p>
 <div class="admonition danger">
 <p class="admonition-title">iPhone settings specific for remote overrides</p>
 <p>For remote overrides to successfully deploy on a Looper's iPhone, they will need to have two settings on the iPhone enabled. First, Loop's slider in iPhone Settings, Notifications needs to be turned on.  Without notifications, the person trying to set a remote override will see the message about "no deviceToken" and no remote override will actually enact. Second, the Looper's iphone needs the slide on in iPhone Settings, General, Background App Refresh. If this is not enabled, the remote overrides will not enact if the Loop app is not actively open on the phone's main screen.</p>
 </div>
 <h2 id="step-2-apple-push-notifications">Step 2: Apple Push Notifications<a class="headerlink" href="#step-2-apple-push-notifications" title="Permanent link">⌁</a></h2>
-<p>The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it.</br></br>
-1. Login to your <a href="https://developer.apple.com/account/">Apple developer account</a> with the Apple ID associated with your developer team that you used to sign your Loop app.</br></br>
-2. Click on "Certificates, Indentifiers &amp; Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" <strong>OR</strong> the "+" icon to add a new key. </p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-add-key.png" width="550">
-</p>
-<p></br></br>
-3. In the form that appears, click the checkbox for enabling "Apple Push Notifications service (APNs)" and enter a name for the key such as "Nightscout". Then click the "Continue" button in the upper right of the screen.</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/key-apns.png" width="550">
-</p>
-<p></br></br>
-4. In the screen that follows, click the blue "Register" button.</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-register.png" width="550">
-</p>
-<p></br></br>
-5. In the screen that follows, click the blue "Download" button. This step will download a file with a name that starts with "AuthKey" and ends with ".p8".</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-download.png" width="550">
-</p>
-<p></br></br>
-6. Find your AuthKey download in your downloads folder. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open.png" width="550">
-</p>
-<p></br></br></p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-textedit.png" width="550">
-</p>
-<p></br></br>
-7. When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight <strong>ALL OF THE CONTENTS</strong> of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press <code>command-a</code> to highlight all the text and then <code>command-c</code> to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key.png" width="550">
-</p>
-<p></br></br></p>
+<p>The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it.</p>
+<ol>
+<li>Login to your <a href="https://developer.apple.com/account/">Apple developer account</a> with the Apple ID associated with your developer team that you used to sign your Loop app.</li>
+<li>Click on "Certificates, Indentifiers &amp; Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" <strong>OR</strong> the "+" icon to add a new key.</li>
+</ol>
+<p><img alt="img/apns-add-key.png" src="../img/apns-add-key.png" /></p>
+<ol>
+<li>In the form that appears, click the checkbox for enabling "Apple Push Notifications service (APNs)" and enter a name for the key such as "Nightscout". Then click the "Continue" button in the upper right of the screen.</li>
+</ol>
+<p><img alt="img/key-apns.png" src="../img/key-apns.png" /></p>
+<ol>
+<li>In the screen that follows, click the blue "Register" button.</li>
+</ol>
+<p><img alt="img/apns-register.png" src="../img/apns-register.png" /></p>
+<ol>
+<li>In the screen that follows, click the blue "Download" button. This step will download a file with a name that starts with "AuthKey" and ends with ".p8".</li>
+</ol>
+<p><img alt="img/apns-download.png" src="../img/apns-download.png" /></p>
+<ol>
+<li>Find your AuthKey download in your downloads folder. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.</li>
+</ol>
+<p><img alt="img/apns-open.png" src="../img/apns-open.png" /></p>
+<p><img alt="img/apns-textedit.png" src="../img/apns-textedit.png" /></p>
+<ol>
+<li>When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight <strong>ALL OF THE CONTENTS</strong> of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press <code>command-a</code> to highlight all the text and then <code>command-c</code> to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.</li>
+</ol>
+<p><img alt="img/apns-copy-key.png" src="../img/apns-copy-key.png" /></p>
 <h2 id="step-3-update-nightscout-site">Step 3: Update Nightscout site<a class="headerlink" href="#step-3-update-nightscout-site" title="Permanent link">⌁</a></h2>
 <p>You'll need to update your Nightscout site to use the latest version of cgm-remote-monitor. It is called Ketchup and the version number is 13.0.1. You can check your version number by looking at the bottom of your NS site's settings, near where the authentication button is located. The easiest way to do to update your Nightscout site is to follow the steps in the video below.</p>
 <div class="admonition danger">
-<p>Use this video for an easy process to update your Nightscout site:
-<p align="center">
-<a href="https://youtu.be/C0edTQhO21g"><strong>Easy Nightscout Update Video</strong></a></p>
-<p>A quick note about the video instructions:
-</p> 
-If you don't see any branches to select to deploy and are missing the deploy button when you get to that step...you need to do one easy step. Select/click the "GitHub" icon from the middle of your Heroku screen. Then enter your GitHub account name to connect to that account. Once connected to your account, enter <code>cgm-remote-monitor</code> as the repo you'd like to use to connect with specifically. That will fix the issue and you'll then see the deploy buttons like in the video.</p>
+<p class="admonition-title">Danger</p>
+<p>Use this video for an easy process to update your Nightscout site:</p>
+<p><a href="https://youtu.be/C0edTQhO21g"><strong>Easy Nightscout Update Video</strong></a></p>
+<p>A quick note about the video instructions:</p>
+<p>If you don't see any branches to select to deploy and are missing the deploy button when you get to that step...you need to do one easy step. Select/click the "GitHub" icon from the middle of your Heroku screen. Then enter your GitHub account name to connect to that account. Once connected to your account, enter <code>cgm-remote-monitor</code> as the repo you'd like to use to connect with specifically. That will fix the issue and you'll then see the deploy buttons like in the video.</p>
 </div>
 <p>Once you have your Nightscout deployment updated to the latest master branch of cgm-remote-monitor, now we need to add a couple new variables.</p>
 <p>Go to the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.  </p>
-<p align="center">
-<img src="../img/heroku5.png" width="650">
-</p>
-<p></br></br>
-Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:</p>
-<p align="center">
-<img src="../img/add_vars.jpg" width="650">
-</p>
+<p align="center"><img alt="img/heroku5.png" src="../img/heroku5.png" width="650" /></p>
+<p>Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:</p>
+<p align="center"><img alt="img/add_vars.jpg" src="../img/add_vars.jpg" width="650" /></p>
 <table>
 <thead>
 <tr>
@@ -558,49 +535,34 @@ Scroll down the bottom of the Config Vars lines until you find the last blank on
 </thead>
 <tbody>
 <tr>
-<th>LOOP_APNS_KEY</th>
-<td>enter ENTIRE contents of the downloaded .p8 file including the BEGIN and END lines. Here's where you can use the `command-a` and `command-c` to hightlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating.
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key2.png" width="550">
-</p> </br></br></td>
+<td>LOOP_APNS_KEY</td>
+<td>enter ENTIRE contents of the downloaded .p8 file including the BEGIN and END lines. Here's where you can use the <code>command-a</code> and <code>command-c</code> to hightlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating. <img alt="img/apns-copy-key2.png" src="../img/apns-copy-key2.png" /></td>
 </tr>
 <tr>
-<th>LOOP_APNS_KEY_ID</th>
-<td>string of characters on the .p8 download file immediately following the underscore (  _  ) and not including the file extension ( .p8 ), or you can get it from your saved key in your developer account as shown next step, too
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open2.png" width="550">
-</p> </br></br>
-</td>
+<td>LOOP_APNS_KEY_ID</td>
+<td>string of characters on the .p8 download file immediately following the underscore (  _  ) and not including the file extension ( .p8 ), or you can get it from your saved key in your developer account as shown next step, too <img alt="img/apns-open2.png" src="../img/apns-open2.png" /></td>
 </tr>
 <tr>
-<th>LOOP_DEVELOPER_TEAM_ID</th>
-<td>get this value from Loop app signing or in your developer account's top right corner under your name
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-vars.png" width="750">
-</p> </br></br>
-</td>
+<td>LOOP_DEVELOPER_TEAM_ID</td>
+<td>get this value from Loop app signing or in your developer account's top right corner under your name <img alt="img/apns-vars.png" src="../img/apns-vars.png" /></td>
 </tr>
 </tbody>
 </table>
-
 <p>When executed properly, you should have something that looks like this for your three new variables that you added:</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/override_vars_complete.png" width="650">
-</p>
-<p></br></br></p>
+<p><img alt="img/override_vars_complete.png" src="../img/override_vars_complete.png" /></p>
 <h2 id="step-4-faqs-on-remote-overrides">Step 4: FAQs on Remote Overrides<a class="headerlink" href="#step-4-faqs-on-remote-overrides" title="Permanent link">⌁</a></h2>
 <p>Don't forget to read Loopdocs pages about how regular overrides work. For remote overrides in particular:</p>
 <ol>
 <li><strong>Can I set different override in Nighscout than I have programmed into Loop app?</strong> Answer: No. You will only be able to enact override presets already programmed into the Loop app.</li>
 <li><strong>If I didn't start the override in Nightscout (it was started in Loop itself), can I still use Nightscout to cancel it?</strong> Answer: Yes. You can cancel a Loop-set override with a Nightscout-set cancel "temporary override" command in careportal.</li>
-<li><strong>"Can I override a Loop-set override with a Nightscout-set override?"</strong> Answer: Yes. </li>
-<li><strong>If I have multiple Nightscout sites because I have multiple kiddos with T1D looping, do I need multiple APNs Keys?</strong> Answer: No. If you have multiple kids looping, you can use the one APNs key in each of their Nightscout sites. </li>
+<li><strong>"Can I override a Loop-set override with a Nightscout-set override?"</strong> Answer: Yes.</li>
+<li><strong>If I have multiple Nightscout sites because I have multiple kiddos with T1D looping, do I need multiple APNs Keys?</strong> Answer: No. If you have multiple kids looping, you can use the one APNs key in each of their Nightscout sites.</li>
 <li><strong>How can I tell if it worked?</strong> Answer: You should see your override pill in Nightscout, with the NEXT Loop cycle, reflecting that the desired override action took place. If you are near the Loop app, you should see the new override within less than 30 seconds or so.</li>
 <li>
-<p><strong>Can I set see on Nightscout when a temporary override has been set using the looper’s phone?</strong> Yes. There will be a grey bar with the name of the override noted and the Loop Pill will display the targets and duration. Remember, there is a KNOWN issue with the grey bars, so use the pill as your best guide. </p>
+<p><strong>Can I set see on Nightscout when a temporary override has been set using the looper’s phone?</strong> Yes. There will be a grey bar with the name of the override noted and the Loop Pill will display the targets and duration. Remember, there is a KNOWN issue with the grey bars, so use the pill as your best guide.</p>
 </li>
 <li>
-<p><strong>Can a looper cancel a remote override</strong>? Yes. They can tap the heart icon in Loop so that it is no longer highlighted. This turns off the override, regardless of where it was initiated. </p>
+<p><strong>Can a looper cancel a remote override</strong>? Yes. They can tap the heart icon in Loop so that it is no longer highlighted. This turns off the override, regardless of where it was initiated.</p>
 </li>
 <li>
 <p><strong>I set a remote override in Nightscout but the looper tapped the heart symbol in the Loop app, so the override turned off. Will the override get reinstated next time Loop completes with internet access?</strong> No. The APN is only sent once. You can set the remote override again if need be.</p>
@@ -612,19 +574,13 @@ Scroll down the bottom of the Config Vars lines until you find the last blank on
 <h2 id="step-5-using-remote-overrides">Step 5: Using Remote Overrides<a class="headerlink" href="#step-5-using-remote-overrides" title="Permanent link">⌁</a></h2>
 <p>There are three ways you can trigger your override presets remotely; careportal, Shortcuts, and IFTTT.</p>
 <h3 id="careportal">Careportal<a class="headerlink" href="#careportal" title="Permanent link">⌁</a></h3>
-<p>To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions <a href="https://loopkit.github.io/loopdocs/nightscout/new_user/#step-4-setup-your-heroku-nightscout-app">here</a> in Loopdocs. Especially the part about your ENABLE line including "override careportal loop" (in addition to other variables you'd be interested in). You'll also need to have your site authenticated so that your careportal is active to send remote overrides. You can authenticate your site by selecting the three horizontal lines in the upper right corner of your Nightscout site and scrolling to the bottom of the settings. There's an "authenicate" link at the very bottom. Once authenticated by entering your API Secret, then there will be a <code>+</code> in the upper right corner of your site. That is your careportal. Tap the careportal <code>+</code> and then scroll down in the "event type" menu to find "Temporary Override". Within there, you will find all your Loop override presets already loaded for you.</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/careportal-overrides.PNG" width="350">
-</p>
-<p></br></br></p>
+<p>To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions <a href="../new_user/#step-4-setup-your-heroku-nightscout-app">here</a> in Loopdocs. Especially the part about your ENABLE line including "override careportal loop" (in addition to other variables you'd be interested in). You'll also need to have your site authenticated so that your careportal is active to send remote overrides. You can authenticate your site by selecting the three horizontal lines in the upper right corner of your Nightscout site and scrolling to the bottom of the settings. There's an "authenicate" link at the very bottom. Once authenticated by entering your API Secret, then there will be a <code>+</code> in the upper right corner of your site. That is your careportal. Tap the careportal <code>+</code> and then scroll down in the "event type" menu to find "Temporary Override". Within there, you will find all your Loop override presets already loaded for you.</p>
+<p><img alt="img/careportal-overrides.PNG" src="../img/careportal-overrides.PNG" /></p>
 <p>The Looper will see a banner notification that an override has been set (or canceled, as the case may be).</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/override_notification.jpeg" width="550">
-</p>
-<p></br></br></p>
-<p>Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary Override Cancel" and submitting. </p>
+<p><img alt="img/override_notification.jpg" src="../img/override_notification.jpg" /></p>
+<p>Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary Override Cancel" and submitting.</p>
 <h3 id="shortcuts">Shortcuts<a class="headerlink" href="#shortcuts" title="Permanent link">⌁</a></h3>
-<p>If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple shortcuts for you that integrate Loop overrides with Nightscout. </p>
+<p>If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple shortcuts for you that integrate Loop overrides with Nightscout.</p>
 <div class="admonition info">
 <p class="admonition-title">Important note</p>
 <p>Before you click that download below...save some trouble. Download the Shortcuts app if you don't have it yet and choose to run any shortcut from the Gallery. It can be the laundry timer...I don't care, just pick one and run it.  THEN go to download the shortcut of your choice below. The shortcuts that aren't run through the Gallery option are called "untrusted". And you need a slider in your iPhone to trust the "untrusted" shortcuts you would be downloading here. But...in lovely iOS glitch...that slider doesn't appear unless you've run a trusted shortcut first. So, run one now. Then you'll have the slider in iPhone Settings, Shortcuts app to turn "Allow Untrusted Shortcuts" on when you will see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts."</p>
@@ -639,12 +595,12 @@ Scroll down the bottom of the Config Vars lines until you find the last blank on
 <ol>
 <li>You will need iOS 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than iOS 13, but your phone as the shortcut user would need iOS 13.</li>
 <li>You need to open those links in the Safari browser on your iPhone. When you do that click the button to get the shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.</li>
-<li>When you enter your Nightscout URL in the "URL" field of the Loop shortcut setup, make sure you don't include a trailing "/" or the API calls to Heroku will error out. </li>
+<li>When you enter your Nightscout URL in the "URL" field of the Loop shortcut setup, make sure you don't include a trailing "/" or the API calls to Heroku will error out.</li>
 <li>When a remote override is set properly, you'll see an "ok" message displayed. If there is an error, you'll see an error message. Most errors will be that you have an API secret wrong (make sure there isn't a space at the end of you API Secret that you don't see) or you failed to do the steps to setup NS and update your Loop app as described in steps 1-3 above.</li>
 <li>You can absolutely customize these bits and pieces within the shortcut. Change the text messages, change the links...totally up to you.</li>
 </ol>
 <h3 id="ifttt">IFTTT<a class="headerlink" href="#ifttt" title="Permanent link">⌁</a></h3>
-<p>If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by <a href="https://loopkit.github.io/loopdocs/nightscout/ifttt/">setting up IFTTT</a>, too.</p>
+<p>If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by <a href="../ifttt/">setting up IFTTT</a>, too.</p>
 <h2 id="step-6-known-issues">Step 6: Known Issues<a class="headerlink" href="#step-6-known-issues" title="Permanent link">⌁</a></h2>
 <p>Just a brief mention so you are aware:</p>
 <ol>
