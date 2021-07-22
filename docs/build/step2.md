@@ -79,11 +79,11 @@ When you turn off automatic updates, then you can choose when to update your pho
 - If a problem is found, the solution is typically posted pretty quickly
 - Google the instructions for your device if you cannot figure it out
     1. Please configure your phone to automatically download the updates
-    1. You can choose to perform the installation of the updates manually
+    1. You should choose to perform the installation of the updates manually
 - Check on your favorite [Loop Social Media](../index.md#stay-in-the-loop) site to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple
 - The "All-Clear" or "WAIT there's a problem" is normally posted within a few days
 
-It is expected that iOS 15 will be released soon. This operating system may or may not require some updates to Loop code before being able to rebuild. Many of us who remember the iOS 12 to iOS 13 transition have automatic downloads turned on, with automatic installation of the update turned off.
+It is expected that iOS 15 will be released soon. This operating system may or may not require some updates to Loop code before being able to rebuild. Many of us remember the iOS 12 to iOS 13 transition was somewhat rocky.  This is a good time to have automatic downloads turned on, with automatic installation of the update turned off.
 
 ## Next Step: Compatible Pump
 
