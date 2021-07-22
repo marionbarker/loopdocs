@@ -28,10 +28,14 @@ Click on one of the links below to download Loop code and then follow the rest o
 
 !!! warning "Advanced Users Only"
 
-    Only build the dev branch if you're a developer/advanced user: [Loop: dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)
+    Only build the dev branch if you're a developer/advanced user. The link to the dev zip has been removed for now (July 22, 2021).  That's because you must use a LoopWorkspace build. Instead, the link takes you to the wiki that explains how to clone and build.  
 
-    - Note, the dev branch will soon require iOS 14 on your device
-    - Once you install the dev branch on a device, you might have to delete the app to return to master or automatic-bolus
+    Replace the "<branch\>" in the wiki `git clone` line with "dev". (Do not include the quotes.):
+
+    [Loop: dev branch LoopWorkspace wiki](https://github.com/LoopKit/LoopWorkspace#loopworkspace)
+
+    - Note, the dev branch requires iOS 14 on your device
+    - Once you install the dev branch on a device, you should delete the app to return to master or automatic-bolus which means all settings will need to be entered and a new pod started
     - **Repeat: only build the dev branch if you're a developer/advanced user**
     - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see if you build the dev branch
 
