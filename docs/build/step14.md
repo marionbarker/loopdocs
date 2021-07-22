@@ -95,6 +95,7 @@ Once you select your device (your iPhone's name), you are ready to start signing
 - If you select a team name with (personal team), your app will expire after 7 days and you must disable [Push Notification and Siri](step14.md#free-account) as mentioned above.
 - If you select a team name without (personal team), your app will last a full year.  
 - If you never signed up for a [Free Developer Account](step9.md#add-apple-id), you will not have a (personal team) showing.
+- If you do not have **"All"** selected near the top, your targets won't get signed properly.  Make sure you did not accidentally click on **"Debug"** or **"Release"**.
 
 ![img/team.png](img/team.png){width="750"}
 {align="center"}
