@@ -30,7 +30,7 @@ If you've done your homework (read this entire page) and are ready to download a
 - Open your App Store in your computer and search for Xcode
 - You will be downloading it brand new or updating an existing installation
 - If the version number you need is bigger than what is shown, stop and review the rest of this page
-    - This image is old - latest Xcode version is 12.4 (March 17, 2021)
+    - This image is old - latest Xcode version is 12.5.1 (July 22, 2021)
 
 
 ![Screenshot: Apple Store search for Xcode](img/xcode.png){width="750"}
@@ -44,25 +44,19 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
 !!! green "Loop and iOS Updates"
 
-    **Please Wait** - Disable the automatic iOS update.
-
-    - As far as we know, an iOS update has never prevented Loop from working
-    - But an iOS update often requires an Xcode update to build Loop on that device
-    - Rarely, but it has happened, that Xcode update requires a Loop code update
-    - If a problem is found, the solution is typically posted pretty quickly
-    - Check on your favorite social media platform to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple
-    - The "All-Clear" or "WAIT there's a problem" is normally posted within a few days
+    **Please Read**: [Turn Off Automatic Updates](step2.md#turn-off-automatic-updates)
 
 
 !!! info "Minimum Xcode Version"
 
-    The **minimum** version of Xcode you need is dependent on your version of iOS
+    The **minimum** version of Xcode you need is dependent on your version of iOS. Minimum means that later version of Xcode and Mac OS work with the earlier version of iOS.
 
-      - If your phone is running iOS 14.x, that requires at least Xcode 12.x
-      - If your phone is running iOS 14.1, Xcode 12.1 works, but so does 12.4
-      - If your phone is running iOS 12.4, Xcode 12.4 on a mac with macOS 11.2.2 (Big Sur) builds Loop just fine
-      - If you are running iOS 14, we recommended you update to at least iOS 14.4, Xcode to 12.4; some iOS 14 updates were pretty important
-      - All iOS 14 versions require macOS 10.15.4 as a minimum
+      - If your phone is running iOS 14.5 and higher, that requires Mac OS 11.x (Big Sur) and Xcode 12.5
+      - If your phone is running iOS 14.1 - 14.5, that requires at least Xcode 12.# where the # must be as large as the 14.# iOS value (in other words, for many iOS 14.x updates, Xcode also had to be updated - it has settled down now)
+      - If your phone is running iOS 12.4, Xcode 12.5.1 on a mac with macOS 11.4 (Big Sur) builds Loop just fine
+      - If you are running iOS 14, we recommended you update to at the latest version; some iOS 14 updates were pretty important
+          - iOS 14 versions up through 14.4 require Catalina (macOS 10.15.4) as a minimum
+          - As of iOS 14.5, your Mac must be running Big Sur (macOS 11.x)
 
 
 !!! warning "Can't find the required Xcode version"
