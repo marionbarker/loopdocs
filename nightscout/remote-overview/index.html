@@ -1978,6 +1978,19 @@
     Remote Caregivers
   </a>
   
+    <nav class="md-nav" aria-label="Remote Caregivers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remote-commanding-requirements" class="md-nav__link">
+    Remote Commanding Requirements:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2348,6 +2361,19 @@
     Remote Caregivers
   </a>
   
+    <nav class="md-nav" aria-label="Remote Caregivers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remote-commanding-requirements" class="md-nav__link">
+    Remote Commanding Requirements:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2416,12 +2442,20 @@
   <h1>Remote Overview</h1>
 
 <h2 id="remote-caregivers">Remote Caregivers<a class="headerlink" href="#remote-caregivers" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, a caregiver can provide remote commands to assist in diabetes care, including modifying overrides and issuing remote bolus commands and adding remote carb entries.</p>
-<p>Remote Commanding requires:</p>
+<p>With <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> 3, a caregiver can provide remote commands to assist in diabetes care, including modifying overrides, issuing remote bolus commands and adding remote carb entries. With <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> 2, only overrides can be turned on or off remotely.</p>
+<p>Remote commands to the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> phone go through their <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site. For security, any command to deliver a bolus or add a carb entry requires a one-time-password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) to be used with each remote command. These codes are unique to your combined <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> and <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> configuration. An authentication app needs to be installed on the device sending the remote boluses/carbs, which is paired to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. Alternatively, the <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> app can be used which handles these requirements and offers a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-like user interface.</p>
+<h3 id="remote-commanding-requirements">Remote Commanding Requirements:<a class="headerlink" href="#remote-commanding-requirements" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
-<li><span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> version 14.2.6 or newer</li>
-<li><em>Apple Push Notifications</em> (</span><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></span>) created with the <em>Apple Developer ID</em> used to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
-<li>Several configuration variables added to your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site</li>
+<li><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> version 3.2.0 or newer<ul>
+<li>version 3.0 works but is not recommended for other reasons</li>
+</ul>
+</li>
+<li><em>Apple Push Notifications</em> (</span><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></span>) created with the <em>Apple Developer ID</em> that built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
+<li><span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> version 14.2.6 or newer<ul>
+<li>Several configuration variables must be added</li>
+</ul>
+</li>
+<li>Ability to generate a One-Time-Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>)</li>
 </ul>
 <div class="admonition question">
 <p class="admonition-title">What about Older Versions?</p>
@@ -2433,13 +2467,13 @@
 <p>There is a new companion app, <a href="../loop-caregiver/"><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></a> that makes remote commands and reviewing status of your looper much easier.</p>
 </div>
 <h2 id="how-does-this-work">How does this work?<a class="headerlink" href="#how-does-this-work" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> code and <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> code work together to provide this capability. However, remote commands and override control requires <em>Apple Push Notifications</em> (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>).</p>
+<p>The <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> code and <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> code work together to provide this capability. However, remote commands and override control requires <span translate="no">Apple Push Notifications</span> (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>).</p>
 <ul>
-<li>The Apple Developer ID used to build the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app must be used to set up the push notifications<ul>
-<li>If you built <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> and the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app yourself, follow the directions to set up <a href="../remote-config/">Remote Configuration</a></li>
+<li>The <span translate="no">Apple Developer ID</span> used to build the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app must be used to set up the push notifications<ul>
+<li>If you built <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> and the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app yourself, follow the directions to set up <a href="../remote-config/">Remote Configuration</a></li>
 </ul>
 </li>
-<li>Some providers who supply <code>Nightscout as a service</code> or <code>Hosted Nightscout</code> can assist you in getting your <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> information added to your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> variables if you need help<ul>
+<li>Most providers who supply <code>Nightscout as a service</code> or <code>Hosted Nightscout</code> can assist you in getting your <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> information added to your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> variables; one requires an added monthly subscription fee<ul>
 <li><a href="https://nightscout.github.io/nightscout/new_user"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Docs: New User</a></li>
 <li><a href="https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Docs: Comparison Table</a><ul>
 <li>Warning: examine the <code>Loop remote carbs/bolus</code> row</li>
@@ -2448,19 +2482,6 @@
 </ul>
 </li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Remote Build</p>
-<p>There are several methods for building remotely for your family members (or even yourself).</p>
-<ul>
-<li><a href="../../gh-actions/gh-overview/"><span translate="no">LoopDocs</span>: <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span></a>: build on a browser (no need for a Mac) and send <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> to your phone using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
-<li><a href="../../build/testflight-xcode/"><span translate="no">LoopDocs</span>: <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> from <em><abbr title="program used to build an app">Xcode</abbr></em></a>: build using Mac-<abbr title="program used to build an app">Xcode</abbr> and then send <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to your phone using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
-<li><a href="https://www.loopandlearn.org/remote-build/"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</span>: Remote Build with <em>Diawi</em></a> allows you to save a build created by <em><abbr title="program used to build an app">Xcode</abbr></em>, store it in the cloud, and then download and install it on your phone later</li>
-</ul>
-<p>Any remote build method requires the following <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Config Var</span> be added to <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span>:</p>
-<p><code>LOOP_PUSH_SERVER_ENVIRONMENT = production</code></p>
-<p>Be aware that if you return to building directly from <em><abbr title="program used to build an app">Xcode</abbr></em>, you must disable that config var from <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> and restart the server.</p>
-<p>Note - this is covered in detail on the <a href="../remote-config/">Remote Configuration</a> page.</p>
-</div>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are a number of steps to follow to set this up. Each page is linked below:</p>
 <h3 id="set-up-remote-for-nightscout"><a href="../remote-config/">Set Up Remote for <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></a><a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
