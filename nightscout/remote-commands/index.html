@@ -2680,10 +2680,29 @@
 <p>You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your <span translate="no">Careportal</span> is active to send remote overrides . </p>
 <p>Once authenticated by entering your <code>API_SECRET</code>, there is a plus sign (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14h-6v6h-4v-6H4v-4h6V4h4v6h6v4Z"/></svg></span>) in the upper right corner of your site. That is your <em>Careportal</em>. Tap the <em>Careportal</em> plus sign (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14h-6v6h-4v-6H4v-4h6V4h4v6h6v4Z"/></svg></span>) and then scroll down in the <code>event type</code> menu to find <code>Temporary Override</code>.<br />
 Within there, you will find all your <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> override presets already loaded for you.</p>
+<h4 id="start-and-end-remote-override">Start and End Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr><a class="headerlink" href="#start-and-end-remote-override" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p align="center"><img alt="img/careportal-overrides.PNG" src="../img/careportal-overrides.PNG" width="500" /></p>
 <p>The Looper will see a banner notification that a remote command has been sent with details about that command and whether it succeeded (or not).</p>
 <p align="center"><img alt="img/override_notification.jpg" src="../img/override_notification.jpg" width="500" /></p>
 <p>Canceling an override through <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> careportal</em> is as simple as selecting the event type <code>Temporary Override Cancel</code> and submitting.</p>
+<h4 id="command-remote-bolus-or-carb-entry">Command Remote Bolus or Carb Entry<a class="headerlink" href="#command-remote-bolus-or-carb-entry" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Open your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site in a browser or app.</p>
+<ul>
+<li>Tap the <em>Careportal</em> plus sign (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14h-6v6h-4v-6H4v-4h6V4h4v6h6v4Z"/></svg></span>) and then scroll down in the <code>event type</code> dropdown menu to find <code>Remote Carb Entry</code> or <code>Remote Bolus Entry</code></li>
+<li>Fill out the treatment log until you get to the <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> row<ul>
+<li>When using Safari, the <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> code is automatically offered - might need to tap twice</li>
+<li>For other authentication apps (Authenticator, 1Password, etc)<ul>
+<li>Tap on the code in the authentication app and copy to your clipboard</li>
+<li>In <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> and paste that code into the <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> box</li>
+</ul>
+</li>
+<li>Click “Submit Form”</li>
+</ul>
+</li>
+</ul>
+<p>Note that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will honor both the current <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> code and the one that just expired.</p>
+<p>f the Looper is with you, you can see the notification on their phone. You can see the entry on the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> carbohydrate or the insulin displays to see if it went through.</p>
+<p>If the Looper is not with you, you should see the result in the <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> dashboard within 5 minutes.</p>
 <h3 id="shortcuts">Shortcuts<a class="headerlink" href="#shortcuts" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple of shortcuts for you that integrate &nbsp;<span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span>&nbsp; overrides with <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em>.</p>
 <div class="admonition important">
