@@ -1697,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operation/features/workout/" class="md-nav__link">
+      <a href="../../operation/features/overrides/" class="md-nav__link">
         Overrides
       </a>
     </li>
@@ -3284,12 +3284,12 @@
 <h3 id="do-not-confuse-your-keys">Do Not Confuse Your Keys<a class="headerlink" href="#do-not-confuse-your-keys" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title"><span class="loop-big"><code>API Key</code></span> vs <span class="loop-big"><code>APN Key</code></span></p>
-<p>If you use <a href="../nightscout/remote-overrides.md">Remote Commands with <code><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></code></a>, you may notice the Application Programming Interface (<abbr title="Application Programming Interface">API</abbr>) key has the same type of format as the <em>Apple</em> Push Notification (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.</p>
+<p>If you use <a href="../../nightscout/remote-overview/">Remote Commands with <code><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></code></a>, you may notice the Application Programming Interface (<abbr title="Application Programming Interface">API</abbr>) key has the same type of format as the <em>Apple</em> Push Notification (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.</p>
 <p>The <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> for building with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> use the <span class="loop-bigger"><code>API Key</code></span>.</p>
 <p>The config vars for <code>Nightscout</code> use the <span class="loop-bigger"><code>APN Key</code></span>.</p>
 <ul>
 <li>If you are using remote commands with <code>Nightscout</code> and building with <code><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Browser Build</code><ul>
-<li><a href="../nightscout/remote-overrides.md#remote-build-config-var-requirement">Remote Commands <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr></a>: make sure you have a config var of <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> with a value of <code>production</code> or remote commands will not work with <code>Nightscout</code></li>
+<li><a href="../../nightscout/remote-config/#remote-build-config-var-requirement">Remote Commands <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr></a>: make sure you have a config var of <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> with a value of <code>production</code> or remote commands will not work with <code>Nightscout</code></li>
 </ul>
 </li>
 <li>This is true for using <em><code><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></code></em> directly or using <em><code><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></code></em></li>

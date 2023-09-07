@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../../loop/looptips/">
+        <link rel="prev" href="../bolus/">
       
       
-        <link rel="next" href="../bolus/">
+        <link rel="next" href="../watch/">
       
       <link rel="icon" href="../../../loop-logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
     
     
       
-        <title>Algorithm Overview - LoopDocs</title>
+        <title>Overrides - LoopDocs</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loop-algorithm" class="md-skip">
+        <a href="#new-loopers-please-read" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Algorithm Overview
+              Overrides
             
           </span>
         </div>
@@ -1341,7 +1341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/carbs/" class="md-nav__link">
+      <a href="../carbs/" class="md-nav__link">
         Meal Entries
       </a>
     </li>
@@ -1355,7 +1355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/bolus/" class="md-nav__link">
+      <a href="../bolus/" class="md-nav__link">
         Bolus
       </a>
     </li>
@@ -1367,11 +1367,172 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../features/overrides/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overrides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Overrides
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#new-loopers-please-read" class="md-nav__link">
+    New Loopers - Please Read
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-temp-basal" class="md-nav__link">
+    Manual Temp Basal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-overrides-work" class="md-nav__link">
+    How Overrides Work
+  </a>
+  
+    <nav class="md-nav" aria-label="How Overrides Work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-of-an-override" class="md-nav__link">
+    Features of an Override
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-override" class="md-nav__link">
+    Future Override
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-overrides-do-not-work" class="md-nav__link">
+    How Overrides Do NOT Work
+  </a>
+  
+    <nav class="md-nav" aria-label="How Overrides Do NOT Work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avoid-extreme-insulin-needs-setting" class="md-nav__link">
+    Avoid Extreme Insulin Needs Setting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-override-preset" class="md-nav__link">
+    Create an Override Preset
+  </a>
+  
+    <nav class="md-nav" aria-label="Create an Override Preset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-1-insulin-needs" class="md-nav__link">
+    Select 1% Insulin Needs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate-an-override" class="md-nav__link">
+    Activate an Override
+  </a>
+  
+    <nav class="md-nav" aria-label="Activate an Override">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schedule-an-override" class="md-nav__link">
+    Schedule an Override
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deactivating-an-override" class="md-nav__link">
+    Deactivating an Override
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apple-watch" class="md-nav__link">
+    Apple Watch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-an-active-override" class="md-nav__link">
+    Editing an Active Override
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remote-overrides" class="md-nav__link">
+    Remote Overrides
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1383,7 +1544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/watch/" class="md-nav__link">
+      <a href="../watch/" class="md-nav__link">
         Apple Watch
       </a>
     </li>
@@ -1397,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/notifications/" class="md-nav__link">
+      <a href="../notifications/" class="md-nav__link">
         Loop Notifications
       </a>
     </li>
@@ -1411,7 +1572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/premeal/" class="md-nav__link">
+      <a href="../premeal/" class="md-nav__link">
         Pre-Meal Target
       </a>
     </li>
@@ -1425,7 +1586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/ice/" class="md-nav__link">
+      <a href="../ice/" class="md-nav__link">
         Meal Review
       </a>
     </li>
@@ -1439,7 +1600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/widget/" class="md-nav__link">
+      <a href="../widget/" class="md-nav__link">
         iPhone Widget
       </a>
     </li>
@@ -1465,16 +1626,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_12" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_12" >
       
       
       
@@ -1483,7 +1642,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_12_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_12_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6_12">
           <span class="md-nav__icon md-icon"></span>
           Algorithm
@@ -1494,64 +1653,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Algorithm Overview
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../algorithm/overview/" class="md-nav__link">
         Algorithm Overview
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Headers on this Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#loop-algorithm" class="md-nav__link">
-    Loop Algorithm
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algorithm-terminology" class="md-nav__link">
-    Algorithm Terminology
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algorithm-section-menu" class="md-nav__link">
-    Algorithm Section Menu
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1563,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bolus/" class="md-nav__link">
+      <a href="../../algorithm/bolus/" class="md-nav__link">
         Bolus Recommendations
       </a>
     </li>
@@ -1577,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prediction/" class="md-nav__link">
+      <a href="../../algorithm/prediction/" class="md-nav__link">
         Glucose Prediction
       </a>
     </li>
@@ -1591,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../temp-basal/" class="md-nav__link">
+      <a href="../../algorithm/temp-basal/" class="md-nav__link">
         Automated Adjustments
       </a>
     </li>
@@ -1731,7 +1837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/battery/" class="md-nav__link">
+      <a href="../battery/" class="md-nav__link">
         MDT Pump Battery
       </a>
     </li>
@@ -2312,22 +2418,130 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loop-algorithm" class="md-nav__link">
-    Loop Algorithm
+  <a href="#new-loopers-please-read" class="md-nav__link">
+    New Loopers - Please Read
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#algorithm-terminology" class="md-nav__link">
-    Algorithm Terminology
+  <a href="#manual-temp-basal" class="md-nav__link">
+    Manual Temp Basal
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#algorithm-section-menu" class="md-nav__link">
-    Algorithm Section Menu
+  <a href="#how-overrides-work" class="md-nav__link">
+    How Overrides Work
+  </a>
+  
+    <nav class="md-nav" aria-label="How Overrides Work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-of-an-override" class="md-nav__link">
+    Features of an Override
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-override" class="md-nav__link">
+    Future Override
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-overrides-do-not-work" class="md-nav__link">
+    How Overrides Do NOT Work
+  </a>
+  
+    <nav class="md-nav" aria-label="How Overrides Do NOT Work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avoid-extreme-insulin-needs-setting" class="md-nav__link">
+    Avoid Extreme Insulin Needs Setting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-override-preset" class="md-nav__link">
+    Create an Override Preset
+  </a>
+  
+    <nav class="md-nav" aria-label="Create an Override Preset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-1-insulin-needs" class="md-nav__link">
+    Select 1% Insulin Needs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate-an-override" class="md-nav__link">
+    Activate an Override
+  </a>
+  
+    <nav class="md-nav" aria-label="Activate an Override">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schedule-an-override" class="md-nav__link">
+    Schedule an Override
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deactivating-an-override" class="md-nav__link">
+    Deactivating an Override
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apple-watch" class="md-nav__link">
+    Apple Watch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-an-active-override" class="md-nav__link">
+    Editing an Active Override
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remote-overrides" class="md-nav__link">
+    Remote Overrides
   </a>
   
 </li>
@@ -2347,86 +2561,184 @@
                   
 
 
-  <h1>Algorithm Overview</h1>
+  <h1>Overrides</h1>
 
-<h2 id="loop-algorithm"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Algorithm<a class="headerlink" href="#loop-algorithm" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s algorithm for adjusting insulin delivery is oriented around making a blood glucose prediction. Every five minutes, triggered by new blood glucose data, it generates a new prediction. Both <a href="../bolus/">bolus recommendations</a> and <a href="../temp-basal/">temporary basal rate adjustments</a> are set based on this <a href="../prediction/">prediction</a>.</p>
-<h2 id="algorithm-terminology">Algorithm Terminology<a class="headerlink" href="#algorithm-terminology" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This graph and legend illustrates terms commonly used in discussing <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s algorithm,
-and shows them in the context of historical and forecasted blood glucose in style similar to the
-status screen of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
-<p><img alt="Chart illustrating terms" src="../img/terms_graph.png" /></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Insulin activity duration</td>
-<td>The insulin activity duration is the duration of the insulin activity curve, and describes the point at which the delivered insulin dose no longer affects blood glucose. The insulin activity duration is 6 hours for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s rapid-acting and ultra-rapid insulin models.</td>
-</tr>
-<tr>
-<td>Correction range</td>
-<td>The correction range is the blood glucose range <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses to determine corrective actions (e.g., between 90 and 120 mg/dL in the figure). NOTE: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s correction range is a user setting and should not be confused with the target range, typically 70-180 mg/dL, used for the purpose of calculating the percent time in range.</td>
-</tr>
-<tr>
-<td>Correction minimum</td>
-<td>The lower or minimum value of the user’s correction range, which is 90 mg/dL in the figure.</td>
-</tr>
-<tr>
-<td>Correction maximum</td>
-<td>The upper or maximum value of the user’s correction range, which is 120 mg/dL in the figure.</td>
-</tr>
-<tr>
-<td>Correction target</td>
-<td>The correction target is the average value of the correction range. In the overview figure, this is 105 mg/dL given that the correction minimum is 90 mg/dL and the correction maximum is 120 mg/dL.</td>
-</tr>
-<tr>
-<td>Predicted blood glucose</td>
-<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes a prediction of blood glucose values out for a length of time equal to your insulin action duration. The predicted blood glucose is the basis for how <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes its insulin delivery recommendations and actions.</td>
-</tr>
-<tr>
-<td>Eventual blood glucose</td>
-<td>The last value of the predicted glucose curve, in other words the very last blood glucose predicted at the end of your insulin action duration. In the figure above, this is 85 mg/dL.</td>
-</tr>
-<tr>
-<td>Minimum predicted blood glucose</td>
-<td>The lowest blood glucose value at any point in time within the prediction. In the figure above, this is 77 mg/dL.</td>
-</tr>
-<tr>
-<td>Delta</td>
-<td>The delta is the difference between the eventual blood glucose and the correction target. In the overview figure, the eventual blood glucose is 85 mg/dL and the correction target is 105 mg/dL, which means that the delta is  -20 mg/dL.</td>
-</tr>
-<tr>
-<td>Suspend Threshold</td>
-<td>The suspend threshold is a safety feature of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm. If any predicted blood glucose is below this threshold, the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm will issue a temporary basal rate of 0</td>
-</tr>
-<tr>
-<td><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data</td>
-<td>Blood glucose readings made by a continuous glucose monitor.</td>
-</tr>
-<tr>
-<td>Insulin sensitivity factor</td>
-<td>A configuration value that provides an estimate of how much blood glucose will drop given a unit of insulin.</td>
-</tr>
-<tr>
-<td>Active insulin</td>
-<td>Active insulin, often referred to as Insulin-on-Board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>), is the remaining amount of insulin activity from boluses and temporary basal rates relative to a user’s scheduled basal rates. More specifically, it is the total amount of insulin activity due to all bolus and basal insulin delivered within the last N hours, where N is determined by the insulin activity duration. The amount of “active” insulin depends upon the insulin activity curve, and also accounts for the insulin withheld via basal suspensions. As such, it is possible that the active insulin can be negative. Negative active insulin will result in an increase in predicted blood glucose. The active insulin displayed in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s main display does not reflect the currently enacted temporary basal rate, as that basal rate may be canceled or modified before completion over the next 30 minutes. In others words, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> doesn't count chickens before the eggs hatch...insulin delivery must be confirmed before being added to the active insulin reporting.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="algorithm-section-menu">Algorithm Section Menu<a class="headerlink" href="#algorithm-section-menu" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="new-loopers-please-read">New Loopers - Please Read<a class="headerlink" href="#new-loopers-please-read" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><strong>Please do not use this feature until you understand it.</strong></p>
+<p>Many new Loopers interpret <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Overrides as a one-for-one replacement for manual pump options where a temporary basal was applied for a particular activity. Although <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Overrides can help in a situation where you previously used a temporary basal rate, overrides are more powerful.</p>
+<div class="admonition danger">
+<p class="admonition-title">Changing Overall Insulin Needs is NOT like Manual Pump <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> Change</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Overrides are <strong>not</strong> the same as adjusting temporary basal on a manual pump. The easiest way to restrict basal rates with an automated system is to raise your correction target temporarily. In some cases, you may need to also adjust insulin needs, but begin just by changing that target.</p>
+<p>When you modify insulin needs, you are affecting <strong>basal rates</strong>, <strong>carb ratios</strong>, and <strong>insulin sensitivity factors (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>)</strong> for the duration of the override.</p>
+<p>A common mistake is to think selecting an override with 10% Overall Insulin Needs is like selecting 10% basal rate with a manual pump. <strong>With <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, that selection modifies all your normal settings by a factor of 10!</strong>ß</p>
+</div>
+<h2 id="manual-temp-basal">Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr><a class="headerlink" href="#manual-temp-basal" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Sometimes you need to set a manual temp basal and you need it to keep working whether you are near your gear. There's a function for that with <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <ul>
-<li><a href="./">Algorithm Overview</a><ul>
-<li><a href="../bolus/">Bolus Recommendations</a></li>
-<li><a href="../prediction/">Blood Glucose Prediction</a></li>
-<li><a href="../temp-basal/"><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> Adjustments</a></li>
+<li>Pods: use the <a href="../../../loop-3/omnipod/#manual-temp-basal">Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></a> setting</li>
+<li>Medtronic: select Open <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and use your Medtronic pump temp basal feature</li>
+</ul>
+<h2 id="how-overrides-work">How Overrides Work<a class="headerlink" href="#how-overrides-work" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Overrides let <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> know selected settings are modified for the duration of the override. The override can change either the correction range or the overall insulin needs or both. When you set an override on insulin needs, the override adjusts basal schedule, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> together. Examples where this can be helpful include hormone cycles, steroid medications, and/or exercise.</p>
+<p><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> presets are (1) optional and (2) can be configured within <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s workout icon (the little blue heart icon in the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> toolbar). Once override presets are created, they can be turned on/off by using the workout icon as well.</p>
+<p align="center"><img alt="img/toolbar.png" src="../img/toolbar-override.svg" width="450" /></p>
+<h3 id="features-of-an-override">Features of an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr><a class="headerlink" href="#features-of-an-override" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Overrides allow you to specify:</p>
+<ul>
+<li>an overall insulin needs adjustment</li>
+<li>a correction target range</li>
+<li>a duration in 15-minute increments (or indefinite)</li>
+<li>a start time</li>
+</ul>
+<p>The override only works when your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> gear is with you. For example, if <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> sets a zero temporary basal rate based on an override and then you leave your gear behind; at the end of half an hour, your pump will resume scheduled insulin delivery.</p>
+<p align="center"><img alt="img/override-entry.jpeg" src="../img/override-entry.jpeg" width="300" /></p>
+<p>The <strong>target range</strong> replaces the correction range target for the duration of the override.</p>
+<ul>
+<li>If the target range is left blank, your scheduled correction range continues to be in effect</li>
+<li>If the target range is specified, that range is used instead of your scheduled correction range</li>
+</ul>
+<p>The <strong>overall insulin needs</strong> is applied to your basal rates, insulin sensitivities and carb ratios for the duration of the override.</p>
+<ul>
+<li>If the insulin needs is left at 100%, no change is made to basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> or <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr></li>
+<li>If you set an overall insulin needs adjustment <em>below</em> 100%, you are telling <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> you are more insulin sensitive and need a lighter touch.<ul>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses basal rates decreased from scheduled rates</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers increased from settings</li>
+</ul>
+</li>
+<li>If you set an overall insulin needs adjustment <em>above</em> 100%, you are telling <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> you are less insulin sensitive and need a heavier touch.<ul>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses basal rates increased from scheduled rates</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers decreased from settings</li>
+</ul>
+</li>
+<li>While the override is active, the modified basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> are applied for <strong>every</strong> automated or manual insulin delivery and affect the calculation for future <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> while the override is active<ul>
+<li>Those <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers are associated with the carbs and/or insulin delivered during the override</li>
+<li>As the carbs and/or insulin "ages" during their absorption-time/duration-of-action, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> maintains the sensitivity values associated with those during-the-override entries</li>
 </ul>
 </li>
 </ul>
+<p>For an override to be accepted:</p>
+<ul>
+<li>You must change either insulin needs or target range</li>
+<li>A named override can be saved and used again<ul>
+<li>To save the override, you must supply a name and an icon</li>
+<li>Named overrides can be set to occur at a scheduled time</li>
+</ul>
+</li>
+<li>A Custom override is used only once</li>
+<li>Any override can be edited while it is active</li>
+</ul>
+<h3 id="future-override">Future <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr><a class="headerlink" href="#future-override" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>When an override is scheduled to start in the future, it can have an effect earlier than you might think. The closed loop automated insulin increase or restriction at each cycle is calculated to map your predicted glucose to the desired target range over the duration of insulin action (6 hours). If the future override has a higher target, that higher target is factored into the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> calculations.</p>
+<p>Example:</p>
+<ul>
+<li>At 10 pm, you set an override with a higher correction range target to start the following morning at 6 am</li>
+<li>At approximately midnight, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will begin taking that future target into account in the dosing for each <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle</li>
+<li>By the time you awaken at 6 am, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> should have your glucose in that higher target range</li>
+<li>The insulin needs modification, if any, associated with that override do not affect the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> prediction until the scheduled start time for the override</li>
+</ul>
+<h2 id="how-overrides-do-not-work">How Overrides Do NOT Work<a class="headerlink" href="#how-overrides-do-not-work" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Overrides will work while you are Looping. Sounds obvious, right? But, the thing to remember is that the adjustments (multipliers) that overrides make are not saved back to your Medtronic pump or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr>. They only exist in the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app.</p>
+<div class="admonition warning">
+<p class="admonition-title">If you walk away from iPhone and/or <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr>...</p>
+<p>If you stop Looping (i.e., walk away from your gear or your glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr>. Your adjusted needs as set-up in any override will not continue if your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals or use a <a href="../../../loop-3/omnipod/#manual-temp-basal">Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></a> setting.</p>
+</div>
+<h3 id="avoid-extreme-insulin-needs-setting">Avoid Extreme Insulin Needs Setting<a class="headerlink" href="#avoid-extreme-insulin-needs-setting" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There have been users who select a 10% overall insulin need. This is NOT the same as choosing a 10% temporary basal with the PDM. This changes your basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> by a factor of 10!</p>
+<div class="admonition warning">
+<p class="admonition-title">Scenario for 10% Insulin Need</p>
+<ul>
+<li>User really wants insulin reduced and chooses 10% insulin need</li>
+<li>User doesn't think about the 10% and enters carbs while the override is active<ul>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> suggests a tiny bolus and the user accepts<ul>
+<li>User goes high because <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> was 10 times higher than Therapy Setting Value</li>
+<li>User stays high because <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is also 10 times higher than Therapy Setting Value<ul>
+<li>Automated corrections are 10% of typical corrections</li>
+<li>Basal supplied is 10% of the Therapy Setting value</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>OR</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> suggests a tiny bolus and the user manually boluses the amount they know the food needs<ul>
+<li>User glucose may be normal BUT<ul>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predicts a negative eventual glucose (prediction only - this will never happen)</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> immediately withholds all basal until prediction normalizes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Instead of selecting 10%, raise your correction range with a moderate needs adjustment. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> tends to suspend insulin delivery via temp basals with the next <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading.</p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, there is now a warning message in the meal entry screen when an override is active with an overall insulin needs value other than 100%. The user can decide whether to proceed with the meal entry with the override active.</p>
+<p>If you feel the need to immediately halt insulin delivery, consider a <a href="../../../loop-3/omnipod/#manual-temp-basal">Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></a> or suspend command to the pump. If you choose to suspend, be sure to pay attention to the reminder to resume insulin delivery later.</p>
+<div class="admonition tip">
+<p class="admonition-title">Extreme Athletes</p>
+<p>There are athletes who do need those extreme overall insulin need changes and know how to use them appropriately. This typically involves extreme or prolonged exercise.</p>
+</div>
+<h2 id="create-an-override-preset">Create an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Preset<a class="headerlink" href="#create-an-override-preset" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>To create an override preset, tap on the workout icon. Then click the &plus; sign in the upper right corner to start a new preset entry.</p>
+<p>You must select an emoji, name the preset and modify either the overall insulin needs or target range or both to save your new preset</p>
+<ul>
+<li>Pick an emoji</li>
+<li>Enter a name for the preset</li>
+<li>Optional: change insulin needs<ul>
+<li>Default is 100% - no change to your settings</li>
+<li>You may use the picker wheel or <a href="#select-1-insulin-needs">Select 1% Insulin Needs</a> increments</li>
+</ul>
+</li>
+<li>Optional: enter a target range<ul>
+<li>If you do not enter a target range, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will use your existing scheduled target range</li>
+</ul>
+</li>
+<li>Select whether you want the override to run indefinitely or for a finite time</li>
+</ul>
+<p>When you've made your selections, save the preset using the "Save" button in the upper right corner.</p>
+<h3 id="select-1-insulin-needs">Select 1% Insulin Needs<a class="headerlink" href="#select-1-insulin-needs" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Not Available in 2.2.x</p>
+<p>This feature is only available in <abbr title="Latest release with major updates">Loop 3</abbr> or later.</p>
+<ul>
+<li>Not available in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x</li>
+</ul>
+</div>
+<p>The selectable Overall Insulin Needs values are not limited by the default picker values of 10%.</p>
+<ul>
+<li>When adjusting Needs, press and hold the "orange" bar, highlighted by the red rectangle in the graphic below</li>
+<li>Move your finger left and right to adjust by 1%</li>
+<li>Release to select the desired level</li>
+</ul>
+<p align="center"><img alt="press and hold within the insulin needs bar to make 1% adjustments" src="../img/override-one-percent.svg" width="200" /></p>
+<h2 id="activate-an-override">Activate an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr><a class="headerlink" href="#activate-an-override" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>To enact your override preset, tap on the workout icon toolbar and select an override from your list of saved presets, create a new one or use the custom override for one-time use.</p>
+<p align="center"><img alt="img/override-selection.PNG" src="../img/override-selection.PNG" width="300" /></p>
+<p>The heart will be highlighted in a blue square while active and the <a href="../../../loop-3/displays_v3/#hud-status-row"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Status Row</a> will indicate the active override name. The <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr> will show a darker blue bar indicating the active target range and duration.</p>
+<p align="center"><img alt="img/override-enacted.PNG" src="../img/override-enacted.PNG" width="300" /></p>
+<h3 id="schedule-an-override">Schedule an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr><a class="headerlink" href="#schedule-an-override" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You can set up a future start time when selecting a saved override by tapping on the calendar icon to the right of the override. Adjust the "Start time" row. Tap the "Enable" button in the top right corner.</p>
+<p>A <a href="#future-override">Future <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> can be very helpful, for example, to set an exercise override the night before your workout. You'll wake up with less insulin on board and at your desired exercise targets.</p>
+<h2 id="deactivating-an-override">Deactivating an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr><a class="headerlink" href="#deactivating-an-override" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Tap the heart icon to turn off your override at any time. This happens without confirmation, so be sure to lock your phone when you have an override running to avoid accidentally turning it off.</p>
+<p><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> presets with a finite duration will automatically deactivate when the duration is over.</p>
+<h2 id="apple-watch">Apple Watch<a class="headerlink" href="#apple-watch" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Saved overrides can be turned on and off by tapping on the blue heart icon on your watch.</p>
+<h2 id="editing-an-active-override">Editing an Active <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr><a class="headerlink" href="#editing-an-active-override" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Tap on the active override in the <a href="../../../loop-3/displays_v3/#hud-status-row"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Status Row</a> with the phone in portrait orientation. This brings up a screen to edit the override currently running.</p>
+<p>This only affects this override during the current period. It is not saved to that named override. For example, you can extend the duration or modify the needs value or target value based on a temporary situation.</p>
+<div class="admonition info">
+<p class="admonition-title">Higher Priority Messages</p>
+<p>If the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Status Row is displaying a higher priority message, you must wait for that message to complete before you'll be able to edit an active override. If you want to edit an active override, you can choose to cancel an active bolus and edit the override immediately.  The edited override will then be in effect for the next <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle or manual recommendation.</p>
+<p><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Status Row messages with higher priority:</p>
+<ul>
+<li>Bolus starting, in-progress or canceling</li>
+<li>Pump suspended</li>
+<li>No recent glucose</li>
+</ul>
+</div>
+<h2 id="remote-overrides">Remote Overrides<a class="headerlink" href="#remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You can also use your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site to activate/deactivate your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s override presets. To accomplish this, you will need to do some legwork as outlined on <a href="../../../nightscout/remote-overview/">this page for how to set up Remote Overrides in <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></a> and you will need to be using a paid Apple developer account. Remote overrides require Apple Push Notifications service, and that is only available on paid accounts.</p>
 
 
 
@@ -2453,7 +2765,7 @@ status screen of <abbr title="With a capital L, Loop is one of several do-it-you
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../loop/looptips/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loop Tips" rel="prev">
+          <a href="../bolus/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bolus" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -2462,20 +2774,20 @@ status screen of <abbr title="With a capital L, Loop is one of several do-it-you
                 Previous
               </span>
               <div class="md-ellipsis">
-                Loop Tips
+                Bolus
               </div>
             </div>
           </a>
         
         
           
-          <a href="../bolus/" class="md-footer__link md-footer__link--next" aria-label="Next: Bolus Recommendations" rel="next">
+          <a href="../watch/" class="md-footer__link md-footer__link--next" aria-label="Next: Apple Watch" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Bolus Recommendations
+                Apple Watch
               </div>
             </div>
             <div class="md-footer__button md-icon">

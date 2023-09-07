@@ -1367,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operation/features/workout/" class="md-nav__link">
+      <a href="../../operation/features/overrides/" class="md-nav__link">
         Overrides
       </a>
     </li>
@@ -2436,7 +2436,7 @@
 <p>The <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> code and <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> code work together to provide this capability. However, remote commands and override control requires <em>Apple Push Notifications</em> (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>).</p>
 <ul>
 <li>The Apple Developer ID used to build the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app must be used to set up the push notifications<ul>
-<li>If you built <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> and the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app yourself, follow the directions to set up <a href="remote-configuration.md">Remote Configuration</a></li>
+<li>If you built <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> and the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app yourself, follow the directions to set up <a href="../remote-config/">Remote Configuration</a></li>
 </ul>
 </li>
 <li>Some providers who supply <code>Nightscout as a service</code> or <code>Hosted Nightscout</code> can assist you in getting your <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> information added to your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> variables if you need help<ul>
@@ -2448,21 +2448,21 @@
 </ul>
 </li>
 </ul>
-<div class="admonition important">
+<div class="admonition warning">
 <p class="admonition-title">Remote Build</p>
 <p>There are several methods for building remotely for your family members (or even yourself).</p>
 <ul>
-<li><a href="../../gh-actions/gh-overview/"><em>LoopDocs</em>: <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build</em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a> (new with <abbr title="Latest release with major updates">Loop 3</abbr>) allows you to build on a browser (no need for a Mac) and send <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to your phone using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
-<li><a href="../build/testflight.md"><em>LoopDocs</em>: <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> from <em><abbr title="program used to build an app">Xcode</abbr></em></a> allows you to build using Mac-<abbr title="program used to build an app">Xcode</abbr> and then send <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to your phone using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
-<li><a href="https://www.loopandlearn.org/remote-build/"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Remote Build with <em>Diawi</em></a> allows you to save a build created by <em><abbr title="program used to build an app">Xcode</abbr></em>, store it in the cloud, and then download and install it on your phone later</li>
+<li><a href="../../gh-actions/gh-overview/"><span translate="no">LoopDocs</span>: <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span></a>: build on a browser (no need for a Mac) and send <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> to your phone using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li><a href="../../build/testflight-xcode/"><span translate="no">LoopDocs</span>: <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> from <em><abbr title="program used to build an app">Xcode</abbr></em></a>: build using Mac-<abbr title="program used to build an app">Xcode</abbr> and then send <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to your phone using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li><a href="https://www.loopandlearn.org/remote-build/"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</span>: Remote Build with <em>Diawi</em></a> allows you to save a build created by <em><abbr title="program used to build an app">Xcode</abbr></em>, store it in the cloud, and then download and install it on your phone later</li>
 </ul>
-<p>Any remote build method requires this <a href="https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars"><em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em>: Config Var</a> to be added to <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em>:</p>
+<p>Any remote build method requires the following <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Config Var</span> be added to <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span>:</p>
 <p><code>LOOP_PUSH_SERVER_ENVIRONMENT = production</code></p>
-<p>Be aware that if you then return to building directly from <em><abbr title="program used to build an app">Xcode</abbr></em>, you must disable that config var from <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> and restart the server.</p>
-<p>Note - this is covered in detail on the next page.</p>
+<p>Be aware that if you return to building directly from <em><abbr title="program used to build an app">Xcode</abbr></em>, you must disable that config var from <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> and restart the server.</p>
+<p>Note - this is covered in detail on the <a href="../remote-config/">Remote Configuration</a> page.</p>
 </div>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There are a number of steps to follow to set this up. Each are now found on separate pages, linked below:</p>
+<p>There are a number of steps to follow to set this up. Each page is linked below:</p>
 <h3 id="set-up-remote-for-nightscout"><a href="../remote-config/">Set Up Remote for <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></a><a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h3 id="using-remote-commands"><a href="../remote-commands/">Using Remote Commands</a><a class="headerlink" href="#using-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h3 id="common-errors"><a href="../remote-errors/">Common Errors</a><a class="headerlink" href="#common-errors" title="Anchor link to this Header on this Page">&para;</a></h3>
