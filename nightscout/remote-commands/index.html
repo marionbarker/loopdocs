@@ -2016,8 +2016,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#remote-overrides" class="md-nav__link">
-    Remote Overrides
+  <a href="#qr-code" class="md-nav__link">
+    QR Code
   </a>
   
 </li>
@@ -2026,6 +2026,26 @@
   <a href="#set-up-an-authentication-app" class="md-nav__link">
     Set up an Authentication App
   </a>
+  
+    <nav class="md-nav" aria-label="Set up an Authentication App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apple-keychain" class="md-nav__link">
+    Apple Keychain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-authentication-apps" class="md-nav__link">
+    Other Authentication Apps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2386,8 +2406,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#remote-overrides" class="md-nav__link">
-    Remote Overrides
+  <a href="#qr-code" class="md-nav__link">
+    QR Code
   </a>
   
 </li>
@@ -2396,6 +2416,26 @@
   <a href="#set-up-an-authentication-app" class="md-nav__link">
     Set up an Authentication App
   </a>
+  
+    <nav class="md-nav" aria-label="Set up an Authentication App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apple-keychain" class="md-nav__link">
+    Apple Keychain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-authentication-apps" class="md-nav__link">
+    Other Authentication Apps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2480,21 +2520,91 @@
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>All remote commands require the configuration steps from <a href="../remote-config/">Remote Configuration</a>.</p>
 <ul>
-<li>Remote Overrides do not require a <span translate="no">One Time Password</span> (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>)</li>
-<li>A new <span translate="no">One Time Password</span> (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) is required for each remote command that issues a bolus or adds a carb entry</li>
+<li>A new One-Time Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) is required for each remote command that issues a bolus or adds a carb entry<ul>
+<li>The <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> updates every 30 seconds</li>
+<li>Both the sending device and the Looper's phone must have automatic time enabled</li>
+</ul>
+</li>
+<li>Remote Overrides do not require a One-Time Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>)<ul>
+<li>There are some versions of <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> that provide a row for entry of an <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> for <span translate="no">Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></span> in the <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Careportal</span></li>
+<li>Leave that row blank</li>
+</ul>
+</li>
 </ul>
 <div class="admonition question">
 <p class="admonition-title">Do I have to use <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>?</p>
 <p>There are a number of methods for using remote commands.</p>
 <p>Things everyone needs to know are covered on this page, so you should read it regardless of how you plan to issue remote commands. The next page is devoted to using <a href="../loop-caregiver/"><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></a>.</p>
 </div>
-<h2 id="remote-overrides">Remote Overrides<a class="headerlink" href="#remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Remote Overrides do not require a <span translate="no">One Time Passworde</span> (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>). There are some versions of <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> that provide a row for entry of an <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> for <span translate="no">Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></span> in the <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Careportal</span>. Leave that row blank.</p>
+<h2 id="qr-code"><abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> Code<a class="headerlink" href="#qr-code" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>On the Looper's phone, <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> must be included under the <code>Loop</code> -&gt; Settings -&gt; Services section. Navigate to Services and select <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span>. Tap on the One-Time Password row to view the <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code.</p>
+<p>When you need to configure your authentication method, you can either use a saved <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> screenshot or scan the <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> on the Looper's phone.</p>
+<p>Options:</p>
+<ol>
+<li>Save a screen shot of the <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code<ul>
+<li>Keep this secure</li>
+<li>Do not share this screen shot when asking for help</li>
+</ul>
+</li>
+<li>Have your Looper (or at least their phone) available</li>
+</ol>
+<p align="center"><img alt="example screen for nightscout and qr code" src="../img/qr-code-example.png" width="650" /></p>
+<p>While you are on the Settings -&gt; Services -&gt; NightScout screen, notice that the 6-digit number on the One-Time Password row updates every 30 seconds.</p>
 <h2 id="set-up-an-authentication-app">Set up an Authentication App<a class="headerlink" href="#set-up-an-authentication-app" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>After you have set up your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site and confirmed you can successfully receive remote overrides <a href="../remote-config/#step-4-make-sure-remote-override-works">Step 4: Make Sure Remote Overrides Work</a>, you need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.</p>
+<p>After you confirmed the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> phone receives remote overrides as discussed on the previous page: <a href="../remote-config/#step-4-make-sure-remote-override-works">Step 4: Make Sure Remote Overrides Work</a>, you need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.</p>
 <p>One of the nice features of <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> is that it handles the <span translate="no">One-Time-Password</span> (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) requirements for you.</p>
 <p>But even if you choose to use <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>, you might still want to configure an authentication app for cases where you don't have access to your <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> phone.</p>
-<p>Alternatively, build the Caregiver app which will handle the one-time passwords for you. Setup the authentication app on the caregiver’s device, not the Loopers device. There are several authentication apps that support one-time-passwords.</p>
+<p>There are several authentication apps that support one-time-passwords.</p>
+<h3 id="apple-keychain"><span translate="no">Apple Keychain</span><a class="headerlink" href="#apple-keychain" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you are using a iPhone or Mac to issue remote commands through a browser or <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> app, you can use the <span translate="no">Apple Keychain</span> which has native support to store passwords and generate one-time passwords. </p>
+<p>To setup your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> credentials in <span translate="no">Apple Keychain</span>:</p>
+<p>On the Caregivers device:</p>
+<ul>
+<li>Go to Apple Settings -&gt; Passwords</li>
+<li>
+<p>Tap the + Button up top to add a new Password</p>
+<p align="center"><img alt="add password screen for apple keychain" src="../img/add-password-apple-keychain.png" width="650" /></p>
+</li>
+<li>
+<p>You will enter your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> credentials</p>
+<ul>
+<li>Website: <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> <abbr title="website address (Uniform Resource Locator)">URL</abbr>, without the leading “https://” part</li>
+<li>Username: <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> <abbr title="website address (Uniform Resource Locator)">URL</abbr> as the “username”, like the website including the leading “https://” part</li>
+<li>Password: <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> <abbr title="Application Programming Interface">API</abbr> Secret</li>
+</ul>
+</li>
+<li>Tap Done</li>
+</ul>
+<p>Next step:</p>
+<ul>
+<li>On a Mac, you are offered a screen that allows you to set up a <code>Verification Code</code></li>
+<li>On an iPhone:<ul>
+<li>Go to Apple Settings -&gt; Passwords -&gt; Tap the <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> row</li>
+</ul>
+</li>
+<li>Tap “Setup Verification Code”<ul>
+<li>This is where you can scan your <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code from the Looper's phone or the saved <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> screenshot</li>
+</ul>
+</li>
+<li>If the Looper's phone is handy, wait a cycle or two and ensure the 6-digit <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> on the password screen matches that on the Looper's phone</li>
+<li>In Apple Settings -&gt; Passwords -&gt; Autofill Passwords</li>
+<li>Select the <code>Autofill Passwords</code> checkbox and check <code>iCloud Keychain</code></li>
+</ul>
+<p>Using Safari:</p>
+<ul>
+<li>When you use Safari to view your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span><ul>
+<li>The <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> will be offered to you for every row - ignore it when entering Carb amount or Absorption Time, or Bolus Amount</li>
+<li>Select it for the <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> row</li>
+</ul>
+</li>
+</ul>
+<h3 id="other-authentication-apps">Other Authentication Apps<a class="headerlink" href="#other-authentication-apps" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There are other Authentication apps available. Here’s a few options that you can download from your phone’s app store:</p>
+<ul>
+<li><em>1Password</em></li>
+<li><em>Authenticator</em></li>
+<li><em>Authy</em></li>
+</ul>
 <h2 id="faqs-on-remote-overrides">FAQs on Remote Overrides<a class="headerlink" href="#faqs-on-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Don't forget to read <a href="../../operation/features/overrides/">Loopdocs: Overrides</a>. For remote overrides in particular:</p>
 <ol>
