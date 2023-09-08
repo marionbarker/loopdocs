@@ -2446,13 +2446,13 @@
 <ol>
 <li><a href="#step-1-update-the-loopers-iphone-settings">Update the Looper's iPhone Settings</a></li>
 <li><a href="#step-2-apple-push-notifications">Create a Key for an <code>Apple Push Notifications service (APNs)</code></a></li>
-<li><a href="#step-3-add-apn-to-nightscout">Update your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site and add some "config vars" lines in your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site settings</a></li>
+<li><a href="#step-3-add-apn-to-nightscout">Update <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site and add some "config vars" lines in <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site settings</a></li>
 <li><a href="#step-4-test-remote-overrides">Test Remote Overrides</a></li>
 </ol>
 </div>
 <h2 id="set-up-remote-for-nightscout">Set Up Remote for <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span><a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You can use your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site to remotely set and cancel override presets in your <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app.</p>
-<p>If you are using &nbsp;<span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span>, then you can also send remote commands to add carbs and command a bolus. <strong>Remote bolus/carb commands</strong> have a minimum requirement of &nbsp;<span translate="no"><strong><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> 14.2.6</strong></span>. If your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> version does not meet that minimum requirement, remote commands <strong>might</strong> be accepted, but the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> phone.</p>
+<p>You can use the Looper's <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site to remotely set and cancel override presets in your Looper's <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app.</p>
+<p>With &nbsp;<span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span>, you can also send remote commands to add carbs and command a bolus. <strong>Remote bolus/carb commands</strong> have a minimum requirement of &nbsp;<span translate="no"><strong><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> 14.2.6</strong></span>. If your Looper's <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> version does not meet that minimum requirement, remote commands <strong>might</strong> be accepted, but the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> phone.</p>
 <p>After you complete the configuration, read the entire <a href="../remote-commands/">Remote Commands</a> page - pay attention to the warnings and caveats. Test this while your Looper is sitting next to you so you can watch their phone.</p>
 <div class="admonition warning">
 <p class="admonition-title">Remote <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> Interface Caveats</p>
@@ -2462,32 +2462,45 @@
 </ul>
 </li>
 <li>When you build <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span>, the required <em><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></em> information is tied to your Apple Developer account<ul>
-<li>You add your <em><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></em> information to your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site (directions on this page)</li>
-<li><span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> sites, in general, allow you to add the required <strong><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></strong> information</li>
+<li>You add your <em><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></em> information to your Looper's <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site</li>
+<li>If you support multiple Looper's, you add the same <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> variables to each of their <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> sites</li>
 </ul>
 </li>
-<li>Most providers who supply <code>Nightscout as a service</code> or <code>Hosted Nightscout</code> can assist you in getting your <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> information added to your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> variables; one requires an added monthly subscription fee</li>
+<li>There are many choices for building your own or paying someone to build a <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site<ul>
+<li>The directions for only one of the options is documented on this page</li>
+<li>Use that as a guide for your site</li>
+</ul>
+</li>
+<li><a href="https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Docs: Comparison Table</a><ul>
+<li>Warning: examine the <code>Loop remote carbs/bolus</code> row</li>
+<li>If a green check is missing, it might just be too new for evaluation</li>
+</ul>
+</li>
 </ul>
 </div>
 <h2 id="step-1-update-the-loopers-iphone-settings">Step 1: Update the Looper's iPhone settings<a class="headerlink" href="#step-1-update-the-loopers-iphone-settings" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>For remote commands to successfully deploy to a Looper's iPhone, they will need to have two settings on the iPhone enabled.</p>
-<ol>
-<li>The slider in <code>iPhone -&gt; Settings -&gt; Loop -&gt; Notifications</code> needs to be turned to <code>Allow Notifications</code></li>
-<li>The slider in <code>iPhone -&gt; Settings -&gt; General -&gt; Background App Refresh -&gt; Loop</code> must be enabled</li>
-</ol>
-<p>Error messages if Looper's phone is not configured correctly:</p>
+<p>For remote commands to successfully deploy to a Looper's iPhone when the phone is locked, they must have Background App Refresh enabled.</p>
 <ul>
-<li>Without notifications, the person trying to set a remote override will see a message about <code>"no deviceToken"</code> and no remote override will actually enact</li>
-<li>If Background app refresh is not enabled, the remote overrides will only enact if the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app is open and the phone is unlocked.</li>
+<li>The slider in <code>iPhone -&gt; Settings -&gt; General -&gt; Background App Refresh -&gt; Loop</code> must be enabled</li>
 </ul>
+<p>Consequence if Looper's phone is not configured correctly:</p>
+<ul>
+<li>If Background app refresh is not enabled, the remote overrides might only enact if the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app is open and the phone is unlocked</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Keep Notifications Turned on for Looper's Phone</p>
+<p>Typically, the Looper's phone has Notifications enabled for <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span>. In fact, if they don't, a red warning bar is prominently displayed. </p>
+<p>There may be times when you really need <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> to be quiet, so you can turn off Notifications. The remote commands still go through but the Looper does not see a notification that this happened.</p>
+<p>Best practice is to keep <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> Notifications enabled.</p>
+</div>
 <h2 id="step-2-apple-push-notifications">Step 2: <em>Apple Push Notifications</em><a class="headerlink" href="#step-2-apple-push-notifications" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The next part of this will help your <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app give permissions to your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site to remotely interact with it. To enable this, you need to create a key and grant it access to the <span translate="no">Apple Push Notification Service (APNS)</span>. </p>
+<p>The step is required for the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app to give permissions to your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> site to remotely interact with it. To enable this, you need to create a key and grant it access to the <span translate="no">Apple Push Notification Service (APNS)</span>. </p>
 <div class="admonition info">
 <p class="admonition-title">Reminder</p>
 <p>This only works with the <strong>paid</strong> Apple Developer ID.</p>
 </div>
 <ol>
-<li>To get started, go to the <code>Keys</code> section under Apple Developer's <a href="https://developer.apple.com/account/resources/authkeys/list"><code>Certificates, Identifiers &amp; Profiles</code></a> and login with the <em>Apple ID</em> associated with your developer team that you used to sign your <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app.</li>
+<li>To get started, go to the <code>Keys</code> section under Apple Developer's <a href="https://developer.apple.com/account/resources/authkeys/list"><code>Certificates, Identifiers &amp; Profiles</code></a> and login with the <em>Apple ID</em> associated with your developer team that you used to build the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app.</li>
 <li>If not already open in your browser (compare with the below screenshot), <ul>
 <li>Click on <strong><code>Keys</code></strong> (located in the left-hand column). </li>
 <li>Either click on the blue <strong><code>Create a new key</code></strong> button <strong>OR</strong> the plus button (<font color="#2997FF"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></font>)  to add a new key.<blockquote>
@@ -2515,7 +2528,7 @@
 </blockquote>
 </li>
 <li>Find your <code>AuthKey</code> downloaded file in your downloads folder.<br />
-   Double-click to open it and you will be presented a message asking how you'd like to open it.<br />
+   Double-click to open it and you will be presented a message asking how you'd like to open it. The graphic and instructions below are for a Mac. Make sure your editor does not change any characters in your <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> key; use a text-only editor like NotePad (PC) or TextEdit (Mac).
    Click on <code>Choose Application...</code> and then select <em><code>TextEdit</code></em> as your application to open it with.  <blockquote>
 <p><img alt="img/apns-open.png" src="../img/apns-open.png" />
 <img alt="img/apns-textedit.png" src="../img/apns-textedit.png" /></p>
@@ -2599,8 +2612,14 @@ Scroll down to the line (on that page) that says <code>Update Nightscout</code>.
 <p>That last row of the table above is needed if you are using a remote build option such as <a href="../../gh-actions/gh-overview/">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a> or downloaded an archived file via <a href="https://www.loopandlearn.org/remote-build/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Remote Build with Diawi</a>. If you later return to a direct <em><abbr title="program used to build an app">Xcode</abbr></em> build to your phone, you must remove that config var or remote commands will not work.</p>
 <p>When executed properly, you should have something that looks like this for the three (or four) new variables that you added:</p>
 <blockquote>
-<p><img alt="the 3 or 4 config vars required for Nightscout remote commands to work" src="../img/override_vars_complete.svg" /></p>
+<p><img alt="the 3 or 4 config vars required for &lt;span translate=&quot;no&quot;&gt;Nightscout&lt;/span&gt; remote commands to work" src="../img/override_vars_complete.svg" /></p>
 </blockquote>
+<h4 id="baddevicetoken">BadDeviceToken<a class="headerlink" href="#baddevicetoken" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>When the <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app build method; the error message contains the phrase <code>APNs delivery failed: BadDeviceToken</code>.</p>
+<ul>
+<li>If <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> was installed remotely (typically from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> following <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build), you <strong>must</strong> have <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> config var <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> set to <code>production</code></li>
+<li>If <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> was built using Mac-<abbr title="program used to build an app">Xcode</abbr>, you <strong>cannot</strong> have <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> as one of your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> config vars</li>
+</ul>
 <h3 id="do-not-confuse-your-keys">Do Not Confuse Your Keys<a class="headerlink" href="#do-not-confuse-your-keys" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition danger">
 <p class="admonition-title"><abbr title="Application Programming Interface">API</abbr> Key vs <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Key</p>
@@ -2623,21 +2642,21 @@ Scroll down to the line (on that page) that says <code>Update Nightscout</code>.
 <h3 id="things-to-check">Things to Check:<a class="headerlink" href="#things-to-check" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Remote overrides will not start working until after you activate an override in the app at least once<ul>
-<li>Activating an override from the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> interface will upload the necessary push notification token to <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> which will enable remote commands to work</li>
+<li>Activating an override from the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> interface will upload the necessary push notification token to <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> which will enable remote commands to work</li>
 <li>If your Looper gets a new phone - be sure to activate an override from the new phone before trying to use remote commands</li>
 </ul>
 </li>
-<li>Notifications must be allowed in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li>Notifications must be allowed in <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></li>
 <li>Give loop access to all health data</li>
 <li>Enable Background App Refresh</li>
-<li>Double check your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> credentials</li>
+<li>Double check your <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> credentials</li>
 <li>Low Power Mode may prevent background notifications from working</li>
 <li>Some have found that activating the “Focus” and Do-Not-Disturb features on <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> can prevent push notifications from being delivered<ul>
 <li>Turn these off when troubleshooting to eliminate this as a source of problems</li>
 </ul>
 </li>
 <li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.3.x: Note there are reports of Remote notifications not being received to the Loopers device for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version 15.3 and 15.3.1; this is fixed in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version 15.4</li>
-<li>If you distribute the app remotely (i.e. <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, Diawi, AppCenter), you must set a special <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> variable, LOOP_PUSH_SERVER_ENVIRONMENT to “production”, to enable push notifications<ul>
+<li>If you distribute the app remotely (i.e. <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, Diawi, AppCenter), you must set a special <span translate="no"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></span> variable, LOOP_PUSH_SERVER_ENVIRONMENT to “production”, to enable push notifications<ul>
 <li>See <a href="#remote-build-config-var-requirement">Remote Build Config Var Requirement</a></li>
 </ul>
 </li>
