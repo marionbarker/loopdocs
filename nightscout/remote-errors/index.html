@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#to-do" class="md-skip">
+        <a href="#improper-configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -2016,29 +2016,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#to-do" class="md-nav__link">
-    To Do
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#improper-configuration" class="md-nav__link">
     Improper Configuration
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#known-issues" class="md-nav__link">
-    Known Issues
+    <nav class="md-nav" aria-label="Improper Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-phone" class="md-nav__link">
+    Loop Phone
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nightscout-config-and-loop-build-method" class="md-nav__link">
+    Nightscout Config and Loop Build Method
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-errors" class="md-nav__link">
-    Common Errors
+  <a href="#other-errors" class="md-nav__link">
+    Other Errors
   </a>
   
 </li>
@@ -2317,29 +2323,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#to-do" class="md-nav__link">
-    To Do
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#improper-configuration" class="md-nav__link">
     Improper Configuration
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#known-issues" class="md-nav__link">
-    Known Issues
+    <nav class="md-nav" aria-label="Improper Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-phone" class="md-nav__link">
+    Loop Phone
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nightscout-config-and-loop-build-method" class="md-nav__link">
+    Nightscout Config and Loop Build Method
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-errors" class="md-nav__link">
-    Common Errors
+  <a href="#other-errors" class="md-nav__link">
+    Other Errors
   </a>
   
 </li>
@@ -2361,31 +2373,35 @@
 
   <h1>Remote Errors</h1>
 
-<h2 id="to-do">To Do<a class="headerlink" href="#to-do" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition note">
-<p class="admonition-title">To Do</p>
-<p>Not yet incorporated into <em>LoopDocs</em>:</p>
-<p><a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM">Remote Carb/Bolus Guide</a>.</p>
-</div>
 <h2 id="improper-configuration">Improper Configuration<a class="headerlink" href="#improper-configuration" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Error messages if Looper's phone is not configured correctly:</p>
+<h3 id="loop-phone"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Phone<a class="headerlink" href="#loop-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>test this</strong></p>
 <ul>
-<li>Without notifications, the person trying to set a remote override will see a message about <code>"no deviceToken"</code> and no remote override will actually enact</li>
+<li>Without notifications enabled, the person trying to set a remote override will see a message about <code>"no deviceToken"</code> and no remote override will actually enact or be canceled</li>
 <li>If Background app refresh is not enabled, the remote overrides will only enact if the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is open and the phone is unlocked.</li>
 </ul>
-<h2 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Just a brief mention so you are aware:</p>
-<ol>
-<li>The override <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> will display information about what override is currently active in the Looper&#39;s phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to <span><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> runs</span> and <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> upload events in <em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.</li>
-<li>When you add a new override preset in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, that preset has to be uploaded to <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. That will get the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> upload going.</li>
-</ol>
-<h2 id="common-errors">Common Errors<a class="headerlink" href="#common-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="nightscout-config-and-loop-build-method"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Config and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Build Method<a class="headerlink" href="#nightscout-config-and-loop-build-method" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>When the <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app build method; the error message contains the phrase <code>APNs delivery failed: BadDeviceToken</code>.</p>
+<ul>
+<li>If <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> was installed remotely (typically from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> following <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build), you <strong>must</strong> have <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> config var <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> set to <code>production</code></li>
+<li>If <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> was built using Mac-<abbr title="program used to build an app">Xcode</abbr>, you <strong>cannot</strong> have <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> as one of your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> config vars</li>
+</ul>
+<p>If you attempt to issue a command from <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Careportal; after you hit submit and then OK, you will see the error message:</p>
+<div class="highlight"><pre><span></span><code>Error: APNs delivery failed: BadDeviceToken
+</code></pre></div>
+<p>If you attempt to issue a command using <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr>; after you authenticate the command, you will see the error message listed below and shown in the screen shot.</p>
+<div class="highlight"><pre><span></span><code>HTTP Error
+Status Code: 500
+body: APNs delivery failed: BadDeviceToken
+</code></pre></div>
+<p align="center"><img alt="site and build method mismatch" src="../img/site-build-mismatch.png" width="400" /></p>
+<h2 id="other-errors">Other Errors<a class="headerlink" href="#other-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Once you've set up remote overrides, you may encounter errors when trying to run them via <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> or <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  Below are the most common and typical solutions.</p>
 <ol>
 <li><strong><code>Error: Loop notification failed: Could not find deviceToken in loopSettings</code></strong> You might see this in either <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> or Shortcuts.  The error is most commonly caused by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> not pointing to the right <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> instance or you haven't yet run an override locally (with the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app) before trying to run one remotely.<br />
 <strong>Solution:</strong> Confirm the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is pointing to the right <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> site (and there are no extra spaces or a slash (<code>/</code>) at the end, and always run an override for a few seconds in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app before you try to run one remotely.</li>
 <li><strong><code>Error: cannot POST/api/v2/notifications/loop</code></strong> You might see this in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  This means <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> is not updated correctly and you are running a version of <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> that doesn't yet support remote overrides. <br />
-<strong>Solution:</strong> Follow the steps above again on how to update to the version of <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> that supports remote overrides.</li>
+<strong>Solution:</strong> Follow the <a href="#remote-config.md">Remote Configuration</a> documentation.</li>
 <li><strong><code>Error: {“status”:401,”message”:”Unauthorized”,”description”:Invalid\\/Missing”}</code></strong> You might see this in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  This is caused by having an incorrect <code>API_SECRET</code> in the shortcut.<br />
 <strong>Solution:</strong> Double check the <code>API_SECRET</code> is correct and that there are no spaces at the end.</li>
 <li><strong><code>Error: APNs delivery failed: InvalidProviderToken</code></strong> You might see this in either <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> or Shortcuts.  This is caused because your <code>LOOP_APNS_KEY_ID</code> and <code>LOOP_DEVELOPER_TEAM_ID</code> are swapped in <em>Heroku</em>. <br />
