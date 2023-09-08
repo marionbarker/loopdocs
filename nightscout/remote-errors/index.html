@@ -2407,6 +2407,7 @@ body: APNs delivery failed: BadDeviceToken
 <li><strong><code>Error: APNs delivery failed: InvalidProviderToken</code></strong> You might see this in either <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> or Shortcuts.  This is caused because your <code>LOOP_APNS_KEY_ID</code> and <code>LOOP_DEVELOPER_TEAM_ID</code> are swapped in <em>Heroku</em>. <br />
 <strong>Solution:</strong> Double check what's listed in your <em>Apple Developer Account</em> and compare it to the config variables in <em>Heroku</em>. Your <code>Team_ID</code> is next to your name in the top right corner.  The other code is your <code>Key_ID</code>. Get the IDs in the correct location in <em>Heroku</em> to resolve the error.</li>
 </ol>
+<p>Review errors on the <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr> page, especially the <a href="../loop-caregiver/#undelivered-or-expired-commands">Undelivered or Expired Commands</a> section.</p>
 
 
 
