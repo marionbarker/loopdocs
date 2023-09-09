@@ -19,7 +19,7 @@
     
     
       
-        <title>Remote Errors - LoopDocs (Draft)</title>
+        <title>Remote Errors - LoopDocs</title>
       
     
     
@@ -91,7 +91,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LoopDocs (Draft)" class="md-header__button md-logo" aria-label="LoopDocs (Draft)" data-md-component="logo">
+    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LoopDocs (Draft)
+            LoopDocs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +385,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LoopDocs (Draft)" class="md-nav__button md-logo" aria-label="LoopDocs (Draft)" data-md-component="logo">
+    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
     </a>
-    LoopDocs (Draft)
+    LoopDocs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -2038,21 +2038,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#loop-remote_overrides_disabled" class="md-nav__link">
+    Loop REMOTE_OVERRIDES_DISABLED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#incorrect-password-otp-error" class="md-nav__link">
     Incorrect Password (OTP) Error
   </a>
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#undelivered-or-expired-commands" class="md-nav__link">
     Undelivered or Expired Commands
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2352,21 +2359,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#loop-remote_overrides_disabled" class="md-nav__link">
+    Loop REMOTE_OVERRIDES_DISABLED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#incorrect-password-otp-error" class="md-nav__link">
     Incorrect Password (OTP) Error
   </a>
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#undelivered-or-expired-commands" class="md-nav__link">
     Undelivered or Expired Commands
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2429,6 +2443,11 @@ Status Code: 500
 body: APNs delivery failed: BadDeviceToken
 </code></pre></div>
 <p align="center"><img alt="site and build method mismatch" src="../img/site-build-mismatch.png" width="300" /></p>
+<h3 id="loop-remote_overrides_disabled"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> <code>REMOTE_OVERRIDES_DISABLED</code><a class="headerlink" href="#loop-remote_overrides_disabled" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You can build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <a href="../../build/code_customization/#build-time-features">Build-Time Features</a> as part of code customization.</p>
+<p>If you added this Build-Time Flag: <code>REMOTE_OVERRIDES_DISABLED</code></p>
+<p>You will not see any errors, but nothing will happen when you issue any kind of remote command.</p>
+<p><strong>Solution</strong>: Remove  <code>REMOTE_OVERRIDES_DISABLED</code> from  <code>LoopConfigOverride.xcconfig</code> file and rebuild the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app.</p>
 <h3 id="incorrect-password-otp-error">Incorrect Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) Error<a class="headerlink" href="#incorrect-password-otp-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The references to Caregiver below is the person sending the commands. There are specific <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> app insructions that you modify for your authenticator. You must have the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> phone with you to troubleshoot this problem.</p>
 <ul>
@@ -2457,7 +2476,7 @@ body: APNs delivery failed: BadDeviceToken
 </ul>
 </li>
 </ul>
-<h3 id="undelivered-or-expired-commands">Undelivered or Expired Commands<a class="headerlink" href="#undelivered-or-expired-commands" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h2 id="undelivered-or-expired-commands">Undelivered or Expired Commands<a class="headerlink" href="#undelivered-or-expired-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Apple Push Notifications will often not make it to an app, either due to your settings or intentional limitations by Apple. This error can appear in various forms:</p>
 <ul>
 <li>Push notification banner never shows on Looper’s device.</li>
