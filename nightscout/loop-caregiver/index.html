@@ -2092,15 +2092,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#loop-caregiver-main-screen" class="md-nav__link">
-    Loop Caregiver&nbsp; Main Screen
+  <a href="#loop-caregiver-add-looper" class="md-nav__link">
+    Loop Caregiver&nbsp; Add Looper
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-a-looper-to-loop-caregiver" class="md-nav__link">
-    Add a Looper to Loop Caregiver
+  <a href="#loop-caregiver-main-screen" class="md-nav__link">
+    Loop Caregiver&nbsp; Main Screen
   </a>
   
 </li>
@@ -2432,15 +2432,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#loop-caregiver-main-screen" class="md-nav__link">
-    Loop Caregiver&nbsp; Main Screen
+  <a href="#loop-caregiver-add-looper" class="md-nav__link">
+    Loop Caregiver&nbsp; Add Looper
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-a-looper-to-loop-caregiver" class="md-nav__link">
-    Add a Looper to Loop Caregiver
+  <a href="#loop-caregiver-main-screen" class="md-nav__link">
+    Loop Caregiver&nbsp; Main Screen
   </a>
   
 </li>
@@ -2505,7 +2505,7 @@
 </li>
 <li>Read the <a href="../remote-commands/">Remote Commands</a> page and pay special attention to these 2 sections<ul>
 <li><a href="../remote-commands/#faqs-on-remote-overrides">FAQs on Remote Overrides</a></li>
-<li><a href="../remote-commands/#warnings-for-remote-commands">Warnings for Remote Commands</a></li>
+<li><a href="../remote-commands/#warnings-on-remote-commands">Warnings on Remote Commands</a></li>
 </ul>
 </li>
 </ul>
@@ -2524,16 +2524,6 @@
 <p>You can build <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> using the <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span> method or the <a href="#mac-xcode-build"><span translate="no">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</span></a> method.</p>
 <h3 id="github-browser-build"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build:<a class="headerlink" href="#github-browser-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span> method is documented on the <a href="../../gh-actions/gh-other-apps/">Other Apps</a> page.</p>
-<p><strong>Warning:</strong></p>
-<ul>
-<li>The actions for the <code>LoopCaregiver repository</code> might not have the numbering that you see on the <code>LoopWorkspace repository</code></li>
-<li>If the actions don't start with <code>1. Validate Secrets</code>, then you must follow this order:<ul>
-<li><code>Add Identifiers</code></li>
-<li><code>Create Certificates</code></li>
-<li><code>Build LoopCaregiver</code></li>
-</ul>
-</li>
-</ul>
 <h3 id="mac-xcode-build">Mac-<abbr title="program used to build an app">Xcode</abbr> Build:<a class="headerlink" href="#mac-xcode-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>A build script is available to assist in building <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>. This should be straightforward for anyone who has previously built &nbsp;<span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span>&nbsp; using the script.</p>
 <ul>
@@ -2541,7 +2531,7 @@
 <li>Spot the line below that starts with <code>/bin/bash</code></li>
 <li>Click the gray copy button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1Z"/></svg></span>) located near the bottom right side of that line  (should say <code>Copy to Clipboard</code> when you hover the mouse over it).<br />
   Once clicked, a confirmation message that says <code>Copied to Clipboard</code> will appear on your screen.
-    <div class="copy highlight"><span class="filename">Copy and Paste to start the Build<span translate=</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/Build&lt;span<span class="w"> </span><span class="nv">translate</span><span class="o">=</span><span class="s2">&quot;no&quot;</span>&gt;Loop<span class="w"> </span>Caregiver&lt;/span&gt;.sh<span class="k">)</span><span class="s2">&quot;</span>
+    <div class="copy highlight"><span class="filename">Copy and Paste to start the BuildLoopCaregiver script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopCaregiver.sh<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div></li>
 <li>Important: Click anywhere in the terminal before trying to paste</li>
 <li>Paste the line into the <abbr title="interface for entering commands to the computer">Terminal</abbr> window.  <ul>
@@ -2568,23 +2558,12 @@
 </div>
 <h2 id="use-loop-caregiver">Use <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span><a class="headerlink" href="#use-loop-caregiver" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Some limited directions for using the <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> app are provided - please also read the <em>Zulipchat</em> stream to stay up-to-date with improvements - especially if you are using a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span>.</p>
-<h3 id="loop-caregiver-main-screen"><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>&nbsp; Main Screen<a class="headerlink" href="#loop-caregiver-main-screen" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em> uses a lot of features from <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> with some <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>-like features in the Timeline.</p>
-<p>The Timeline:</p>
-<ul>
-<li>Autoscales the vertical display for glucose reported over the last 24 hours (plus the forecast if that is turned on)<ul>
-<li><code>Show Prediction</code> for Timeline is turned off in the graphic below.</li>
-</ul>
-</li>
-<li>Horizontal display can be adjusted using the dropdown hours selector and scrolling left/right.</li>
-<li>A double tap on the Timeline alternates between 1 and 6 hour display</li>
-</ul>
-<p align="center"><img alt="main screen of the &lt;span translate=&quot;no&quot;&gt;Loop Caregiver&lt;/span&gt; app" src="../img/lcg-main.jpg" width="450" /></p>
-<h3 id="add-a-looper-to-loop-caregiver">Add a <em>Looper</em> to <em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em><a class="headerlink" href="#add-a-looper-to-loop-caregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You add each Looper under settings. (<em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em> can monitor more than one Looper).</p>
+<h3 id="loop-caregiver-add-looper"><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>&nbsp; Add Looper<a class="headerlink" href="#loop-caregiver-add-looper" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You must add a Looper to continue with <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> as shown in the graphic below.</p>
+<p align="center"><img alt="add Looper to Loop Caregiver" src="../img/lcg-add-looper.png" width="300" /></p>
 <ul>
 <li>
-<p>On the Looper&#39; phone:</p>
+<p>On the Looper&#39;s phone:</p>
 <ul>
 <li>Tap on <code>Loop -&gt; Settings -&gt; Services -&gt; Nightscout</code></li>
 <li>Tap on the <code>One-Time-Password</code> row to see the <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code  </li>
@@ -2600,21 +2579,33 @@
 </div>
 </li>
 <li>
-<p>On the <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>&#39; phone:</p>
+<p>On the <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>&#39;s phone:</p>
 <ul>
-<li>Tap on <code>&lt;span translate="no"&gt;Loop Caregiver&lt;/span&gt; -&gt; Settings</code></li>
-<li>Tap on the plus sign <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14h-6v6h-4v-6H4v-4h6V4h4v6h6v4Z"/></svg></span> to add a Looper</li>
+<li>Tap on <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> -&gt; <code>Settings</code></li>
 <li>Enter the name of the Looper, the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr> (use <span translate="no"> http<strong>s</strong>://</span>) and <code>API_SECRET</code></li>
 <li>Touch the <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code row - this opens the camera - point the camera at the <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code from Looper's phone</li>
 </ul>
 </li>
 </ul>
-<p>You can also use <span>the <code>&lt;span translate="no"&gt;Loop Caregiver&lt;/span&gt; -&gt; Settings</code> screen</span> to modify:</p>
+<p>You can add additional Looper's under settings. (<em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em> can monitor more than one Looper).</p>
+<h3 id="loop-caregiver-main-screen"><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>&nbsp; Main Screen<a class="headerlink" href="#loop-caregiver-main-screen" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em> uses a lot of features from <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> with some <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>-like features in the Timeline.</p>
+<p>The Timeline:</p>
+<ul>
+<li>Autoscales the vertical display for glucose reported over the last 24 hours (plus the forecast if that is turned on)<ul>
+<li><code>Show Prediction</code> for Timeline is turned off in the graphic below.</li>
+</ul>
+</li>
+<li>Horizontal display can be adjusted using the dropdown hours selector and scrolling left/right.</li>
+<li>A double tap on the Timeline alternates between 1 and 6 hour display</li>
+</ul>
+<p align="center"><img alt="main screen of the &lt;span translate=&quot;no&quot;&gt;Loop Caregiver&lt;/span&gt; app" src="../img/lcg-main.jpg" width="300" /></p>
+<p>You can also use the <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> -&gt; <code>Settings</code> screen to modify:</p>
 <ul>
 <li>Units used for glucose display: <code>mg/dL</code> or <code>mmol/L</code></li>
 <li>Include the &nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em> forecast display on the Timeline chart as well as the Glucose chart of the main display (<code>Show Prediction</code> is turned off in the graphic above)</li>
 </ul>
-<h3 id="issue-remote-commands-with-loop-caregiver"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Remote Commands with &nbsp;<em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em><a class="headerlink" href="#issue-remote-commands-with-loop-caregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="issue-remote-commands-with-loop-caregiver"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Remote Commands with &nbsp;<span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span><a class="headerlink" href="#issue-remote-commands-with-loop-caregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You issue override, carb, and bolus commands using a toolbar similar to the one seen on <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>. In the example graphic above, the carb and bolus entries visible were issued remotely.</p>
 <p>Carb and bolus commands each require authorization before they are accepted. The authorization (<em>FaceID</em>, Fingerprint, or passcode) matches that required to unlock the <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span>&#39;s phone.</p>
 <p>The use of <em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em> makes remote commands much easier and more reliable.</p>
