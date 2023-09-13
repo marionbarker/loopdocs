@@ -2962,8 +2962,7 @@
 </li>
 <li><code>Identifiers</code>: are required to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <code><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Browser Build</code> (these are automatically generated for you)<ul>
 <li>Four Identifier Names must be associated with your <code>App Group</code><ul>
-<li><code>Loop</code>, <code>Loop Intent Extension</code>, <code>Loop Status Extension</code> and <code>Small Status Widget</code></li>
-<li>For dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> only: <code>Small Status Widget</code> was renamed <code>Loop Widget Extension</code></li>
+<li><code>Loop</code>, <code>Loop Intent Extension</code>, <code>Loop Status Extension</code> and <code>Loop Widget Extension</code></li>
 </ul>
 </li>
 <li>Two Identifier Names will exist but do not require that association<ul>
@@ -3031,10 +3030,6 @@
 <p><a href="#collect-the-four-apple-secrets"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#collect-the-four-apple-secrets">Collect the Four <code>Apple Secrets</code></a></p>
 </details>
 <p>You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a> for how the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are used. In addition to the 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, other important information to keep handy (like usernames and passwords) is listed below. Be sure to keep this file secure.</p>
-<p><strong>Created yourself</strong></p>
-<ul>
-<li>a password - make one up and save it (<code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code>)</li>
-</ul>
 <p><strong>Created at developer.apple.com</strong></p>
 <ul>
 <li>Email address (this is your username)</li>
@@ -3058,6 +3053,10 @@
 <li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token (<code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code>)</li>
 </ul>
 </li>
+</ul>
+<p><strong>Created yourself</strong></p>
+<ul>
+<li>a password - make one up and save it (<code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code>)</li>
 </ul>
 <h3 id="collect-the-four-apple-secrets">Collect the Four <code>Apple Secrets</code><a class="headerlink" href="#collect-the-four-apple-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
@@ -3181,14 +3180,10 @@
 </ol>
 <h3 id="copy-api-key-secrets">Copy <code>API Key Secrets</code><a class="headerlink" href="#copy-api-key-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <code>Keys</code> screen appears again with content similar to the graphic below; the key information is blanked out for security.</p>
-<ul>
-<li>
 <p>Review the graphic and then follow the directions below to save more parameters you will need to <a href="#configure-secrets">Configure <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a></p>
 <p align="center"><img alt="App Store Connect Key page" src="../img/api-key-in-process.svg" width="700" /></p>
-</li>
-<li>
-<p>A button labeled Copy is always adjacent to the <code>Issuer ID</code> above the word Active (this is the same for all keys that you generate with this <em>Apple</em> Developer ID)</p>
-<ul>
+<ol>
+<li>A button labeled Copy is always adjacent to the <code>Issuer ID</code> above the word Active (this is the same for all keys that you generate with this <em>Apple</em> Developer ID)<ul>
 <li>Tap on the <code>Copy</code> button - this copies the <code>Issuer ID</code> into your paste buffer</li>
 <li>In the file where you are saving information, paste this with the indication that it is for  <code>FASTLANE_ISSUER_ID</code></li>
 </ul>
@@ -3222,7 +3217,7 @@
 </ul>
 <p><img alt="img/apns-copy-key.png" src="../../nightscout/img/apns-copy-key.png" /></p>
 </li>
-</ul>
+</ol>
 <h3 id="do-not-confuse-your-keys">Do Not Confuse Your Keys<a class="headerlink" href="#do-not-confuse-your-keys" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title"><span class="loop-big"><code>API Key</code></span> vs <span class="loop-big"><code>APN Key</code></span></p>
@@ -3408,9 +3403,8 @@
 <p align="center"><img alt="drop-down-menu" src="../img/gh-quick-access.png" width="200" /></p>
 </li>
 <li>
-<p>You should see (at least) 2 repositories: <code>Match-Secrets</code> and <code>LoopWorkspace</code></p>
+<p>Click on <code>LoopWorkspace</code> to open that <abbr title="contains project files and each file's revision history">repository</abbr></p>
 </li>
-<li>Click on <code>LoopWorkspace</code> to open that <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>
 <p>Click on the Settings Icon near the top right of your LoopWorkspace</p>
 <ul>
@@ -3500,6 +3494,10 @@
 </li>
 </ul>
 <p>The <code>workflows</code> are now displayed on the left side as shown in the graphic below. (Dismiss the <code>Actions Enabled</code> message using the <code>X</code> near the upper right side if it appears).</p>
+<div class="admonition note">
+<p class="admonition-title">To Do</p>
+<p>Update figure with numbered actions</p>
+</div>
 <p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.png" width="700" /></p>
 <h2 id="validate-secrets">Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#validate-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
@@ -3838,7 +3836,7 @@
 <p>Wait a minute or two for the action to finish</p>
 <ul>
 <li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: 3. Create Certificates Errors</a></li>
-<li>Once you've resolved the error, repeat the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and then <code>Create Certificates</code>. (The <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> might not be required but it is fast and should be done as a matter of routine.)</li>
+<li>Once you've resolved the error, repeat the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and then <code>Create Certificates</code>.</li>
 </ul>
 </li>
 </ol>
@@ -3857,11 +3855,6 @@
 </ul>
 </li>
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps">App Store Connect</a>.</li>
-<li>For each phone/person you would like to support <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on:<ul>
-<li>Add them in <a href="https://appstoreconnect.apple.com/access/users">Users and Access</a> on App Store Connect.</li>
-<li>Add them to your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Internal Testing group.</li>
-</ul>
-</li>
 </ol>
 <p><a href="#set-up-users-and-access-testflight"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#set-up-users-and-access-testflight">Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)</a>.</p>
 </details>
@@ -3900,6 +3893,16 @@
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps"><code>App Store Connect</code></a>.</li>
 </ol>
 <h2 id="set-up-users-and-access-testflight">Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)<a class="headerlink" href="#set-up-users-and-access-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
+<details class="abstract">
+<summary>Section Summary (click to open/close)</summary>
+<p>For each Apple ID (person) who needs access to your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> builds:</p>
+<ul>
+<li>Add them in <a href="https://appstoreconnect.apple.com/access/users">Users and Access</a> on App Store Connect</li>
+<li>Add them to your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Internal Testing group for the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app</li>
+<li>Note Apple ID is the email associated with the person; it is not the same as your developer ID email</li>
+</ul>
+<p><a href="../gh-deploy/"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="../gh-deploy/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Deploy</a>.</p>
+</details>
 <p>Once the first build completes, you will be able to configure <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for the app.</p>
 <p>You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the <em>Apple ID</em> email address for each adult installing from your build. When building for a child, you will use your own <em>Apple ID</em>, not theirs. See <a href="../gh-deploy/#install-testflight-loop-for-child">Install <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for Child</a>.</p>
 <ol>
@@ -3981,6 +3984,7 @@
 <li>Note - this graphic indicates where on this page you can find your <code>TEAMID</code><ul>
 <li>If you notice an identifier with a value embedded in it that does not have your <code>TEAMID</code>, then delete it if you can and <a href="../gh-update/#update-secrets">Update <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a> with your correct <code>TEAMID</code></li>
 <li>If you try to delete a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier that does not have your <code>TEAMID</code>, but you already added to the <em>App Store</em>, it will refuse, don't worry, just keep going</li>
+<li>Delete all the other identifiers first that have the same incorrect <code>TEAMID</code> and then try to delete the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier with the incorrect <code>TEAMID</code></li>
 </ul>
 </li>
 </ul>
