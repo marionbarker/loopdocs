@@ -2582,9 +2582,11 @@
 <h2 id="update-loop-using-github-actions">Update <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> using <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></span><a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="info">
 <summary>Time Estimate (click to open/close)</summary>
-<p>Build <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></p>
 <ul>
-<li>Start the Build: 5 minutes</li>
+<li>Update your configuration for automatic builds: 10 minutes</li>
+<li>Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr>: 5 minutes</li>
+<li>Follow the extra instructions to get <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> ready to build: 10 minutes</li>
+<li>Start the Build process: 30 seconds</li>
 <li>Wait for build to complete and appear in <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> on your phone<ul>
 <li>about an hour</li>
 <li>depends on <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span>, <span translate="no">Apple</span> and <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span></li>
@@ -2661,7 +2663,7 @@
 <p>Yes: please follow instructions at <a href="#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a></p>
 </div>
 <h3 id="build-loop">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is already up at 3.4, all that is required is to run the action: Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for your <abbr title="a copy of code in a github repository other than the original">fork</abbr> and skip ahead to <a href="#wait-for-testflight">Wait for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a>.</p>
+<p>If you have successfully built <abbr title="Latest release with major updates">Loop 3</abbr>.4 with automatic build configuration enabled and later decide to manually build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, all that is required is to run the action: Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for your <abbr title="a copy of code in a github repository other than the original">fork</abbr> and skip ahead to <a href="#wait-for-testflight">Wait for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a>.</p>
 <h4 id="updating-from-32x-to-34">Updating from 3.2.x to 3.4<a class="headerlink" href="#updating-from-32x-to-34" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future.</p>
 <h4 id="add-and-update-new-identifier">Add and Update New Identifier<a class="headerlink" href="#add-and-update-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -2715,11 +2717,6 @@
 </li>
 <li>You will also see a build number in parentheses, that number increments each build - don't worry about the number</li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Calendar Reminder</p>
-<p>This is a good time to put a calendar reminder in your favorite app.</p>
-<p>Set it up for a few days before the <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> app will expire.</p>
-</div>
 <h3 id="install-or-confirm-installation">Install or Confirm Installation<a class="headerlink" href="#install-or-confirm-installation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h4 id="automatic-update-disabled">Automatic Update Disabled<a class="headerlink" href="#automatic-update-disabled" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Option 1: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> disabled for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you choose when to install the app on the phone.</p>
@@ -2735,6 +2732,10 @@
 <li>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above, the message will say <code>Open</code> instead of <code>Install</code></li>
 </ul>
 <h2 id="github-build-details"><span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span> Build Details<a class="headerlink" href="#github-build-details" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">To Do</p>
+<p>Update this section know the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> information is displayed on Settings screen.</p>
+</div>
 <p>In the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, once installed on your phone, tap on <code>Settings -&gt; Support -&gt; Issue Report</code>. The graphic below shows an example of the Build Details included in the report.</p>
 <ul>
 <li>The <code>profileExpiration</code> listed here is irrelevant - the app expires when the <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> expiration indicates<ul>
@@ -2755,12 +2756,10 @@
 <li><code>repo, workflow</code> permission scope</li>
 </ul>
 <p>If your token has expired or will expire, the next section helps you to set up a new token and update your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>.</p>
-<p>If you are not sure about the status of your token, go to 
- has not expired and you don't want to regenerate it, you don't need this section.</p>
-<p>If you want to follow the new recommendation of using a <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token</span> that never expires, you can regenerate the new one at any time.</p>
-<div class="admonition tip">
-<p class="admonition-title">Update new <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> to <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></p>
-<p>After you get your new token, immediately add it to your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for each <abbr title="contains project files and each file's revision history">repository</abbr> to make sure you did not make a mistake.</p>
+<p>If you are not sure about the status of your token, go to </p>
+<div class="admonition note">
+<p class="admonition-title">To Do</p>
+<p>Revise this section for how-to review and update (not regenerate)</p>
 </div>
 <h3 id="regenerate-github-token">Regenerate <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</span><a class="headerlink" href="#regenerate-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You can regenerate your <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token</span> at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)</p>
@@ -2790,8 +2789,16 @@
 <p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-no-expiration.svg" width="600" /></p>
 <p>The next screen shows your new token. Copy the token using the copy icon and save it along with your other secret settings.</p>
 <p align="center"><img alt="copy fastlane access token on github" src="../img/gh-token-to-copy.png" width="600" /></p>
-<p>The next step is to update <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in your LoopWorkspace Repository <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. (If you build other apps with this method - update the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> for all of them right now - do not forget.)</p>
+<p>The next step is to update <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in your LoopWorkspace Repository <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Update new <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> to <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></p>
+<p>After you get your new token, immediately add it to your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for each <abbr title="contains project files and each file's revision history">repository</abbr> to make sure you did not make a mistake.</p>
+</div>
 <h3 id="update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#update-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">To Do</p>
+<p>Update graphics to use a browser rather than a phone.</p>
+</div>
 <p>This example is for updating <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for your <abbr title="contains project files and each file's revision history">repository</abbr>, but the same method can be applied when changing any Secret.</p>
 <p>This can be done with the <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token</span> still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just <a href="#regenerate-github-token">Regenerate <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</span></a> again.</p>
 <p>The graphics and instructions in this section are using a phone. This was done just to prove we weren't kidding when we said you can do it all on your phone. Most people use a computer browser.</p>
@@ -2805,6 +2812,10 @@
 <p align="center"><img alt="update secret dialog" src="../img/update-secret-dialog.png" width="300" /></p>
 <p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a> instructions to start a new build.</p>
 <h2 id="github-build-for-dev"><span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span> Build for dev<a class="headerlink" href="#github-build-for-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">To Do</p>
+<p>Update this section for dev 3.5.0 following 3.4 release.</p>
+</div>
 <p>You can build any desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> (available at LoopKit/LoopWorkspace) using the <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span> Browser build method. This section is suitable if you have already built either dev or main <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a> instructions.</p>
 <p><strong>No matter the method used to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> other than main, you are testing development code. Please read this link now before continuing.</strong></p>
 <ul>
@@ -2823,59 +2834,7 @@
 </ol>
 </div>
 <h3 id="one-time-changes">One-Time Changes<a class="headerlink" href="#one-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Look in this section for one-time changes to the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> that require special, one-time actions. These are in reverse chronological order to make the most recent one easier to find.</p>
-<p><strong>26-July-2023</strong></p>
-<p>The <code>bundle ID</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>".</p>
-<p>The table in LoopDocs (for main) will be updated after the next release.</p>
-<p>For those using dev, you must follow these one-time steps:</p>
-<ol>
-<li>Sync your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to latest version of dev</li>
-<li>Run the Action for Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> (this adds "<code>LoopWidgetExtension</code>" to identifiers)<ul>
-<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
-<li>Click on the "<code>LoopWidgetExtension</code>" identifier</li>
-<li>Edit the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
-</ul>
-</li>
-<li>Run the Action for Create Certificates</li>
-<li>Run the Action for Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
-</ol>
-<p><strong>03-July-2023</strong></p>
-<ol>
-<li>Libre support was added to dev (03 July 2023) using the LibreTransmitter code<ul>
-<li>This requires (one-time) that the <code>Actions</code> for <code>2. Add Identifiers</code> and <code>3. Create Certificates</code> be run before attempting <code>4. Build Loop</code></li>
-<li>The LibreTransmitter code requires <code>Near Field Communication</code> and doing these steps automatically adds the required capability</li>
-</ul>
-</li>
-<li>Automatic update and automatic monthly build was added to dev (13 July 2023)<ul>
-<li>Once a month, <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span> will attempt to update and build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> from your <code>default branch</code> using the instructions in the <code>Action: 4. Build Loop</code> (<code>build_loop.yml</code> file) and send the new app to <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span></li>
-<li>As part of this monthly build, <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span> will check to see if updates are required for your <code>default branch</code></li>
-<li>When updates are not required, it just builds the app</li>
-<li>When updates are required:<ul>
-<li>If it can figure out how to do the <code>sync</code> automatically, it does so</li>
-<li>If it cannot figure out how to do the <code>sync</code> automatically, the <code>Action</code> to <code>4. Build Loop</code> will fail and you will need to take manual steps</li>
-</ul>
-</li>
-<li>You will get an email that the <code>Build</code> either succeeded or failed</li>
-</ul>
-</li>
-</ol>
-<div class="admonition info">
-<p class="admonition-title">Automatic Update Requirements</p>
-<p>To enable the automatic update and rebuild, two steps are required. These are one-time steps.</p>
-<ul>
-<li>The <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> must be updated (not regenerated) to add <code>workflow</code><ul>
-<li>Examine your <a href="https://github.com/settings/tokens"><code>FastLane Access Token</code></a></li>
-<li>If it says <code>repo, workflow</code>, then no further action is needed for your <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></li>
-<li>If it say <code>repo</code> only, then click on the <code>FastLane Access Token</code> link, click to add a check to the <code>workflow</code> box and scroll all the way down to select the green <code>Update token</code> button</li>
-</ul>
-</li>
-<li>A new <abbr title="version of code within a single repository or workspace repository">branch</abbr> called <code>alive</code> must be created from the LoopKit <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
-<li>Follow the directions at <a href="#add-branch">Add Branch</a>, except this time, you will type <code>alive</code> in the empty <abbr title="version of code within a single repository or workspace repository">branch</abbr> name that you connect to <code>LoopKit/LoopWorkspace</code> <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>You will not use the <code>alive</code> for anything directly, but it must exist for the automatic update to function</li>
-</ul>
-</li>
-</ul>
-</div>
+<p>Look in this section for one-time changes to the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> that require special, one-time actions. At the current time, this section is blank.</p>
 <h3 id="check-current-branches">Check Current Branches<a class="headerlink" href="#check-current-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> is at <code>https://github.com/username/LoopWorkspace</code> where you substitute your actual <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span> <code>username</code>. You need to be logged into <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span>. Review the graphic below as you go through the steps.</p>
 <ol>
