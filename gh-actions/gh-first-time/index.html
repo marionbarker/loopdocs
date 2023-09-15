@@ -689,6 +689,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#automatic-build-of-loop" class="md-nav__link">
+    Automatic Build of Loop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tips-and-tricks" class="md-nav__link">
     Tips and Tricks
   </a>
@@ -2557,6 +2564,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#automatic-build-of-loop" class="md-nav__link">
+    Automatic Build of Loop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tips-and-tricks" class="md-nav__link">
     Tips and Tricks
   </a>
@@ -2909,6 +2923,18 @@
 <li><strong>Can I still use my customizations?</strong> Yes. <a href="../gh-customize/">Customize with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a></li>
 </ul>
 </details>
+<h2 id="automatic-build-of-loop">Automatic Build of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#automatic-build-of-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>When you follow the directions on this page, for <abbr title="Latest release with major updates">Loop 3</abbr>.4 and later, you configure your app to automatically build at least once a month. You also configure your app to be updated within one week of a new release, in other words, when the LoopKit/LoopWorkspace main <abbr title="version of code within a single repository or workspace repository">branch</abbr> is updated.</p>
+<ul>
+<li>What if I want to turn off automatic building?<ul>
+<li><a href="../gh-update/#stop-building">Stop Building</a></li>
+</ul>
+</li>
+<li>What if I want the development version and I want to adjust when it updates and/or builds?<ul>
+<li>Review <a href="../gh-update/#modify-automatic-building">Modify Automatic Building</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="tips-and-tricks">Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This page contains fully detailed steps including graphics, which makes it incredibly long.</p>
 <p>Some sections have a Section Summary:</p>
@@ -3275,7 +3301,10 @@
 <ul>
 <li>Enter a name for your token, use "<code>FastLane Access Token</code>"</li>
 <li>Change the Expiration selection to <code>No expiration</code></li>
-<li>Select the <code>workflow</code> <code>permission scope</code> (<code>repo</code> will be automatically selected)</li>
+<li>Select the <code>workflow</code> <code>permission scope</code> (<code>repo</code> will be automatically selected)<ul>
+<li>This step enables automatic building</li>
+</ul>
+</li>
 <li>Click "Generate token"</li>
 <li>Copy the token and record it. It will be used below as <code>GH_PAT</code></li>
 </ul>
@@ -3306,6 +3335,13 @@
 <li>Scroll all the way to the bottom and click <code>Generate token</code> (it's a long way, ignore all other settings, do not check anything else)</li>
 </ul>
 <p align="center"><img alt="request a new personal access token" src="../img/gh-access-token.svg" width="700" /></p>
+<div class="admonition tip">
+<p class="admonition-title">What does <code>repo</code> and  <code>workflow</code> do?</p>
+<ul>
+<li><code>repo</code>: enables manual build actions</li>
+<li><code>workflow</code>: enables <code>repo</code> and automatic build actions</li>
+</ul>
+</div>
 </li>
 <li>
 <p>A new screen appears showing your access token</p>

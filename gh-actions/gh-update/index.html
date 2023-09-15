@@ -853,6 +853,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modify-automatic-building" class="md-nav__link">
+    Modify Automatic Building
+  </a>
+  
+    <nav class="md-nav" aria-label="Modify Automatic Building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modify-automatic-schedule" class="md-nav__link">
+    Modify Automatic Schedule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-configure-a-variable" class="md-nav__link">
+    How to configure a variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-automatic-actions" class="md-nav__link">
+    Disable Automatic Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-building" class="md-nav__link">
+    Stop Building
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2562,6 +2603,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modify-automatic-building" class="md-nav__link">
+    Modify Automatic Building
+  </a>
+  
+    <nav class="md-nav" aria-label="Modify Automatic Building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modify-automatic-schedule" class="md-nav__link">
+    Modify Automatic Schedule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-configure-a-variable" class="md-nav__link">
+    How to configure a variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-automatic-actions" class="md-nav__link">
+    Disable Automatic Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-building" class="md-nav__link">
+    Stop Building
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2718,14 +2800,14 @@
 <li>You will also see a build number in parentheses, that number increments each build - don't worry about the number</li>
 </ul>
 <h3 id="install-or-confirm-installation">Install or Confirm Installation<a class="headerlink" href="#install-or-confirm-installation" title="Anchor link to this Header on this Page">&para;</a></h3>
-<h4 id="automatic-update-disabled">Automatic Update Disabled<a class="headerlink" href="#automatic-update-disabled" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="testflight-automatic-update-disabled"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Update Disabled<a class="headerlink" href="#testflight-automatic-update-disabled" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Option 1: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> disabled for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you choose when to install the app on the phone.</p>
 <ul>
 <li>Open <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> on your phone and click <code>Install</code> as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
 <li>If you are building for a child, follow the <a href="../gh-deploy/#install-testflight-loop-for-child">Install <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for Child</a> instructions again</li>
 </ul>
 <p align="center"><img alt="install Loop from &lt;span translate=&quot;no&quot;&gt;TestFlight&lt;/span&gt;" src="../img/testflight-install-loop.gif" width="300" /></p>
-<h4 id="automatic-update-enabled">Automatic Update Enabled<a class="headerlink" href="#automatic-update-enabled" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="testflight-automatic-update-enabled"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Update Enabled<a class="headerlink" href="#testflight-automatic-update-enabled" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Option 2: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> enabled for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, the updated build will be installed over your existing app.</p>
 <ul>
 <li>In this case, when you look at the <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> app on your phone, the app should have installed automatically</li>
@@ -2911,6 +2993,127 @@
 </li>
 </ol>
 <p>Your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> has been changed.</p>
+<h2 id="modify-automatic-building">Modify Automatic Building<a class="headerlink" href="#modify-automatic-building" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>For someone using <a href="#github-build-for-dev">development code</a> for their own use, they probably want to decide when to update their <abbr title="a copy of code in a github repository other than the original">fork</abbr> to the most recent <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. They can still have the advantage of automatic building without automatic updates. There may be other configurations someone would choose. These options are added to <abbr title="Latest release with major updates">Loop 3</abbr>.3.0 and later.</p>
+<p>You can affect the default behavior:</p>
+<ol>
+<li><a href="#modify-automatic-schedule">Modify Automatic Schedule</a></li>
+<li><a href="#disable-automatic-actions">Disable Automatic <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a></li>
+</ol>
+<h3 id="modify-automatic-schedule">Modify Automatic Schedule<a class="headerlink" href="#modify-automatic-schedule" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You can modify the automation by creating and using some variables.</p>
+<p>To configure the automated build more granularly involves creating up to two environment variables: <code>SCHEDULED_BUILD</code> and/or <code>SCHEDULED_SYNC</code>. See <a href="#how-to-configure-a-variable">How to configure a variable</a>. </p>
+<p>Note that the weekly and monthly Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> actions will continue, but the actions are modified if one or more of these variables is set to false. <strong>A successful Action Log will still appear, even if no automatic activity happens</strong>.</p>
+<ul>
+<li>If you want to manually decide when to update your <abbr title="contains project files and each file's revision history">repository</abbr> to the latest <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>, but you want the monthly builds and keep-alive to continue: set <code>SCHEDULED_SYNC</code> to false and either do not create <code>SCHEDULED_BUILD</code> or set it to true</li>
+<li>If you want to only build when an update has been found: set <code>SCHEDULED_BUILD</code> to false and either do not create <code>SCHEDULED_SYNC</code> or set it to true<ul>
+<li><strong>Warning</strong>: if no updates to your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> are detected within 90 days, your previous <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> build may expire requiring a manual build</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><code>SCHEDULED _SYNC</code></th>
+<th><code>SCHEDULED _BUILD</code></th>
+<th>Automatic <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>true</code> (or NA)</td>
+<td><code>true</code> (or NA)</td>
+<td>keep-alive, weekly update check (auto update/build), monthly build with auto update</td>
+</tr>
+<tr>
+<td><code>true</code> (or NA)</td>
+<td><code>false</code></td>
+<td>keep-alive, weekly update check with auto update, only builds if update detected</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td><code>true</code> (or NA)</td>
+<td>keep-alive, monthly build, no auto update</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td>no automatic activity, no keep-alive</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-configure-a-variable">How to configure a variable<a class="headerlink" href="#how-to-configure-a-variable" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ol>
+<li>Go to the "Settings" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
+<li>Click on <code>Secrets and Variables</code>.</li>
+<li>Click on <code>Actions</code></li>
+<li>You will now see a page titled <em><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> secrets and variables</em>. Click on the <code>Variables</code> tab</li>
+<li>To disable ONLY scheduled building, do the following:<ul>
+<li>Click on the green <code>New repository variable</code> button (upper right)</li>
+<li>Type <code>SCHEDULED_BUILD</code> in the "Name" field</li>
+<li>Type <code>false</code> in the "Value" field</li>
+<li>Click the green <code>Add variable</code> button to save.</li>
+</ul>
+</li>
+<li>To disable scheduled syncing, add a variable:<ul>
+<li>Click on the green <code>New repository variable</code> button (upper right)</li>
+<li>
+<ul>
+<li>Type <code>SCHEDULED_SYNC</code> in the "Name" field</li>
+</ul>
+</li>
+<li>Type <code>false</code> in the "Value" field</li>
+<li>Click the green <code>Add variable</code> button to save</li>
+</ul>
+</li>
+</ol>
+<p>Your build will run on the following conditions:</p>
+<ul>
+<li>Default behaviour:<ul>
+<li>Run weekly, every Wednesday at 08:00 <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr> to check for changes; if there are changes, it will update your <abbr title="contains project files and each file's revision history">repository</abbr> and build</li>
+<li>Run monthly, every first of the month at 06:00 <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr>, if there are changes, it will update your <abbr title="contains project files and each file's revision history">repository</abbr>; regardless of changes, it will build</li>
+<li>Each time the action runs, it makes a keep-alive <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to the <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> if necessary</li>
+</ul>
+</li>
+<li>If you disable any automation (both variables set to <code>false</code>), no updates, keep-alive or building happens when Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> runs</li>
+<li>If you disabled just scheduled synchronization (<code>SCHEDULED_SYNC</code> set to<code>false</code>), it will only run once a month, on the first of the month, no update will happen; keep-alive will run</li>
+<li>If you disabled just scheduled build (<code>SCHEDULED_BUILD</code> set to<code>false</code>), it will run once weekly, every Wednesday, to check for changes; if there are changes, it will update and build; keep-alive will run</li>
+</ul>
+<h3 id="disable-automatic-actions">Disable Automatic <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#disable-automatic-actions" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>To enable the scheduled build and sync, the <code>GH_PAT</code> must hold the <code>workflow</code> permission scopes. This permission serves as the enabler for automatic and scheduled builds with browser build. To disable this, follow these steps:</p>
+<ol>
+<li>Go to your <a href="https://github.com/settings/tokens">FastLane Access Token</a></li>
+<li>If it says <code>repo</code>, <code>workflow</code> next to the <code>FastLane Access Token</code> link, then automatic building is enabled</li>
+<li>To disable automatic update and build, click on the link to open the token detail view<ul>
+<li>Click to uncheck the <code>workflow</code> box</li>
+<li>Click to check the <code>repo</code> box</li>
+</ul>
+</li>
+<li>Scroll all the way down to and click the green <code>Update token</code> button</li>
+<li>Your token now holds only the <code>repo</code> permission</li>
+</ol>
+<p>If you choose not to have automatic building enabled, be sure the <code>GH_PAT</code> has <code>repo</code> scope or you won't be able to manually build.</p>
+<h2 id="stop-building">Stop Building<a class="headerlink" href="#stop-building" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>What if I decide I don't want the automatic building feature?</p>
+<ul>
+<li>
+<p>If you are using the released version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, please leave automatic building running</p>
+<ul>
+<li>Please read <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> on how to configure <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> so you choose when the updated app gets installed on your phone</li>
+<li>Otherwise, you may see the dreaded "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Beta has expired" message, have a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> that won't open and not have a version ready to go in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> that you can install within a few seconds</li>
+</ul>
+</li>
+<li>
+<p>If you are taking a break from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and want to stop monthly Build emails, consider disabling actions for the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> action for your app.</p>
+<ul>
+<li><a href="https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Directions to Disable and Enable a Workflow</a></li>
+<li>It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient</li>
+</ul>
+</li>
+<li>
+<p>If you are done with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you can delete the whole <abbr title="contains project files and each file's revision history">repository</abbr>; but you should be sure about this because you'll need to start over with <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First Time</a> to restore ability to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
+</li>
+</ul>
 
 
 
