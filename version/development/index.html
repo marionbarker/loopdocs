@@ -19,7 +19,7 @@
     
     
       
-        <title>Loop Development - LoopDocs</title>
+        <title>Loop Development - LoopDocs (DRAFT for 3.4)</title>
       
     
     
@@ -91,7 +91,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-header__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LoopDocs
+            LoopDocs (DRAFT for 3.4)
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +385,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-nav__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
     </a>
-    LoopDocs
+    LoopDocs (DRAFT for 3.4)
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -2638,7 +2638,7 @@
 <p align="center"><img alt="use long press example for pump" src="../img/long-press-to-adjust-simulator.jpg" width="500" /></p>
 <h3 id="algorithm-experiments">Algorithm Experiments<a class="headerlink" href="#algorithm-experiments" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Two algorithm experiments have been added to dev. These are <span translate="no">Glucose Based Partial Application</span> and <span translate="no">Integral Retrospective Correction</span>. They can be viewed on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen just below <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> and Usage Data Sharing as shown in the graphic below:</p>
-<p align="center"><img alt="algorithm experiments" src="../img/algorithm-experiments.svg" width="650" /></p>
+<p align="center"><img alt="algorithm experiments" src="../../loop-3/img/algorithm-experiments.svg" width="650" /></p>
 <h3 id="glucose-based-partial-application-gbpa"><span translate="no">Glucose Based Partial Application</span> (<code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code>):<a class="headerlink" href="#glucose-based-partial-application-gbpa" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Originally proposed as <a href="https://github.com/LoopKit/Loop/pull/1988"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 1988</a></li>
@@ -2810,7 +2810,7 @@
 <div class="arithmatex">\[ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[t] \]</div>
 <p>Note that the Momemtum term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).</p>
 <p>The Retrospective Correction section of the <a href="../../loop-3/displays-v3/#predicted-glucose-chart">Predicted <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr></a> is updated when <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> is enabled, as shown in the graphic below. The <code>Integral effect</code>, inside lower blue rectangle, is the difference between the <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> and <code><abbr title="Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions">RC</abbr></code> calculations.</p>
-<p align="center"><img alt="predicted glucose retrospective section with irc disabled and enabled" src="../img/glucose-details-irc.svg" width="400" /></p>
+<p align="center"><img alt="predicted glucose retrospective section with irc disabled and enabled" src="../../loop-3/img/glucose-details-irc.svg" width="400" /></p>
 <p>The <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> term is described in this (updated) <a href="https://github.com/LoopKit/Loop/issues/695#issue-310265141">comment</a> including plots and equations. Some of the information in that comment is repeated below: <a href="#important-points-about-irc">Important points about <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code></a>.</p>
 <p>If you want to look at the code, the version (as of 14-Aug-2023) is found in LoopKit/LoopKit:</p>
 <ul>
@@ -2857,14 +2857,14 @@
 <h3 id="favorite-foods">Favorite Foods<a class="headerlink" href="#favorite-foods" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This feature allows you to save Favorite Foods.</p>
 <p>A new row on the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app Settings screen, see graphic below, provides access to create and edit your <span translate="no">Favorite Foods</span>.</p>
-<p align="center"><img alt="favorite foods feature" src="../img/favorite-foods.svg" width="300" /></p>
+<p align="center"><img alt="favorite foods feature" src="../../loop-3/img/favorite-foods.svg" width="300" /></p>
 <p>In the example meal entry shown below:</p>
 <ol>
 <li>The Favorite Food row (at the bottom) is tapped</li>
 <li>The desired Favorite Food is selected</li>
 </ol>
 <p>At this point the meal can be saved by tapping the Continue button, or the user can modify the time (typical) or any other of the carb entry rows before tapping Continue.</p>
-<p align="center"><img alt="carb entry with favorite foods feature" src="../img/favorite-foods-carb-entry.svg" width="500" /></p>
+<p align="center"><img alt="carb entry with favorite foods feature" src="../../loop-3/img/favorite-foods-carb-entry.svg" width="500" /></p>
 <h3 id="testflight-expiration-warning"><span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> Expiration Warning<a class="headerlink" href="#testflight-expiration-warning" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app has been updated to detect whether the build was uploaded through <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span>, which implies a 90-day limit until the app expires.</p>
 <p>The usual <a href="../../operation/features/notifications/#loop-app-expiration-notification"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> expiration notification system</a> alerts the user when within 20 days of expiration. In addition to that <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.</p>
