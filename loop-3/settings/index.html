@@ -1039,6 +1039,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#temp-basal-only" class="md-nav__link">
+    Temp Basal Only
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#automatic-bolus" class="md-nav__link">
     Automatic Bolus
   </a>
@@ -2480,6 +2487,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#temp-basal-only" class="md-nav__link">
+    Temp Basal Only
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#automatic-bolus" class="md-nav__link">
     Automatic Bolus
   </a>
@@ -2660,7 +2674,9 @@
 </ul>
 <p>If you find this confusing, read how to <a href="https://loopkit.github.io/looptips/how-to/think-like-loop/">Think Like a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a> on the LoopTips website.</p>
 <h2 id="dosing-strategy"><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><a class="headerlink" href="#dosing-strategy" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This row gives you the ability to select <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>. The <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> only affects the method by which the recommended bolus - if any - is delivered. The current selection is noted underneath the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> label. The default (initial) value for this setting is <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>. Tap on the arrow to the right to modify your selection.</p>
+<p>This row gives you the ability to select <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>. The <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> only affects the method by which the recommended bolus - if any - is delivered. The current selection is noted underneath the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> label.</p>
+<h3 id="temp-basal-only"><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr><a class="headerlink" href="#temp-basal-only" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The default (initial) value for this setting is <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>. Tap on the arrow to the right to modify your selection.</p>
 <p align="center"><img alt="Dosing Strategy selection screen" src="../img/loop-3-setting-dosing-strategy.svg" width="500" /></p>
 <div class="admonition quote">
 <p class="admonition-title">Words in Graphic</p>
@@ -2675,6 +2691,7 @@
 <h3 id="automatic-bolus"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr><a class="headerlink" href="#automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>When you first start <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, we encourage you to leave <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> set to <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr> until you are sure your settings are dialed in.</p>
 <p>The <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> selection causes <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to provide 40% of the recommended dose as a bolus at the beginning of each <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle (when a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading comes in). This is a faster method of getting the recommended insulin delivered. When <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> delivers extra insulin, the scheduled basal rate continues unchanged.</p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>.4.0 and later versions, you have the option of using <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> with <a href="../features/#glucose-based-partial-application-gbpa">Glucose Based Partial Application (<abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr>)</a>. This feature is reached through the <a href="#algorithm-experiments">Algorithm Experiments</a> row of the Settings screen. It modifies the percentage of the recommended dose that is supplied with each <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle. Instead of being a fixed 40%, it changes from 20% when glucose is near your selected <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> and gradually increases to 80% when glucose reaches 200 mg/dL (11.1 mmol/L).</p>
 <p>As with all <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> versions, you can manually bolus at any time by pressing the Bolus icon in the center of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s Main Screen.  Any bolus recommendation that you see when you press the Bolus icon will be 100% of the Recommended Bolus.</p>
 <h2 id="alert-management">Alert Management<a class="headerlink" href="#alert-management" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This row enables the user to modify Alert Permissions and to enable Missed Meal Notifications.</p>
@@ -2757,7 +2774,7 @@
 <p>The information about the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is found on the <a href="../add-cgm/">Add or Modify <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a> page.</p>
 <h2 id="favorite-foods">Favorite Foods<a class="headerlink" href="#favorite-foods" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="../features/#favorite-foods">Favorite Foods</a>, new with <abbr title="Latest release with major updates">Loop 3</abbr>.4, can simplify meal entry if you choose to use it. You can create a Favorite Food here or on the Carb Entry screen. </p>
-<p>Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and choosing one of those icons. The standard Lollipop, Taco, Pizza icons are not sufficient to enable the Save as Favorite button.</p>
+<p>Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and then choosing a food emoji. The standard Lollipop, Taco, Pizza icons selected from the top level are not sufficient to enable the Save as Favorite button.</p>
 <h2 id="services">Services<a class="headerlink" href="#services" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The Services section allows additions of other services such <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, Tidepool, Loggly and Amplitude.</p>
 <p>Please refer to the <a href="../services/">Optional: Service</a> page.</p>

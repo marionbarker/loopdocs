@@ -1132,14 +1132,14 @@
         
           <li class="md-nav__item">
   <a href="#glucose-based-partial-application-gbpa" class="md-nav__link">
-    Glucose Based Partial Application (GBPA):
+    Glucose Based Partial Application (GBPA)
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#integral-retrospective-correction-irc" class="md-nav__link">
-    Integral Retrospective Correction (IRC):
+    Integral Retrospective Correction (IRC)
   </a>
   
 </li>
@@ -2421,14 +2421,14 @@
         
           <li class="md-nav__item">
   <a href="#glucose-based-partial-application-gbpa" class="md-nav__link">
-    Glucose Based Partial Application (GBPA):
+    Glucose Based Partial Application (GBPA)
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#integral-retrospective-correction-irc" class="md-nav__link">
-    Integral Retrospective Correction (IRC):
+    Integral Retrospective Correction (IRC)
   </a>
   
 </li>
@@ -2534,14 +2534,19 @@
 <li><a href="../../nightscout/remote-errors/">Remote Errors</a></li>
 <li><a href="../../nightscout/loop-caregiver/"><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> App</a></li>
 </ul>
-<h2 id="new-with-loop-340">New with <abbr title="Latest release with major updates">Loop 3</abbr>.4.0<a class="headerlink" href="#new-with-loop-340" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="new-with-loop-340"><strong>New with <abbr title="Latest release with major updates">Loop 3</abbr>.4.0</strong><a class="headerlink" href="#new-with-loop-340" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h2 id="algorithm-experiments">Algorithm Experiments<a class="headerlink" href="#algorithm-experiments" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Two algorithm experiments have been added to dev. These are <span translate="no">Glucose Based Partial Application</span> and <span translate="no">Integral Retrospective Correction</span>. They can be viewed on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen just below <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> and Usage Data Sharing as shown in the graphic below:</p>
 <p align="center"><img alt="algorithm experiments" src="../img/algorithm-experiments.svg" width="650" /></p>
-<h3 id="glucose-based-partial-application-gbpa"><span translate="no">Glucose Based Partial Application</span> (<code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code>):<a class="headerlink" href="#glucose-based-partial-application-gbpa" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="glucose-based-partial-application-gbpa"><span translate="no">Glucose Based Partial Application</span> (<code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code>)<a class="headerlink" href="#glucose-based-partial-application-gbpa" title="Anchor link to this Header on this Page">&para;</a></h3>
+<details class="abstract">
+<summary>Do you want to know more? (Click to open/close)</summary>
 <ul>
 <li>Originally proposed as <a href="https://github.com/LoopKit/Loop/pull/1988"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 1988</a></li>
-<li>It is only used when <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> (AB) is selected for <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code></li>
+</ul>
+</details>
+<p><span translate="no">Glucose Based Partial Application</span> is only used when <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> (AB) is selected for <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code></p>
+<ul>
 <li>This modification <strong>does not affect the recommended dose</strong>, only how quickly the recommended dose is automatically delivered</li>
 </ul>
 <p>When AB is selected and <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> is enabled, the percentage of the recommended dose delivered per <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> enabled, AB uses a fixed 40% percentage regardless of glucose level.)</p>
@@ -2684,7 +2689,9 @@
 </table>
 <p>The 20% and 40% application factor columns did not reach 1 U in 30 minutes because the requested dose is smaller than this pump will deliver. The 60% application factor only reached 1 U because tiny doses down to 0.03 U were rounded up to 0.05 U.</p>
 <p>The <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code> <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the <strong>rate</strong> requested, acheiving the full 1 U (<strong>for this example</strong>).</p>
-<h3 id="integral-retrospective-correction-irc"><span translate="no">Integral Retrospective Correction</span> (<code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code>):<a class="headerlink" href="#integral-retrospective-correction-irc" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="integral-retrospective-correction-irc"><span translate="no">Integral Retrospective Correction</span> (<code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code>)<a class="headerlink" href="#integral-retrospective-correction-irc" title="Anchor link to this Header on this Page">&para;</a></h3>
+<details class="abstract">
+<summary>Do you want to know more? (Click to open/close)</summary>
 <ul>
 <li>Originally proposed in <a href="https://github.com/LoopKit/Loop/issues/695"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 695</a><ul>
 <li>This was tested in a few forks but not included into dev until recently</li>
@@ -2692,11 +2699,18 @@
 </ul>
 </li>
 <li>Updated with a modification to limit stacking of <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> with Glucose Momentum: <a href="https://github.com/LoopKit/Loop/pull/2028"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2028</a></li>
-<li><span translate="no">Integral Retrospective Correction</span>, when enabled:<ul>
+</ul>
+<p>The <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> term is described in this (updated) <a href="https://github.com/LoopKit/Loop/issues/695#issue-310265141">comment</a> in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 695 which  includes plots and equations. Some of the information in that comment is repeated below: <a href="#important-points-about-irc">Important points about <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code></a>.</p>
+<p>If you want to look at the code for <abbr title="Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions">RC</abbr> and <abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr>, examine these files found in LoopKit/LoopKit:</p>
+<ul>
+<li>RetrospectiveCorrection code: <a href="https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift">StandardRetrospectiveCorrection.swift</a></li>
+<li>IntegralRetrospectiveCorrection code: <a href="https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift">IntegralRetrospectiveCorrection.swift</a></li>
+</ul>
+</details>
+<p><span translate="no">Integral Retrospective Correction</span>, when enabled:</p>
+<ul>
 <li>changes the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> prediction model and thus can affect the recommended dose</li>
 <li>applies to both Dosing Strategies: <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> or <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></li>
-</ul>
-</li>
 </ul>
 <p>Refering to the <a href="../../operation/algorithm/prediction/">Algorithm: Prediction</a> page:</p>
 <ul>
@@ -2710,12 +2724,6 @@
 <p>Note that the Momemtum term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).</p>
 <p>The Retrospective Correction section of the <a href="../displays-v3/#predicted-glucose-chart">Predicted <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr></a> is updated when <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> is enabled, as shown in the graphic below. The <code>Integral effect</code>, inside lower blue rectangle, is the difference between the <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> and <code><abbr title="Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions">RC</abbr></code> calculations.</p>
 <p align="center"><img alt="predicted glucose retrospective section with irc disabled and enabled" src="../img/glucose-details-irc.svg" width="400" /></p>
-<p>The <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> term is described in this (updated) <a href="https://github.com/LoopKit/Loop/issues/695#issue-310265141">comment</a> including plots and equations. Some of the information in that comment is repeated below: <a href="#important-points-about-irc">Important points about <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code></a>.</p>
-<p>If you want to look at the code, the version (as of 14-Aug-2023) is found in LoopKit/LoopKit:</p>
-<ul>
-<li>RetrospectiveCorrection code: <a href="https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift">StandardRetrospectiveCorrection.swift</a></li>
-<li>IntegralRetrospectiveCorrection code: <a href="https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift">IntegralRetrospectiveCorrection.swift</a></li>
-</ul>
 <h4 id="important-points-about-irc">Important points about <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code>:<a class="headerlink" href="#important-points-about-irc" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ol>
 <li>
@@ -2764,8 +2772,8 @@
 </ol>
 <p>At this point the meal can be saved by tapping the Continue button, or the user can modify the time (typical) or any other of the carb entry rows before tapping Continue.</p>
 <p align="center"><img alt="carb entry with favorite foods feature" src="../img/favorite-foods-carb-entry.svg" width="500" /></p>
-<p>Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and choosing one of the specific food emoji icons. The standard Lollipop, Taco, Pizza icons are not sufficient to enable the Save as Favorite button. The favorite food examples seen in the graphic above were created in the Favorite Foods Settings row. The taco was chosen to go with the absorption time chosen.</p>
-<h2 id="new-with-loop-300">New with <abbr title="Latest release with major updates">Loop 3</abbr>.0.0<a class="headerlink" href="#new-with-loop-300" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and choosing one of the specific food emoji icons. The standard Lollipop, Taco, Pizza icons can be selected at that level, but choosing them at the top level is not sufficient to enable the Save as Favorite button. The favorite food examples seen in the graphic above were created in the Favorite Foods Settings row. The taco was chosen to go with the absorption time chosen.</p>
+<h2 id="new-with-loop-300"><strong>New with <abbr title="Latest release with major updates">Loop 3</abbr>.0.0</strong><a class="headerlink" href="#new-with-loop-300" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h2 id="loop-3-screens"><abbr title="Latest release with major updates">Loop 3</abbr> Screens<a class="headerlink" href="#loop-3-screens" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr> Screens</p>
