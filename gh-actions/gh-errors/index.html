@@ -19,7 +19,7 @@
     
     
       
-        <title>GitHub Errors - LoopDocs</title>
+        <title>GitHub Errors - LoopDocs (DRAFT for 3.4)</title>
       
     
     
@@ -91,7 +91,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-header__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LoopDocs
+            LoopDocs (DRAFT for 3.4)
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +385,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-nav__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
     </a>
-    LoopDocs
+    LoopDocs (DRAFT for 3.4)
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -884,6 +884,46 @@
   <a href="#reset-match-secrets" class="md-nav__link">
     Reset Match-Secrets
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotation-message" class="md-nav__link">
+    Annotation Message
+  </a>
+  
+    <nav class="md-nav" aria-label="Annotation Message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agreement-not-signed" class="md-nav__link">
+    Agreement not signed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#old-steps" class="md-nav__link">
+    Old Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Old Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-match-secrets" class="md-nav__link">
+    Create Match-Secrets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2616,6 +2656,46 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#annotation-message" class="md-nav__link">
+    Annotation Message
+  </a>
+  
+    <nav class="md-nav" aria-label="Annotation Message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agreement-not-signed" class="md-nav__link">
+    Agreement not signed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#old-steps" class="md-nav__link">
+    Old Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Old Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-match-secrets" class="md-nav__link">
+    Create Match-Secrets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3018,16 +3098,12 @@
 </ul>
 <p>These steps are needed to reset your <code>Match-Secrets</code>:</p>
 <ol>
-<li>Delete your <code>Match-Secrets</code> Repository<ul>
+<li>Delete your <code>Match-Secrets</code> <code>Repository</code><ul>
 <li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
 </ul>
 </li>
-<li>Create a new private <code>Match-Secrets</code> <em>Repository</em><ul>
-<li>main <abbr title="version of code within a single repository or workspace repository">branch</abbr>: follow the directions <a href="../gh-first-time/#create-match-secrets">First-Time: Create <code>Match-Secrets</code></a></li>
-<li>dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>: the <code>Action</code>: <code>Validate Secrets</code> automatically creates a new private <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> if you don't have one</li>
-</ul>
-</li>
 <li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
+<li>This will automatically create a new <code>Match-Secrets</code> <code>Repository</code> for you</li>
 <li>Run the <code>Action</code>: <code>Create Certificates</code></li>
 <li>If this fails, click on this link for the most likely <a href="#error-could-not-create">Error: Could not create</a></li>
 <li>If that doesn't help, check all your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> and try again</li>
@@ -3041,6 +3117,44 @@
 <p>If you add an app to your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username (by forking the <abbr title="contains project files and each file's revision history">repository</abbr> and adding <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>) and then build it, it encrypts your <code>Certificate</code> using <code>MATCH_PASSWORD</code>.</p>
 <p>If you already have the other apps configured and then you delete <code>Match-Secrets</code> and add a new one, you will need to run <code>Create Certificates</code> for each app before the next time you build each app - go ahead and do that now so you don't forget.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">To Do</p>
+<p>set up headers that will be added, with graphics, for later use.</p>
+</div>
+<h2 id="annotation-message"><span translate="no">Annotation</span> Message<a class="headerlink" href="#annotation-message" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="agreement-not-signed">Agreement not signed<a class="headerlink" href="#agreement-not-signed" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>placeholder for the example annotation messages from Action failures.</p>
+<h2 id="old-steps">Old Steps<a class="headerlink" href="#old-steps" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>.4, some manual steps are no longer required.</p>
+<p>However, the manual direction are being stashed at the bottom of the errors page. Expect this documentation to be removed over time.</p>
+<h3 id="create-match-secrets">Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr><a class="headerlink" href="#create-match-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>This step is automatically performed for you when you run `Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>``.</strong></p>
+<p>Open your <abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr> (this is <code>https://github.com/username</code>), (<code>username</code> is the name you chose above).</p>
+<p>Create a new private <abbr title="contains project files and each file's revision history">repository</abbr> - you can either click on the link below or follow the instructions with the first graphic:</p>
+<ul>
+<li>Click on this link: <a href="https://github.com/new">(https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/new)</a></li>
+</ul>
+<p>or</p>
+<ul>
+<li>
+<p>At the top right of the screen, click on the &plus; sign and select <code>New Repository</code></p>
+<p align="center"><img alt="plus sign to add repository" src="../img/create-match-secrets.svg" width="200" /></p>
+</li>
+</ul>
+<p>This shows you a screen similar to the following graphic which has 3 regions highlighted:</p>
+<ul>
+<li>In <code>Repository name</code>, type <code>Match-Secrets</code> (use a hyphen between <code>Match</code> and <code>Secrets</code>)</li>
+<li>Be sure to check the  box <strong><code>Private</code></strong>  (red circle) to make the <abbr title="contains project files and each file's revision history">repository</abbr> <strong>private</strong></li>
+<li><strong>Please confirm you selected <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> as private.</strong></li>
+<li>Scroll to the bottom of the page and tap on "<code>Create repository</code>"</li>
+</ul>
+<p align="center"><img alt="first screen for new repository" src="../img/01-gh-create-match-secrets.png" width="600" /></p>
+<p>A screen will appear with a lot of options - do <strong>not</strong> do anything on this screen.</p>
+<ul>
+<li>Click on your username (as indicated by the red rectangle) to return to your main <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr>.</li>
+</ul>
+<p align="center"><img alt="second screen for new repository" src="../img/02-gh-match-secrets-leave-alone.png" width="600" /></p>
+<p>You will not directly interact with your <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 
 
 
