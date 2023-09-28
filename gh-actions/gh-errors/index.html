@@ -19,7 +19,7 @@
     
     
       
-        <title>Errors with Browser - LoopDocs (DRAFT for 3.4)</title>
+        <title>Errors with Browser - LoopDocs</title>
       
     
     
@@ -91,7 +91,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-header__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
+    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LoopDocs (DRAFT for 3.4)
+            LoopDocs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +385,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-nav__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
+    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
     </a>
-    LoopDocs (DRAFT for 3.4)
+    LoopDocs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -2701,7 +2701,6 @@
 </li>
 <li>Common mistake: when saving <code>TEAMID</code>, you type what you think you see instead of using copy and paste</li>
 <li>Common mistake: skip running one of the actions</li>
-<li>Common mistake: you need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span> </li>
 </ul>
 <p>If you are running development code, skip ahead to <a href="#preview-for-version-34">Preview for Version 3.4</a>.</p>
 <p>The next section is valid for Version 3.2.x and earlier.</p>
@@ -3061,12 +3060,16 @@
 </ul>
 <p>These steps are needed to reset your <code>Match-Secrets</code>:</p>
 <ol>
-<li>Delete your <code>Match-Secrets</code> <code>Repository</code><ul>
+<li>Delete your <code>Match-Secrets</code> Repository<ul>
 <li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
 </ul>
 </li>
+<li>Create a new private <code>Match-Secrets</code> <em>Repository</em><ul>
+<li>main <abbr title="version of code within a single repository or workspace repository">branch</abbr>: follow the directions <a href="../gh-first-time/#create-match-secrets">First-Time: Create <code>Match-Secrets</code></a></li>
+<li>dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>: the <code>Action</code>: <code>Validate Secrets</code> automatically creates a new private <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> if you don't have one</li>
+</ul>
+</li>
 <li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
-<li>This will automatically create a new <code>Match-Secrets</code> <code>Repository</code> for you</li>
 <li>Run the <code>Action</code>: <code>Create Certificates</code></li>
 <li>If this fails, click on this link for the most likely <a href="#error-could-not-create">Error: Could not create</a></li>
 <li>If that doesn't help, check all your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> and try again</li>
