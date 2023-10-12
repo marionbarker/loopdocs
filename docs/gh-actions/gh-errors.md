@@ -445,12 +445,10 @@ There might be several reasons to do this:
 
 These steps are needed to reset your `Match-Secrets`:
 
-1. Delete your `Match-Secrets` Repository
+1. Delete your `Match-Secrets` `Repository`
     * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
-1. Create a new private `Match-Secrets` *Repository*
-    * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
-    * dev branch: the `Action`: `Validate Secrets` automatically creates a new private `Match-Secrets` repository if you don't have one
 1. In your fork of LoopWorkspace:
+    * This will automatically create a new `Match-Secrets` `Repository` for you
     * Run the `Action`: `Create Certificates`
     * If this fails, click on this link for the most likely [Error: Could not create](#error-could-not-create)
     * If that doesn't help, check all your <code>Secrets</code> and try again
