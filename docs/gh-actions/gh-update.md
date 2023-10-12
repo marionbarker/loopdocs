@@ -324,7 +324,7 @@ Tap the `Code` button (upper left) and ensure this branch in your fork is up to 
 
 ### One-Time Changes
 
-Look in this section for one-time changes for building dev with a browser that require special, one-time actions. After the release of 3.4.0, this section is empty.
+Look in this section for one-time changes for building dev with a browser that require special, one-time actions. After the release of 3.2.4, this section is empty.
 
 Skip ahead to [Build Branch](#build-branch).
 

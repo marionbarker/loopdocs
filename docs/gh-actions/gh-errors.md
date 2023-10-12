@@ -29,11 +29,40 @@ These are some of the most common errors to date.
 * Common mistake: skip running one of the actions
 * Common mistake: you need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span> - be sure to read [Misleading Error Message](#misleading-error-message)
 
-If you are running development code, skip ahead to [Preview for Version 3.4](#preview-for-version-34).
+## Error Annotations
 
-## Misleading Error Message
+Error annotations are available for the *Loop* app version 3.2.4 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
 
-> For Version 3.2.x and earlier - later versions give better error messages.
+## Examine Annotation
+
+If a&nbsp;<span translate="no">*GitHub* Action</span>&nbsp;fails, you will see a clear notification.
+
+First consider the following results from the&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>.
+
+Your screen may look similar to the graphic below. The name in parentheses refers to the branch used to develop these wonderful messages. Yours may be (dev) or (main), once 3.2.4 is released.
+
+![graphic showing failure to validate secrets](img/error-validate-secrets.png){width="500"}
+{align="center"}
+
+But there are so many reasons why this could happen. The first step is to click on the link highlighted by the red rectangle in the graphic above. This opens a new detailed view. The GIF below shows two different error messages. The first frame shows the error in the Annotation box at the bottom (you may need to scroll down to see this), and you may need to click on "Show More" to see the full message as seen in the second frame. The third frame of the GIF shows a different message. Each one these messages is designed to make it easier for you to diagnose your own problem.
+
+![graphic showing validate secret error messages](img/error-annotations-validate-secrets.gif){width="800"}
+{align="center"}
+
+Notice that&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action, so you will see this a lot.
+
+For example, the graphic below shows a failure of&nbsp;<span translate="no">GitHub Action: 3. Create Certificates</span>&nbsp;.
+
+![graphic showing failure to create certificates](img/error-create-certs.png){width="800"}
+{align="center"}
+
+This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is [Error: Could not Create](#error-could-not-create).
+
+If you run across an error that does not have a nice message, be sure to post as discussed in [Help with Errors](#help-with-errors). You may be contributing to future improvements for this process.
+
+## Earlier Versions
+
+> For Version 3.2.x and earlier
 
 If there are *Apple* Developer agreements you have not accepted, you will get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
 
@@ -461,35 +490,3 @@ These steps are needed to reset your `Match-Secrets`:
 
     If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
 
-## Preview for Version 3.4
-
-When dev is released as Version 3.4.0, this will be the error finding section in LoopDocs.
-
-Error annotations are available for Version 3.3.0 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
-
-## Examine Annotation
-
-If a&nbsp;<span translate="no">GitHub Action</span>&nbsp;fails, you will see a clear notification.
-
-First consider the following results from the&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>.
-
-Your screen may look similar to the graphic below. The name in parentheses refers to the branch used to develop these wonderful messages. Yours may be (dev) or (main), once 3.4.0 is released.
-
-![graphic showing failure to validate secrets](img/error-validate-secrets.png){width="500"}
-{align="center"}
-
-But there are so many reasons why this could happen. The first step is to click on the link highlighted by the red rectangle in the graphic above. This opens a new detailed view. The GIF below shows two different error messages. The first frame shows the error in the Annotation box at the bottom (you may need to scroll down to see this), and you may need to click on "Show More" to see the full message as seen in the second frame. The third frame of the GIF shows a different message. Each one these messages is designed to make it easier for you to diagnose your own problem.
-
-![graphic showing validate secret error messages](img/error-annotations-validate-secrets.gif){width="800"}
-{align="center"}
-
-Notice that&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action, so you will see this a lot.
-
-For example, the graphic below shows a failure of&nbsp;<span translate="no">GitHub Action: 3. Create Certificates</span>&nbsp;.
-
-![graphic showing failure to create certificates](img/error-create-certs.png){width="800"}
-{align="center"}
-
-This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is [Error: Could not Create](#error-could-not-create).
-
-If you run across an error that does not have a nice message, be sure to post as discussed in [Help with Errors](#help-with-errors). You may be contributing to future improvements for this process.

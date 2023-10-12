@@ -57,7 +57,7 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 ## Automatic Update, Build, Install
 
-Automatic features will be available when version 3.4.0 is released and are available now in 3.3.0 (when&nbsp;<span translate="no">dev is the default branch</span>). The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for 3.4.0:
+Automatic features will be available when version 3.2.4 is released and are available now in 3.3.0 (when&nbsp;<span translate="no">dev is the default branch</span>). The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for 3.2.4:
 
 * Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
 * Build the app at least once a month and upload to *TestFlight*
@@ -68,7 +68,7 @@ It is already true that, unless you make a change, the default setting will:
 
 ### Recommendation
 
-Recommended settings for 3.4.0 (when it is released) and later:
+Recommended settings for 3.2.4 (when it is released) and later:
 
 * Allow automatic update of your&nbsp;<span translate="no">fork</span>
 * Allow automatic build and upload to *TestFlight*
