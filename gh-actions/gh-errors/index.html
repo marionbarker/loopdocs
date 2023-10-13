@@ -2756,13 +2756,13 @@
 <p>Error annotations are available for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app version 3.2.4 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.</p>
 <h2 id="examine-annotation">Examine Annotation<a class="headerlink" href="#examine-annotation" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If a&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action</span>&nbsp;fails, you will see a clear notification.</p>
-<p>First consider the following results from the&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action: 1. Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span>.</p>
+<p>First consider the following results from the&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 1. Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span>.</p>
 <p>Your screen may look similar to the graphic below. The name in parentheses refers to the <abbr title="version of code within a single repository or workspace repository">branch</abbr> used to develop these wonderful messages. Yours may be (dev) or (main), once 3.2.4 is released.</p>
 <p align="center"><img alt="graphic showing failure to validate secrets" src="../img/error-validate-secrets.png" width="500" /></p>
 <p>But there are so many reasons why this could happen. The first step is to click on the link highlighted by the red rectangle in the graphic above. This opens a new detailed view. The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below shows two different error messages. The first frame shows the error in the Annotation box at the bottom (you may need to scroll down to see this), and you may need to click on "Show More" to see the full message as seen in the second frame. The third frame of the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> shows a different message. Each one these messages is designed to make it easier for you to diagnose your own problem.</p>
 <p align="center"><img alt="graphic showing validate secret error messages" src="../img/error-annotations-validate-secrets.gif" width="800" /></p>
-<p>Notice that&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action: 1. Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action, so you will see this a lot.</p>
-<p>For example, the graphic below shows a failure of&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action: 3. Create Certificates</span>&nbsp;.</p>
+<p>Notice that&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 1. Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action, so you will see this a lot.</p>
+<p>For example, the graphic below shows a failure of&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 3. Create Certificates</span>&nbsp;.</p>
 <p align="center"><img alt="graphic showing failure to create certificates" src="../img/error-create-certs.png" width="800" /></p>
 <p>This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is <a href="#error-could-not-create">Error: Could not Create</a>.</p>
 <p>If you run across an error that does not have a nice message, be sure to post as discussed in <a href="#help-with-errors">Help with Errors</a>. You may be contributing to future improvements for this process.</p>
@@ -2807,7 +2807,7 @@
 <li>Paste in a possible error string (copy it exactly); repeat until you find a match</li>
 <li>If the possible error string is found - follow the directions for that error</li>
 <li>Still stuck?<ul>
-<li>Post for help including your <mark><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <strong>username</strong></mark></li>
+<li>Post for help including your <mark><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <strong>username</strong></mark></li>
 <li>With that, mentors can diagnose your problem - or at least make a good guess at what you need to try</li>
 <li>Please <strong>do NOT post a screenshot</strong></li>
 </ul>
@@ -2820,7 +2820,7 @@
 <li>either in the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of <code>Loopworkspace</code>, after <code>github.com</code> in between the forward slashes (<code>/</code>).
    https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/<mark>username</mark>/Loopworkspace</li>
 <li>
-<p>or on the <a href="https://github.com"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> website</a></p>
+<p>or on the <a href="https://github.com"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> website</a></p>
 <p align="right"><img alt="Find your GitHub username step 1" src="../img/github-username-1.svg" />
 <img alt="Find your GitHub username step 2" src="../img/github-username-2.svg" width="200" /></p>
 <p><img alt="Find your GitHub username step 3" src="../img/github-username-3.svg" width="400" /></p>
@@ -3041,7 +3041,7 @@
 </blockquote>
 <p>Use <a href="#examine-the-error">Examine the Error</a></p>
 <ul>
-<li>Click on the Action log on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></li>
+<li>Click on the Action log on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></li>
 <li>There may be a series of green items followed by a red one</li>
 <li>Click on the red item to view the error</li>
 <li>Use the search function in this log to locate your error</li>
@@ -3159,7 +3159,7 @@
 <p>These steps are needed to reset your <code>Match-Secrets</code>:</p>
 <ol>
 <li>Delete your <code>Match-Secrets</code> <code>Repository</code><ul>
-<li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
+<li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Docs</a></li>
 </ul>
 </li>
 <li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
