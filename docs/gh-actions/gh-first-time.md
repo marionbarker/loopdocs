@@ -756,6 +756,11 @@ Because you built Loop using *Xcode*, the **`NAME`** associated with at least th
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
+!!! tip "Double-check when finished with this step"
+    When you think you have completed this step, double check to make sure all 4 `Identifiers` listed in the table have the `App Group` added.
+
+    If not, `Create Certificates` will succeed but `Build Loop` will fail.
+
 Find and click on the row for the Loop identifier on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.Loop`. The name in the **`NAME`** column may be different than Loop.
 
 **Once you complete this step for Loop, you will repeat it for the other 3 identifiers in the table below.**
@@ -789,6 +794,12 @@ If you did not need to make changes, the `Save` button will not be active.
 The full list of Identifiers should be displayed again.
 
 Repeat the steps until you have completed all 4 identifiers in the table above.
+
+!!! important "Double-check this step"
+    Double check to make sure all 4 `Identifiers` listed in the table above have the `App Group` added.
+
+    If not, `Create Certificates` will succeed but `Build Loop` will fail.
+
 
 ## Create Loop App in App Store Connect
 
