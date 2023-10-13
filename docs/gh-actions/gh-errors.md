@@ -75,7 +75,9 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 ## Find Your Error
 
-> For Version 3.2.x and earlier - later versions have an improved method for display errors.
+For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
+
+> The section only needed for Version 3.2.3 and earlier.
 
 There is a separate section for each step in the process. First, you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
 
@@ -88,6 +90,10 @@ There is a separate section for each step in the process. First, you must follow
 If you discover a new error, please reach out to help us update the documentation.
 
 ## Examine the Error
+
+For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
+
+> The section only needed for Version 3.2.3 and earlier.
 
 It doesn't matter which action you are running; after the action completes, you will either see a green check mark <font color="green">:material-checkbox-marked-circle:</font> for **success** or a red x mark <font color="red">:fontawesome-solid-circle-xmark:</font> for **failure**. The graphic below shows an example for the `Add Identifiers` action.
 
@@ -128,6 +134,10 @@ Click on the top link to view the record of the failed action as shown in the gr
 
 ## Action: `Validate Secrets` Errors
 
+For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
+
+> The section only needed for Version 3.2.3 and earlier.
+
 A new action was added with *Loop* 3.1 to provide better error messages if something is wrong with your *Secrets*. In addition, the Actions are numbered to match the order in which they should be applied.
 
 ![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
@@ -140,6 +150,10 @@ To generate the graphic below, some items were deliberately set to be incorrect 
 
 
 ## Action: `Add Identifiers` Errors
+
+For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
+
+> The section only needed for Version 3.2.3 and earlier.
 
 Use the [Examine the Error](#examine-the-error) instructions to find your error message.
 
@@ -185,6 +199,10 @@ Make sure you copy in a text editor from the first hyphen to the last hyphen.
 
 
 ## Action: `Create Certificates` Errors
+
+For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
+
+> The section only needed for Version 3.2.3 and earlier.
 
 Use the [Examine the Error](#examine-the-error) instructions to find your error message.
 
@@ -343,6 +361,10 @@ Otherwise, you need to follow the steps to [Reset Match-Secrets](#reset-match-se
 
 !!! warning "Run `Create Certificates` First"
     You must run Action: `Create Certificates` before attempting to run Action: `Build Loop`
+
+For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
+
+> The section only needed for Version 3.2.3 and earlier.
 
 Use [Examine the Error](#examine-the-error)
 
