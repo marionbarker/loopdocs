@@ -324,9 +324,24 @@ Tap the `Code` button (upper left) and ensure this branch in your fork is up to 
 
 ### One-Time Changes
 
-Look in this section for one-time changes for building dev with a browser that require special, one-time actions. After the release of 3.2.4, this section is empty.
+Look in this section for one-time changes for building dev with a browser that require special, one-time actions. 
 
-Skip ahead to [Build Branch](#build-branch).
+**26-July-2023**
+
+The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
+
+The table in LoopDocs (for main) will be updated after the next release.
+
+For those using dev, you must follow these one-time steps:
+
+1. Sync your fork to latest version of dev
+1. Run the Action for Add Identifiers (this adds "`LoopWidgetExtension`" to identifiers)
+    * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
+    * Click on the "`LoopWidgetExtension`" identifier
+    * Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
+1. Run the Action for Create Certificates
+1. Run the Action for Build Loop
+
 
 ### Build Branch
 

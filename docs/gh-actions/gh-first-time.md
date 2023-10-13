@@ -116,7 +116,8 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * It is required to enable your *GitHub* account to interface with *Apple* to create your app
 * `Identifiers`: are required to build Loop with <code>*GitHub* Browser Build</code> (these are automatically generated for you)
     * Four Identifier Names must be associated with your `App Group`
-        * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Loop Widget Extension`
+        * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
+        * For `dev`` branch only: `Small Status Widget` was renamed `Loop Widget Extension`
     * Two Identifier Names will exist but do not require that association
         * `WatchApp` and `WatchAppExtension`
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
@@ -724,9 +725,14 @@ Because you built Loop using *Xcode*, the **`NAME`** associated with at least th
 | `Loop` | `com.TEAMID.loopkit.Loop` |
 | `Loop Intent Extension` | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` |
 | `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
-| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
+| `Small Status Widget` | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
 | `WatchApp` | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
+
+!!! warning "Loop dev Builders"
+    The name and identifier for "`Small Status Widget`" has been renamed to "`Loop Widget Extension`". This only affects those using dev branch until the next release. At that time, this table will be updated.
+
+    If you are building with dev branch, follow the directions at [One-Time Changes](../gh-actions/gh-update.md#one-time-changes).
 
 ### Add App Group to Identifiers
 
@@ -740,7 +746,7 @@ Because you built Loop using *Xcode*, the **`NAME`** associated with at least th
         * `Loop`
         * `Loop Intent Extension`
         * `Loop Status Extension`
-        * `Loop Widget Extension`
+        * `Small Status Widget` (released code) / `Loop Widget Extension` (`dev` branch)
     1. Click on the identifier's name
     1. On the "App Groups" capabilies, click on the "Configure" or "Edit" button
     1. If your "Loop App Group" with your TEAMID is not showing, then select it
@@ -761,7 +767,7 @@ Find and click on the row for the Loop identifier on the [Certificates, Identifi
 | `Loop` | `com.TEAMID.loopkit.Loop` |
 | `Loop Intent Extension` | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` |
 | `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
-| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
+| `Small Status Widget` | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
 
 The `Edit Your App ID Configuration` screen will open. Take one action for the each identifier listed in this table:
 
