@@ -10,9 +10,9 @@
         * depends on &nbsp;<span translate="no">GitHub</span>, <span translate="no">Apple</span>&nbsp;and &nbsp;<span translate="no">TestFlight</span>
 
 ???+ abstract "Page Summary (click to open/close)"
-    **You must build the app every 90 days when you build with a browser - this is a&nbsp;<span translate="no">TestFlight</span>&nbsp;requirement.**
+    **The *Loop* app must be built at least every 90 days when you build with a browser - this is *TestFlight* requirement.**
 
-    The default settings on these pages configure automatic build as part of the update to Loop 3.4: see [Update with Browser](#update-with-browser).
+    Follow the instructions for automatic build as part of the update to Loop 3.2.4: see [Update with Browser](#update-with-browser).
 
     * If you do not want automated builds, review [Modify Automatic Building](#modify-automatic-building)
 
@@ -20,7 +20,7 @@
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a computer?** No.
-    - **Did the directions change?** Yes. With the release of 3.4, we recommend you configure for automatic update and build. You should not need to visit this page again with released code.
+    - **Did the directions change?** Yes. With the release of 3.2.4, we recommend you configure for automatic update and build.
     - **What if I don't want automatic update or automatic build?** See this section [Modify Automatic Building](#modify-automatic-building)
     - **What happens to my existing builds if I change my&nbsp;<span translate="no">GitHub Personal Access Token</span>?** Nothing. It only affect future builds. Previous build will be available for the full 90 days.
 
@@ -28,10 +28,10 @@
 
 !!! abstract "Summary of Update Steps"
     * [Accept Agreements](#accept-agreements)
-    * [Update Fork](#update-fork)
-    * [Build Loop](#build-loop)
-    * [Wait for &nbsp;<span translate="no">TestFlight</span>](#wait-for-testflight)
-    * [Install or Confirm Installation](#install-or-confirm-installation)
+    * [Update Your Copy](#update-your-copy)
+    * [Build the *Loop* App](#build-the-loop-app)
+    * [Wait for *TestFlight*](#wait-for-testflight)
+    * [Install on Phone](#install-on-phone)
 
     Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 
@@ -50,13 +50,13 @@ If you need detailed instructions, click on the [<code>Apple Program License Agr
 
     If your build with browser fails, wait longer. An hour wait was reported by one person.
 
-### Update Fork
+### Update Your Copy
 
-Open your &nbsp;<span translate="no">GitHub</span>&nbsp;account and select your LoopWorkspace repository from your repositories list.
+Open your *GitHub* account and select your&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;`repository` from your `repositories` list.
 
-#### Special Instructions for &nbsp;<span translate="no">Loop</span>&nbsp;3.4
+#### Special Instructions for Update
 
-When updating from&nbsp;<span translate="no">Loop</span>&nbsp;3.2.x to 3.4, you will need to take some extra steps. Once those steps are completed, your &nbsp;<span translate="no">Loop</span>&nbsp;app will be automatically updated and automatically built at least once a month.
+When updating from&nbsp;<span translate="no">Loop</span>&nbsp;3.2.x to 3.2.4, you will need to take some extra steps. Once those steps are completed, your &nbsp;<span translate="no">Loop</span>&nbsp;app will be automatically updated and automatically built at least once a month.
 
 !!! question "Can I Opt Out?"
     Yes - you can opt out of the automatic build.
@@ -66,57 +66,50 @@ When updating from&nbsp;<span translate="no">Loop</span>&nbsp;3.2.x to 3.4, you 
 
 Here is a summary of the extra steps; each step has an associated link. You need to do all of them.
 
-1. Confirm the status of your &nbsp;<span translate="no">GitHub Personal Access Token</span>
+1. Confirm the status of your &nbsp;<span translate="no">*GitHub* Personal Access Token</span>
     * Recommended permission scope is `repo, workflow` and set to never expire
-    * You can check this using directions at [<span translate="no">GitHub Personal Access Token</span>](#github-personal-access-token)
+    * You can check this using directions at [<span translate="no">*GitHub* Personal Access Token</span>](#github-personal-access-token)
 1. Follow the directions for [Manual Update](#manual-update) for your fork
-1. This list is repeated in the [Build Loop](#build-loop) section along with detailed instructions
-    * Add and Update New Indentifier
-    * Create Certificates
-    * Build Loop
+1. [Build the *Loop* App](#build-the-loop-app)
 
 #### Manual Update
 
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
-* If your fork is up to date with LoopKit version, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless your Loop app in &nbsp;<span translate="no">TestFlight</span>&nbsp;is about to expire - in which case, proceed to [Build Loop](#build-loop)
+* If your `fork` is up to date with LoopKit version, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless your Loop app in *TestFlight* is about to expire - in which case, proceed to [Build the *Loop* App](#build-the-loop-app)
 * If your fork shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on `Update branch`
-* If your fork shows a message such as `This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main`; you might need to manually sync and choose to `discard changes`; you can always customize again after the update
+* If your `fork` shows a message such as `This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main`; you might need to manually sync and choose to `discard changes`; you can always customize again after the update
 
 !!! question "Building a different branch"
     Do I need to do anything special to build a different branch?
 
     Yes: please follow instructions at [Build Development Version](#build-development-version)
 
-### Build Loop
+### Build the *Loop* App
 
-If you have successfully built Loop 3.4 with automatic build configuration enabled and later decide to manually build Loop, all that is required is to run the action: Build Loop for your fork and skip ahead to [Wait for TestFlight](#wait-for-testflight).
+Refer to the graphic below for the first four steps:
 
-#### Updating from 3.2.x to 3.4
+1. Click on the "`Actions`" tab of your <code>LoopWorkspace</code> repository.
+1. On the left side, click on "4. `Build Loop`".
+1. On the right side, click "`Run Workflow`" to show a drop-down menu
+    * You will see your default branch (typically `main`)
+    * You can select a different branch, but typically, you run the default
+1. Tap the green button that says "`Run workflow`".
 
-For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future.
+    ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
+    {align="center"}
 
-#### Add and Update New Identifier
+1. Wait a few minutes to make sure there is not an early failure
+    * If this action fails, head over to [Action: Build Loop Errors](gh-errors.md#action-build-loop-errors)
+1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
+1. You should get several emails
+    * one says build succeeded (or failed)
+    * one says *TestFlight* is ready (typically half-hour after build succeeds)
+    * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
+1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
-The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`". You need to run Add Identifier, wait for it to succeed and then add the `App Group` to this one new Identifier, shown in the table below.
-
-All other identifiers should be already set up. If they are not, please go through the steps on the [GitHub First Time](gh-first-time.md) page to figure out what you are missing.
-
-| `NAME` | `IDENTIFIER` |
-|-------|------------|
-| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
-
-* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
-* Click on the "`LoopWidgetExtension`" identifier
-* Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
-
-#### Create Certificates and Build
-
-You must create certificates again to cover the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - Loop needs permission to have that capability). Once the certificate action succeeds, then run the action to build Loop.
-
-1. Run the Action for Create Certificates
-1. Run the Action for Build Loop
+If you have successfully built the *Loop* app, version 3.2.4 with automatic build configuration enabled, and later decide to manually build Loop, all that is required is to run the action: Build Loop for your fork and skip ahead to [Wait for *TestFlight*](#wait-for-testflight).
 
 ### Wait for &nbsp;<span translate="no">TestFlight</span>
 
@@ -136,11 +129,11 @@ The updated app will show up in your&nbsp;<span translate="no">TestFlight</span>
     * There may be older builds that are still in&nbsp;<span translate="no">TestFlight</span>
 * You will also see a build number in parentheses, that number increments each build
 
-### Install or Confirm Installation
+### Install on Phone
 
 #### TestFlight Automatic Update Disabled
 
-Option 1: If you chose to [Disable Automatic Install from&nbsp;<span translate="no">TestFlight</span>](../gh-actions/gh-deploy.md#disable-automatic-install-fromtestflight) for Loop, you choose when to install the app on the phone.
+You are encouraged to [Disable Automatic Install from *TestFlight*](../gh-actions/gh-deploy.md#disable-automatic-install-from-testflight) for Loop, you choose when to install the app on the phone.
 
 * Open&nbsp;<span translate="no">TestFlight</span>&nbsp;on your phone and click `Install` as shown in the GIF below
 * If you are building for a child, follow the&nbsp;[<span translate="no">TestFlight</span>&nbsp; for Child](gh-deploy.md#testflightfor-child) instructions again
