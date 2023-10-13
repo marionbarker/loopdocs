@@ -3018,8 +3018,22 @@
 </ul>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <h3 id="one-time-changes">One-Time Changes<a class="headerlink" href="#one-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Look in this section for one-time changes for building dev with a browser that require special, one-time actions. After the release of 3.2.4, this section is empty.</p>
-<p>Skip ahead to <a href="#build-branch">Build Branch</a>.</p>
+<p>Look in this section for one-time changes for building dev with a browser that require special, one-time actions. </p>
+<p><strong>26-July-2023</strong></p>
+<p>The <code>bundle ID</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>".</p>
+<p>The table in LoopDocs (for main) will be updated after the next release.</p>
+<p>For those using dev, you must follow these one-time steps:</p>
+<ol>
+<li>Sync your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to latest version of dev</li>
+<li>Run the Action for Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> (this adds "<code>LoopWidgetExtension</code>" to identifiers)<ul>
+<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
+<li>Click on the "<code>LoopWidgetExtension</code>" identifier</li>
+<li>Edit the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
+</ul>
+</li>
+<li>Run the Action for Create Certificates</li>
+<li>Run the Action for Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+</ol>
 <h3 id="build-branch">Build Branch<a class="headerlink" href="#build-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want a <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be the one you build all the time, you may choose to <a href="#change-default-branch">Change Default Branch</a>. This is not necessary except for special cases.</p>
 <p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example main, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. Refer to step 4 in the graphic below. Use the <abbr title="version of code within a single repository or workspace repository">branch</abbr> dropdown menu to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want before hitting the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button.</p>
