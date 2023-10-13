@@ -950,8 +950,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-loop" class="md-nav__link">
-    Build Loop
+  <a href="#build-the-loop-app" class="md-nav__link">
+    Build the Loop App
   </a>
   
 </li>
@@ -2839,8 +2839,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-loop" class="md-nav__link">
-    Build Loop
+  <a href="#build-the-loop-app" class="md-nav__link">
+    Build the Loop App
   </a>
   
 </li>
@@ -2955,7 +2955,7 @@
 </li>
 <li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
 <li><a href="#create-certificates"><code>Action: 3. Create Certificates</code></a></li>
-<li><a href="#build-loop"><code>Action: 4. Build Loop</code></a></li>
+<li><a href="#build-the-loop-app"><code>Action: 4. Build Loop</code></a></li>
 </ul>
 </li>
 <li><em><span translate="no">Apple</span></em>: <a href="#set-up-users-and-access-testflight">Set up <code>Internal *TestFlight* Group</code></a></li>
@@ -2973,7 +2973,7 @@
 </ul>
 </details>
 <h2 id="automatic-build-of-loop">Automatic Build of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#automatic-build-of-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When you follow the directions on this page, for <abbr title="Latest release with major updates">Loop 3</abbr>.4 and later, you configure your app to automatically build at least once a month. You also configure your app to be updated within one week of a new release, in other words, when the LoopKit/LoopWorkspace main <abbr title="version of code within a single repository or workspace repository">branch</abbr> is updated.</p>
+<p>When you follow the directions on this page, for <abbr title="Latest release with major updates">Loop 3</abbr>.2.4 and later, you configure your app to automatically build at least once a month. You also configure your app to be updated within one week of a new release, in other words, when the LoopKit/LoopWorkspace main <abbr title="version of code within a single repository or workspace repository">branch</abbr> is updated.</p>
 <ul>
 <li>What if I want to modify the automatic update and build schedule?<ul>
 <li><a href="../gh-update/#modify-automatic-building">Modify Automatic Building</a></li>
@@ -3063,15 +3063,15 @@
 <p><strong>Everyone needs to read this section!</strong></p>
 <p>You need to keep a digital copy of your 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>.</p>
 <ul>
-<li>You need to copy and paste those <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to configure the <code><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Browser Build</code> method</li>
+<li>You need to copy and paste those <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to build the app with a browser</li>
 <li>Make sure your editor does not change any characters in your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>; use a text-only editor like NotePad (PC) or TextEdit (Mac)</li>
 <li>Many people add other information to the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> file for easy reference</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Archive Your Information</p>
-<p>For many of the steps on this page, you will need username, email address,  and password for <em>Apple</em> and <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>. You will require six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>.</p>
+<p>To complete the steps on this page, you will need a username, email address and password for <em>Apple</em> and <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>. You will find, generate or make up six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> as instructed.</p>
 <ul>
-<li>Record these in a safe place where you can find them</li>
+<li>Record this information in a safe place</li>
 <li>A digital copy is best for copying and pasting in different locations</li>
 </ul>
 <p><strong>Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.</strong></p>
@@ -3085,7 +3085,7 @@
 <p class="admonition-title">Use a Text-Only Editor</p>
 <p><strong>Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.</strong></p>
 <p>If you use a "smart" editor, it may change lower-case letters to upper-case letters at the beginning of a line when you paste items into your archive file.</p>
-<p>If even one character is capitalized when it should not be, you will get <a href="../gh-errors/"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Errors</a>.</p>
+<p>If even one character is capitalized when it should not be, you will get <a href="../gh-errors/">Errors wuth Browser Build</a>.</p>
 <p>If you use a smart editor to store your <abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr>, you are likely to get the mysterious <code>invalid curve name</code> error.</p>
 </div>
 <h2 id="save-six-secrets">Save Six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#save-six-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3232,8 +3232,12 @@
 <li>
 <p>Right click to open this link in a new tab: <a href="https://appstoreconnect.apple.com/access/api"><code>App Store Connect/Access/API</code></a></p>
 <ul>
+<li>The top of the display is shown in the graphic below</li>
+</ul>
+<p align="center"><img alt="App Store Connect Key page" src="../img/api-key-initial-screen.svg" width="700" /></p>
+<ul>
 <li>
-<p>Click the <code>Keys</code> tab</p>
+<p>Click the <code>Keys</code> tab as indicate in the graphic above</p>
 <ul>
 <li>
 <p>If this is your first time here, you will see:</p>
@@ -3250,10 +3254,9 @@
 <li>
 <p>If you did not get routed through the <code>permission is required</code> screens click the blue &plus; sign</p>
 </li>
-</ul>
-<p align="center"><img alt="App Store Connect Key page" src="../img/api-key-initial-screen.svg" width="700" /></p>
-<ul>
-<li>A new <code>Generate API Key</code> dialog box will appear as shown in the graphic below</li>
+<li>
+<p>A new <code>Generate API Key</code> dialog box will appear as shown in the graphic below</p>
+</li>
 </ul>
 <p align="center"><img alt="generate api key dialog box" src="../img/dev-generate-key.png" width="500" /></p>
 <ul>
@@ -3370,8 +3373,8 @@
 </details>
 <div class="admonition tip">
 <p class="admonition-title">Default Settings</p>
-<p>These instructions are a prerequisite for automatic update and automatic build.</p>
-<p>Refer to <a href="../gh-update/#modify-automatic-building">Modify Automatic Building</a> if you don't want to accept the default recommendation to automatically update and build.</p>
+<p>Follow these instructions to choose automatic update and automatic build.</p>
+<p>Refer to <a href="../gh-update/#modify-automatic-building">Modify Automatic Building</a> if you want to customize the update and build feature.</p>
 </div>
 <p>You must be logged into your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account before starting this step. If you are continuing, you are already logged in.</p>
 <ol>
@@ -3742,7 +3745,7 @@
 <p>The name and identifier for "<code>Small Status Widget</code>" has been renamed to "<code>Loop Widget Extension</code>". This only affects those using dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> until the next release. At that time, this table will be updated.</p>
 <p>If you are building with dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, follow the directions at <a href="../gh-update/#one-time-changes">One-Time Changes</a>.</p>
 </div>
-<h3 id="add-app-group-to-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="add-app-group-to-identifiers">Add <code>App Group</code> to <code>Identifiers</code><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
 <summary>Section Summary (click to open/close)</summary>
 <p>Note 1 - If you previously built with <abbr title="program used to build an app">Xcode</abbr>, the <code>Names</code> listed below may be different, but the <code>Identifiers</code> will match. A table was provided above that lists both <code>Names</code> and <code>Identifiers</code>. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step.</p>
@@ -3942,7 +3945,7 @@
 <li>On the right side, click "Run Workflow", and tap the green <code>Run workflow</code> button.</li>
 <li>Wait, and within a minute or two you should see a green checkmark indicating the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> succeeded.</li>
 </ol>
-<p><a href="#build-loop"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#build-loop">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></p>
+<p><a href="#build-the-loop-app"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></p>
 </details>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
@@ -3965,7 +3968,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="build-loop"><code>Build Loop</code><a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App<a class="headerlink" href="#build-the-loop-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
 <summary>Section Summary (click to open/close)</summary>
 <ol>
@@ -4121,7 +4124,7 @@
 <li>Run Action: <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> to add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> with the documented short names</li>
 <li>Complete the <a href="#add-app-group-to-identifiers">Add <code>App Group</code> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 <li>If you did not complete the <a href="#create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> step, do it now</li>
-<li>Continue with <a href="#create-certificates">Create Certificates</a> and then <a href="#build-loop">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></li>
+<li>Continue with <a href="#create-certificates">Create Certificates</a> and then <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></li>
 </ul>
 
 
