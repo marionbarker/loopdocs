@@ -37,7 +37,7 @@ Error annotations are available for the *Loop* app version 3.2.4 and later. Thes
 
 If a&nbsp;<span translate="no">*GitHub* Action</span>&nbsp;fails, you will see a clear notification.
 
-First consider the following results from the&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>.
+First consider the following results from the&nbsp;<span translate="no">*GitHub* Action: 1. Validate Secrets</span>.
 
 Your screen may look similar to the graphic below. The name in parentheses refers to the branch used to develop these wonderful messages. Yours may be (dev) or (main), once 3.2.4 is released.
 
@@ -49,9 +49,9 @@ But there are so many reasons why this could happen. The first step is to click 
 ![graphic showing validate secret error messages](img/error-annotations-validate-secrets.gif){width="800"}
 {align="center"}
 
-Notice that&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action, so you will see this a lot.
+Notice that&nbsp;<span translate="no">*GitHub* Action: 1. Validate Secrets</span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action, so you will see this a lot.
 
-For example, the graphic below shows a failure of&nbsp;<span translate="no">GitHub Action: 3. Create Certificates</span>&nbsp;.
+For example, the graphic below shows a failure of&nbsp;<span translate="no">*GitHub* Action: 3. Create Certificates</span>&nbsp;.
 
 ![graphic showing failure to create certificates](img/error-create-certs.png){width="800"}
 {align="center"}
@@ -113,7 +113,7 @@ Click on the top link to view the record of the failed action as shown in the gr
 * Paste in a possible error string (copy it exactly); repeat until you find a match
 * If the possible error string is found - follow the directions for that error
 * Still stuck?
-    * Post for help including your ==GitHub **username**==
+    * Post for help including your ==*GitHub* **username**==
     * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
     * Please **do NOT post a screenshot**
 
@@ -122,7 +122,7 @@ Click on the top link to view the record of the failed action as shown in the gr
 
     -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).
        https://github.com/==username==/Loopworkspace
-    - or on the [GitHub website](https://github.com)
+    - or on the [*GitHub* website](https://github.com)
 
         ![Find your GitHub username step 1](img/github-username-1.svg)
         ![Find your GitHub username step 2](img/github-username-2.svg){width="200"}
@@ -368,7 +368,7 @@ For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
 
 Use [Examine the Error](#examine-the-error)
 
-* Click on the Action log on GitHub
+* Click on the Action log on *GitHub*
 * There may be a series of green items followed by a red one
 * Click on the red item to view the error
 * Use the search function in this log to locate your error
@@ -497,7 +497,7 @@ There might be several reasons to do this:
 These steps are needed to reset your `Match-Secrets`:
 
 1. Delete your `Match-Secrets` `Repository`
-    * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 1. In your fork of LoopWorkspace:
     * This will automatically create a new `Match-Secrets` `Repository` for you
     * Run the `Action`: `Create Certificates`
