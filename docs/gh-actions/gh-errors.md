@@ -23,6 +23,7 @@ These are some of the most common errors to date.
     * Each secret must be spelled exactly the way it is presented in the instructions
     * If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name
 1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers)
+    * See [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for an example of this kind of failure
 1. You used a smart editor instead of a text-only editor to save your information
     * It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day
     * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both upper and lower-case characters and all the values are case-sensitive
@@ -35,7 +36,7 @@ These are some of the most common errors to date.
 
 Error annotations are available for the *Loop* app version 3.2.4 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
 
-Not all error messages have an annotation yet. In those cases, you will be required to search for the error string as explained in [Examine the Error](#examine-the-error).
+Not all error messages have an annotation yet. In those cases, you will be required to search for the error string as explained in [Find the Error](#find-the-error).
 
 ## Examine Annotation
 
@@ -70,18 +71,30 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 ### Annotation without Clear Message (*Build*)
 
-The graphic below shows a failure of&nbsp;<span translate="no">*GitHub* Action: 4. Build Loop</span>&nbsp;.
+The GIF below shows a failure of&nbsp;_<span translate="no">*GitHub* Action: 4. Build Loop</span>_&nbsp;. The nice messages have not been added to this yet - you will have to follow the [Find the Error](#find-the-error) instructions, but now, you are automatically taken to the correct section so there is less of the log to deal with.
 
-![graphic showing failure to create certificates](img/error-build-loop.png){width="800"}
+* Frame 1 shows the failure message - click on one of the build links highlighted with the red rectangle (it does not matter which link you click)
+* Frame 2 shows the screen displayed after you click the link - you will see the display automatically move to the first item that failed
+    * The area indicated by the orange rectangle near the top right is where you will paste the strings offered in [Action: `Build Loop` Errors](#action-build-loop-errors)
+* Frame 3 shows what happens when you paste in the correct string
+    * Note that if the string is not found, nothing happens
+    * If the string is found, the display automatically moves to the section of the log with that string
+    * The particular `Identifier`, which does not have the required `App Group` for this example, is the SmallStatusWidget
+
+![graphic showing failure to create certificates](img/missing-app-group.gif){width="800"}
 {align="center"}
 
-This is another example of a message that is not terribly descriptive. Click on just the one job that failed. Follow along to examine the details. Hint: One of the `Identifiers` did not have the `App Gruup` added.
 
-## Find Your Error
+## Find the Error
 
 This section is required when you need to search for a string to diagnose and error that does not have a clear annotation.
 
-There is a separate section for each step in the process. First, you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
+There is a separate section for each step in the process. First, you must follow the [Examine Annotation](#examine-annotation) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box. For each section there are possible strings to paste to search the log.
+
+* Paste in a possible error string (copy it exactly); repeat until you find a match
+* If the possible error string is found - follow the directions for that error
+
+Error annotations are available for the *Loop* app version 3.2.4 and later for some of the actions. We believe the first two actions have a complete set of error annotations.
 
 1. [Action: `Validate Secrets`](#action-validate-secrets-errors)
 1. [Action: `Add Identifiers` Errors](#action-add-identifiers-errors)
@@ -91,7 +104,7 @@ There is a separate section for each step in the process. First, you must follow
 
 If you discover a new error, please reach out to help us update the documentation.
 
-## Examine the Error
+## Still Stuck?
 
 It doesn't matter which action you are running; after the action completes, you will either see a green check mark <font color="green">:material-checkbox-marked-circle:</font> for **success** or a red x mark <font color="red">:fontawesome-solid-circle-xmark:</font> for **failure**. The graphic below shows an example for the `Add Identifiers` action.
 
@@ -108,8 +121,6 @@ Click on the top link to view the record of the failed action as shown in the gr
 ![graphic with failure details for a GitHub Add Identifier action](img/action-result-failure.svg){width="700"}
 {align="center"}
 
-* Paste in a possible error string (copy it exactly); repeat until you find a match
-* If the possible error string is found - follow the directions for that error
 * Still stuck?
     * Post for help including your ==*GitHub* **username**==
     * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
@@ -132,60 +143,15 @@ Click on the top link to view the record of the failed action as shown in the gr
 
 ## Action: `Validate Secrets` Errors
 
-For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
+For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation) and read the annotation.
 
 ## Action: `Add Identifiers` Errors
 
-For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation).
-
-> The section only needed for Version 3.2.3 and earlier.
-
-Use the [Examine the Error](#examine-the-error) instructions to find your error message.
-
-There are two errors that we are familiar with at this point. Look for text matching what is listed below and view what has caused this error to be seen.
-
-### Error: credentials missing / invalid
-
-Copy the words on the line below and paste them into the search function for your action log.
-
-
-> ``` { .text .copy }
-> Authentication credentials are missing or invalid
-> ```
-
-The full error looks like this:
-
-> Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
-
-
-This can be caused by an error in the value (or spelling) of one of these keys:
-
-* `FASTLANE_ISSUER_ID`
-* `FASTLANE_KEY_ID`
-* `FASTLANE_KEY`
-* `GH_PAT`
-
-!!! danger "Use a Text-Only Editor"
-    If you used a "smart" editor when saving your *Secrets* in an archive file before pasting them into the repository `Secrets`, it might have changed a lowercase letter to an uppercase letter.
-
-    If even one character is capitalized when it should not be, you will not succeed at the Add Identifiers step.
-
-### Error: `Invalid curve name`
-
-If you see:
-
-> ``` { .text .copy }
-> invalid curve name
-> ```
-
-This was caused by an error in the format of the value entered for the `FASTLANE_KEY`.
-
-Make sure you copy in a text editor from the first hyphen to the last hyphen.
-
+For Version 3.2.4 and later - use [Examine Annotation](#examine-annotation) and read the annotation.
 
 ## Action: `Create Certificates` Errors
 
-Use the [Examine the Error](#examine-the-error) instructions to find your error message.
+Review [Examine Annotatios](#examine-annotation) for instructions on how to use the error strings.
 
 ### Error: Wrong TEAMID in `Secrets`
 
@@ -345,12 +311,12 @@ Otherwise, you need to follow the steps to [Reset Match-Secrets](#reset-match-se
 
     If you had to step backward and fix an `Identifier`, you must run `Create Certificates` again.
 
-Use [Examine the Error](#examine-the-error)
+Refer to [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for a detailed example of these steps:
 
 * Click on the Action log on *GitHub*
-* There may be a series of green items followed by a red one
+* There will be a series of green items followed by a red one
 * Click on the red item to view the error
-* Use the search function in this log to locate your error
+* Use the search function in this log to locate your error using one of the string below
 
 For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.
 
