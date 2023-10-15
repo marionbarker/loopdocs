@@ -416,7 +416,7 @@ At this point, get your correct `TEAMID`, fix your Secrets file to have the corr
 
 This section is only for people who have successfully built using *GitHub Build Actions*.
 
-Use the [Examine the Error](#examine-the-error) instructions to find your error message.
+Use the [Find the Error](#find-the-error) instructions to find your error message.
 
 ### `Could not install WWDR certificate`
 
