@@ -321,7 +321,7 @@ Review the graphic and then follow the directions below to save more parameters 
 
 6. Find your `AuthKey` download in your downloads folder. The name of the file will be "`AuthKey_KeyID.p8`" where `KeyID` matches your `FASTLANE_KEY_ID`
 
-    * Double-click to open it and you will be presented a message asking how you'd like to open it (message shown is for a Mac - translate these directions to whatever computer you are using)
+    * Double-click to open it and you will be presented a message asking how you'd like to open it (The message shown is for a Mac - translate these directions to whatever computer you are using)
     * Click on "`Choose Application...`" and then select "`TextEdit`" (on a Mac, NotePad on a PC, or any text-only editor you prefer)
 
     ![img/apns-open.png](../nightscout/img/apns-open.png)
@@ -414,7 +414,7 @@ You must be logged into your *GitHub* account before starting this step. If you 
         * Most Looper will use the `classic Token`
             * If you are a developer who needs to use fine-grained `tokens`, that is fine
         * Edit the note box to be `FastLane Access Token`
-    * The default Expiration time is 30 days - but you should select `No expiration` (use the drop down menu to select)
+    * The default Expiration time is 30 days - but you should select `No expiration` (use the drop-down menu to select)
         * *GitHub* will show a yellow warning when you do this
         * It is ok to ignore the warning
     * Add a check beside the `workflow` permission scope
@@ -555,7 +555,7 @@ Enter the name of each <code>Secret</code> found in [Save Your Information](#sav
 * Once you save a secret value, you will not be able to view what you entered, so check carefully before you hit `Add Secret`
     * You can replace the value for any secret later - but you can't view the saved value
 * Be especially careful with your `TEAMID`
-    * If `TEAMID` is incorrect, the intial `Actions` will succeed but `Build Loop` will fail and you will have some clean-up to do
+    * If `TEAMID` is incorrect, the initial `Actions` will succeed but `Build Loop` will fail and you will have some clean-up to do
 
 You can copy the names of the <code>Secrets</code> by hovering to the right of each word below until you see the copy button (:material-content-copy:). Click on the button to copy the `Secret` name and paste it into *GitHub* where you see `YOUR_SECRET_NAME`. This avoids spelling errors.
 ``` { .text .copy }
@@ -668,7 +668,7 @@ Refer to the graphic below for the numbered steps:
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
 
-The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
+The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
@@ -749,7 +749,7 @@ Because you built Loop using *Xcode*, the **`NAME`** associated with at least th
         * `Loop Status Extension`
         * `Small Status Widget` (released code) / `Loop Widget Extension` (`dev` branch)
     1. Click on the identifier's name
-    1. On the "App Groups" capabilies, click on the "Configure" or "Edit" button
+    1. On the "App Groups" capabilities, click on the "Configure" or "Edit" button
     1. If your "Loop App Group" with your TEAMID is not showing, then select it
         * Click "Save"
         * Click "Confirm"
@@ -808,7 +808,7 @@ Repeat the steps until you have completed all 4 identifiers in the table above.
 ??? abstract "Section Summary (click to open/close)"
     If you have created a Loop app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
 
-    1. Right click on the link [apps list](https://appstoreconnect.apple.com/apps) top open App Store Connect and click the blue "plus" icon to create a New App.
+    1. Right click on the link [apps list](https://appstoreconnect.apple.com/apps) to open App Store Connect and click the blue "plus" icon to create a New App.
         * Select "iOS".
         * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
         * Select your primary language.
