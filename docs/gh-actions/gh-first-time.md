@@ -156,7 +156,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 
     If you use a "smart" editor, it may change lower-case letters to upper-case letters at the beginning of a line when you paste items into your archive file.
 
-    If even one character is capitalized when it should not be, you will get [Errors wuth Browser Build](gh-errors.md).
+    If even one character is capitalized when it should not be, you will get [Errors with Browser Build](gh-errors.md).
 
     If you use a smart editor to store your FASTLANE_KEY, you are likely to get the mysterious `invalid curve name` error.
 
@@ -1062,7 +1062,7 @@ To make it easy when configuring the identifiers, go through and delete as many 
 ![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
 {align="center"}
 
-If coming here from the *GitHub* Errors page because you enter the wrong `TEAMID` in `Secrets` - return to that page once you've deleted as many identifiers as you can: [Errors: Wrong TEAMID in Secrets](gh-errors.md#wrong-teamid-in-secrets).
+If coming here from the *GitHub* Errors page because you enter the wrong `TEAMID` in `Secrets` - return to that page once you've deleted as many identifiers as you can: [Error: Wrong TEAMID in Secrets](gh-errors.md#error-wrong-teamid-in-secrets).
 
 If you were just trying to clean up the identifiers, then follow these steps:
 
