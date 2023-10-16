@@ -37,7 +37,7 @@
 
 ### Accept Agreements
 
-Sign in to your [<span translate="no">Apple Developer</span>&nbsp;account](https://developer.apple.com/account). If there are agreements you have not accepted, your build will fail and you'll see an [<span translate="no">Annotation</span>&nbsp;Message](gh-errors.md#annotation-message) telling you to accept your agreement.
+Sign in to your [<span translate="no">Apple Developer</span>&nbsp;account](https://developer.apple.com/account). If there are agreements you have not accepted, your build will fail and you'll see an [Annotation with Clear Message](gh-errors.md#annotation-with-clear-message) telling you to accept your agreement.
 
 If you need detailed instructions, click on the [<code>Apple Program License Agreement</code>](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement) help page.
 
