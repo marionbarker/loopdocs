@@ -3,9 +3,10 @@
 ???+ info "Time Estimate (click to open/close)"
     - If you have never built the *Loop* app (allow up to one week elapsed time)
         * Request and get an <span>*Apple Developer* Account</span>: 1-2 days
+        * Request and get an <span>*Apple Developer* Account</span>: 1-2 days
         * Create and configure your *GitHub* account and `repositories`: 1-2 hours
         * Add <code>Secrets</code> (requires *Apple Developer* Account): 1 hour
-        * Perform the `Action` steps: 30 minutes to 2 hours
+        * Perform the *GitHub* `Action` steps: 30 minutes to 2 hours
     - If you have previously built the *Loop* app with *Xcode* you have fewer steps and are probably familiar with some of the concepts
         * Expect 1 to 4 hours
 
@@ -36,7 +37,7 @@
         * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](#create-loop-app-in-app-store-connect)
     * *GitHub*:
         * [`Action: 3. Create Certificates`](#create-certificates)
-        * [`Action: 4. Build Loop`](#build-the-loop-app)
+        * [`Action: 4. Build Loop`](#build-the-the-loop-app-app)
     * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](#set-up-users-and-access-testflight)
     * Phone: [Install *Loop* with *TestFlight*](../gh-actions/gh-deploy.md#deploy-using-testflight)
 
@@ -76,9 +77,9 @@ For sparse instructions, right-click on the link below:
 
 ## Prerequisites
 
-#### Prerequisites to Build Loop
+#### Prerequisites to Build the *Loop* App
 
-There are two prerequisites to build Loop using <code>*GitHub* Browser Build</code>.
+There are two prerequisites to build the *Loop* app using <code>*GitHub* Browser Build</code>.
 
 1. Paid *Apple Developer* account ($99/year)
 1. Free *GitHub* account
@@ -106,7 +107,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 * `Actions`: available in your *GitHub* account to build your app (once you follow the instructions on this page)
     * With Loop 3, the actions: `Validate Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the Loop app from a browser on any computer
     * If <code>*GitHub* Browser Build</code> Actions are not operating as you expect, check [*GitHub* Status](https://www.githubstatus.com/) to see if it is *GitHub* problem.
-* <code>Secrets</code>: are required to enable *GitHub* to build Loop using *GitHub* Actions
+* <code>Secrets</code>: are required to enable *GitHub* to build the *Loop* app using *GitHub* Actions
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
     * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same <code>*GitHub* Browser Build</code> method
@@ -114,7 +115,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * You obtain and save this key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>
     * It is required to enable your *GitHub* account to interface with *Apple* to create your app
-* `Identifiers`: are required to build Loop with <code>*GitHub* Browser Build</code> (these are automatically generated for you)
+* `Identifiers`: are required to build the *Loop* app with <code>*GitHub* Browser Build</code> (these are automatically generated for you)
     * Four Identifier Names must be associated with your `App Group`
         * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
         * For the dev branch only: `Small Status Widget` was renamed `Loop Widget Extension`
@@ -139,7 +140,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 * Many people add other information to the <code>Secrets</code> file for easy reference
 
 !!! tip "Archive Your Information"
-    To complete the steps on this page, you will need a username, email address and password for *Apple* and *GitHub*. You will find, generate or make up six <code>Secrets</code> as instructed.
+    To complete the steps on this page, you will need a username, email address, and password for *Apple* and *GitHub*. You will find, generate or make up six <code>Secrets</code> as instructed.
 
     * Record this information in a safe place
     * A digital copy is best for copying and pasting in different locations
@@ -264,7 +265,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
         **Copy and paste** the `Team ID` from the webpage.
 
         * <code>TEAMID</code> must be 10 characters
-        * Avoid typing an &nbsp;<span class="loop-biggest">`8`</span>&nbsp; when it should be a &nbsp;<span class="loop-biggest">`B`</span>
+        * Avoid typing an&nbsp<span class="loop-biggest">`8`</span>&nbsp; when it should be a&nbsp<span class="loop-biggest">`B`</span>
 
 ### Generate `API Key`
 
@@ -280,7 +281,13 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
     ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
     {align="center"}
 
-    * Click the `Keys` tab as indicate in the graphic above
+
+    * The top of the display is shown in the graphic below
+
+    ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
+    {align="center"}
+
+    * Click the `Keys` tab as indicated in the graphic above as indicate in the graphic above
         * If this is your first time here, you will see:
 
             "`Permission is required to access the App Store Connect API. You can request access on behalf of your organization.`"
@@ -290,7 +297,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
         * Once access is granted, click on the `Generate API Key` button
 
     * If you did not get routed through the `permission is required` screens click the blue &plus; sign
-    
+
     * A new `Generate API Key` dialog box will appear as shown in the graphic below
 
     ![generate api key dialog box](img/dev-generate-key.png){width="500"}
@@ -337,12 +344,12 @@ Review the graphic and then follow the directions below to save more parameters 
 
 ### Do Not Confuse Your Keys
 
-!!! important "<span class="loop-big">`API Key`</span>&nbsp; vs &nbsp;<span class="loop-big">`APN Key`</span>"
+!!! important "<span class="loop-big">`API Key`</span>&nbsp; vs&nbsp;<span class="loop-big">`APN Key`</span>"
     If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overview.md), you may notice the Application Programming Interface (API) key has the same type of format as the *Apple* Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
-    The <code>Secrets</code> for building with *GitHub* use the &nbsp;<span class="loop-bigger">`API Key`</span>.
+    The <code>Secrets</code> for building with *GitHub* use the&nbsp;<span class="loop-bigger">`API Key`</span>.
 
-    The config vars for `Nightscout` use the &nbsp;<span class="loop-bigger">`APN Key`</span>.
+    The config vars for `Nightscout` use the&nbsp;<span class="loop-bigger">`APN Key`</span>.
 
     * If you are using remote commands with `Nightscout` and building with <code>*GitHub* Browser Build</code>
         * [Remote Commands Config Vars](../nightscout/remote-config.md#remote-build-config-var-requirement): make sure you have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` or remote commands will not work with `Nightscout`
@@ -382,7 +389,7 @@ Decide on a couple of usernames that you will be happy with - this will get embe
     * Don't check anything on the next screen, just tap `Continue`
     * Select the `Free` option by selecting `Continue for Free`
 
-The free level comes with plenty of storage and compute time to build Loop.
+The free level comes with plenty of storage and compute time to build the *Loop* app.
 
 ### Create `GitHub Personal Access Token`
 
@@ -704,7 +711,7 @@ If you have never built Loop with *Xcode* using your `TEAMID`, you need to creat
 1. For **`Description`**, use `Loop App Group`.
 1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopGroup`, substituting your team id for `TEAMID`.
 1. Double-check the spelling - your `TEAMID` must be correct and the `Loop` *App Group* must match the format shown in the previous step
-    * A mistake here means you will not be able to build Loop until you fix it
+    * A mistake here means you will not be able to build the *Loop* app until you fix it
 1. Click `Continue` and then `Register`.
 
 #### New Builders
