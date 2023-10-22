@@ -5,7 +5,7 @@
         * Request and get an <span>*Apple Developer* Account</span>: 1-2 days
         * Create and configure your *GitHub* account and `repositories`: 1-2 hours
         * Add <code>Secrets</code> (requires *Apple Developer* Account): 1 hour
-        * Performing the `Action` steps: 30 minutes to 2 hours
+        * Perform the `Action` steps: 30 minutes to 2 hours
     - If you have previously built the *Loop* app with *Xcode* you have fewer steps and are probably familiar with some of the concepts
         * Expect 1 to 4 hours
 
@@ -37,7 +37,7 @@
     * *GitHub*:
         * [`Action: 3. Create Certificates`](#create-certificates)
         * [`Action: 4. Build Loop`](#build-the-loop-app)
-    * _<span translate="no">Apple</span>_: [Set up `Internal *TestFlight* Group`](#set-up-users-and-access-testflight)
+    * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](#set-up-users-and-access-testflight)
     * Phone: [Install *Loop* with *TestFlight*](../gh-actions/gh-deploy.md#deploy-using-testflight)
 
 ???+ question "FAQs (click to open/close)"
