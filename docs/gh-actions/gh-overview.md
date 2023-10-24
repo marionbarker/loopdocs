@@ -29,7 +29,6 @@
 * Personalized code customizations are tedious to set up but easy to maintain
     * Instructions are documented at [Customize using Browser](../gh-actions/gh-customize.md)
 
-
 ## Requirements
 
 * **Loop 3 requires iOS 15.1 or higher on the phone.**
@@ -74,8 +73,11 @@ Instructions to make manual updates are found at:
 If you get an error, please consult:
 
 * [Errors with Browser](gh-errors.md)
+If you get an error, please consult:
 
-## Building the Development Version
+* [Errors with Browser](gh-errors.md)
+
+## Building the Development Version of the App
 
 For experienced and/or advanced users who want to build the development version of the app, there is additional information at the link below. If you have not built using the browser build method before, it is strongly recommended you first build the released version. Once you have a successful build, then follow the steps for the development version. Building the app is independent of installing the app on your phone from *TestFlight*.
 
@@ -89,6 +91,6 @@ Try to:
 * Compare your display with the <span>graphics in *LoopDocs*</span>
     * Is something different or does yours have an error message?
     * Does the error message guide you to the problem and solution?
-    * Be aware that *GitHub* sometimes updates displayed names or locations for menu items - search for  *GitHub* directions if your display looks different than our documentation
+    * Be aware that *GitHub* sometimes updates displayed names or locations for menu items - search for *GitHub* directions if your display looks different than our documentation
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
     * Remember - to get help for Browser Build, all we need is your *GitHub* username and a brief descriptions of your problem
