@@ -68,7 +68,7 @@ It is already true that, unless you make a change, the default setting will:
 
 ### Recommendation
 
-Recommended settings for 3.2.4 (when it is released) and later:
+Recommended settings:
 
 * Allow automatic update of your&nbsp;<span translate="no">fork</span>
 * Allow automatic build and upload to *TestFlight*
