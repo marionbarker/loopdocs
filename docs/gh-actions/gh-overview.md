@@ -90,4 +90,4 @@ Try to:
     * Does the error message guide you to the problem and solution?
     * Be aware that *GitHub* sometimes updates displayed names or locations for menu items - search for *GitHub* directions if your display looks different than our documentation
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
-    * Remember - to get help with Browser Build, all we need is your *GitHub* username and a brief descriptions of your problem
+    * Remember - to get help with Browser Build, all we need is your *GitHub* username and a brief description of your problem
