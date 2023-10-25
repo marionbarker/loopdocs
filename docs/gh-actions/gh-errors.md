@@ -29,8 +29,8 @@ These are some of the most common errors to date.
     * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both upper and lower-case characters and all the values are case-sensitive
 1. When saving `TEAMID`, you typed what you thought you saw instead of using copy and paste
 1. You skipped running one of the actions
-1. You need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span>
-    * For versions earlier than 3.2.4, there was a misleading error message for this situation; see [Misleading Error Message](#misleading-error-message)
+1. You need to sign a program license agreement or update a credit card at&nbsp;<span translate="no">Apple Developer</span>
+    * Be sure to read [Misleading Error Message](#misleading-error-message)
 
 ## Error Annotations
 
@@ -316,7 +316,7 @@ Refer to [Annotation without Clear Message (*Build*)](#annotation-without-clear-
 * Click on the Action log on *GitHub*
 * There will be a series of green items followed by a red one
 * Click on the red item to view the error
-* Use the search function in this log to locate your error using one of the string below
+* Use the search function in this log to locate your error using one of the strings below
 
 For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.
 
@@ -459,9 +459,9 @@ These steps are needed to reset your `Match-Secrets`:
 
 ## Misleading Error Message
 
-> For Version 3.2.3 and earlier
-
 If there are *Apple Developer* agreements you have not accepted, you will get errors when you try to build the app that indicate your *Apple* <code>Secrets</code> are incorrect.
+
+You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
 
 * The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
 * Check your *Apple* Developer account for agreements first, before trying to fix those
