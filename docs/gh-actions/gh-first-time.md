@@ -37,7 +37,7 @@
         * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](#create-loop-app-in-app-store-connect)
     * *GitHub*:
         * [`Action: 3. Create Certificates`](#create-certificates)
-        * [`Action: 4. Build Loop`](#build-the-the-loop-app-app)
+        * [`Action: 4. Build Loop`](#build-the-loop-app)
     * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](#set-up-users-and-access-testflight)
     * Phone: [Install *Loop* with *TestFlight*](../gh-actions/gh-deploy.md#deploy-using-testflight)
 
@@ -177,7 +177,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-four-apple-secrets) To skip the detailed instructions, click on [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
 
-You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure Secrets](#configure-secrets) for how the <code>Secrets</code> are used. In addition to the 6 <code>Secrets</code>, other important information to keep handy (like usernames and passwords) is listed below. Be sure to keep this file secure.
+You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure <code>Secrets</code>](#configure-secrets) for how the <code>Secrets</code> are used. In addition to the 6 <code>Secrets</code>, other important information to keep handy (like usernames and passwords) is listed below. Be sure to keep this file secure.
 
 **Created at developer.apple.com**
 
@@ -272,7 +272,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 !!! info "Paid *Apple Developer* Account is Required"
     To generate the `API Key`, you must have a paid *Apple Developer* account.
 
-    If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [`*GitHub* Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure Secrets](#configure-secrets) until your *Apple* account is active.
+    If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [`*GitHub* Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](#configure-secrets) until your *Apple* account is active.
 
 1. Right-click to open this link in a new tab: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
 
