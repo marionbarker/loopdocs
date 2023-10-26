@@ -2,7 +2,7 @@
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac-Xcode* updates, please see: [Build with *Mac-Xcode*](../build/updating.md)**
+**For *Mac-Xcode* updates, please see: [Updating/Rebuilding](../build/updating.md)**
 
 ???+ info "Time Estimate (click to open/close)"
     Build the *Loop* App
@@ -138,8 +138,8 @@ You'll receive an App Store Connect email confirming that the build has complete
 
 * If you get an email that the action failed, then return to your repository and look for Build Action error messages
     * Click on the most recent Build job with the red x by it
-    * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)"
-         * This means _<span translate="no">Apple</span>_ did not reply to &nbsp;<span translate="no">GitHub</span>&nbsp;as fast as &nbsp;<span translate="no">GitHub</span>&nbsp;expected
+    * If the details show this message, [`Could not install WWDR certificate`](gh-errors.md#could-not-install-wwdr-certificate)
+         * This means *Apple* did not reply to *GitHub* as fast as *GitHub* expected
          * Make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step)
 
@@ -486,7 +486,7 @@ What if I decide I don't want the automatic building feature?
     * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow)
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
 
-* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [GitHub First Time](gh-first-time.md) to restore ability to build Loop with GitHub.
+* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to Use Browser](gh-first-time.md) to restore ability to build Loop with GitHub.
 
 ## Historical Interest Only
 

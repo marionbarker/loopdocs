@@ -79,9 +79,7 @@ Once all six <code>Secrets</code> are added, you will either to the first Action
 
 ## Validate <code>Secrets</code>
 
-The first action step is to Validate <code>Secrets</code>.
-
-Near the top middle of your Repository fork, click on the "Actions" tab.
+The first action step is to Validate <code>Secrets</code>. Near the top middle of your Repository fork, click on the `Actions` tab.
 
 * The first time you click on `Actions` with this repository you'll be informed that `Workflows aren't being run on this forked repository`
 * Tap on the green button that says: `I understand my workflows, go ahead and enable them`
