@@ -24,7 +24,7 @@
         * [Collect the <code>GH_PAT</code> Secret](#collect-the-gh_pat-secret)
     * [Make up a Password](#make-up-a-password)
 
-    Now it's time to use those <code>Secrets</code> to build the Loop app
+    Now it's time to use those <code>Secrets</code> to build the *Loop* app
 
     * *GitHub*:
         * [Fork a repository (copy of <code>LoopWorkspace</code>)](#fork-loopworkspace)
@@ -677,11 +677,9 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 ## Configure Identifiers for Loop
 
-Some steps can be skipped if you previously built Loop with `Mac-Xcode`.
+Some steps can be skipped if you previously built the *Loop* app with `Mac-Xcode`.
 
 [<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built Loop using Mac-Xcode, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
-
-Some steps can be skipped if you previously built the *Loop* app with `Mac-Xcode`.
 
 Please read carefully to avoid confusion.
 
@@ -712,16 +710,13 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
 
 Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 
-If you never built using *Xcode*, then after the <code>Add Identifiers</code> *Action*, you will see the six items under **`NAME`** in the table below with the associated **`IDENTIFIER`** information. Your `Developer ID` replaces the `TEAMID` in the identifier.
-
 [<span class="loop-big">:material-skip-forward:</span>](#table-with-name-and-identifier-for-loop-3) Skip ahead to [Table with Name and Identifier for Loop 3](#table-with-name-and-identifier-for-loop-3).
 
 #### Previous Xcode Builders
 
 Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 
-Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3`.
-Because you built Loop using *Xcode*, the **`NAME`** associated with at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building Loop 3.
+Because you built the *Loop* app using *Xcode*, the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3`.
 
 #### Table with Name and Identifier for `Loop 3`
 
@@ -810,7 +805,7 @@ Repeat the steps until you have completed all 4 identifiers in the table above.
 ## Create Loop App in App Store Connect
 
 ??? abstract "Section Summary (click to open/close)"
-    If you have created a Loop app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
+    If you have created a *Loop* app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
 
     1. Right-click on the link [apps list](https://appstoreconnect.apple.com/apps) to open App Store Connect and click the blue "plus" icon to create a New App.
         * Select "iOS".
@@ -827,7 +822,7 @@ Repeat the steps until you have completed all 4 identifiers in the table above.
 
 If you have created a `Loop app` in *App Store Connect* before, skip ahead to [Create Certificates](#create-certificates).
 
-If have previously used some kind of remote build, like `diawi` or `TestFlight`, you may have your Loop in the *App Store* but can't see it. Don't worry - there are instructions for this case.
+If have previously used some kind of remote build, like `diawi` or `TestFlight`, you may have your *Loop* app in the *App Store* but can't see it. Don't worry - there are instructions for this case.
 
 1. Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
     * If you have never added an app to *App Store Connect*, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them
@@ -972,7 +967,7 @@ Refer to the graphic below for the first four steps:
     For each Apple ID (person) who needs access to your *TestFlight* builds:
     
     * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect
-    * Add them to your *TestFlight* Internal Testing group for the Loop app
+    * Add them to your *TestFlight* Internal Testing group for the *Loop* app
     * Note Apple ID is the email associated with the person; it is not the same as your developer ID email
 
     [<span class="loop-bigger">:material-skip-forward:</span>](gh-deploy.md) To skip the detailed instructions, click on [GitHub Deploy](gh-deploy.md).
