@@ -3,7 +3,6 @@
 ???+ info "Time Estimate (click to open/close)"
     - If you have never built the *Loop* app (allow up to one week elapsed time)
         * Request and get an <span>*Apple Developer* Account</span>: 1-2 days
-        * Request and get an <span>*Apple Developer* Account</span>: 1-2 days
         * Create and configure your *GitHub* account and `repositories`: 1-2 hours
         * Add <code>Secrets</code> (requires *Apple Developer* Account): 1 hour
         * Perform the *GitHub* `Action` steps: 30 minutes to 2 hours
@@ -45,7 +44,7 @@
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Isn't it hard to build every 90 days?** The initial setup and deployment take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action.
     - **Can you explain the new automatic building?** See this section [Automatic Update, Build, Install](gh-deploy.md#automatic-update-build-install) for more explanations
-    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflightfor-a-child).
+    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
     - **Can I still use my customizations?** Yes. [Customize with Browser](gh-customize.md)
 
 ## Automatic Build of Loop
@@ -124,7 +123,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
         * If you previously built with Xcode, the items in the **`NAME`** column may start with `XC`
         * The items under the **`IDENTIFIER`** column match the table in [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
-* [`App Store Connect`](https://appstoreconnect.apple.com): a website to review apps build with your *Apple Developer* account
+* [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
     * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
     * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
     * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
@@ -142,7 +141,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 !!! tip "Archive Your Information"
     To complete the steps on this page, you will need a username, email address, and password for *Apple* and *GitHub*. You will find, generate or make up six <code>Secrets</code> as instructed.
 
-    * Record this information in a safe place
+    * Record this information in a safe place where you can find them 
     * A digital copy is best for copying and pasting in different locations
 
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
@@ -281,13 +280,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
     ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
     {align="center"}
 
-
-    * The top of the display is shown in the graphic below
-
-    ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
-    {align="center"}
-
-    * Click the `Keys` tab as indicated in the graphic above as indicate in the graphic above
+    * Click the `Keys` tab as indicated in the graphic above
         * If this is your first time here, you will see:
 
             "`Permission is required to access the App Store Connect API. You can request access on behalf of your organization.`"
