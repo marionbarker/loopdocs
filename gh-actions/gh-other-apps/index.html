@@ -3609,6 +3609,7 @@
 <h3 id="add-app-group-to-identifiers">Add <code>App Group</code> to <code>Identifiers</code><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Right-click to open this link in a new tab: <a href="https://developer.apple.com/account/resources/identifiers/list"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the <em>Apple Developer</em> site.</p>
 <h4 id="table-with-name-and-identifier-for-loopcaregiver">Table with Name and Identifier for <code>LoopCaregiver</code><a class="headerlink" href="#table-with-name-and-identifier-for-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>All five of these identifiers should be found after running the <code>2. Add Identifier</code> action on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>. The <strong><code>NAME</code></strong> might begin with an <code>XC</code> if you previously built with <abbr title="program used to build an app">Xcode</abbr>. However, the <strong><code>IDENTIFIER</code></strong> column value should match.</p>
 <table>
 <thead>
 <tr>
@@ -3623,24 +3624,24 @@
 </tr>
 <tr>
 <td><code>LoopCaregiverWidgetExtension</code></td>
-<td><code>com.TEAMID.loopkit.LoopCaregiverWidgetExtension</code></td>
+<td><code>com.TEAMID.loopkit.LoopCaregiver.WidgetExtension</code></td>
 </tr>
 <tr>
 <td><code>LoopCaregiverIntentExtension</code></td>
-<td><code>com.TEAMID.loopkit.LoopCaregiverIntentExtension</code></td>
+<td><code>com.TEAMID.loopkit.LoopCaregiver.IntentExtension</code></td>
 </tr>
 <tr>
 <td><code>LoopCaregiverWatchApp</code></td>
-<td><code>com.TEAMID.loopkit.LoopCaregiverWatchApp</code></td>
+<td><code>com.TEAMID.loopkit.LoopCaregiver.WatchApp</code></td>
 </tr>
 <tr>
 <td><code>LoopCaregiverWatchAppExtension</code></td>
-<td><code>com.TEAMID.loopkit.LoopCaregiverWatchAppExtension</code></td>
+<td><code>com.TEAMID.loopkit.LoopCaregiver.WatchAppExtension</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="add-loopcaregivergroup-to-each-identifier">Add <code>LoopCaregiverGroup</code> to each Identifier<a class="headerlink" href="#add-loopcaregivergroup-to-each-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Find and click on the row for the <code>LoopCaregiver</code> on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page. Look in the <strong><code>IDENTIFIER</code></strong> column to find <code>com.TEAMID.loopkit.LoopCaregiver</code>. The name in the <strong><code>NAME</code></strong> column may be different than <code>LoopCaregiver</code>.</p>
+<p>Find and click on the row for the <code>LoopCaregiver</code> on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page. Look in the <strong><code>IDENTIFIER</code></strong> column to find <code>com.TEAMID.loopkit.LoopCaregiver</code>. The <strong><code>NAME</code></strong> might begin with an <code>XC</code> if you previously built with <abbr title="program used to build an app">Xcode</abbr>. However, the <strong><code>IDENTIFIER</code></strong> column value should match.</p>
 <table>
 <thead>
 <tr>
@@ -3678,7 +3679,7 @@
 <li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
-<p>Continue down the list until every identifier in the table below has the <code>App Group</code> added to it. (TBD - add comment and edit table if some identifiers do not require the <code>App Group</code>.)</p>
+<p>Continue down the list until every identifier in the table below has the <code>App Group</code> added to it. If you miss any, the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action to <code>3. Create Certificates</code> will succeed but the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action to <code>4. Build LoopCaregiver</code> will fail.</p>
 <table>
 <thead>
 <tr>
@@ -3693,19 +3694,19 @@
 </tr>
 <tr>
 <td><code>LoopCaregiverWidgetExtension</code></td>
-<td><code>com.TEAMID.loopkit.LoopCaregiverWidgetExtension</code></td>
+<td><code>com.TEAMID.loopkit.LoopCaregiver.WidgetExtension</code></td>
 </tr>
 <tr>
 <td><code>LoopCaregiverIntentExtension</code></td>
-<td><code>com.TEAMID.loopkit.LoopCaregiverIntentExtension</code></td>
+<td><code>com.TEAMID.loopkit.LoopCaregiver.IntentExtension</code></td>
 </tr>
 <tr>
 <td><code>LoopCaregiverWatchApp</code></td>
-<td><code>com.TEAMID.loopkit.LoopCaregiverWatchApp</code></td>
+<td><code>com.TEAMID.loopkit.LoopCaregiver.WatchApp</code></td>
 </tr>
 <tr>
 <td><code>LoopCaregiverWatchAppExtension</code></td>
-<td><code>com.TEAMID.loopkit.LoopCaregiverWatchAppExtension</code></td>
+<td><code>com.TEAMID.loopkit.LoopCaregiver.WatchAppExtension</code></td>
 </tr>
 </tbody>
 </table>
