@@ -20,7 +20,7 @@
     
     
       
-        <title>Code Customization - LoopDocs (DRAFT for 3.4)</title>
+        <title>Code Customization - LoopDocs (DRAFT for 3.2.4)</title>
       
     
     
@@ -95,7 +95,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-header__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
+    <a href="../.." title="LoopDocs (DRAFT for 3.2.4)" class="md-header__button md-logo" aria-label="LoopDocs (DRAFT for 3.2.4)" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
@@ -108,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LoopDocs (DRAFT for 3.4)
+            LoopDocs (DRAFT for 3.2.4)
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -423,12 +423,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-nav__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
+    <a href="../.." title="LoopDocs (DRAFT for 3.2.4)" class="md-nav__button md-logo" aria-label="LoopDocs (DRAFT for 3.2.4)" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
     </a>
-    LoopDocs (DRAFT for 3.4)
+    LoopDocs (DRAFT for 3.2.4)
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -4258,7 +4258,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <h2 id="modify-the-guardrails">Modify the <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#modify-the-guardrails" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <a href="../../loop-3/therapy-settings/#guardrails-for-settings">Therapy Setting <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a> are for <abbr title="Latest release with major updates">Loop 3</abbr> only.</p>
 <h3 id="glucose-guardrails">Glucose <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#glucose-guardrails" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you build <abbr title="Latest release with major updates">Loop 3</abbr> over a version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x where the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.</p>
+<p>If you build <abbr title="Latest release with major updates">Loop 3</abbr> over a version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x or FreeAPS where the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>Guardrail(absoluteBounds:
 </code></pre></div>
 <ul>
