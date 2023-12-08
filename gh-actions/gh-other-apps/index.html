@@ -3577,12 +3577,13 @@
   <h1>Build Other Apps with Browser</h1>
 
 <h2 id="build-other-apps-using-a-browser">Build Other Apps using a Browser<a class="headerlink" href="#build-other-apps-using-a-browser" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other apps in the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> universe added the same feature. <strong>Only apps that are companions to&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;are included on this page.</strong></p>
+<p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other apps in the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> universe added the same feature.</p>
+<p><strong>Only apps that are companions to&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;are included on this page.</strong></p>
 <ul>
 <li><em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em></li>
 <li><em><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">Loop Follow</abbr></span></em></li>
 </ul>
-<p>If you want to build another <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> app that is not included here, look for the file <code>fastlane/testflight.md</code> in the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> associated with that app and open it in a browser. The instruction for that app should be located in that file.</p>
+<p>If you want to build another <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> app that is not included here, look for the file <code>fastlane/testflight.md</code> in the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> associated with that app and open it in a browser. The instructions for that app should be located in that file.</p>
 <p>The same technique is used and the same six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are applied to each <code>repository</code>. Those secrets are tied to your <em>Apple</em> Developer ID and your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account.</p>
 <div class="admonition warning">
 <p class="admonition-title">The <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> App Requires an <code>App Group</code></p>
@@ -3830,7 +3831,7 @@
 <tbody>
 <tr>
 <td><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></td>
-<td><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></td>
+<td><span translate="no">LoopCaregiver</span></td>
 <td><span translate="no">com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.LoopCaregiver</span></td>
 </tr>
 <tr>
@@ -3867,8 +3868,8 @@
 <h3 id="add-app-group-to-identifiers">Add <code>App Group</code> to <code>Identifiers</code><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Right-click to open this link in a new tab: <a href="https://developer.apple.com/account/resources/identifiers/list"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the <em>Apple Developer</em> site.</p>
 <h4 id="table-with-name-and-identifier-for-loopcaregiver">Table with Name and Identifier for <code>LoopCaregiver</code><a class="headerlink" href="#table-with-name-and-identifier-for-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>All five of these identifiers should be found after running the <code>2. Add Identifier</code> action on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>.</p>
-<p>If you do not see them, please sync your <code>LoopCaregiver</code> <abbr title="contains project files and each file's revision history">repository</abbr> and then run the <a href="#add-identifiers"><code>2. Add Identifier</code> action</a>. The <strong><code>NAME</code></strong> might begin with an <code>XC</code> if you previously built with <abbr title="program used to build an app">Xcode</abbr>. However, the <strong><code>IDENTIFIER</code></strong> column value should match.</p>
+<p>All five of these identifiers should be found after running the <code>Add Identifier</code> action on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>.</p>
+<p>If you do not see them, please sync your <code>LoopCaregiver</code> <abbr title="contains project files and each file's revision history">repository</abbr> and then run the <a href="#add-identifiers"><code>Add Identifier</code> action</a>. The <strong><code>NAME</code></strong> might begin with an <code>XC</code> if you previously built with <abbr title="program used to build an app">Xcode</abbr>. However, the <strong><code>IDENTIFIER</code></strong> column value should match.</p>
 <table>
 <thead>
 <tr>
