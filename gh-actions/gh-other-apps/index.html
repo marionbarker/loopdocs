@@ -994,6 +994,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#update-the-repository" class="md-nav__link">
+    Update the Repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configure-secrets-for-this-app" class="md-nav__link">
     Configure Secrets for this App
   </a>
@@ -1041,6 +1048,13 @@
   
     <nav class="md-nav" aria-label="Add App Group to LoopCaregiver">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-if-app-group-exists" class="md-nav__link">
+    Check if App Group Exists
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#create-app-group-for-the-loop-caregiver-app" class="md-nav__link">
@@ -3361,6 +3375,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#update-the-repository" class="md-nav__link">
+    Update the Repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configure-secrets-for-this-app" class="md-nav__link">
     Configure Secrets for this App
   </a>
@@ -3408,6 +3429,13 @@
   
     <nav class="md-nav" aria-label="Add App Group to LoopCaregiver">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-if-app-group-exists" class="md-nav__link">
+    Check if App Group Exists
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#create-app-group-for-the-loop-caregiver-app" class="md-nav__link">
@@ -3549,17 +3577,25 @@
   <h1>Build Other Apps with Browser</h1>
 
 <h2 id="build-other-apps-using-a-browser">Build Other Apps using a Browser<a class="headerlink" href="#build-other-apps-using-a-browser" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other apps in the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> universe added the same feature. <strong>Only apps that are companions to&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;are included on this page.</strong> If you want to build another <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> app that is not included here, look for the file <code>fastlane/testflight.md</code> in the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> associated with that app and open it in a browser. The instruction for that app should be located in that file.</p>
-<p>The same technique is used and the same six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are applied to each <code>repository</code>. Those secrets are tied to your <em>Apple</em> Developer ID and your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account.</p>
+<p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other apps in the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> universe added the same feature. <strong>Only apps that are companions to&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;are included on this page.</strong></p>
 <ul>
 <li><em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span></em></li>
 <li><em><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">Loop Follow</abbr></span></em></li>
 </ul>
+<p>If you want to build another <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> app that is not included here, look for the file <code>fastlane/testflight.md</code> in the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> associated with that app and open it in a browser. The instruction for that app should be located in that file.</p>
+<p>The same technique is used and the same six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are applied to each <code>repository</code>. Those secrets are tied to your <em>Apple</em> Developer ID and your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account.</p>
 <div class="admonition warning">
 <p class="admonition-title">The <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> App Requires an <code>App Group</code></p>
 <p>As of 2023 December 8, the updated version of the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> app requires the addition of an <code>App Group</code> to an expanded list of <code>Identifiers</code>.</p>
 <ul>
-<li>Please refer to the new section <a href="#add-app-group-to-loopcaregiver">Add <code>App Group</code> to <code>LoopCaregiver</code></a></li>
+<li>To update the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> App you need to <a href="#update-the-repository">Update the <code>Repository</code></a></li>
+<li>Then (one time only):<ul>
+<li>Run the Action to <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
+<li>Follow the instructions in <a href="#add-app-group-to-loopcaregiver">Add <code>App Group</code> to <code>LoopCaregiver</code></a></li>
+<li>Continue with <a href="#create-certificates">Create Certificates</a></li>
+<li>Finish with <a href="#build-app">Build App</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <h3 id="optional-build-method">Optional Build Method<a class="headerlink" href="#optional-build-method" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -3657,6 +3693,16 @@
 </tr>
 </tbody>
 </table>
+<h2 id="update-the-repository">Update the <code>Repository</code><a class="headerlink" href="#update-the-repository" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you just created the <code>fork</code>, you can skip this section.</p>
+<p>If you are returning to this page to update an app, please follow these steps. Each step has a link to instructions on the Update <code>LoopWorkspace</code> page. Follow the <code>Update Fork</code> directions for the <code>repository</code> of the app you are updating:</p>
+<ol>
+<li><a href="../gh-update/#accept-agreements">Accept Agreements</a> for the <em>Apple</em> Developer account</li>
+<li><a href="../gh-update/#update-fork">Update <code>Fork</code></a></li>
+</ol>
+<p>Then return to this page.</p>
+<p>Normally you skip ahead to <a href="#build-app">Build App</a> after an update.</p>
+<p>If you are updating the <em>LoopCaregiver</em> app after the 2023 December 8 update, you need to go to <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> after updating the <code>fork</code>.</p>
 <h2 id="configure-secrets-for-this-app">Configure <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> for this App<a class="headerlink" href="#configure-secrets-for-this-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <blockquote>
 <p>If you choose to use the optional <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization method, you can skip this section:</p>
@@ -3708,7 +3754,7 @@
 <p align="center"><img alt="dialog for entering a new secret" src="../img/repeat-secret-dialog.png" width="500" /></p>
 </li>
 </ol>
-<p>Once all six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are added, you will proceed to the first Action to validate your secrets.</p>
+<p>Once all six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are added, proceed to the first Action to validate your secrets.</p>
 <h2 id="validate-secrets">Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#validate-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The first action step is to Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>. Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the <code>Actions</code> tab.</p>
 <ul>
@@ -3735,7 +3781,8 @@
 <ul>
 <li>If you see the green check (<span class="twemoji passed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018L6.75 9.19 5.28 7.72a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l2 2a.75.75 0 0 0 1.06 0Z"/></svg></span>)  continue to the next section</li>
 <li>If you see the red <code>X</code> (<span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span>):<ul>
-<li><a href="../gh-errors/">Errors with Browser</a> tells how to diagnose your problem</li>
+<li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells how to view the file needed to diagnose your problem.</li>
+<li><a href="../gh-errors/#action-validate-secrets-errors">Action: Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> Errors</a> tells you what to search for in the file</li>
 <li>Resolve the error and repeat the Action: <a href="#validate-secrets">Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a></li>
 </ul>
 </li>
@@ -3764,6 +3811,7 @@
 <li>If you see the green check (<span class="twemoji passed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018L6.75 9.19 5.28 7.72a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l2 2a.75.75 0 0 0 1.06 0Z"/></svg></span>)  continue to the next section</li>
 <li>If you see the red <code>X</code> (<span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span>):<ul>
 <li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells how to view the file needed to diagnose your problem</li>
+<li><a href="../gh-errors/#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a> tells you what to search for in the file</li>
 <li>Resolve the error and repeat the Action: <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 </ul>
 </li>
@@ -3795,22 +3843,23 @@
 <blockquote>
 <p>If you build from a second or third <code>repository</code> for <code>Loop Follow</code>, the Name will end in <code>Second</code> or <code>Third</code> and Bundle ID will have <code>.Second</code> or <code>.Third</code> at the end.</p>
 </blockquote>
-<p>Some apps, like the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, require updates to the <code>Identifier</code> after they are generated.</p>
+<p>The <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> app requires updates to the <code>Identifiers</code> after they are generated.</p>
 <p>The <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">Loop Follow</abbr></em> app does not require this extra step. You can skip ahead to <a href="#create-app-in-app-store-connect">Create App in App Store Connect</a>.</p>
 <h2 id="add-app-group-to-loopcaregiver">Add <code>App Group</code> to <code>LoopCaregiver</code><a class="headerlink" href="#add-app-group-to-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>As of 2023 December 8, the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> app requires the addition of an <code>App Group</code> to an expanded list of <code>Identifiers</code>.</p>
-<ol>
-<li>Instructions are provided to create the <code>App Group</code></li>
-<li>The expanded list of <code>Identifiers</code> is provided to which you must associate that <code>App Group</code></li>
-</ol>
+<p>As of 2023 December 8, the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> app requires the addition of an <code>App Group</code> to an expanded list of <code>Identifiers</code>. Follow these steps one time to be able to build the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> app after this update.</p>
+<h3 id="check-if-app-group-exists">Check if <code>App Group</code> Exists<a class="headerlink" href="#check-if-app-group-exists" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Open this link to view your <code>applicationGroup</code> <code>Identifiers</code>: <a href="https://developer.apple.com/account/resources/identifiers/list/applicationGroup"><code>App Group Identifiers</code></a></p>
+<ul>
+<li>No action is required if there is already an identifier with the <code>NAME</code> of <code>LoopCaregiver App Group</code> and the <code>IDENTIFIER</code> contains your <code>TEAMID</code> in this format: <code>group.com.TEAMID.loopkit.LoopCaregiverGroup</code></li>
+<li>In that case, you can skip ahead to <a href="#add-app-group-to-identifiers">Add <code>App Group</code> to <code>Identifiers</code></a></li>
+</ul>
 <h3 id="create-app-group-for-the-loop-caregiver-app">Create <code>App Group</code> for the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> App<a class="headerlink" href="#create-app-group-for-the-loop-caregiver-app" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you do not have this <code>App Group</code>, you need to create it. If your <code>App Group</code> exists, you do not need to create it. It's ok to try if you are not sure; you will not be allowed to register it if it already exists.</p>
+<p>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a> on the <em>Apple Developer</em> site.</p>
 <ol>
-<li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a> on the <em>Apple Developer</em> site.</li>
-<li>For <strong><code>Description</code></strong>, use <code>LoopCaregiver App Group</code>.</li>
+<li>For <strong><code>Description</code></strong>, use <code>LoopCaregiver App Group</code></li>
 <li>For <strong><code>Identifier</code></strong>, enter <code>group.com.TEAMID.loopkit.LoopCaregiverGroup</code>, substituting your team id for <code>TEAMID</code>.</li>
 <li>Double-check the spelling - your <code>TEAMID</code> must be correct and the <code>LoopCaregiverGroup</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> must match the format shown above<ul>
-<li>A mistake here means you will not be able to build the <em>LoopCaregive</em> app until you fix it</li>
+<li>A mistake here means you will not be able to build the <em>LoopCaregiver</em> app until you fix it</li>
 </ul>
 </li>
 <li>Click <code>Continue</code> and then <code>Register</code>.</li>
@@ -3818,7 +3867,8 @@
 <h3 id="add-app-group-to-identifiers">Add <code>App Group</code> to <code>Identifiers</code><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Right-click to open this link in a new tab: <a href="https://developer.apple.com/account/resources/identifiers/list"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the <em>Apple Developer</em> site.</p>
 <h4 id="table-with-name-and-identifier-for-loopcaregiver">Table with Name and Identifier for <code>LoopCaregiver</code><a class="headerlink" href="#table-with-name-and-identifier-for-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>All five of these identifiers should be found after running the <code>2. Add Identifier</code> action on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>. If you do not see them, please sync your <code>LoopCaregiver</code> <abbr title="contains project files and each file's revision history">repository</abbr>. The <strong><code>NAME</code></strong> might begin with an <code>XC</code> if you previously built with <abbr title="program used to build an app">Xcode</abbr>. However, the <strong><code>IDENTIFIER</code></strong> column value should match.</p>
+<p>All five of these identifiers should be found after running the <code>2. Add Identifier</code> action on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>.</p>
+<p>If you do not see them, please sync your <code>LoopCaregiver</code> <abbr title="contains project files and each file's revision history">repository</abbr> and then run the <a href="#add-identifiers"><code>2. Add Identifier</code> action</a>. The <strong><code>NAME</code></strong> might begin with an <code>XC</code> if you previously built with <abbr title="program used to build an app">Xcode</abbr>. However, the <strong><code>IDENTIFIER</code></strong> column value should match.</p>
 <table>
 <thead>
 <tr>
