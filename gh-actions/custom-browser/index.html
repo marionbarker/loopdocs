@@ -1032,7 +1032,7 @@
         
   
   <span class="md-ellipsis">
-    Personal Edits with Browser
+    Custom Edits with Browser
   </span>
   
 
@@ -1274,11 +1274,31 @@
   
   
     <li class="md-nav__item">
+      <a href="../../build/edit-mac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Edits with Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../build/updating/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Update/Rebuild with Mac-Xcode
+    Update/Rebuild with Mac
   </span>
   
 
@@ -1298,7 +1318,7 @@
         
   
   <span class="md-ellipsis">
-    Build Loop dev with Mac-Xcode
+    Build Loop dev with Mac
   </span>
   
 
@@ -2570,11 +2590,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version/build-time-flag/" class="md-nav__link">
+      <a href="../../version/code-custom-edits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Build-Time Flags
+    Custom Edits
   </span>
   
 
@@ -2590,11 +2610,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/code-customization/" class="md-nav__link">
+      <a href="../../version/build-time-flag/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Personal Edits
+    Build-Time Flag
   </span>
   
 
@@ -2654,7 +2674,7 @@
         
   
   <span class="md-ellipsis">
-    Build Loop Dev
+    Build Dev
   </span>
   
 
@@ -3338,7 +3358,7 @@
 </div>
 <h2 id="customizations-prepared-for-you">Customizations Prepared for You<a class="headerlink" href="#customizations-prepared-for-you" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Some customizations are the same for everyone and have been prepared for easy use.</p>
-<p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em> team <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to maintaining these prepared customizations and provide an easy to use method to add your selection from these customization to your version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>.</p>
+<p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em> team <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to maintaining these prepared customizations and provide an easy method to add your selection from these customization to your version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>.</p>
 <p>Please read the documentation for these on the <a href="https://www.loopandlearn.org/custom-code"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization Select Page</a>:</p>
 <ul>
 <li><a href="https://www.loopandlearn.org/custom-code#custom-list">List of Customizations Available</a></li>
@@ -3352,30 +3372,27 @@
 </ul>
 <h3 id="add-libre-support-to-323">Add Libre Support to 3.2.3<a class="headerlink" href="#add-libre-support-to-323" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you are using <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> to build <code>Loop 3.2.3</code> and rely on either <em>xDrip4iOS</em> or <em>GlucoseDirect</em> to read your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and transfer the readings to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, you need to review this <a href="https://www.loopandlearn.org/custom-code#add-cgm-323-browser">section of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em> customization page</a>.</p>
-<p>Alternatively, you can switch to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, which already supports Libre.</p>
+<p>Alternatively, you can switch to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, which already supports Libre. <a href="../build-dev-browser/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev with Browser</a></p>
 <h2 id="personal-customizations">Personal Customizations<a class="headerlink" href="#personal-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Some customizations are personal to your use of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. These are of two basic types: Build-Time Flags and Custom File Edits.</p>
-<p>The information needed to use these customizations is found in the Versions tab because the information is independent of build method (think of these as your personal versions). The links are found below.</p>
+<p>Some customizations must be created for yourself. These are of two basic types: Custom Edits and Build-Time Flag.</p>
+<p>The information needed to modify the code to make these customizations is found in the Versions tab because the information is independent of build method (think of these as your personal versions). The links are found below.</p>
 <ul>
-<li><a href="../../version/build-time-flag/">Build-Time Flags</a><ul>
-<li>By enabling or disabling features controlled by Build-Time Flags, you are turning on or off features included in the code by the developers that they configured to be off or on by default</li>
+<li><a href="../../version/code-custom-edits/">Version: Custom Edits</a><ul>
+<li>The page linked above indicates how you can modify behavior by editing the code</li>
+</ul>
+</li>
+<li><a href="../../version/build-time-flag/">Version: Build-Time Flag</a><ul>
+<li>By enabling or disabling features controlled by a Build-Time Flag, you are turning on or off features included in the code by the developers that they configured to be off or on by default</li>
 <li>Please read about these flags on the page linked above</li>
-<li>When building with a <em>Mac</em>, you make the edits inside <em><abbr title="program used to build an app">Xcode</abbr></em> before building</li>
-</ul>
-</li>
-<li><a href="../../build/code-customization/">Personal Edits</a><ul>
-<li>This page indicates how you can modify behavior by editing the code</li>
-<li>Some items on this page are already done for you and you can choose them using the <a href="https://www.loopandlearn.org/custom-code#customization-select"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization Select Script</a></li>
-<li>Other items require you to make your own edits but guidelines are provided</li>
 </ul>
 </li>
 </ul>
-<p>When preparing these personal edits using a browser, there is a whole page explaining how to get these edits into you personal <code>fork</code> of <code>LoopWorkspace</code> prior to building.</p>
+<p>When preparing these personal edits using a browser, there is a page explaining how to get these edits into your personal <code>fork</code> of <code>LoopWorkspace</code> prior to building.</p>
 <ul>
-<li><a href="../gh-customize/">Personal Edits with Browser</a></li>
+<li><a href="../gh-customize/">Custom Edits with Browser</a></li>
 </ul>
 <h2 id="details-at-links">Details at Links<a class="headerlink" href="#details-at-links" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The changes required for these customizations are the same regardless of the build method. The pages that provide the documentation are found at the links above.</p>
+<p>The code changes required for these customizations are the same regardless of the build method. The pages that provide the documentation on modifying and incorporating these changes are found at the links above.</p>
 
 
 
@@ -3420,13 +3437,13 @@
         
         
           
-          <a href="../gh-customize/" class="md-footer__link md-footer__link--next" aria-label="Next: Personal Edits with Browser">
+          <a href="../gh-customize/" class="md-footer__link md-footer__link--next" aria-label="Next: Custom Edits with Browser">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Personal Edits with Browser
+                Custom Edits with Browser
               </div>
             </div>
             <div class="md-footer__button md-icon">
