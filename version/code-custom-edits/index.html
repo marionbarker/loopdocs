@@ -4102,6 +4102,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 
 static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // user is warned above this value
 </code></pre></div>
+<h4 id="low_carb_limit"><code>"low_carb_limit"</code><a class="headerlink" href="#low_carb_limit" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This first example might be used by a parent for a child with very small carb entries. It is provided as one of the prepared customizations supplied by the <a href="https://www.loopandlearn.org/custom-code/#custom-list"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em> Customization as <code>"low_carb_limit</code>"</a>.</p>
 <p><em>Code After Modification to enable the warning at lower levels and limit maximum</em></p>
 <div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // cannot exceed this value
