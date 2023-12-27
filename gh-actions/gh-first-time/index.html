@@ -1576,6 +1576,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../../build/updating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Update/Rebuild with Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../build/custom-mac/" class="md-nav__link">
         
   
@@ -1601,26 +1621,6 @@
   
   <span class="md-ellipsis">
     Custom Edits with Mac
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/updating/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Update/Rebuild with Mac
   </span>
   
 
@@ -2896,7 +2896,7 @@
         
   
   <span class="md-ellipsis">
-    Loop Releases
+    Releases
   </span>
   
 
@@ -4384,7 +4384,7 @@
 <p>The contents of this file will be used for <code>FASTLANE_KEY</code></p>
 <ul>
 <li>Copy the full text, including the "<code>-----BEGIN PRIVATE KEY-----</code>" and "<code>-----END PRIVATE KEY-----</code>" lines<ul>
-<li>On a <strong>Mac</strong>, use <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>A</kbd></span>, then <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>C</kbd></span>  to copy all the contents</li>
+<li>On a <em>Mac</em>, use <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>A</kbd></span>, then <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>C</kbd></span>  to copy all the contents</li>
 <li>On a <strong>PC</strong>, use <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>A</kbd></span> , then <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>C</kbd></span> to copy all the contents</li>
 </ul>
 </li>
@@ -4784,7 +4784,7 @@
 </li>
 </ul>
 <h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Some steps can be skipped if you previously built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app with <code>Mac-Xcode</code>.</p>
+<p>Some steps can be skipped if you previously built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app with <code>*Mac*</code>.</p>
 <p>Please read carefully to avoid confusion.</p>
 <h3 id="create-app-group">Create <code>App Group</code><a class="headerlink" href="#create-app-group" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
@@ -4811,7 +4811,7 @@
 <li>Click <code>Continue</code> and then <code>Register</code>.</li>
 </ol>
 <h3 id="add-app-group-to-identifiers">Add <code>App Group</code> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><a href="#previous-xcode-builders"><span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> If you ever built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app using Mac-<abbr title="program used to build an app">Xcode</abbr>, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
+<p><a href="#previous-xcode-builders"><span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> If you ever built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app using <em>Mac</em>, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
 <h4 id="new-builders">New Builders<a class="headerlink" href="#new-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Right-click to open this link in a new tab: <a href="https://developer.apple.com/account/resources/identifiers/list"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the <em>Apple Developer</em> site.</p>
 <p>If you never built using <em><abbr title="program used to build an app">Xcode</abbr></em>, then after the <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> <em>Action</em>, you will see the six items under <strong><code>NAME</code></strong> in the table below with the associated <strong><code>IDENTIFIER</code></strong> information. Your <code>Developer ID</code> replaces the <code>TEAMID</code> in the identifier.</p>
@@ -5261,6 +5261,11 @@
 </ol>
 <h2 id="install-on-phone">Install on Phone<a class="headerlink" href="#install-on-phone" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <a href="../gh-deploy/">Install on Phone</a> page walks you through the steps to use the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app to install the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app on a phone.</p>
+<p>But wait - there's more.</p>
+<ul>
+<li>Caregivers who help manage a loved-ones diabetes often use other open-source apps that can be built the same way</li>
+<li>When you are done building and installing the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, there are instructions to <a href="../gh-other-apps/">Build Other Apps with Browser</a></li>
+</ul>
 <h2 id="extra-steps">Extra Steps<a class="headerlink" href="#extra-steps" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Most people won't need the information on the rest of this page.</p>
 <h3 id="already-haveloopworkspace">Already Have&nbsp;<span translate="no">LoopWorkspace</span>?<a class="headerlink" href="#already-haveloopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
