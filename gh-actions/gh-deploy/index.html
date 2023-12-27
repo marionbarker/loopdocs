@@ -20,7 +20,7 @@
     
     
       
-        <title>Install on Phone - LoopDocs  (DRAFT for Nav Reorg)</title>
+        <title>Install on Phone - LoopDocs (DRAFT for 3.4)</title>
       
     
     
@@ -95,7 +95,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LoopDocs  (DRAFT for Nav Reorg)" class="md-header__button md-logo" aria-label="LoopDocs  (DRAFT for Nav Reorg)" data-md-component="logo">
+    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-header__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
@@ -108,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LoopDocs  (DRAFT for Nav Reorg)
+            LoopDocs (DRAFT for 3.4)
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -423,12 +423,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LoopDocs  (DRAFT for Nav Reorg)" class="md-nav__button md-logo" aria-label="LoopDocs  (DRAFT for Nav Reorg)" data-md-component="logo">
+    <a href="../.." title="LoopDocs (DRAFT for 3.4)" class="md-nav__button md-logo" aria-label="LoopDocs (DRAFT for 3.4)" data-md-component="logo">
       
   <img src="../../loop-logo.png" alt="logo">
 
     </a>
-    LoopDocs  (DRAFT for Nav Reorg)
+    LoopDocs (DRAFT for 3.4)
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -1062,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gh-customize/" class="md-nav__link">
+      <a href="../edit-browser/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3416,7 +3416,7 @@
 
 <h2 id="general-installation-information">General Installation Information<a class="headerlink" href="#general-installation-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is only available with&nbsp;<em><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span></em>.</p>
-<p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be built at least every 90 days when using a browser to build.</strong></p>
+<p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be built at least every 90 days when using a browser to build.</strong> With version 3.4.0 and later, the build is automatic. It is recommended you manually install the new build using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> at your convenience.</p>
 <p>After you <a href="../gh-first-time/#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a> with a browser and it has automatically uploaded to the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app, you are ready to install on as many phones as you and your family members need.</p>
 <ul>
 <li>
@@ -3465,14 +3465,17 @@
 </ul>
 <p align="center"><img alt="install Loop from TestFlight" src="../img/testflight-install-loop.gif" width="300" /></p>
 <h2 id="automatic-update-build-install">Automatic Update, Build, Install<a class="headerlink" href="#automatic-update-build-install" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Automatic features will be available when the next version is released and are available now in 3.3.0 (when&nbsp;<span translate="no">dev is the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></span>). The instructions on the <a href="../gh-first-time/">Configure to Use Browser</a> page will, unless you make a change, automatically take the following actions when you update to the next release or use <code>dev</code>:</p>
+<p>The instructions on the <a href="../gh-first-time/">Configure to Use Browser</a> page will, unless you make a change, automatically take the following actions for released versions 3.4.0 and later:</p>
 <ul>
-<li>Update the version of your&nbsp;<span translate="no"><abbr title="a copy of code in a github repository other than the original">fork</abbr></span>&nbsp;within a week of the change</li>
+<li>Update the version of your&nbsp;<span translate="no"><abbr title="a copy of code in a github repository other than the original">fork</abbr></span>&nbsp;within a week of the change<ul>
+<li>When an update to the default <code>branch</code>, typically <code>main</code>, is detected, a new build is created automatically and uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+</ul>
+</li>
 <li>Build the app at least once a month and upload to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
 <p>It is already true that, unless you make a change, the default setting will:</p>
 <ul>
-<li>Install each new build on phone from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li>Install each new build from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on the phone as soon as it is detected</li>
 </ul>
 <h3 id="recommendation">Recommendation<a class="headerlink" href="#recommendation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Recommended settings:</p>
@@ -3493,7 +3496,7 @@
 <p>When you are ready to install, just open the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app and click Install to get the most recent build and then click Open when it completes the installation. All your settings and connections to <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump are maintained.</p>
 <p>If you tap on the bottom row that says <code>Previous Builds</code>, highlighted by the dashed-green rectangle, you can view and choose an older build (as long as it has not expired).</p>
 <h2 id="testflight-for-a-child"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child<a class="headerlink" href="#testflight-for-a-child" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The adult (Apple Developer Account owner) can log into Media &amp; Purchase (see steps below) without affecting the child <em>Apple</em> ID associated with a phone (and thus their health records used by&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>). After the adult installs or updates the app using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, they probably should reverse those steps to remove their credentials from Media &amp; Purchase.</p>
+<p>The adult (<em>Apple Developer Account</em> owner) can log into Media &amp; Purchase (see steps below) without affecting the child <em>Apple</em> ID associated with a phone (and thus their health records used by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app). After the adult installs or updates the app using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, they probably should reverse those steps to remove their credentials from Media &amp; Purchase.</p>
 <p>Media &amp; Purchase affects access to the App Store, Books, Music and Podcasts.</p>
 <p>On the Child phone:</p>
 <ul>
@@ -3505,7 +3508,7 @@
 <li>Sometimes the phone requires a reboot before you can sign in with a different ID</li>
 </ul>
 </li>
-<li>Sign in with the adult (Apple Developer Account owner) <em>Apple</em> ID and password</li>
+<li>Sign in with the adult (<em>Apple Developer</em> Account owner) <em>Apple</em> ID and password</li>
 <li>Install or Update the app from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on child phone</li>
 <li>Repeat the process to sign out the adult and (if needed) sign back in the child</li>
 </ul>
