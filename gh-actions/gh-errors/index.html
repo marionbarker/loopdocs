@@ -1139,6 +1139,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#extra-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra Sections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra Sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-match-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Match-Secrets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3861,6 +3885,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#extra-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra Sections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra Sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-match-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Match-Secrets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4239,7 +4287,7 @@
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget</code></li>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
 </ul>
-<p>Return to <a href="../gh-first-time/#add-app-group-to-other-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and fix the missing items.</p>
+<p>Return to <a href="../gh-first-time/#add-app-group-to-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and fix the missing items.</p>
 <p>You must create certificates again before you can build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>:</p>
 <ul>
 <li>Action: <code>Create Certificates</code></li>
@@ -4327,6 +4375,35 @@
 <li>It can take 15 minutes to an hour after the agreement is signed before it can be used</li>
 </ul>
 <p>If you need detailed instructions, click on this <a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement"><code>Apple Program License Agreement</code> Help Page</a>.</p>
+<h2 id="extra-sections">Extra Sections<a class="headerlink" href="#extra-sections" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>It is unlikely you will need these sections. They are being saved for the transition to version 3.4.x. The <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> is automatically created for you if you don't have one. The instructions below were used when you had to create yours manually.</p>
+<h3 id="create-match-secrets">Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr><a class="headerlink" href="#create-match-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Open your <abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr> (this is <code>https://github.com/username</code>), (<code>username</code> is your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account name).</p>
+<p>Create a new private <abbr title="contains project files and each file's revision history">repository</abbr> - you can either click on the link below or follow the instructions with the first graphic:</p>
+<ul>
+<li>Click on this link: <a href="https://github.com/new" target="_blank">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/new</a></li>
+</ul>
+<p>or</p>
+<ul>
+<li>
+<p>At the top right of the screen, click on the &plus; sign and select <code>New Repository</code></p>
+<p align="center"><img alt="plus sign to add repository" src="../img/create-match-secrets.svg" width="200" /></p>
+</li>
+</ul>
+<p>This shows you a screen similar to the following graphic which has 3 regions highlighted:</p>
+<ul>
+<li>In <code>Repository name</code>, type <code>Match-Secrets</code> (use a hyphen between <code>Match</code> and <code>Secrets</code>)</li>
+<li>Be sure to check the  box <strong><code>Private</code></strong>  (red circle) to make the <abbr title="contains project files and each file's revision history">repository</abbr> <strong>private</strong></li>
+<li><strong>Please confirm you selected the <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> as private.</strong></li>
+<li>Scroll to the bottom of the page and tap on "<code>Create repository</code>"</li>
+</ul>
+<p align="center"><img alt="first screen for new repository" src="../img/01-gh-create-match-secrets.png" width="600" /></p>
+<p>A screen will appear with a lot of options - do <strong>not</strong> do anything on this screen.</p>
+<ul>
+<li>Click on your username (as indicated by the red rectangle) to return to your main <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr>.</li>
+</ul>
+<p align="center"><img alt="second screen for new repository" src="../img/02-gh-match-secrets-leave-alone.png" width="600" /></p>
+<p>You will not directly interact with your <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 
 
 
