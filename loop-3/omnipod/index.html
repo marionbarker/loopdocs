@@ -1598,9 +1598,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#insert-cannula-slider" class="md-nav__link">
+  <a href="#new-slider" class="md-nav__link">
     <span class="md-ellipsis">
-      Insert Cannula Slider
+      New Slider
     </span>
   </a>
   
@@ -3587,9 +3587,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#insert-cannula-slider" class="md-nav__link">
+  <a href="#new-slider" class="md-nav__link">
     <span class="md-ellipsis">
-      Insert Cannula Slider
+      New Slider
     </span>
   </a>
   
@@ -3862,17 +3862,18 @@
 </li>
 </ul>
 </div>
-<h3 id="insert-cannula-slider">Insert Cannula Slider<a class="headerlink" href="#insert-cannula-slider" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="new-slider">New Slider<a class="headerlink" href="#new-slider" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition tip">
-<p class="admonition-title">New Insert Cannula Control</p>
-<p>For version 3.3.0 and later, (which means the <code>dev branch</code> right now), there is a new slider to control insertion of the cannula instead of a button to tap. It looks like the graphic below. You place your finger on the darker blue icon and, while keeping your finger in contact with the screen, drag all the way to the right. After the drag operation, as soon as you lift your finger off the phone, the cannula insertion command is sent to the pod.</p>
-<p align="center"><img alt="slider to insert cannual for Omnipod or Omnipod DASH pumps" src="../img/omnipod-insert-slider.svg" width="250" /></p>
+<p class="admonition-title">The Insert Cannula and Deactivate Pod now use a Slider instead of a Button</p>
+<p>For version 3.4.x and later there is a new slider to control insertion of the cannula and deactivation of a pod. </p>
+<p>The slider looks like the graphic below. (The Deactivate Pod slider is red.) You place your finger on the dark circular icon and, while keeping your finger in contact with the screen, drag all the way to the other side. (The direction depends on the natural direction for your selected language). After the drag operation, as soon as you lift your finger off the phone, the cannula insertion command is sent to the pod.</p>
 </div>
+<p align="center"><img alt="slider to insert cannual for Omnipod or Omnipod DASH pumps" src="../img/omnipod-insert-slider.svg" width="250" /></p>
 <p>The Screen that says Setup Complete allows you to change the Scheduled Reminder for this pod if you want a different reminder time (including none) from your usual setting.</p>
 <ul>
 <li>This only changes the reminder for this one pod</li>
 <li>If you want to change all future reminders, tap on Notifications to modify the Reminder Default</li>
-<li>In that same location, you can also change notification for the current pod</li>
+<li>In that same location, you can also change notification for the current pod at any time</li>
 </ul>
 <h2 id="pod-status">Pod Status<a class="headerlink" href="#pod-status" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The Pod Status screen is shown in the graphic below. The dashed green outline indicates the <code>Device</code> portion that is found only for the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr>.  All other features of the screen are common for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH.</p>
@@ -4052,6 +4053,7 @@
 <p>The graphic shows an example for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> on the left, <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH (TWI BOARD) in the middle and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH (NXP <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr>) on the right. Do not worry about the different board styles (Device Name) for DASH. The developers did that for you. If you are asking for help from a mentor - they may request this information.</p>
 <p align="center"><img alt="section of Pod Status screen with Pod Details" src="../img/loop-3-omnipod-device-details.svg" width="600" /></p>
 <h2 id="replace-pod">Replace Pod<a class="headerlink" href="#replace-pod" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h4 id="todo-update-graphic-for-34">TODO - update graphic for 3.4<a class="headerlink" href="#todo-update-graphic-for-34" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>When you tap on the <code>Replace Pod</code> row, the <code>Deactivate Pod</code> screen, shown below, is displayed. </p>
 <ul>
 <li>If you tap <code>Deactivate Pod</code> on this screen, insulin delivery stops for this pod and cannot be resumed</li>
@@ -4121,12 +4123,11 @@
 <p>If you should happen to get a fault where the last 3 digits of the PDM ref code are "-049" (the Hex Designation is fault code 0x31), do <strong>not</strong> report this to Insulet and do <strong>not</strong> ask for a replacement. This means <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code. </p>
 <p>We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report and rebuild if you have an older version of the development code.</p>
 </div>
-<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, do not leave the screen open and unlocked for long periods of time without first reading <a href="../../faqs/omnipod-faqs/#is-there-an-increase-in-pod-failures-on-loop">Is there an increase in pod failures on <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>?</a></p>
 <h3 id="pod-error-messages">Pod Error Messages<a class="headerlink" href="#pod-error-messages" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section presents some of the error message screens you may see specific to pods.</p>
 <h4 id="pod-faults">Pod Faults<a class="headerlink" href="#pod-faults" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You are likely to hear a pod fault before <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> notices. If your phone is locked, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> only checks status every 5 minutes for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> or 3 minutes for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH.</p>
-<p>Unlock your phone, open <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, navigate to the Pod Status screen and tap on Deactivate Pod to stop the noise. The pod fault - even if it does not show up in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> or the Pod Status screen, will be picked up by the process of hitting Deactivate Pod. You can then view the Fault information in the <a href="#previous-pod-information">Previous Pod Information</a> screen.</p>
+<p>Unlock your phone, open <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, navigate to the Pod Status screen and use the slider to Deactivate Pod to stop the noise. The pod fault - even if it does not show up in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> or the Pod Status screen, will be picked up by the process of sliding to Deactivate Pod. You can then view the Fault information in the <a href="#previous-pod-information">Previous Pod Information</a> screen.</p>
 
 
 

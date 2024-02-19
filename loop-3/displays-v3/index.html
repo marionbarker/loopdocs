@@ -3663,7 +3663,6 @@
   <h1>Displays</h1>
 
 <p>This page has detailed information about <abbr title="Latest release with major updates">Loop 3</abbr> Displays.</p>
-<p>If you are running <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v2.2.x, follow this link: <a href="../../operation/loop-settings/displays/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v2.2.x Displays</a>.</p>
 <h2 id="main-loop-screen">Main <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Screen<a class="headerlink" href="#main-loop-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The main <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> screen contains a Heads-Up Display (<a href="#heads-up-display"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr></a>) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom. As part of the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>, important messages will appear in the <a href="#hud-status-row">Status Row</a> location.</p>
 <p align="center"><img alt="main loop screen when running nominally with annotation for heads-up-display, charts and toolbar" src="../img/loop-3-main-annotated.png" width="450" /></p>
@@ -3689,32 +3688,39 @@
 <p>The vertical scale is automatically adjusted by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to be as useful as possible while including the highest and lowest readings in the chart.</p>
 <p>The horizontal axis is set to go forward from the current time through your <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> (insulin duration), so you can see what <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> thinks glucose will be eventually. It then goes back in time as far as there is room, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.</p>
 <p>The glucose <a href="../therapy-settings/#correction-range"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.</p>
+<div class="admonition question">
+<p class="admonition-title">Why is my Prediction so High?</p>
+<p>New Loopers are often concerned when they bolus for a meal and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> then reduces basal and predicts a high future glucose.</p>
+<p>That prediction is what would happen if <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> took no further action (or if you walked away from your phone). <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> suggests a bolus for that meal that keeps near-term glucose above your <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>. As the food is absorbed and glucose rises, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will provide additional insulin. The automated part of this waits until your actual glucose is above the low-end of your correction range. But you can manually bolus earlier, or set an override for a few hours with a lower correction range.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Negative Glucose Prediction</p>
-<p>If you have a crazy negative glucose prediction - it is likely that you set an <a href="../../operation/features/overrides/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> with a tiny Overall Insulin Needs percentage.</p>
+<p>If you have a crazy negative glucose prediction - it is likely that you set an <a href="../../operation/features/overrides/#avoid-extreme-insulin-needs-setting" target="_blank"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> with a tiny Overall Insulin Needs percentage.</p>
 <ul>
-<li>Do not panic - this is a prediction only; not reality.</li>
-</ul>
-<p>Best approach:</p>
-<ul>
-<li>Open the loop until the prediction settles down.</li>
-<li>In future, do not choose a tiny Overall Insulin Needs percentage to force less insulin<ul>
-<li>Increase the correction range in your override</li>
-<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will reduce your basal rate at the next cycle (within 5 minutes)</li>
-<li>Most users should limit Overall Insulin Needs settings in the range of 50% to 200% (a factor of 2 in each direction)</li>
-<li>Be cautious adding carbs during an override with a change in Overall Insulin Needs - make sure you understand the effects first</li>
-</ul>
-</li>
+<li>Do not panic - this is a prediction only; not reality - follow the link above.</li>
 </ul>
 </div>
 <p>If you tap on the <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr> itself, it will open the Predicted Glucose chart described below.</p>
 <h4 id="predicted-glucose-chart">Predicted <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr><a class="headerlink" href="#predicted-glucose-chart" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="todo-update-graphic-for-34">TODO - update graphic for 3.4<a class="headerlink" href="#todo-update-graphic-for-34" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>The predicted glucose view is a great way to gain insight into the various components’ importance in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s prediction of eventual glucose.</p>
 <p align="center"><img alt="Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects" src="../../operation/loop-settings/img/glucose_hidden.svg" width="300" /></p>
-<p>The graph at the top of this view will match your <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr>. Below this chart you will see an explanation of the variables <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> takes into account in predicting your future glucose value:  Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction. You can tap on any of the entries to see the effects of that component by looking at the dashed lines.</p>
+<p>The graph at the top of this view will match your <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr>. Below this chart you will see an explanation of the variables <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> takes into account in predicting your future glucose value:</p>
+<ul>
+<li><a href="../../operation/algorithm/prediction/#carbohydrate-effect" target="_blank">Carbohydrates</a></li>
+<li><a href="../../operation/algorithm/prediction/#insulin-effect" target="_blank">Insulin</a></li>
+<li><a href="../../operation/algorithm/prediction/#blood-glucose-momentum-effect" target="_blank">Glucose Momentum</a></li>
+<li><a href="../../operation/algorithm/prediction/#insulin-effect" target="_blank">Integral Retrospective Correction</a> (or <a href="../../operation/algorithm/prediction/#retrospective-correction-effect" target="_blank">Retrospective Correction</a>)</li>
+<li>Suspension of Insulin Delivery</li>
+</ul>
+<p>You can tap on any of the entries to see the effects of that component by looking at the dashed lines. The last item, Suspension of Insulin Delivery, is new and was added to assist people wondering how long can they safely delay changing a site or suspending a pump.</p>
 <div class="admonition note">
 <p class="admonition-title">Display Only</p>
 <p>These elements are not turned on and off in the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predictions. They just modify the graph so you can view the relative effects.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Algorithm Experiments</p>
+<p>Algorithm Experiments is a feature added with version 3.4. One of the items available is Integral Retrospective Correction. When you have this enabled, the Predicted <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr> displays the retrospective and integral retrospective components as shown on the graphic above. When this is disabled, (the default setting), only the retrospective component is calculated and used.</p>
 </div>
 <h3 id="active-insulin-chart">Active Insulin Chart<a class="headerlink" href="#active-insulin-chart" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="Plot of insulin on board (IOB); active amount above or below basal using insulin type" src="../../operation/loop-settings/img/active_insulin.jpg" width="400" /></p>
@@ -3754,36 +3760,36 @@
 <p class="admonition-title">Previous Pod Insulin History</p>
 <p>For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.</p>
 <p>Before attempting that modification, please read this entire section on <a href="../../faqs/apple-health-faqs/#how-does-loop-use-apple-healthkit">How does <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> use Apple HealthKit</a> in detail.</p>
-<p>Pay special attention to <a href="../../faqs/apple-health-faqs/#insulin-and-apple-healthkit">Insulin and Apple HealthKit</a> section.</p>
+<p>Pay special attention to <a href="../../faqs/apple-health-faqs/#insulin-and-apple-healthkit" target="_blank">Insulin and Apple HealthKit</a> section.</p>
 </div>
 <h3 id="active-carbohydrates-chart">Active Carbohydrates Chart<a class="headerlink" href="#active-carbohydrates-chart" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="Active carbohydrate chart showing measured rise and fall based on entries and settings" src="../../operation/loop-settings/img/carb_graph.jpg" width="400" /></p>
-<p>The Carbohydrate chart displays the carbs used by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to predict glucose changes.  The active <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the <a href="../../operation/features/carbs/">Meal Entry</a> page for more information about entering and editing carb entries.</p>
+<p>The Carbohydrate chart displays the carbs used by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to predict glucose changes.  The active <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the <a href="../../operation/features/carbs/" target="_blank">Meal Entry</a> page for more information about entering and editing carb entries.</p>
 <h4 id="ice-chart"><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> Chart<a class="headerlink" href="#ice-chart" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p align="center"><img alt="Editable Carbohydrate History with Insulin Counteraction Effects (ICE) graph" src="../../operation/loop-settings/img/carb_edit.png" width="300" /></p>
-<p>Click this link for even more details about <a href="../../operation/features/ice/">Insulin Counteraction Effects</a>. It's a good idea to read both the Meal Entry and <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> pages - this is an important concept.</p>
+<p>Click this link for even more details about <a href="../../operation/features/ice/" target="_blank">Insulin Counteraction Effects</a>. It's a good idea to read both the Meal Entry and <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> pages - this is an important concept.</p>
 <h2 id="toolbar">Toolbar<a class="headerlink" href="#toolbar" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p align="center"><img alt="Loop Toolbar showing meal entry, pre-meal, bolus, override and settings icons" src="../../operation/loop-settings/img/toolbar.png" width="400" /></p>
 <p>The toolbar is always found at the bottom of the main <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> screen in both portrait and landscape orientation. By tapping on one of these icons, you can begin a Meal Entry, start a <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr>, initiate a Manual Bolus, select an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> or go to the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen.</p>
 <p>From left to right, the icons are:</p>
 <ul>
 <li>
-<p><strong>Meal Entry</strong>- click on this icon to enter meals. Detailed info regarding how to enter, save, and edit meal entries can be found in the <a href="../../operation/features/carbs/">Meal Entry</a> page.</p>
+<p><strong>Meal Entry</strong>- click on this icon to enter meals. Detailed info regarding how to enter, save, and edit meal entries can be found in the <a href="../../operation/features/carbs/" target="_blank">Meal Entry</a> page.</p>
 <ul>
 <li><em>For those used to entering carbs on a Medtronic pump or coming from non-<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> systems, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will not read carb entries from a Medtronic pump or <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, so you must use the meal entry tool.</em></li>
 </ul>
 </li>
 <li>
-<p><strong><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></strong> - click on this icon to start the <a href="../../operation/features/premeal/"><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a> for one hour or until carbs are entered. (plate symbol turns dark green when active)</p>
+<p><strong><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></strong> - click on this icon to start the <a href="../../operation/features/premeal/" target="_blank"><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a> for one hour or until carbs are entered. (plate symbol turns dark green when active)</p>
 </li>
 <li>
-<p><strong>Bolus</strong> - click on this icon to open the <a href="../../operation/features/bolus/">Bolus</a> tool.</p>
+<p><strong>Bolus</strong> - click on this icon to open the <a href="../../operation/features/bolus/" target="_blank">Bolus</a> tool.</p>
 </li>
 <li>
-<p><strong>Overrides</strong> - click on this icon to select a saved or custom <a href="../../operation/features/overrides/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> or to cancel an override if one is active (heart symbol turns dark blue when active)</p>
+<p><strong>Overrides</strong> - click on this icon to select a saved or custom <a href="../../operation/features/overrides/" target="_blank"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> or to cancel an override if one is active (heart symbol turns dark blue when active)</p>
 </li>
 <li>
-<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings</strong> - click on this icon to make changes to any of your <a href="../settings/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings</a>.</p>
+<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings</strong> - click on this icon to make changes to any of your <a href="../settings/" target="_blank"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings</a>.</p>
 </li>
 </ul>
 <h2 id="hud-details"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Details<a class="headerlink" href="#hud-details" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3840,7 +3846,7 @@
 </tr>
 <tr>
 <td><img alt="A green open circle with a gap at the top denoting open loop" src="../img/loop-3-icon-open-green.svg" width="175" /></td>
-<td>When the circle is open at the top, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is operating in “open-loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> (<abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr>) is active, the <abbr title="Loop will not make automated adjustments of insulin delivery but predictions and recommendation features are available">Open Loop</abbr> icon will be displayed until <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> expires or is cancelled. <em>Note that <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> is only implemented in <abbr title="Latest release with major updates">Loop 3</abbr> for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH, at the current time.</em></td>
+<td>When the circle is open at the top, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is operating in “<abbr title="Loop will not make automated adjustments of insulin delivery but predictions and recommendation features are available">Open Loop</abbr>” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> (<abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr>) is active, the <abbr title="Loop will not make automated adjustments of insulin delivery but predictions and recommendation features are available">Open Loop</abbr> icon will be displayed until <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> expires or is cancelled. <em>Note that <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> is only implemented in <abbr title="Latest release with major updates">Loop 3</abbr> for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH, at the current time.</em></td>
 </tr>
 </tbody>
 </table>
