@@ -937,6 +937,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#missing-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Certificates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#annotation-without-clear-message-build" class="md-nav__link">
     <span class="md-ellipsis">
       Annotation without Clear Message (Build)
@@ -1066,9 +1075,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#could-not-find-an-app-on-app-store-connect" class="md-nav__link">
+  <a href="#error-could-not-find-an-app-on-app-store-connect" class="md-nav__link">
     <span class="md-ellipsis">
-      Could not find an app on App Store Connect
+      Error: Could not find an app on App Store Connect
     </span>
   </a>
   
@@ -1084,9 +1093,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-new-one-cannot-be-created-because-you-enabled" class="md-nav__link">
+  <a href="#error-a-new-one-cannot-be-created-because-you-enabled" class="md-nav__link">
     <span class="md-ellipsis">
-      A new one cannot be created because you enabled
+      Error: A new one cannot be created because you enabled
     </span>
   </a>
   
@@ -1108,9 +1117,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#could-not-install-wwdr-certificate" class="md-nav__link">
+  <a href="#error-no-code-signing-identity" class="md-nav__link">
     <span class="md-ellipsis">
-      Could not install WWDR certificate
+      Error: No code signing identity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-appstore-comloopkitlooploopwidgetextension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error: AppStore com.***.loopkit.Loop.LoopWidgetExtension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-could-not-install-wwdr-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error: Could not install WWDR certificate
     </span>
   </a>
   
@@ -3470,6 +3497,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#missing-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Certificates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#annotation-without-clear-message-build" class="md-nav__link">
     <span class="md-ellipsis">
       Annotation without Clear Message (Build)
@@ -3599,9 +3635,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#could-not-find-an-app-on-app-store-connect" class="md-nav__link">
+  <a href="#error-could-not-find-an-app-on-app-store-connect" class="md-nav__link">
     <span class="md-ellipsis">
-      Could not find an app on App Store Connect
+      Error: Could not find an app on App Store Connect
     </span>
   </a>
   
@@ -3617,9 +3653,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-new-one-cannot-be-created-because-you-enabled" class="md-nav__link">
+  <a href="#error-a-new-one-cannot-be-created-because-you-enabled" class="md-nav__link">
     <span class="md-ellipsis">
-      A new one cannot be created because you enabled
+      Error: A new one cannot be created because you enabled
     </span>
   </a>
   
@@ -3641,9 +3677,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#could-not-install-wwdr-certificate" class="md-nav__link">
+  <a href="#error-no-code-signing-identity" class="md-nav__link">
     <span class="md-ellipsis">
-      Could not install WWDR certificate
+      Error: No code signing identity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-appstore-comloopkitlooploopwidgetextension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error: AppStore com.***.loopkit.Loop.LoopWidgetExtension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-could-not-install-wwdr-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error: Could not install WWDR certificate
     </span>
   </a>
   
@@ -3731,7 +3785,14 @@
 <div class="admonition warning">
 <p class="admonition-title">Just updated?</p>
 <p>If you just updated to version 3.4 from version 3.2.x, you must add a new Identifier.</p>
-<p>If you missed this step - go do it now. <a href="../gh-update/#add-and-update-new-identifier">Add and Update New Identifier</a></p>
+<p>If you missed this step - go do it now. <a href="../gh-update/#updating-from-32x-to-34" target="_blank">Updating from 3.2.x to 3.4</a></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title"><abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> is missing</p>
+<p>If you get this build error message: <code>No code signing identity found and can not create a new one because you enabled</code>, you do not have certificates needed to run the build.</p>
+<ul>
+<li>See <a href="../gh-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
+</ul>
 </div>
 <p>These are some of the most common errors to date.</p>
 <ol>
@@ -3740,7 +3801,7 @@
 <li>If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name</li>
 </ul>
 </li>
-<li>You did not add the <code>App Group Identifier</code> to all 4 of the required identifiers in this step: <a href="../gh-first-time/#add-app-group-to-identifiers">Add <code>App Group</code> to <code>Identifiers</code></a><ul>
+<li>You did not add the <code>App Group Identifier</code> to all 4 of the required identifiers in this step: <a href="../gh-first-time/#add-app-group-to-identifiers" target="_blank">Add <code>App Group</code> to <code>Identifiers</code></a><ul>
 <li>See <a href="#annotation-without-clear-message-build">Annotation without Clear Message (<em>Build</em>)</a> for an example of this kind of failure</li>
 </ul>
 </li>
@@ -3773,6 +3834,12 @@
 <p>For example, the graphic below shows a failure of&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 3. Create Certificates</span>&nbsp;.</p>
 <p align="center"><img alt="graphic showing failure to create certificates" src="../img/error-create-certs.png" width="800" /></p>
 <p>This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is <a href="#error-could-not-create">Error: Could not Create</a>.</p>
+<h3 id="missing-certificates">Missing Certificates<a class="headerlink" href="#missing-certificates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: <code>No code signing identity found and can not create a new one because you enabled</code>.</p>
+<ul>
+<li>See <a href="../gh-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
+</ul>
+<p align="center"><img alt="graphic showing missing distribution certificate" src="../img/missing-distribution-certificate.png" width="800" /></p>
 <h3 id="annotation-without-clear-message-build">Annotation without Clear Message (<em>Build</em>)<a class="headerlink" href="#annotation-without-clear-message-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below shows a failure of&nbsp;<em><span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 4. Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;. The nice messages have not been added to this yet - you will have to follow the <a href="#find-the-error">Find the Error</a> instructions, but now, you are automatically taken to the correct section so there is less of the log to deal with.</p>
 <ul>
@@ -3784,7 +3851,10 @@
 <li>Frame 3 shows what happens when you paste in the correct string<ul>
 <li>Note that if the string is not found, nothing happens</li>
 <li>If the string is found, the display automatically moves to the section of the log with that string</li>
-<li>The particular <code>Identifier</code>, which does not have the required <code>App Group</code> for this example, is the SmallStatusWidget</li>
+<li>The particular <code>Identifier</code>, which does not have the required <code>App Group</code> for this example, is the SmallStatusWidget<ul>
+<li>Note that with version 3.4, SmallStatusWidget is no longer used - perhaps an unfortunate choice for this <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -4022,7 +4092,7 @@
 <li>Use the search function in this log to locate your error using one of the strings below</li>
 </ul>
 <p>For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.</p>
-<h3 id="could-not-find-an-app-on-app-store-connect"><code>Could not find an app on App Store Connect</code><a class="headerlink" href="#could-not-find-an-app-on-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="error-could-not-find-an-app-on-app-store-connect"><code>Error: Could not find an app on App Store Connect</code><a class="headerlink" href="#error-could-not-find-an-app-on-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>Could not find an app on App Store Connect
@@ -4080,7 +4150,7 @@
 <li>Action: <code>Create Certificates</code></li>
 <li>Action: <code>Build Loop</code></li>
 </ul>
-<h3 id="a-new-one-cannot-be-created-because-you-enabled"><code>A new one cannot be created because you enabled</code><a class="headerlink" href="#a-new-one-cannot-be-created-because-you-enabled" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="error-a-new-one-cannot-be-created-because-you-enabled"><code>Error: A new one cannot be created because you enabled</code><a class="headerlink" href="#error-a-new-one-cannot-be-created-because-you-enabled" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>A new one cannot be created because you enabled
@@ -4113,10 +4183,33 @@
 <h2 id="repeat-build-loop-errors">Repeat <code>Build Loop</code> Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section is only for people who have successfully built using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em>.</p>
 <p>Use the <a href="#find-the-error">Find the Error</a> instructions to find your error message.</p>
-<h3 id="could-not-install-wwdr-certificate"><code>Could not install WWDR certificate</code><a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="error-no-code-signing-identity"><code>Error: No code signing identity</code><a class="headerlink" href="#error-no-code-signing-identity" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>No code signing identity found and can not create a new one because you enabled
+</code></pre></div>
+</blockquote>
+<p>If that phrase is found, it means your <em>Apple</em> <code>Distribution Certificate</code> expired or was revoked.</p>
+<ul>
+<li>See <a href="../gh-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
+</ul>
+<h3 id="error-appstore-comloopkitlooploopwidgetextension"><code>Error: AppStore com.***.loopkit.Loop.LoopWidgetExtension</code><a class="headerlink" href="#error-appstore-comloopkitlooploopwidgetextension" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This error has a useful Annotation that presents the error. If you want to search for it manually, copy the words on the line below and paste them into the search function for your action log.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>Provisioning profile &quot;match AppStore com.***.loopkit.Loop.LoopWidgetExtension
+</code></pre></div>
+</blockquote>
+<p>This means you did not follow the steps here: <a href="../gh-update/#updating-from-32x-to-34" target="_blank">Updating from 3.2.x to 3.4</a></p>
+<h3 id="error-could-not-install-wwdr-certificate"><code>Error: Could not install WWDR certificate</code><a class="headerlink" href="#error-could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
+<p>Note - you will get that error in addition to the <code>No code signing</code> error if you need to renew your certificates.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>Could not install WWDR certificate
+</code></pre></div>
+</blockquote>
 <p>Assuming you have successfully built using the Browser-Build / <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> method before:</p>
 <ul>
-<li>If the details show this message, <code>Could not install WWDR certificate</code>, make sure your <a href="https://developer.apple.com" target="_blank"><em>Apple developer</em> account</a> is in good standing and that there are no agreements that need to be accepted</li>
+<li>If the details show this message, <code>Could not install WWDR certificate</code>, make sure your <a href="https://developer.apple.com" target="_blank"><em>Apple developer</em> account</a> is in good standing and that there are no agreements that need to be accepted and that your <code>Distribution Certificates</code> did not expire</li>
 <li>Sometimes this is a sign that <em>Apple</em> did not respond to a request, this failure happens in the first few minutes<ul>
 <li>Repeat the build and it should be fine the next time</li>
 </ul>

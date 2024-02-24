@@ -3599,10 +3599,6 @@
 <p>This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your <code>Distribution Certificate</code> expires.</p>
 </blockquote>
 <p><strong>Once a year, you need to renew your <code>Distribution Certificate</code> to continue using the build with browser method.</strong></p>
-<blockquote>
-<p>Note that these steps should become more automated, but for now, here's what you need to do when you get an email from Apple informing you that "Your <code>Distribution Certificate</code> will no longer be valid in 30 days."</p>
-<p>Many people report not seeing the email; that is covered in the steps below.</p>
-</blockquote>
 <p><strong>Apps in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> that have not already expired are not affected by revoking the certificate.</strong></p>
 <ul>
 <li>Apps installed on the phone continue to run</li>
@@ -3694,12 +3690,43 @@
 <blockquote>
 <p>This is Step 4 of 6 - this is always required.</p>
 </blockquote>
-<p>If you have successfully built <abbr title="Latest release with major updates">Loop 3</abbr>.4 with automatic build configuration enabled and later decide to manually build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, all that is required is to run the action: Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for your <abbr title="a copy of code in a github repository other than the original">fork</abbr> and skip ahead to <a href="#wait-for-testflight">Wait for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a>.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Reminder on <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></p>
+<ol>
+<li>You select the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> tab</li>
+<li>You select an action on the left</li>
+<li>You click on the Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button on the right to reveal two new rows</li>
+<li>You click on the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button that just appeared to start the action</li>
+<li>Wait for the action to finish before doing anything else (except maybe refresh your browser)<ul>
+<li>If an action takes longer than you think is reasonable, you can cancel the action (click on the three dots by the action and cancel) and then try again</li>
+</ul>
+</li>
+</ol>
+<p>When action has finished, a log appears. Do not delete those logs. They are an important record of activity.</p>
+</div>
 <h4 id="updating-from-32x-to-34">Updating from 3.2.x to 3.4<a class="headerlink" href="#updating-from-32x-to-34" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future.</p>
-<h4 id="add-and-update-new-identifier">Add and Update New Identifier<a class="headerlink" href="#add-and-update-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The <code>Identifier</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>". You need to run Add Identifier, wait for it to succeed and then add the <code>App Group</code> to this one new Identifier, shown in the table below.</p>
-<p>All other identifiers should be already set up. If they are not, please go through the steps on the <a href="../gh-first-time/#add-app-group-to-identifiers">Configure to use Browser: Add <code>App Group</code> to <code>Identifiers</code></a> to figure out what you are missing.</p>
+<p>For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future. If you skip this step - the build will fail.</p>
+<blockquote>
+<p>If you have successfully built <abbr title="Latest release with major updates">Loop 3</abbr>.4 with automatic build configuration enabled and later decide to manually build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you can skip ahead to <a href="#4-build">4: Build</a>.</p>
+</blockquote>
+<h4 id="extra-steps">Extra Steps<a class="headerlink" href="#extra-steps" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>These extra steps are required one time only.</p>
+<ul>
+<li>The <code>Identifier</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>"</li>
+<li>The addition of the Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app requires new capabilities<ul>
+<li>All capabilities, except the configuration of the <code>App Groups</code>, are now done automatically</li>
+</ul>
+</li>
+</ul>
+<p>You will (1) run <code>Add Identifiers</code>, (2) update the new identifier, (3) run <code>Create Certificates</code> and then (4) run <code>Build Loop</code>.</p>
+<h4 id="1-add-identifiers">1: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#1-add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:</p>
+<ul>
+<li>Run the <a href="../gh-first-time/#add-identifiers" target="_blank"><code>Action</code>: <code>Add Identifers</code></a></li>
+</ul>
+<p>Wait for it to succeed.</p>
+<h4 id="2-update-new-identifier">2: Update New Identifier<a class="headerlink" href="#2-update-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The next step is to add your <code>App Group</code> to this one new Identifier, shown in the table below.</p>
 <table>
 <thead>
 <tr>
@@ -3715,16 +3742,26 @@
 </tbody>
 </table>
 <ul>
-<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
+<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
 <li>Click on the "<code>LoopWidgetExtension</code>" identifier</li>
-<li>Edit the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
+<li>These are the steps you need to take:<ul>
+<li>Scroll down to the <code>App Groups</code> row of the Capabilities column</li>
+<li>Configure the App Groups to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
+<li>Save and Confirm your configuration</li>
 </ul>
-<h4 id="create-certificates-and-build">Create Certificates and Build<a class="headerlink" href="#create-certificates-and-build" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You must create certificates again to cover the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> needs permission to have that capability). Once the certificate action succeeds, then run the action to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+</li>
+<li>If you need more explicit directions, review <a href="../gh-first-time/#add-app-group-to-identifiers" target="_blank">Configure to use Browser: Add <code>App Group</code> to <code>Identifiers</code></a></li>
+</ul>
+<h4 id="3-create-certificates">3: Create Certificates<a class="headerlink" href="#3-create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>You must create certificates again to add a certificate for the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> needs permission to have that capability). Once the certificate action succeeds, then run the action to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <ol>
-<li>Run the Action for Create Certificates</li>
-<li>Run the Action for Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
+<li>Run the <a href="../gh-first-time/#create-certificates" target="_blank"><code>Action</code>: <code>Create Certificates</code></a></li>
+</ul>
+</li>
 </ol>
+<p>Wait for this action to succeed.</p>
+<h4 id="4-build">4: Build<a class="headerlink" href="#4-build" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Refer to graphic below as you follow the steps to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <ul>
 <li>Click on the <code>Actions</code> tab</li>
