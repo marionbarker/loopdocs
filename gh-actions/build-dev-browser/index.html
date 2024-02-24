@@ -3372,76 +3372,8 @@
 </ul>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <h3 id="one-time-changes">One-Time Changes<a class="headerlink" href="#one-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Look in this section for one-time changes for building <code>dev</code> with a browser that require special, one-time actions. </p>
-<p>If you have already completed the One-Time Changes, skip ahead to <a href="#build-branch">Build <code>Branch</code></a>.</p>
-<h4 id="transition-to-dev">Transition to <code>dev</code><a class="headerlink" href="#transition-to-dev" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>When updating from&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;3.2.x to <code>dev</code>, you will need to take some extra steps. </p>
-<p>You have a choice:</p>
-<ul>
-<li>You can change your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> to <code>dev</code>, see <a href="#change-default-branch">Change Default <code>Branch</code></a> and then your&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;app will be automatically updated and automatically built at least once a month<ul>
-<li>Be sure to review the <a href="../automatic/#modify-automatic-building" target="_blank">Modify Automatic Building</a> section</li>
-</ul>
-</li>
-<li>You can leave your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> at main, but no automated updates will happen<ul>
-<li>Running each action below requires you to select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the drop-down menu</li>
-</ul>
-</li>
-</ul>
-<p>Here is a summary of the extra steps; each step has an associated link. This assumes you have already updated your <code>fork</code> and are at the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<ol>
-<li>Confirm the status of your &nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token</span><ul>
-<li>It should be configured with permission scope of <code>repo, workflow</code> and to never expire</li>
-<li>You can check this using directions at <a href="../gh-update/#github-token"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Token</a></li>
-</ul>
-</li>
-<li>Next, follow along in this section to perform these steps before you build<ul>
-<li>Add and Update <code>New Indentifier</code></li>
-<li><code>Create Certificates</code></li>
-</ul>
-</li>
-</ol>
-<h4 id="automatic-creation-of-alive-branch">Automatic Creation of <code>alive branch</code><a class="headerlink" href="#automatic-creation-of-alive-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
-<div class="admonition warning">
-<p class="admonition-title">What about the <code>alive branch</code></p>
-<ul>
-<li>Sometimes you get an error about the <code>alive branch</code></li>
-<li>It should be created for you automatically if you are building with the <code>dev branch</code> <strong>and</strong> you have <code>workflow</code> permission added to the <code>scope</code> for your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code></li>
-<li>If necessary, delete the <code>alive branch</code> and run the <code>Create Certificates</code> again</li>
-</ul>
-</div>
-<h4 id="add-and-update-new-identifier">Add and Update New <code>Identifier</code><a class="headerlink" href="#add-and-update-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The <code>bundle ID</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>".</p>
-<ul>
-<li>You need to run Add Identifier - be sure that you run this for the <code>dev branch</code></li>
-<li>Wait for it to succeed</li>
-<li>Add the <code>App Group</code> to this one new Identifier</li>
-</ul>
-<p>All other identifiers should be already set up. If they are not, please go through the steps on the <a href="../gh-first-time/">Configure to Use Browser</a> page to figure out what you are missing.</p>
-<table>
-<thead>
-<tr>
-<th><code>NAME</code></th>
-<th><code>IDENTIFIER</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Loop Widget Extension</code></td>
-<td><code>com.TEAMID.loopkit.Loop.LoopWidgetExtension</code></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
-<li>Click on the "<code>LoopWidgetExtension</code>" identifier</li>
-<li>Edit the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
-</ul>
-<h4 id="create-certificates-and-build">Create Certificates and Build<a class="headerlink" href="#create-certificates-and-build" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You must create certificates again to cover the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> needs permission to have that capability). Once the certificate action succeeds, then run the action to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
-<ol>
-<li>Run the Action for Create Certificates - be sure that you run this for the <code>dev branch</code></li>
-<li>Run the Action for <code>Build Loop</code> (see <a href="#build-branch">Build <code>Branch</code></a>)</li>
-</ol>
+<p>Look in this section for one-time changes for building <code>dev</code> with a browser that require special, one-time actions.</p>
+<p>With the release of version 3.4, no one-time changes are required. This assumes you built main after the release of 3.4.</p>
 <h3 id="build-branch">Build <code>Branch</code><a class="headerlink" href="#build-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want a <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be the one you build all the time, you may choose to <a href="#change-default-branch">Change Default <code>Branch</code></a>. This is not necessary except for special cases.</p>
 <p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example main, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you <code>Build Loop</code>. Refer to step 4 in the graphic below. Use the <abbr title="version of code within a single repository or workspace repository">branch</abbr> dropdown menu to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want before hitting the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button.</p>
