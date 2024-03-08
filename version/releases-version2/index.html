@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loop-2-version-history" class="md-skip">
+        <a href="#compatibility-between-versions-2-and-3" class="md-skip">
           Skip to content
         </a>
       
@@ -2497,6 +2497,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#compatibility-between-versions-2-and-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compatibility between Versions 2 and 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-2-version-history" class="md-nav__link">
     <span class="md-ellipsis">
       Loop 2 Version History
@@ -3237,6 +3246,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#compatibility-between-versions-2-and-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compatibility between Versions 2 and 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-2-version-history" class="md-nav__link">
     <span class="md-ellipsis">
       Loop 2 Version History
@@ -3367,6 +3385,22 @@
 
   <h1>Loop 2 and Older</h1>
 
+<h2 id="compatibility-between-versions-2-and-3">Compatibility between Versions 2 and 3<a class="headerlink" href="#compatibility-between-versions-2-and-3" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are running a much older version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, be aware:</p>
+<ul>
+<li>You can build <abbr title="Latest release with major updates">Loop 3</abbr> over older versions of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and maintain therapy settings as well as your configuration for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump (including a pod)</li>
+<li>You can build <abbr title="Latest release with major updates">Loop 3</abbr> using a browser on any computer (no Mac required) with <a href="../../gh-actions/gh-overview/">Build with Browser</a></li>
+<li>Your phone must be running at least <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15.1 (although some people report they needed newer <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> than that when building with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build)</li>
+</ul>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> is <strong>NOT backwards</strong> compatible. Once you build <abbr title="Latest release with major updates">Loop 3</abbr> or later on your phone, you cannot return to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x or FreeAPS without some additional work.</p>
+<ul>
+<li>Be prepared to enter all your settings again and start a new pod</li>
+<li>If you use <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">Loop Follow</abbr>, you do <strong>not</strong> need to delete <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">Loop Follow</abbr></li>
+<li>When downgrading to an older version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> from <abbr title="Latest release with major updates">Loop 3</abbr>, you have to delete all apps with a shared app group ID<ul>
+<li>For more information, click on <a href="../releases/#remove-apps-with-shared-app-group">Remove Apps with Shared <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a></li>
+</ul>
+</li>
+</ul>
 <h2 id="loop-2-version-history"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2 Version History<a class="headerlink" href="#loop-2-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="loop-v229"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v2.2.9<a class="headerlink" href="#loop-v229" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This release updates <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to handle Dexcom Share server changes for how glucose trend is parsed. Dexcom used to provide integers that mapped to the meaning for the arrows.  They changed that to strings, like "Flat" or "FortyFiveUp".</p>
