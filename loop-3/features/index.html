@@ -3355,7 +3355,16 @@
 <details class="abstract">
 <summary>Do you want to know more? (Click to open/close)</summary>
 <ul>
-<li>Originally proposed as <a href="https://github.com/LoopKit/Loop/pull/1988"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 1988</a></li>
+<li>
+<p>Originally proposed as <a href="https://github.com/LoopKit/Loop/pull/1988"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 1988</a></p>
+</li>
+<li>
+<p>Many people used a customization provided by <em>CustomTypeOne LoopPatches</em> informally called the switcher patch. It transitioned from <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> at higher glucose values to <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr> at lower glucose values where the user had to select the threshold for the shift external to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+<ul>
+<li>The "switcher" patch is no longer compatible</li>
+<li>The <abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr> feature is intended to replace the functionality of that older customization and is controlled completely inside the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
+</ul>
+</li>
 </ul>
 </details>
 <p><em><span translate="no">Glucose Based Partial Application</span></em> is only used when <em><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></em> (AB) is selected for <em><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></em> <em><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></em></p>
@@ -3508,7 +3517,7 @@
 <ul>
 <li>Originally proposed in <a href="https://github.com/LoopKit/Loop/issues/695"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 695</a><ul>
 <li>This was tested in a few forks but not included into dev until recently</li>
-<li>Initial merge into dev: <a href="https://github.com/LoopKit/Loop/pull/2008"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2008</a></li>
+<li>Initial merge into the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app: <a href="https://github.com/LoopKit/Loop/pull/2008"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2008</a></li>
 </ul>
 </li>
 <li>Updated with a modification to limit stacking of <em><span translate="no"><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></span></em> with Glucose Momentum: <a href="https://github.com/LoopKit/Loop/pull/2028"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2028</a></li>
