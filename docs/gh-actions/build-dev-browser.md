@@ -68,64 +68,9 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 
 ### One-Time Changes
 
-Look in this section for one-time changes for building `dev` with a browser that require special, one-time actions. 
+Look in this section for one-time changes for building `dev` with a browser that require special, one-time actions.
 
-If you have already completed the One-Time Changes, skip ahead to [Build `Branch`](#build-branch).
-
-#### Transition to `dev`
-
-When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.3 to `dev`, you will need to take some extra steps. 
-
-**We recommend most users leave their default branch as `main`.**
-
-* This is the safest choice if you are choosing to build `dev branch` now because you want the bug fixes and features that are found in `dev`
-* When version 3.4.0 is released, most users will return to the building the `main branch`
-    * At that time, simply update your `main` branch and return to using released code
-* Each action below requires you to select the `dev` branch in the drop-down menu
-
-Here is a summary of the extra steps you will follow as you progress through this section.
-
-1. Confirm the status of your&nbsp;<span translate="no">*GitHub* Personal Access Token</span>
-    * It should be configured with permission scope of `repo, workflow` and to never expire
-    * You can check this using directions at [*GitHub* Token](gh-update.md#github-token){: target="_blank" }
-1. [Add and Update `New Identifier`](#add-and-update-new-identifier)
-1. [`Create Certificates`](#create-certificates)
-1. [`Build Loop`](#build-branch)
-
-#### Automatic Creation of `alive branch`
-
-The `alive branch` is created automatically when you run the `Build Loop` action using the `dev branch` (version 3.3 or later). It is used as part of the automatic build process that will be released with the next version.
-
-??? warning "I got an error regarding the `alive branch` (click to open/close)"
-    * Sometimes you get an error about the `alive branch`
-    * If you do get an error, delete the `alive branch` and run the `Build Loop` action again
-        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch){: target="_blank" } or ask for help when deleting a branch
-
-#### Add and Update New `Identifier`
-
-The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
-
-* You need to run `Add Identifier` - be sure to select the `dev branch` when you run this action
-* Wait for it to succeed
-* Add the `App Group` to this one new Identifier
-
-| `NAME` | `IDENTIFIER` |
-|-------|------------|
-| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
-
-* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
-* Click on the "`LoopWidgetExtension`" identifier
-* Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
-
-??? tip "Other Identifiers (Click to Open/Close)"
-    All other identifiers should be already set up.
-
-    * If they are not, refer to [Configure to Use Browser: Add App Group to Identifiers](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
-    * With the `dev branch`, only the App Group needs to be added; all other `Identifier` settings are automatically included.
-
-#### Create Certificates
-
-You must run the action `Create Certificates` again because the `Identifiers` were updated. Be sure that you run this for the `dev branch`
+With the release of version 3.4, no one-time changes are required. This assumes you built main after the release of 3.4.
 
 ### Build `Branch`
 
@@ -188,3 +133,9 @@ For the numbered steps below, refer to the graphic found under each group of ste
     {align="center"}
 
 Your default branch has been changed.
+
+## Automatic Update & Build
+
+The automatic update and build features are available for both the released (`main`) and development (`dev`) branch.
+
+Be sure to read this page: [Automatic Update & Build](automatic.md){: target="_blank" }.

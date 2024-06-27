@@ -1,12 +1,18 @@
 ## Overview
 
-**After the next release of the *Loop* app (version 3.4.0), this page will be required for all versions when building with a browser.**
+The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for released versions 3.4.0 and later:
 
-**Before that release, this page is only relevant when building the `dev` branch with a browser and only when the `dev` branch is the default branch.**
+* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
+    * When an update to the default `branch`, typically `main`, is detected, a new build is created automatically and uploaded to *TestFlight*
+* Build the app at least once a month and upload the fresh build to *TestFlight*
+
+If you do not want this automatic schedule, you can modify it.
+
+Regardless of your choice, please [Disable Automatic Installation from *TestFlight*](gh-deploy.md#disable-automatic-install-from-testflight){: target="_blank" }. You should be alert any time your *Loop* app is updated. Check that all settings are maintained and pay attention to make sure the app behavior is nominal.
 
 ## Modify Automatic Building
 
-For someone using [development code](build-dev-browser.md) for their own use, they probably want to decide when to update their `fork` to the most recent commit. They can still have the advantage of automatic building without automatic updates. There may be other configurations someone would choose. These options are added to Loop 3.3.0 (`dev` branch) and later.
+For someone using [development code](build-dev-browser.md) for their own use, they probably want to decide when to update their `fork` to the most recent commit. They can still have the advantage of automatic building without automatic updates. There may be other configurations someone would choose. These options are available starting with Loop 3.3.0 (`dev` branch) and later.
 
 You can affect the default behavior:
 
@@ -27,9 +33,9 @@ Note that the weekly and monthly `Build Loop` actions will continue, but the act
 
 | <div style="width:120px">`SCHEDULED_SYNC`</div> | <div style="width:120px">`SCHEDULED_BUILD`</div> | Automatic Actions |
 |---|---|---|
-| `true` (or NA) | `true` (or NA) | keep-alive, weekly update check (auto update/build), monthly build with auto update|
-| `true` (or NA) | `false` | keep-alive, weekly update check with auto update, only builds if update detected|
-| `false` | `true` (or NA) | keep-alive, monthly build, no auto update |
+| `true` (or N/A) | `true` (or N/A) | This is the default:<br>keep-alive, weekly update check (auto update/build), monthly build with auto update|
+|`true` (or N/A) | `false` |  keep-alive, monthly build, no auto update |
+| `false` | `true` (or N/A) | keep-alive, weekly update check with auto update, only builds if update detected|
 | `false` | `false` | no automatic activity, no keep-alive|
 
 ### How to configure a variable
