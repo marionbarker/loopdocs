@@ -4122,16 +4122,14 @@
 </code></pre></div>
 </blockquote>
 <p>If that phrase is found one, or more times, it means you missed a step when configuring the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier or missed associating your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
-<p>For example, if you see:</p>
-<p><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.</code></p>
-<p>Go back to <a href="../gh-first-time/#add-or-review-configuration-for-loop-identifier">First-Time: Add or Review Configuration for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Identifier</a> and make sure you enabled the <code>Time-Sensitive notification</code> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p>For example, you might see:</p>
 <ul>
-<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.SmallStatusWidget</code></li>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop</code></li>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.LoopWidgetExtension</code></li>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget</code></li>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
 </ul>
-<p>Return to <a href="../gh-first-time/#add-app-group-to-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and fix the missing items.</p>
+<p>Return to <a href="../gh-first-time/#identifiers-for-the-loop-app">First-Time: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for the <code>Loop</code> app</a> and make sure you followed all the steps.</p>
 <p>You must create certificates again before you can build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>:</p>
 <ul>
 <li>Action: <code>Create Certificates</code></li>
@@ -4169,7 +4167,7 @@
 <p>At this point, get your correct <code>TEAMID</code>, fix your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> file to have the correct <code>TEAMID</code> and then return to <a href="../gh-first-time/#configure-secrets">First-Time: Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>. This time you will be updating <code>TEAMID</code> in the <abbr title="contains project files and each file's revision history">repository</abbr> secret list.</p>
 <h2 id="repeat-build-loop-errors">Repeat <code>Build Loop</code> Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section is only for people who have successfully built using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em>.</p>
-<p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
+<p>Use the <a href="#examine-annotation">Examine Annotation</a> instructions to find your error message.</p>
 <h3 id="error-asset-validation-failed"><code>ERROR: Asset validation failed</code><a class="headerlink" href="#error-asset-validation-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This error indicates your <abbr title="a copy of code in a github repository other than the original">fork</abbr> needs to be updated. As of 29 April 2024, you are required to use <abbr title="program used to build an app">Xcode</abbr> 15 to build the app.</p>
 <p>There are serveral phrases you can check for. All of them have the same solution.</p>
