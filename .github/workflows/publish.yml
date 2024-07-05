@@ -9,12 +9,14 @@ on:
   push:
     branches:
       - main
+      - test-publish
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    if: github.repository_owner == 'LoopKit'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
