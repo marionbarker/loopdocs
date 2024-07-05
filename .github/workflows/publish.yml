@@ -1,7 +1,5 @@
 name: publish
 
-if: github.repository_owner == 'marionbarker'
-
 # Controls when the action will run.
 on:
   # Remark: uncomment one section only
@@ -11,7 +9,6 @@ on:
   push:
     branches:
       - main
-      - test-publish
 
 jobs:
   deploy:
