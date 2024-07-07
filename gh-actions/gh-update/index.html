@@ -1039,7 +1039,7 @@
         <li class="md-nav__item">
   <a href="#testflight-expiration-warning" class="md-nav__link">
     <span class="md-ellipsis">
-      TestFlight&nbsp;Expiration Warning
+      TestFlight Expiration Warning
     </span>
   </a>
   
@@ -1048,11 +1048,11 @@
         <li class="md-nav__item">
   <a href="#github-personal-access-token" class="md-nav__link">
     <span class="md-ellipsis">
-      GitHub Personal Access Token
+      *GitHub Personal Access Token
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="GitHub Personal Access Token">
+    <nav class="md-nav" aria-label="*GitHub Personal Access Token">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3410,7 +3410,7 @@
         <li class="md-nav__item">
   <a href="#testflight-expiration-warning" class="md-nav__link">
     <span class="md-ellipsis">
-      TestFlight&nbsp;Expiration Warning
+      TestFlight Expiration Warning
     </span>
   </a>
   
@@ -3419,11 +3419,11 @@
         <li class="md-nav__item">
   <a href="#github-personal-access-token" class="md-nav__link">
     <span class="md-ellipsis">
-      GitHub Personal Access Token
+      *GitHub Personal Access Token
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="GitHub Personal Access Token">
+    <nav class="md-nav" aria-label="*GitHub Personal Access Token">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3738,7 +3738,7 @@
 <h4 id="updating-from-32x-to-34">Updating from 3.2.x to 3.4<a class="headerlink" href="#updating-from-32x-to-34" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future. If you skip this step - the build will fail.</p>
 <blockquote>
-<p>If you have successfully built <abbr title="Latest release with major updates">Loop 3</abbr>.4 with automatic build configuration enabled and later decide to manually build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you can skip ahead to <a href="#4-build">4: Build</a>.</p>
+<p>If you built version 3.3.0 (the <code>dev branch</code> before release of version 3.4) or newer, you can skip ahead to <a href="#4-build">4: Build</a>.</p>
 </blockquote>
 <h4 id="extra-steps">Extra Steps<a class="headerlink" href="#extra-steps" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>These extra steps are required one time only.</p>
@@ -3753,7 +3753,8 @@
 <h4 id="1-add-identifiers">1: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#1-add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:</p>
 <ul>
-<li>Run the <a href="../gh-first-time/#add-identifiers" target="_blank"><code>Action</code>: <code>Add Identifers</code></a></li>
+<li>Run the <code>Action</code> to <code>Add Identifers</code></li>
+<li>If you need explicit instructions, review: <a href="../gh-first-time/#add-identifiers" target="_blank"><code>Action</code>: <code>Add Identifers</code></a></li>
 </ul>
 <p>Wait for it to succeed.</p>
 <h4 id="2-update-new-identifier">2: Update New Identifier<a class="headerlink" href="#2-update-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -3817,7 +3818,7 @@
 <li>Other warnings only address issues if you were selling the app in the app store, but it is for your own personal use</li>
 </ul>
 <h3 id="wait-for-testflight">Wait for <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em><a class="headerlink" href="#wait-for-testflight" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You'll receive an App Store Connect email confirming that the build has completed processing, and a &nbsp;<span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span>&nbsp;email confirming the new app is ready to test.</p>
+<p>You'll receive an App Store Connect email confirming that the build has completed processing, and a <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> email confirming the new app is ready to test.</p>
 <ul>
 <li>If you get an email that the action failed, then return to your <abbr title="contains project files and each file's revision history">repository</abbr> and look for Build Action error messages<ul>
 <li>Click on the most recent Build job with the red x by it</li>
@@ -3835,11 +3836,11 @@
 <p>This is Step 6 of 6 - once you finish this, you are done and your app will last 90 days.</p>
 </blockquote>
 <p>Open the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the Loopers phone and install the most recent version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. Most Loopers have automatic update disabled on their phones, so this is a manual process. <strong>Don't forget.</strong></p>
-<p>The updated app will show up in your&nbsp;<span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span>&nbsp;app.</p>
+<p>The updated app will show up in your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app.</p>
 <ul>
 <li>Your new app will have "Expires in 90 days"<ul>
-<li>It takes time for the update to show up in the&nbsp;<span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span>&nbsp;app</li>
-<li>There may be older builds that are still in&nbsp;<span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span></li>
+<li>It takes time for the update to show up in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app</li>
+<li>There may be older builds that are still in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 <li>Wait for the one that expires in about 90 days</li>
 </ul>
 </li>
@@ -3852,14 +3853,14 @@
 <li>Open <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on your phone and click <code>Install</code> as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
 <li>If you are building for a child, follow the <a href="../gh-deploy/#testflight-for-a-child"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child</a> instructions again</li>
 </ul>
-<p align="center"><img alt="install Loop from &nbsp;&lt;span translate=&quot;no&quot;&gt;TestFlight&lt;/span&gt;" src="../img/testflight-install-loop.gif" width="300" /></p>
+<p align="center"><img alt="install Loop from  *TestFlight*" src="../img/testflight-install-loop.gif" width="300" /></p>
 <h4 id="automatic-update-enabled">Automatic Update Enabled<a class="headerlink" href="#automatic-update-enabled" title="Anchor link to this Header on this Page">&para;</a></h4>
 <blockquote>
 <p>We strongly recommend you toggle off Automatic Updates to allow you to be in full control over when the app is updated. This is even more important if you're using automatic builds from <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> for version 3.3 or later.</p>
 </blockquote>
 <p>Option 2: If you chose to enable Automatic Updates from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, the updated build will be installed over your existing app as soon as it uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>.</p>
 <ul>
-<li>In this case, when you look at the&nbsp;<span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span>&nbsp;app on your phone, the app should have installed automatically</li>
+<li>In this case, when you look at the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone, the app should have installed automatically</li>
 <li>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above, the message will say <code>Open</code> instead of <code>Install</code></li>
 </ul>
 <h2 id="choose-previous-build">Choose Previous Build<a class="headerlink" href="#choose-previous-build" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3902,10 +3903,10 @@
 </ul>
 <p>The following graphic shows the view seen in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the phone. By adding test details (as explained in the previous section), the desired build is clear. For most people - they will just use the most recent build. This procedure is useful for those who build often or who support multiple family members.</p>
 <p align="center"><img alt="choose build from TestFlight that has test details" src="../img/testflight-select-with-details.png" width="300" /></p>
-<h2 id="testflight-expiration-warning"><span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span>&nbsp;Expiration Warning<a class="headerlink" href="#testflight-expiration-warning" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>For version 3.3.0 and newer, the usual <a href="../../operation/features/notifications/#loop-app-expiration-notification"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> expiration notification system</a> alerts the user when the app is within 20 days of expiration. In addition to that <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.</p>
+<h2 id="testflight-expiration-warning"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Expiration Warning<a class="headerlink" href="#testflight-expiration-warning" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>For version 3.3.0 and newer, the usual <a href="../../operation/features/notifications/#loop-app-expiration-notification"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app expiration notification system</a> alerts the user when the app is within 20 days of expiration. In addition to that <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.</p>
 <p align="center"><img alt="expiration warning on settings for testflight example" src="../../version/img/expiration-warning-testflight.svg" width="300" /></p>
-<h2 id="github-personal-access-token"><span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token</span><a class="headerlink" href="#github-personal-access-token" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="github-personal-access-token">*<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token</span><a class="headerlink" href="#github-personal-access-token" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code> should be configured:</p>
 <ul>
 <li><code>Never expire</code></li>
@@ -3955,7 +3956,7 @@
 </ul>
 </li>
 </ul>
-<p>Be sure to change the Expiration from <code>30 days</code> to <code>No Expiration</code>. When you select <code>No Expiration</code> a &nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span> warning appears. Click on the green <code>Regenerate Token</code> button (red highlight in following graphic).</p>
+<p>Be sure to change the Expiration from <code>30 days</code> to <code>No Expiration</code>. When you select <code>No Expiration</code>, a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> warning appears. Click on the green <code>Regenerate Token</code> button (red highlight in following graphic).</p>
 <p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-no-expiration.svg" width="600" /></p>
 <p>The next screen shows your new token. Copy the token using the copy icon and save it along with your other secret settings.</p>
 <p align="center"><img alt="copy fastlane access token on github" src="../img/gh-token-to-copy.png" width="600" /></p>
