@@ -3517,8 +3517,13 @@
 <p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be built at least every 90 days when you build with a browser - this is <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> requirement.</strong></p>
 <p>Most users will start at <a href="#how-to-update-or-rebuild">How to Update or Rebuild</a>:</p>
 <ul>
-<li>If currently using verion 3.2.3 or earlier, there are extra steps included to update to 3.4</li>
-<li>This provides automatic build</li>
+<li>If currently using verion 3.2.3 or earlier, there are manual steps included to update to 3.4</li>
+<li>If currently using verion 3.4.0 or later, builds are automatic but you still need to do some actions:<ul>
+<li>Your <em>Apple Developer</em> account must be active</li>
+<li>All agreements must be signed for your <em>Apple Developer</em> account</li>
+<li>Once a year, you need to update <a href="#renew-certificate">Renew Certificates</a></li>
+</ul>
+</li>
 </ul>
 <p>If you are running <code>Loop-dev</code>, be sure to review these instructions but modify for the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are using: refer to <a href="../build-dev-browser/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev with Browser</a></p>
 </details>
@@ -3735,7 +3740,7 @@
 </ol>
 <p>When action has finished, a log appears. Do not delete those logs. They are an important record of activity.</p>
 </div>
-<h4 id="updating-from-32x-to-34">Updating from 3.2.x to 3.4<a class="headerlink" href="#updating-from-32x-to-34" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="update-from-32x-to-34">Update from 3.2.x to 3.4<a class="headerlink" href="#update-from-32x-to-34" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future. If you skip this step - the build will fail.</p>
 <blockquote>
 <p>If you built version 3.3.0 (the <code>dev branch</code> before release of version 3.4) or newer, you can skip ahead to <a href="#4-build">4: Build</a>.</p>
@@ -3753,12 +3758,39 @@
 <h4 id="1-add-identifiers">1: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#1-add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:</p>
 <ul>
-<li>Run the <code>Action</code> to <code>Add Identifers</code></li>
-<li>If you need explicit instructions, review: <a href="../gh-first-time/#add-identifiers" target="_blank"><code>Action</code>: <code>Add Identifers</code></a></li>
+<li>Run the Action: <code>Add Identifier</code></li>
+<li>Wait for it to succeed</li>
 </ul>
-<p>Wait for it to succeed.</p>
-<h4 id="2-update-new-identifier">2: Update New Identifier<a class="headerlink" href="#2-update-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The next step is to add your <code>App Group</code> to this one new Identifier, shown in the table below.</p>
+<details class="tip">
+<summary>For detailed instructions (Click to open/close)</summary>
+<p>Refer to the graphic below for the numbered steps:</p>
+<ol>
+<li>Click on the <code>Actions</code> tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on 2. <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></li>
+<li>On the right side, click <code>Run Workflow</code> to show a dropdown menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically this is <code>main</code>)</li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says <code>Run workflow</code>.</p>
+<p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700" /></p>
+</li>
+</ol>
+<p>The <code>Add Identifiers</code> &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
+<ul>
+<li>If you see the green check (<span class="twemoji passed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018L6.75 9.19 5.28 7.72a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l2 2a.75.75 0 0 0 1.06 0Z"/></svg></span>)  continue to the next section</li>
+<li>If you see the red <code>X</code> (<span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span>):<ul>
+<li><a href="../gh-errors/#action-add-identifiers-errors" target="_blank">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a> tells you what to search for in the file</li>
+<li>Resolve the error and repeat the Action: <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
+</ul>
+</li>
+</ul>
+</details>
+<h4 id="add-app-group-to-new-identifier">Add <code>App Group</code> to New <code>Identifier</code><a class="headerlink" href="#add-app-group-to-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
+<li>Add the <code>Loop App Group</code> to the new "<code>LoopWidgetExtension</code>" identifier</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -3773,26 +3805,68 @@
 </tr>
 </tbody>
 </table>
+<details class="tip">
+<summary>For detailed instructions (Click to open/close)</summary>
 <ul>
 <li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
-<li>Click on the "<code>LoopWidgetExtension</code>" identifier</li>
-<li>These are the steps you need to take:<ul>
-<li>Scroll down to the <code>App Groups</code> row of the Capabilities column</li>
-<li>Configure the App Groups to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
-<li>Save and Confirm your configuration</li>
+<li>Click on the "<code>LoopWidgetExtension</code>" identifier to open the <code>Edit Your App ID Configuration</code> screen.</li>
+</ul>
+<p>Looking at the <code>App Services</code> column, scroll down to the <code>App Groups</code> row</p>
+<ul>
+<li>Ensure the check box (under the <code>Capabilities column</code>) for <code>App Groups</code> is checked</li>
+<li>If the word <code>Edit</code> shows up under <code>NOTES</code>, return to the identifiers list<ul>
+<li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
 </ul>
 </li>
-<li>If you need more explicit directions, review <a href="../gh-first-time/#add-app-group-to-identifiers" target="_blank">Configure to use Browser: Add <code>App Group</code> to <code>Identifiers</code></a></li>
+<li>If the word <code>Configure</code> shows up, tap on it<ul>
+<li>This opens the <code>App Group Assignment</code> screen</li>
+<li>Check the box by <code>Loop App Group</code> that uses your <code>TEAMID</code> in <code>group.com.TEAMID.loopkit.LoopGroup</code> and then <code>Continue</code></li>
 </ul>
-<h4 id="3-create-certificates">3: Create Certificates<a class="headerlink" href="#3-create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You must create certificates again to add a certificate for the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> needs permission to have that capability). Once the certificate action succeeds, then run the action to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+</li>
+</ul>
+<p>If you had to modify the identifier, the <code>Save</code> button at the top right will become active</p>
+<ul>
+<li>Tap on <code>Save</code></li>
+<li>This opens the <code>Modify App Capabilities confirmation</code> screen</li>
+<li>Click on <code>Confirm</code></li>
+</ul>
+<p>If you did not need to make changes, the <code>Save</code> button will not be active.</p>
+<ul>
+<li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
+</ul>
+<p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></p>
+<p>All other identifiers should be already set up.</p>
+<ul>
+<li>If they are not, refer to <a href="../gh-first-time/#add-app-group-to-identifiers" target="_blank">Configure to Use Browser: Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
+</ul>
+</div>
+<h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>You must run the action <code>Create Certificates</code> again because the <code>Identifiers</code> were updated. Wait for this to succeed before trying to build.</p>
+<details class="tip">
+<summary>For detailed instructions (Click to open/close)</summary>
+<p>Refer to the graphic below for the numbered steps:</p>
 <ol>
-<li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
-<li>Run the <a href="../gh-first-time/#create-certificates" target="_blank"><code>Action</code>: <code>Create Certificates</code></a></li>
+<li>Click on the "<code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code>" tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on "<code>Create Certificates</code>"</li>
+<li>On the right side, click "<code>Run Workflow</code>" to show a dropdown menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically <code>main</code>)</li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says "<code>Run workflow</code>".</p>
+<p align="center"><img alt="create certificates using github actions" src="../img/action-03-create-certs.svg" width="700" /></p>
+</li>
+<li>
+<p>Wait a minute or two for the action to finish</p>
+<ul>
+<li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: 3. Create Certificates Errors</a></li>
 </ul>
 </li>
 </ol>
-<p>Wait for this action to succeed.</p>
+</details>
 <h4 id="4-build">4: Build<a class="headerlink" href="#4-build" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Refer to graphic below as you follow the steps to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <ul>
