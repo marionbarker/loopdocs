@@ -87,16 +87,16 @@ For sparse instructions, click on the link below:
 
 As you move through this page, there will be a lot of instructions regarding your <code>Secrets</code>. Please save yourself a lot of agony. Make a <code>Secrets</code> Reference folder and then create a <code>Secrets</code> Reference file in it.
 
-You don't need to know anything about the <code>Secrets</code> or any other steps on this page to do this. Come up with your own names, but make sure you know where you put this.
+You don't need to know anything about the <code>Secrets</code> or any other steps on this page to do this. Come up with your own names, but make sure you know where you put them.
 
 1. Decide on where you want your <code>Secrets</code> saved and create a special folder
-2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formating and ruin your <code>Secrets</code>)
+2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formatting and ruin your <code>Secrets</code>)
     * Create a blank <code>Secrets</code> Reference file using the text-only editor
     * Tap on the copy icon below to copy the template and paste it into your blank file
     * Save the file
 3. As you move through the steps on this page, fill in the file
-    * The `##` characters are used to indicate sections or title (text only file)
-    * The there is a reference pattern for each SECRET, replace that with your SECRET
+    * The `##` characters are used to indicate sections or titles (text-only file)
+    * Then there is a reference pattern for each SECRET, replace that with your SECRET
 4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file
 5. At the very beginning is a place to indicate the last day you updated the file
 

@@ -32,7 +32,7 @@ Please read the documentation for these on the [Loop and Learn: Customization Se
 
 Some customizations must be created for yourself. These are of two basic types: Custom Edits and Build-Time Flag.
 
-The information needed to modify the code to make these customizations is found in the Versions tab because the information is independent of build method (think of these as your personal versions). The links are found below.
+The information needed to modify the code to make these customizations is found in the Versions tab because the information is independent of the build method (think of these as your personal versions). The links are found below.
 
 * [Version: Custom Edits](../version/code-custom-edits.md)
     * The page linked above indicates how you can modify behavior by editing the code

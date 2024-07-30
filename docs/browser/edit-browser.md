@@ -42,9 +42,9 @@
         * It is a good idea to test each customization as soon as you install the new build on your phone
     * LoopDocs: Decide on Modules to modify using the [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list){: target="_blank" }
-        * If there are customization not provided by the Customization List, then you need to make presonalized edits
+        * If there are customization not provided by the Customization List, then you need to make personalized edits
         * This current page explains how to make the edits using a browser
-        * The [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } gives instructions on identifying the Module, finding the file and editing the line(s) 
+        * The [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } gives instructions on identifying the Module, finding the file, and editing the line(s) 
     * *GitHub* (each Module):
         1. `Fork` the Module (if needed) - this is your <code>fork</code> where you will make changes
         1. `Sync` the Module (if needed)
@@ -64,7 +64,7 @@
 
 ## How to Customize Build with Browser
 
-You do this using any browser on a computer or laptop. (Phone is not recommended - screen is too small.)
+You do this using any browser on a computer or laptop. (Phone is not recommended - the screen is too small.)
 
 There is some background information at the bottom of this page starting at&nbsp;[<span translate="no">LoopWorkspace</span>](#loopworkspace)&nbsp;if you want to know what you are doing. Otherwise, just follow the steps like a cookbook.
 
@@ -99,7 +99,7 @@ In the next sections, the exact process for making changes will be documented. B
 1. Save the change(s) using descriptive comments
 1. Repeat until done with this Module
 
-Later, you will use information from your <code>fork</code> to create your customizations. (Suggestion - use same file as your Secrets, or at least keep the customization file in the same folder). Details are found at the [Prepare the Customizations](#prepare-the-customizations) section.
+Later, you will use information from your <code>fork</code> to create your customizations. (Suggestion - use the same file as your Secrets, or at least keep the customization file in the same folder). Details are found at the [Prepare the Customizations](#prepare-the-customizations) section.
 
 ### Error Committing Your Changes
 
@@ -157,7 +157,7 @@ This table lists all the modules referred to on the Code Customization page link
 | <span translate="no">OmniBLE (for DASH)</span> | [<span translate="no">https://github.com/LoopKit/OmniBLE</span>](https://github.com/LoopKit/OmniBLE){: target="_blank" } |
 | <span translate="no">OmniKit (for Eros)</span> | [<span translate="no">https://github.com/LoopKit/OmniKit</span>](https://github.com/LoopKit/OmniKit){: target="_blank" } |
 
-Remember - you can only have a single <code>fork</code> of a given&nbsp;<span translate="no">GitHub repository</span>. If you already have a <code>fork</code>, you don't need another one; but it must be a linked to the URL listed the [Module Table](#module-table).
+Remember - you can only have a single <code>fork</code> of a given&nbsp;<span translate="no">GitHub repository</span>. If you already have a <code>fork</code>, you don't need another one; but it must be a link to the URL listed in the [Module Table](#module-table).
 
 !!! question "I already have a <code>fork</code>"
     Go to [Existing `Fork` for Module](#existing-fork-for-module) and follow the directions.
@@ -185,7 +185,7 @@ If you are customizing a released version, use the [Table of SHA-1](#table-of-sh
 
 You should create a `branch` following the numbered steps and watching the GIF. Each Frame in the GIF corresponds to a numbered step below.
 
-1. Click on URL line as indicated by the arrow
+1. Click on the URL line as indicated by the arrow
 1. Add the text `/tree/SHA-1` where you change SHA-1 to be the value in the table below and hit return
 1. Create a new branch in three steps
     * 3.1: Click on the dropdown under the `branch` icon
@@ -286,7 +286,7 @@ SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 
 Warning - that is not a valid SHA-1 for this change. Do not try to copy it and use it. You must make your own personalized changes.
 
-Later on, you will create the actual command needed to insert into build_loop.yml so you can add this customization when your build the app.
+Later on, you will create the actual command needed to insert into build_loop.yml so you can add this customization when you build the app.
 
 Repeat this process until you've done all your customizations for this Module and then move on to the next Module.
 
@@ -365,7 +365,7 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 
 Open the text file in which you saved the customization lines.
 
-For a given submodule, paste the comment curl lines that you prepared in [Prepare customization lines](#prepare-customization-lines) similar to the examples, near line 239, that are commented out and provided as an example. The best place to paste these is at the end of the `# Customize Loop: Download and apply patches` section and before the `# Patch Fastlane Match to not print tables` line.
+For a given submodule, paste the comment curl lines that you prepared in [Prepare customization lines](#prepare-customization-lines) similar to the examples, near line 239, which are commented out and provided as an example. The best place to paste these is at the end of the `# Customize Loop: Download and apply patches` section and before the `# Patch Fastlane Match to not print tables` line.
 
 The indenting needs to match, so tab or (shift-tab) to line up the columns.
 
@@ -411,7 +411,7 @@ The easy method is to provide a mentor with your GitHub username and they can fi
 
 If you want to do this yourself, this section explains the steps.
 
-* Step 1: In your customized `LoopWorkspace fork`: tap on <code>Code</code> at upper left
+* Step 1: In your customized `LoopWorkspace fork`: tap on <code>Code</code> at the upper left
     * If your `fork` is behind the `LoopKit` `repository`, consider updating your `fork`
         * Typically this can be done without changing your customization
     * Because you added customizations, your `fork` will be ahead of the `LoopKit` `repository`

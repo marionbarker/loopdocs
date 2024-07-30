@@ -6,8 +6,8 @@
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
 
-!!! tip "Add Each Users One Time"
-    Once you add a user to have access to your TestFlight for this app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.
+!!! tip "Add Each User One Time"
+    Once you add a user to have access to your TestFlight for this app, you don't need to do it again - it remains available to them across rebuilds and different versions of that app.
 
 You are configuring a private capability for your family using an Internal Testing group. You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](phone-install.md#testflight-for-a-child).
 
@@ -36,7 +36,7 @@ You are configuring a private capability for your family using an Internal Testi
     * Click in the box beside each person you want to include
     * Each person in this group will get an email each time you update (build again) using the <code>*GitHub* Browser Build</code> method
     * Click `Add` when you are done
-    * If building for a child, you will send the invitation to yourself because you will install for your child: See [TestFlight for a Child](phone-install.md#testflight-for-a-child)
+    * If building for a child, you will send the invitation to yourself because you will install it for your child: See [TestFlight for a Child](phone-install.md#testflight-for-a-child)
 
     ![select your users for the testing group](img/setup-testflight-03.png){width="700"}
     {align="center"}

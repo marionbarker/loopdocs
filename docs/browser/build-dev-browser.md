@@ -45,8 +45,8 @@ Your `LoopWorkspace fork` is at `https://github.com/username/LoopWorkspace` wher
 
 Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections:
 
-1. Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic
-2. Click on the drop down menu labeled 2 in the graphic and choose `dev`
+1. Click on the drop-down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as shown in the top right graphic
+2. Click on the drop-down menu labeled 2 in the graphic and choose `dev`
 3. Click on the `Branch` name box labeled 3 in the graphic and type `dev`
     * The branch name in your `fork` should always match the branch name you are adding; check that you type it correctly
 4. Review the dialog items to make sure everything is correct and then tap on Create branch
@@ -76,7 +76,7 @@ With the release of version 3.4, no one-time changes are required. This assumes 
 
 > **We recommend most users leave their default branch as `main`.**
 
-If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Loop`. In addition to the normal steps 1, 2 and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button.
+If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Loop`. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button.
 
 ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
 {align="center"}
@@ -101,14 +101,14 @@ Most people should keep `main` as default and make a considered decision when to
 
 There can be several reasons why you would change your default branch.
 
-* It can be convenient to have the branch you build most be configured as the default branch
+* * Configuring the branch you build the most as the default branch can be convenient.
 * The branch you want to build has a different workflow than your default branch (not typical)
     * In this case, you **must** modify the default branch
-    * Check the zulipchat conversation about the branch you are testing to see if it is necessary to make it default
+    * Check the Zulipchat conversation about the branch you are testing to see if it is necessary to make it the default
 
 These are the steps to modify the default branch.
 
-For this example, we show how to change from a default branch of `main` to a default branch of `dev`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
+For this example, we show how to change from a default branch of `main` to a default branch of `dev`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise, the Settings tab does not appear.
 
 For the numbered steps below, refer to the graphic found under each group of steps.
 
@@ -138,6 +138,6 @@ Your default branch has been changed.
 
 ## Automatic Update & Build
 
-The automatic update and build features are available for both the released (`main`) and development (`dev`) branch, but only for your default branch. For any other branch name set as your default branch, there is no automatic update available but the automatic build will run monthly.
+The automatic update and build features are available for both the released (`main`) and development (`dev`) branches, but only for your default branch. For any other branch name set as your default branch, there is no automatic update available but the automatic build will run monthly.
 
 Be sure to read this page: [Automatic Update & Build](automatic.md){: target="_blank" }.

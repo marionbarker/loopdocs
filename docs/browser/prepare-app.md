@@ -3,7 +3,7 @@
 After creating the identifiers, you will need to modify to make sure the correct App Group is associated with each identifier (there will be instructions) and you need to prepare the App - one of those identifiers just created is used as the `Bundle ID` for building your app. This can be a little confusing and a lot of pages over at Apple look the same. Make sure you follow the links given for each section.
 
 * App Group: associates different identifiers so the app works correctly - you will do this step under your Apple Developer ID account.
-* App: associates a particular identiers as the main Loop code - you will do this step under the App Connect site which is associated with your developer ID but is a different URL.
+* App: associates a particular identifier as the main Loop code - you will do this step under the App Connect site which is associated with your developer ID but is a different URL.
 
 ## Configure Identifiers for Loop
 
@@ -93,7 +93,7 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
     
     * This opens the `Edit your App ID Configuration` screen
     * In the Description box in the upper left, edit the Description to match the **NAME**
-    * Tap Save in the upper right and confirm the the change for that identifier._
+    * Tap Save in the upper right and confirm the change for that identifier._
 
     Only the Identifer Bundle ID matters and that is not something you can edit.
     
@@ -176,7 +176,7 @@ Repeat until the 4 Identifiers for the version you are building have the `Loop A
 
 ## Digital Service Act Compliance
 
-In order to create an app you need to indicate whether you are a trader or a non-trader. You are a non-trader unless you use the same Developer ID to submit apps for sale.
+To create an app you need to indicate whether you are a trader or a non-trader. You are a non-trader unless you use the same Developer ID to submit apps for sale.
 
 Even if the graphic below does not match what you see exactly, it should assist in guiding you through the steps.
 
@@ -188,7 +188,7 @@ If you do see the banner, follow the numbered steps in the graphic below:
 
 1. Click on the link that says "Complete Compliance Requirements" to open a new screen shown in the middle of the graphic below
 
-2. Tap on the "Complete Compliance Requirements for Your Name" link to bring up a pop-up shown in the bottom of the graphic below
+2. Tap on the "Complete Compliance Requirements for Your Name" link to bring up a pop-up shown at the bottom of the graphic below
 
 3. Select the "This is a non-trader provider account" radio button
 

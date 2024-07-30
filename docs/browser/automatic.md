@@ -35,7 +35,7 @@ In that case, you should check your favorite information site to find out what t
 
 On the first day of every month at 06:00 UTC, you will see a successful `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
 
-You start getting [Notifications](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your *TestFlight* app. You do not want to get the dreaded "Loop Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)
+You start getting [Notifications](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your *TestFlight* app. You do not want to get the dreaded "Loop Beta is not available" message on your phone. (The warnings get very aggressive when close to expiration.)
 
 ## Modify Automatic Building
 
@@ -98,8 +98,8 @@ Your build will run on the following conditions:
     - Run monthly, every first of the month at 06:00 UTC, if there are changes, it will update your repository; regardless of changes, it will build
     - Each time the action runs, it makes a keep-alive commit to the `alive` branch if necessary
 - If you disable any automation (both variables set to `false`), no updates, keep-alive or building happens when `Build Loop` runs
-- If you disabled just scheduled synchronization (`SCHEDULED_SYNC` set to`false`), it will only run once a month, on the first of the month, no update will happen; keep-alive will run
-- If you disabled just scheduled build (`SCHEDULED_BUILD` set to`false`), it will run once weekly, every Wednesday, to check for changes; if there are changes, it will update and build; keep-alive will run
+- If you disabled just scheduled synchronization (`SCHEDULED_SYNC` set to `false`), it will only run once a month, on the first of the month, no update will happen; keep-alive will run
+- If you disabled just scheduled build (`SCHEDULED_BUILD` set to `false`), it will run once weekly, every Wednesday, to check for changes; if there are changes, it will update and build; keep-alive will run
 
 ### Disable Automatic Actions
 
@@ -121,17 +121,17 @@ What if I decide I don't want the automatic building feature?
 
 * If you are using the released version of Loop, please leave automatic building running
     * Please read [TestFlight Automatic Updates](phone-install.md#automatic-update-build-install) on how to configure TestFlight so you choose when the updated app gets installed on your phone
-    * Otherwise, you may see the dreaded "Loop Beta has expired" message, have a Loop that won't open and not have a version ready to go in TestFlight that you can install within a few seconds
+    * Otherwise, you may see the dreaded "Loop Beta has expired" message, have a Loop that won't open, and not have a version ready to go in TestFlight that you can install within a few seconds
 
 * If you are taking a break from Loop and want to stop monthly Build emails, consider disabling actions for the `Build Loop` action for your app.
     * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow){: target="_blank" }
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
 
-* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to Use Browser](intro-summary.md) to restore ability to build Loop with GitHub.
+* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to Use Browser](intro-summary.md) to restore the ability to build Loop with GitHub.
 
 ## What are the `alive branches` and why do I need them?
 
-The automatic update and build features of version 3.4.1 and later use branches that start with the name `alive`. You may see branches called `alive`, `alive-dev` and `alive-main` in your repository. These are automatically created. They are used to keep GitHub actions working in your repository.
+The automatic update and build features of version 3.4.1 and later use branches that start with the name `alive`. You may see branches called `alive`, `alive-dev`, and `alive-main` in your repository. These are automatically created. They are used to keep GitHub actions working in your repository.
 
 * GitHub keeps track of repositories
 * If there is no activity in a given repository in 60 days, GitHub disables Actions

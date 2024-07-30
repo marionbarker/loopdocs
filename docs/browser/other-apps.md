@@ -34,7 +34,7 @@ If you are coming to this page to update one of the other apps, follow the [How 
 
     Pros:
 
-    * The 6 <code>Secrets</code> can be added to the organization one-time and apply to every repository
+    * The 6 <code>Secrets</code> can be added to the organization one time and apply to every repository
 
     Cons:
 
@@ -138,7 +138,7 @@ Open the text file in which you maintain a copy of your 6 <code>Secrets</code> s
     {align="center"}
 
 1. Tap on `New repository secret` and add each of the 6 <code>Secrets</code>
-    * You will notices the New secret dialog looks a little different
+    * You will notice the New secret dialog looks a little different
     * As soon as you click on the Name* Box, the 6 Secret Names may show up as a dropdown as shown in the graphic below
     * Select each one in turn and paste the secret value into the Secret* box and hit Add secret
     * If they do not appear in a dropdown, enter them exactly as shown (suggest copy / paste from your text file)
@@ -383,15 +383,15 @@ If you are building the *Loop Caregiver* app, skip ahead to [Build Action](#buil
 
 ### Display Name Customization for `Loop Follow`
 
-> If you build `Loop Follow` for one, two or three loopers, you may choose to customize your `fork` or `forks` to insert a custom display name.
+> If you build `Loop Follow` for one, two, or three loopers, you may choose to customize your `fork` or `forks` to insert a custom display name.
 
 > * Find and click on the file `LoopFollowDisplayNameConfig.xcconfig`
 > * Tap the pencil icon so you can edit the file
 > * The last line says `display_name = LoopFollow` (or `LoopFollow_Second` or `LoopFollow_Third`)
 > * Insert your custom name so the last line says `display_name = LF custom name`
-> * Click on commit changes and chose to commit directly into the `main` branch
+> * Click on commit changes and choose to commit directly into the `main` branch
 
-> Continue to build as instructed below. After you install the app on your phone, iPad or Mac via *TestFlight*, that custom name is what is displayed. The prefix LF is suggested to make it easier to find the custom named `Loop Follow` app in the list of apps, but is not required.
+> Continue to build as instructed below. After you install the app on your phone, iPad, or Mac via *TestFlight*, that custom name is what is displayed. The prefix LF is suggested to make it easier to find the custom-named `Loop Follow` app in the list of apps but is not required.
 
 ### Build Action
 
@@ -461,21 +461,21 @@ In the instructions below, use your *GitHub* username instead of `my-name`.
 
 There are three steps to using this account moving forward:
 
-1. One-time only: You need to add your 6 <code>Secrets</code> to this organization account (instructions are in next section)
+1. One-time only: You need to add your 6 <code>Secrets</code> to this organization account (instructions are in the next section)
 
 1. One-time only: Create a `Match-Secrets` repository in the `my-name-org` account
     * Not required for version 3.4 or later of the *Loop* app but it may be required for other apps if you haven't already built the *Loop* app
-    * Start out at the top-level of your organization (`github.com/my-name-org`)
+    * Start out at the top level of your organization (`github.com/my-name-org`)
     * Click on `Repositories`
     * Click on `New repository`
-    * Choose `my-name-org` as owner and enter `Match-Secrets` as the name
+    * Choose `my-name-org` as the owner and enter `Match-Secrets` as the name
     * Make sure to choose `Private` and tap on the `Create` button
     * If you want to see graphics for the steps above, refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](bb-errors.md#create-match-secrets)
 
 1. For each repository: you need to `fork` for each app you wish to build to the new `my-name-org` account
 
     * When you do the fork, there will be a dropdown menu under Owner for you to select the account for the `fork`
-    * Choose the organization account
+    * Choose the organization's account
     * Other than that extra step, follow the standard `fork` directions
         * This link provides instructions to [`Fork LoopWorkspace`](prepare-fork.md#fork-loopworkspace)
         * Refer to the [Table of App `Repositories`](#table-of-app-repositories) when building apps other than the *Loop* app
@@ -492,19 +492,19 @@ Follow the directions below to prepare to add secrets to the organization and th
 
 Make sure you are in the organization for *GitHub*:
 
-* Click on your icon at upper right of *GitHub* browser
+* Click on your icon at the upper right of *GitHub* browser
 * Select `Your Organizations`
 * In the new screen, select `my-name-org`
 * Make sure the URL is `github.com/my-name-org`
 * Click on Settings (it is optional to fill in the information shown under general)
-* In the left pane, scroll down to find `Secrets and variables` and click on the dropdown symbol and choose `Actions`
+* In the left pane, scroll down to find `Secrets and variables`, click on the dropdown symbol, and choose `Actions`
 * Your screen should look like the graphic below
 
 ![add secrets at organization level](img/add-secrets-org.png)
 
 * At this point, tap on `New organization secret`
     * Refer the instructions at this link, [Enter the <code>Secrets</code>](prepare-fork.md#enter-the-secrets), for adding <code>Secrets</code>
-    * Those instructions show the graphics for a personal `repository` and indicate the button will says `New repository secret` - your screen will show `New organization secret`
+    * Those instructions show the graphics for a personal `repository` and indicate the button will say `New repository secret` - your screen will show `New organization secret`
     * Continue until all six <code>Secrets</code> are entered for your organization account `my-name-org`
 * Once the organization <code>Secrets</code> are entered, they are used by every repository you fork with this organization as the owner
 
@@ -523,7 +523,7 @@ You can delete the DIY repositories from your personal account
     * If you have already generated some customizations there, it is safest to not delete the repository
     * If you have pull requests open from your personal account, DO NOT DELETE that repository - that would automatically close those open PR
 * Here are the instructions if you decide to delete the repositories
-    * Click on your icon at upper right of *GitHub* browser
+    * Click on your icon at the upper right of *GitHub* browser
     * Select `Your Repositories`
     * Notice the github address now says `my-name` instead of `my-name-org`
     * Select the repository you wish to delete and follow these instructions
@@ -537,7 +537,7 @@ You can disable the build actions from the repositories in your personal account
 * Pro: You leave any work you previously did alone in your personal account
 * Con: You might get confused and try to build in your personal account instead of your organization account
 * Here are the instructions to disable the build actions:
-    * Click on your icon at upper right of *GitHub* browser
+    * Click on your icon at the upper right of *GitHub* browser
     * Select `Your Repositories`
     * Notice the github address now says `my-name` instead of `my-name-org`
     * Select the repository you wish to disable build actions for and follow these instructions

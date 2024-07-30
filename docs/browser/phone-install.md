@@ -21,12 +21,12 @@ To install *TestFlight*, refer to the GIF below:
     * Hint: On child's phone, do this while logged in as yourself for Media & Purchase
     * Logging in as an adult is explained in [*TestFlight* for a Child](phone-install.md#testflight-for-a-child)
 
-![search for and dowload TestFlight](img/testflight-app-store.gif){width="300"}
+![search for and download TestFlight](img/testflight-app-store.gif){width="300"}
 {align="center"}
 
 ## Install App with *TestFlight*
 
-Once you get an email that the *TestFlight* processing completed, you can install the app on your phone. Note this can be half-hour to an hour after the build displays the green check mark on your browser.
+Once you get an email that the *TestFlight* processing completed, you can install the app on your phone. Note this can be a half-hour to an hour after the build displays the green check mark on your browser.
 
 The first time you use *TestFlight* on any phone associated with a given email, you must `Redeem` the code sent to that email inviting you to test the app. The GIF below is for someone who has never used *TestFlight*.
 
@@ -60,7 +60,7 @@ The instructions on the [Configure to Use Browser](intro-summary.md) page will, 
 
 * Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
     * When an update to the default `branch`, typically `main`, is detected, a new build is created automatically and uploaded to *TestFlight*
-* Build the app at least once a month and upload to *TestFlight*
+* Build the app at least once a month and upload it to *TestFlight*
 
 It is already true that, unless you make a change, the default setting will:
 
@@ -88,7 +88,7 @@ Go back to the *TestFlight* app on your phone and tap on your app name in the li
 ![enable or disable automatic update for Loop](img/testflight-auto-update.png){width="300"}
 {align="center"}
 
-When you are ready to install, just open the *TestFlight* app and click Install to get the most recent build and then click Open when it completes the installation. All your settings and connections to CGM and Pump are maintained.
+When you are ready to install, just open the *TestFlight* app and click Install to get the most recent build, and then click Open when it completes the installation. All your settings and connections to CGM and Pump are maintained.
 
 If you tap on the bottom row that says `Previous Builds`, highlighted by the dashed-green rectangle, you can view and choose an older build (as long as it has not expired).
 
@@ -119,7 +119,7 @@ You can change it.
 Open this link: [App Store Connect Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } and log in as needed.
 
 * Click on your app name.
-* Click on App Information on the left side (make browser wider if you don't see this).
+* Click on App Information on the left side (make the browser wider if you don't see this).
 * Modify the Name under Localizable Information and click on the Save button (upper left)
 * If you chose a name that is in use, you'll see the warning screen - try again
 

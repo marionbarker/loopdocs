@@ -1,6 +1,6 @@
 ## Create Certificate
 
-The instructions on this page are required to build your app intially. It ties information in you Match-Secrets private repository to your Apple information so that the build action works. After that, it only needs to be run again in a few cases.
+The instructions on this page are required to build your app initially. It ties information in your Match-Secrets private repository to your Apple information so that the build action works. After that, it only needs to be run again in a few cases.
 
 * When your certificates have expired (after one year) and you need to [Renew Certificates](bb-update.md#renew-certificate){:target="_blank"}
 * When the developers have modified the Identifiers; this requires Create Certificates to be run after you successfully run Add Identifiers and update the new Identifiers

@@ -30,8 +30,8 @@
 
     Most users will start at [How to Update or Rebuild](#how-to-update-or-rebuild):
 
-    * If currently using verion 3.2.3 or earlier, there are manual steps included to update to 3.4
-    * If currently using verion 3.4.0 or later, builds are automatic but you still need to do some actions:
+    * If currently using version 3.2.3 or earlier, there are manual steps included to update to 3.4
+    * If currently using version 3.4.0 or later, builds are automatic but you still need to do some actions:
         * Your *Apple Developer* account must be active
         * All agreements must be signed for your *Apple Developer* account
         * Once a year, you need to update [Renew Certificates](#renew-certificate)
@@ -48,7 +48,7 @@
     - **Can I do this on my phone?** Yes, especially after you update your *GitHub* token to `No Expiration`.
     - **Did the directions change?** Yes. We now recommend you select a *GitHub* Personal Access Token that never expires and supports automatic update and rebuild when that feature is released. It simplifies the build every 90-day process significantly.
     - **How do I set my *GitHub* `Personal Access Token` to never expire and to support the automatic rebuild feature?** See this section [Regenerate Token](#regenerate-token).
-    - **What happens to my existing builds when I change my *GitHub* Personal Access Token?** Nothing. The <code>GH_PAT</code> only affect future builds. Previous build are available for the full 90 days.
+    - **What happens to my existing builds when I change my *GitHub* Personal Access Token?** Nothing. The <code>GH_PAT</code> only affects future builds. Previous builds are available for the full 90 days.
     - **Is there anything I have to do once a year?** Yes. Once a year you need to get a new `Distribution Certificate`. These only last one year. See this section [Renew Certificate](#renew-certificate)
 
 ## When to Update or Rebuild
@@ -128,7 +128,7 @@ Digital Service Act Compliance
     **Do not miss the final step in this section. After you delete certificates, you must run the Action for `Create Certificates` before you can build an app again.**
 
 1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
-    * If your screen shows no Certificates and you see a message "Getting Started with Certificates", your certificate already expired and was removed by *Apple*; so skip ahead to Step 2: Navigate to your `Match-Secrets` Repository
+    * If your screen shows no Certificates and you see the message "Getting Started with Certificates", your certificate already expired and was removed by *Apple*; so skip ahead to Step 2: Navigate to your `Match-Secrets` Repository
     * Carefully examine the `Type` column - do **not** delete a `Development Certificate`
         * If you do not have any rows that say `Distribution Certificate`, your certificate already expired and was removed by *Apple*; so skip ahead to Step 2
         * If your certificate has an expiration date several months in the future - you can wait and renew your certificate later; skip ahead to [Update `Fork`](#update-fork)
@@ -217,13 +217,13 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
     1. Wait for the action to finish before doing anything else (except maybe refresh your browser)
         * If an action takes longer than you think is reasonable, you can cancel the action (click on the three dots by the action and cancel) and then try again
 
-    When action has finished, a log appears. Do not delete those logs. They are an important record of activity.
+    When the action has finished, a log appears. Do not delete those logs. They are an important record of activity.
 
 #### Update from 3.2.x to 3.4
 
 For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future. If you skip this step - the build will fail.
 
-> If you built version 3.3.0 (the `dev branch` before release of version 3.4) or newer, you can skip ahead to [4: Build](#4-build).
+> If you built version 3.3.0 (the `dev branch` before the release of version 3.4) or newer, you can skip ahead to [4: Build](#4-build).
 
 #### Extra Steps
 
@@ -321,7 +321,7 @@ You must run the action `Create Certificates` again because the `Identifiers` we
 
 #### 4: Build
 
-Refer to graphic below as you follow the steps to build the *Loop* app.
+Refer to the graphic below as you follow the steps to build the *Loop* app.
 
 * Click on the `Actions` tab
 * Select the `4. Build Loop` workflow on the left
@@ -364,7 +364,7 @@ You'll receive an App Store Connect email confirming that the build has complete
 
 > This is Step 6 of 6 - once you finish this, you are done and your app will last 90 days.
 
-Open the *TestFlight* app on the Loopers phone and install the most recent version of the *Loop* app. Most Loopers have automatic update disabled on their phones, so this is a manual process. **Don't forget.**
+Open the *TestFlight* app on the Loopers phone and install the most recent version of the *Loop* app. Most Loopers have automatic updates disabled on their phones, so this is a manual process. **Don't forget.**
 
 The updated app will show up in your *TestFlight* app.
 
@@ -390,9 +390,9 @@ Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../brows
 
 > We strongly recommend you toggle off Automatic Updates to allow you to be in full control over when the app is updated. This is even more important if you're using automatic builds from GitHub for version 3.3 or later.
 
-Option 2: If you chose to enable Automatic Updates from *TestFlight* for the *Loop* app, the updated build will be installed over your existing app as soon as it uploaded to *TestFlight*.
+Option 2: If you chose to enable Automatic Updates from *TestFlight* for the *Loop* app, the updated build will be installed over your existing app as soon as it is uploaded to *TestFlight*.
 
-* In this case, when you look at the *TestFlight* app on your phone, the app should have installed automatically
+* In this case, when you look at the *TestFlight* app on your phone, the app should have been installed automatically
 * Refer to the GIF above, the message will say `Open` instead of `Install`
 
 ## Choose Previous Build
@@ -425,7 +425,7 @@ Select the build to which you wish to add testing notes. When you tap on that ic
 ![add details to your build](img/testflight-test-details.png){width="700"}
 {align="center"}
 
-Click inside the box under **Test Details**. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>< iOS Builds</code> at upper left.
+Click inside the box under **Test Details**. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at the upper right and then <code>< iOS Builds</code> at the upper left.
 
 In this example, the branch and commit number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".
 
@@ -436,13 +436,13 @@ In this example, the branch and commit number are included followed by an indica
 
 ### Select a Previous Build
 
-First open the *TestFlight* app on your phone and select the *Loop* app.
+First, open the *TestFlight* app on your phone and select the *Loop* app.
 
 Near the bottom of the screen is a row labeled previous builds.
 
 * Tap on the previous builds row
 * The available builds are grouped by app version number, choose your desired version
-* Typically you choose the most recent build for that version and click Install and then Open after installation completes
+* Typically you choose the most recent build for that version, click Install, and then Open after installation completes
 * All your settings should remain
 
 The following graphic shows the view seen in the *TestFlight* app on the phone. By adding test details (as explained in the previous section), the desired build is clear. For most people - they will just use the most recent build. This procedure is useful for those who build often or who support multiple family members.
@@ -486,7 +486,7 @@ Click on the link to view your token and compare it to the graphic below.
 ![access token with correct permissions](img/gh-token-correct-permission.png){width="600"}
 {align="center"}
 
-The graphic above has a blue rectangle added to indicate where you should see your token. If yours does not look like this, click on the link (`FastLane Access Token`) to open a new display. Watch the GIF below - there are 4 frames, the last one has the Update token button.
+The graphic above has a blue rectangle added to indicate where you should see your token. If yours does not look like this, click on the link (`FastLane Access Token`) to open a new display. Watch the GIF below - there are 4 frames, and the last one has the Update token button.
 
 1. Click on the link (`FastLane Access Token`) to open a new display
 1. This example has no workflow or repo checks in it
@@ -523,12 +523,12 @@ Note - selecting the `workflow` check box below is new. If yours does not show t
 ![review of fastlane access token on github](img/gh-token-review.svg){width="600"}
 {align="center"}
 
-Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. 
+Click on Regenerate token (red highlight in the previous graphic) to see a screen similar to the next graphic. 
 
 * Most Loopers will have classic personal access tokens
     * If you are a developer who needs to use the fine-grained (by repository) option, that's fine
 
-Be sure to change the Expiration from `30 days` to `No Expiration`. When you select `No Expiration`, a *GitHub* warning appears. Click on the green `Regenerate Token` button (red highlight in following graphic).
+Be sure to change the Expiration from `30 days` to `No Expiration`. When you select `No Expiration`, a *GitHub* warning appears. Click on the green `Regenerate Token` button (red highlight in the following graphic).
 
 ![regenerate fastlane access token on github](img/gh-token-no-expiration.svg){width="600"}
 {align="center"}
@@ -551,9 +551,9 @@ Refer to the GIF for help. There are 3 frames.
 ![screen showing repository secrets list](img/update-secret-gh-pat.gif){width="500"}
 {align="center"}
 
-1. Tap on Settings, then scroll down until you see `Secrets and variables` on the left side and click on the drop down indicator to display `Actions`.
+1. Tap on Settings, then scroll down until you see `Secrets and variables` on the left side and click on the drop-down indicator to display `Actions`.
 1. Keep scrolling on the same screen, past the `Action secrets / New repository secret` row, until you see the list of your current <code>Secrets</code>. 
-1. Click on the GH_PAT, tap on the pencil and enter the new token in the form. Click on Update Secret to complete the action.
+1. Click on the GH_PAT, tap on the pencil, and enter the new token in the form. Click on Update Secret to complete the action.
 
 Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [How to Update or Rebuild](#how-to-update-or-rebuild) instructions to start a new build.
 

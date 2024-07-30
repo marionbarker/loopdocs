@@ -48,9 +48,9 @@ Carefully compare your screen to the graphic below paying attention to the highl
 ??? abstract "Feeling confident? Planning to build more than one app? Click to see more."
     If you are already feeling overwhelmed - skip this tip.
 
-    If you plan to build more that one app, you will making a fork of each repository associated with each app, and then you must add the 6 <code>Secrets</code> to each repository. It is not hard but it can get tiresome.
+    If you plan to build more than one app, you will be making a fork of each repository associated with each app, and then you must add the 6 <code>Secrets</code> to each repository. It is not hard but it can get tiresome.
 
-    There is a way to enter the 6 <code>Secrets</code> only one time for all your repositories, but this requires setting up a free GitHub organization. This is also not hard, but it modifies some of displays you see on GitHub. If you are interested, refer to [Use a GitHub Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }
+    There is a way to enter the 6 <code>Secrets</code> only one time for all your repositories, but this requires setting up a free GitHub organization. This is also not hard, but it modifies some of the displays you see on GitHub. If you are interested, refer to [Use a GitHub Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }
 
 ??? abstract "Section Summary (click to open/close)"
     These <code>Secrets</code> are the same for any repository for which you use `GitHub Browser Build`.
