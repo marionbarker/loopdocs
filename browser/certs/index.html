@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-certificate" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -999,9 +999,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-certificate" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Create Certificate
+      Overview
     </span>
   </a>
   
@@ -1014,14 +1014,29 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-step" class="md-nav__link">
+    <nav class="md-nav" aria-label="Create Certificates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#success" class="md-nav__link">
     <span class="md-ellipsis">
-      Next Step
+      Success
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Failure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1055,35 +1070,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bb-errors/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Errors with Browser
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
               
                 
   
@@ -1105,6 +1091,14 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
@@ -1117,6 +1111,27 @@
   
   <span class="md-ellipsis">
     Install on Phone
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bb-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Errors with Browser
   </span>
   
 
@@ -3351,9 +3366,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-certificate" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Create Certificate
+      Overview
     </span>
   </a>
   
@@ -3366,14 +3381,29 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-step" class="md-nav__link">
+    <nav class="md-nav" aria-label="Create Certificates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#success" class="md-nav__link">
     <span class="md-ellipsis">
-      Next Step
+      Success
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Failure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3394,8 +3424,8 @@
 
   <h1>Create Certificates</h1>
 
-<h2 id="create-certificate">Create <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#create-certificate" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The instructions on this page are required to build your app intially. It ties information in you <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> private <abbr title="contains project files and each file's revision history">repository</abbr> to your Apple information so that the build action works. After that, it only needs to be run again in a few cases.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The instructions on this page are required to build your app intially. This action ties information in your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> private <abbr title="contains project files and each file's revision history">repository</abbr> to your Apple information so that the build action works. Once successful that, it only needs to be run again in a few cases.</p>
 <ul>
 <li>When your certificates have expired (after one year) and you need to <a href="../bb-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
 <li>When the developers have modified the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>; this requires Create Certificates to be run after you successfully run Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and update the new <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></li>
@@ -3426,14 +3456,24 @@
 </li>
 <li>
 <p>Wait a minute or two for the action to finish</p>
-<ul>
-<li>If this action fails, head over to <a href="../bb-errors/#action-create-certificates-errors" target="_blank">Action: 3. Create Certificates Errors</a></li>
-<li>Once you've resolved the error, repeat the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> <a href="../identifiers/#add-identifiers" target="_blank">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and then <code>Create Certificates</code>. (The <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> might not be required but it is fast and should be done as a matter of routine.)</li>
-</ul>
 </li>
 </ol>
-<h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The next step is to <a href="../build-yml/">Build your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Be Patient</p>
+<ul>
+<li>Refresh the browser if you are unsure if the action started</li>
+<li>Do not start a new action until the first one completes</li>
+</ul>
+</div>
+<h3 id="success">Success<a class="headerlink" href="#success" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Once you see the green check mark by <code>Create Certificates</code>, the next step is to <a href="../build-yml/">Build your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a>.</p>
+<h3 id="failure">Failure<a class="headerlink" href="#failure" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If this action fails, head over to the errors page. Review these links, identify and fix your error or ask for help.</p>
+<ul>
+<li><a href="../bb-errors/#most-common-mistakes" target="_blank">Most Common Mistakes</a></li>
+<li><a href="../bb-errors/#action-create-certificates-errors" target="_blank">Create Certificates Errors</a>.</li>
+<li><a href="../bb-errors/#help-with-errors" target="_blank">How to Ask for Help</a></li>
+</ul>
 
 
 

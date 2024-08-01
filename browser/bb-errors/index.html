@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../build-yml/">
+        <link rel="prev" href="../phone-install/">
       
       
-        <link rel="next" href="../tf-users/">
+        <link rel="next" href="../bb-update/">
       
       
       <link rel="icon" href="../../loop-logo.png">
@@ -988,9 +988,51 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tf-users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TestFlight Users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phone-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install on Phone
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1356,6 +1398,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#delete-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete Identifiers
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1365,48 +1416,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tf-users/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TestFlight Users
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../phone-install/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Install on Phone
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -3946,6 +3955,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#delete-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete Identifiers
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4152,19 +4170,13 @@
 </ul>
 </li>
 </ul>
-<p>Follow these steps:</p>
-<div class="admonition tip">
-<p class="admonition-title">Open each link below in a separate tab</p>
-<p>It is best to open each link below in a separate tab so you can return to this list and keep using the links in each step.</p>
-</div>
-<ol>
-<li>
-<p>Delete all the identifiers that you can, following the steps in <a href="../prepare-fork/#delete-identifiers">Prepare Fork: Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></p>
+<p>Click on this link to <a href="#delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
 <ul>
 <li>Delete all the other identifiers first, then try to delete the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> identifier with the wrong <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code></li>
 <li>It is fine to just ignore identifiers with the wrong <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code>, but do not use them</li>
 </ul>
-</li>
+<h4 id="rerun-steps-with-correct-teamid">Rerun Steps with correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr><a class="headerlink" href="#rerun-steps-with-correct-teamid" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ol>
 <li>
 <p>Enter your <code>TEAMID</code> correctly in the <abbr title="contains project files and each file's revision history">repository</abbr> <code>Secrets</code></p>
 <ul>
@@ -4562,6 +4574,26 @@
 </ul>
 <p align="center"><img alt="second screen for new repository" src="../img/02-gh-match-secrets-leave-alone.png" width="600" /></p>
 <p>You will not directly interact with your <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<h3 id="delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#delete-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The <code>Identifier</code> that is associated with the <code>Loop</code> identifier cannot be deleted if it is already in the <em>App Store</em> but all others can. If you attempt to delete the <code>XC</code> <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. If a <code>Bundle ID</code> has ever been associated with an app in the <em>App Store</em>, you cannot delete the <code>Identifier</code>.</p>
+<ul>
+<li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> on the <em>Apple Developer</em> site.</li>
+<li>Use the graphic below as a guide to removing identifiers</li>
+<li>Keep repeating the steps until you've removed all the identifiers you can (or want to) delete</li>
+<li>It is OK to delete an identifier even if it does have your correct <code>TEAMID</code><ul>
+<li>If you try to delete the <code>Loop</code> identifier with your <code>TEAMID</code>, it will refuse, don't worry, just keep going</li>
+</ul>
+</li>
+<li>Note - this graphic indicates where on this page you can find your <code>TEAMID</code><ul>
+<li>If you notice an identifier with a value embedded in it that does not have your <code>TEAMID</code>, then delete it if you can and <a href="../bb-update/#update-secrets" target="_blank">Update <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a> with your correct <code>TEAMID</code></li>
+<li>If you try to delete a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier that does not have your <code>TEAMID</code>, but you already added to the <em>App Store</em>, it will refuse, don't worry, just keep going</li>
+<li>Delete all the other identifiers first that have the same incorrect <code>TEAMID</code> and then try to delete the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier with the incorrect <code>TEAMID</code></li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="steps to delete a given identifier" src="../img/delete-identifiers.svg" width="700" /></p>
+<p>If coming here because you enter the wrong <code>TEAMID</code> in <code>Secrets</code> - return to <a href="#rerun-steps-with-correct-teamid">Rerun Steps with Correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></a> when you've deleted as many identifiers as you can.</p>
+<p>After you delete identifiers, you must add them back, configure them and create certificate before you can build again.</p>
 
 
 
@@ -4597,7 +4629,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../build-yml/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Build the App">
+          <a href="../phone-install/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Install on Phone">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -4607,20 +4639,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Build the App
+                Install on Phone
               </div>
             </div>
           </a>
         
         
           
-          <a href="../tf-users/" class="md-footer__link md-footer__link--next" aria-label="Next: TestFlight Users">
+          <a href="../bb-update/" class="md-footer__link md-footer__link--next" aria-label="Next: Update/Rebuild with Browser">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                TestFlight Users
+                Update/Rebuild with Browser
               </div>
             </div>
             <div class="md-footer__button md-icon">
